@@ -1,0 +1,1917 @@
+[
+  {
+    "id": "q-analista_de_informatica4-01",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 1"
+    ],
+    "enunciado": "1. De acordo com as informações textuais, a utilização do termo “inforus” pelo virologista chinês George Fu Gao é consequência",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "da semelhança dos prejuízos à saúde que pode h aver entre o vírus da informação e o vírus biológico, ambos de grande letalidade na sociedade atual."
+      },
+      {
+        "id": "B",
+        "text": "do surgimento de um novo vírus biológico, cujos prejuízos à saúde dos seres humanos podem ser da mesma proporção que os causados pelo Sars-CoV-2."
+      },
+      {
+        "id": "C",
+        "text": "da falta de informação que rege a sociedade contemporânea, fruto do acesso restrito à internet e à inteligência artificial, o que causa discriminação social."
+      },
+      {
+        "id": "D",
+        "text": "da celeridade com que informações, predominante - mente imprecisas ou falsas, passaram a ser disseminadas, o que se potencializou no con"
+      },
+      {
+        "id": "E",
+        "text": "da superação de problemas como a falta de informação, que levou milhões de pessoas à morte quando se espalhou pelo mundo o novo coronavírus."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 1 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-02",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 2"
+    ],
+    "enunciado": "2. As informações do 3o parágrafo têm a função de",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "justificar o papel relevante que George Fu Gao e seu grupo tiveram durante a pandemia de covid-19, o que não o habilita, no entanto, para tratar de questões de informação."
+      },
+      {
+        "id": "B",
+        "text": "credenciar George Fu Gao como um pesquisador r elevante em sua área, o que implica reconhecer como importantes suas considerações sobre a i nfodemia."
+      },
+      {
+        "id": "C",
+        "text": "mostrar a presença tímida de George Fu Gao no con"
+      },
+      {
+        "id": "D",
+        "text": "colocar George Fu Gao e seu grupo como pesqui - sadores de pequena envergadura no con"
+      },
+      {
+        "id": "E",
+        "text": "engrandecer os estudos de George Fu Gao e de sua equipe que, mesmo não tendo avançado em estudos sobre Sars-CoV-2, criaram conceitos relevantes em infodemia."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 2 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-03",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Língua Portuguesa",
+      "Interpretação e Gramática"
+    ],
+    "enunciado": "3. Assinale a alternativa que atende à norma-padrão de concordância nominal e concordância verbal.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "As imprecisões ou as falsidades de algumas informações se propaga em proporções incontroláveis, segundo o virologista George Fu Gao."
+      },
+      {
+        "id": "B",
+        "text": "Parte das ações do país implementadas para lidar com o novo coronavírus, o Sars-CoV-2, foi coordenada pelo virologista George Fu Gao, no CDC."
+      },
+      {
+        "id": "C",
+        "text": "Mais de 600 artigos científicos foi escrito por George Fu Gao, professor do Instituto de Microbiologia da Academia Chinesa de Ciências."
+      },
+      {
+        "id": "D",
+        "text": "George Fu Gao e outros pesquisadores compõe o grupo responsáveis por identificar a proteína à qual Sars-CoV-2 adere para invadir as células."
+      },
+      {
+        "id": "E",
+        "text": "Um artigo científico de Gao, para o qual já se fez mais de 35 mil citações, descreve o isolamento do Sars-CoV-2 em pacientes de Wuhan."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 3 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-04",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 4"
+    ],
+    "enunciado": "4. Devido internet, as notícias chegam pessoas muito rapidamente, porém, é um processo em que veracidade das informações pode não atender realidade, o que representa prejuízos uma parcela expressiva da população. De acordo com a norma-padrão, as lacunas devem ser preenchidas, respectivamente, com:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "à ... às ... a ... à ... a"
+      },
+      {
+        "id": "B",
+        "text": "a ... as ... à ... à ... à"
+      },
+      {
+        "id": "C",
+        "text": "à ... a ... a ... a ... à"
+      },
+      {
+        "id": "D",
+        "text": "a ... à ... à ... a ... a"
+      },
+      {
+        "id": "E",
+        "text": "à ... às ... a ... à ... à"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 4 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-05",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 5"
+    ],
+    "enunciado": "5. Considere as passagens do 1o parágrafo: •   Ele acompanhou várias epidemias nas últimas décadas e, durante a pandemia de covid-19, esteve à frente... •   ...  que  coordenou  parte  das  ações  do  país  para  lidar com o novo coronavírus, o Sars-CoV-2. •   ... para  invadir  as células  e causar  a infecção, testou anticorpos contra ele e desenvolveu ao menos uma vacina. As vírgulas são empregadas nas três passagens com a função de separar, correta e respectivamente:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "expressão explicativa; expressão corretiva; orações subordinadas."
+      },
+      {
+        "id": "B",
+        "text": "expressão corretiva; expressão exemplificativa; orações coordenadas."
+      },
+      {
+        "id": "C",
+        "text": "expressão adverbial; expressão explicativa; orações coordenadas."
+      },
+      {
+        "id": "D",
+        "text": "expressão adverbial; expressão corretiva; orações coordenadas."
+      },
+      {
+        "id": "E",
+        "text": "expressão explicativa; expressão explicativa; o rações subordinadas.\n\n5"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 5 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-06",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 6"
+    ],
+    "enunciado": "6. O editorial deixa claro que a falta de consenso entre os países-membros da Organização Mundial do Comércio",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "limita o poder de barganha de diversas nações, que se tornam ainda mais dependentes das decisões norte-americanas."
+      },
+      {
+        "id": "B",
+        "text": "representa prejuízos significativos para a maioria das nações no comércio mundial, afetando as c adeias produtivas."
+      },
+      {
+        "id": "C",
+        "text": "deixa de afetar as relações mundiais de comércio porque as suas regras permanecem a despeito das dissonâncias."
+      },
+      {
+        "id": "D",
+        "text": "impõe novas barreiras para as transações comerciais, já que o mundo vive agora sob o protecionismo generalizado."
+      },
+      {
+        "id": "E",
+        "text": "revela que a organização sucumbiu aos interesses particulares de cada país-membro, o que sinaliza o fim da sua essência."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 6 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-07",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 7"
+    ],
+    "enunciado": "7. Considere as passagens: •   Delegações  voltaram  para  casa  com  declarações v agas. (1o parágrafo) •   A  Índia  bloqueia  avanços  em  temas sensíveis, como tributação digital. (2o parágrafo) •   Sem esse equilíbrio, o risco não é exatamente o fim da globalização, mas sua degradação. (5o parágrafo) Os termos destacados significam, correta e respectiva - mente:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "contraditórias; difíceis de entender; destruição."
+      },
+      {
+        "id": "B",
+        "text": "confusas; bastante complexos; irrelevância."
+      },
+      {
+        "id": "C",
+        "text": "desconexas; de natureza solidária; ruína."
+      },
+      {
+        "id": "D",
+        "text": "incertas; naturalmente ofensivos; mudança."
+      },
+      {
+        "id": "E",
+        "text": "imprecisas; difíceis de lidar; aviltamento."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 7 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-08",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 8"
+    ],
+    "enunciado": "8. O termo destacado está empregado em sentido figurado em:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Negociações sobre o comércio digital fracassaram. (1o parágrafo)"
+      },
+      {
+        "id": "B",
+        "text": "A China resiste a mudanças que atinjam seus subsídios. (2o parágrafo)"
+      },
+      {
+        "id": "C",
+        "text": "Os países negociam, mesmo quando a OMC não decide. (3o parágrafo)"
+      },
+      {
+        "id": "D",
+        "text": "... mesmo quando a arquitetura institucional vacila. (4o parágrafo)"
+      },
+      {
+        "id": "E",
+        "text": "... o comércio tem resistido mais do que as instituições... (5o parágrafo)\n\n6"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 8 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-09",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 9"
+    ],
+    "enunciado": "9. Considere as passagens: •   A  Índia  bloqueia  avanços  em  temas  sensíveis, como tributação digital. (2o parágrafo) •   Ainda assim, o comércio global não desacelerou na mesma proporção. (3o parágrafo) •   As regras não desapareceram, mas já não dependem do fórum que as consolidou. (4o parágrafo) •   Isso  exige  flexibilidade para  contornar bloqueios, mas também algum esforço de coordenação... (5o parágrafo) As expressões destacadas estabelecem entre as o rações do texto, correta e respectivamente, relações de sentido de:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "exemplificação; oposição; oposição; adição."
+      },
+      {
+        "id": "B",
+        "text": "comparação; conclusão; oposição; oposição."
+      },
+      {
+        "id": "C",
+        "text": "conformidade; adição; comparação; conclusão."
+      },
+      {
+        "id": "D",
+        "text": "comparação; oposição; comparação; adição."
+      },
+      {
+        "id": "E",
+        "text": "exemplificação; adição; explicação; oposição."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 9 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-10",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 10"
+    ],
+    "enunciado": "10. Assinale a alternativa que atende à norma-padrão de colocação pronominal.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A organização depende de que concertem-se os interesses comerciais entre mais de 160 países."
+      },
+      {
+        "id": "B",
+        "text": "Ainda assim, não constatou-se a desaceleração do comércio global na mesma proporção."
+      },
+      {
+        "id": "C",
+        "text": "Tornaria-se difícil desfazer operações globais: custos elevados, perda de escala e ruptura de contratos."
+      },
+      {
+        "id": "D",
+        "text": "Se trata, agora, de preservar alguma previsibilidade num sistema mais fragmentado e modular."
+      },
+      {
+        "id": "E",
+        "text": "Na realidade, ainda que a máquina rode formalmente, constata-se que não produz resultados."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 10 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-11",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 11"
+    ],
+    "enunciado": "11. Uma aplicação financeira de X reais apresentou ao final do primeiro mês de investimento um total, que inclui X e o rendimento obtido, de 11 9 de X. Esses 11 9 de X foram mantidos na aplicação que, no segundo mês, aumentou o equivalente a 3 2 do valor que havia aumentado no primeiro mês. Sem retirar nada da aplicação, verificou-se que, ao término do segundo mês, o valor total, que inclui X e os dois rendimentos obtidos, era de R$ 6.832,00. A diferença entre o rendimento obtido no segundo mês da aplicação e o valor obtido no primeiro mês foi igual a",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "R$ 244,00."
+      },
+      {
+        "id": "B",
+        "text": "R$ 362,00."
+      },
+      {
+        "id": "C",
+        "text": "R$ 488,00."
+      },
+      {
+        "id": "D",
+        "text": "R$ 506,00."
+      },
+      {
+        "id": "E",
+        "text": "R$ 618,00."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 11 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-12",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 12"
+    ],
+    "enunciado": "12. Em um laboratório, ao ser disparado um cronômetro, o evento F ocorre exatamente a cada 3 minutos, o evento G, a cada 4 minutos, o evento H, a cada 6 minutos, e o evento J, a cada 9 minutos. O tempo decorrido desde o disparo do cronômetro até a ocorrência do 16 o evento isolado, ou seja, ocorrência de um evento sem a ocorrência de qualquer outro desses eventos, ao mesmo tempo, foi de",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "45 minutos."
+      },
+      {
+        "id": "B",
+        "text": "51 minutos."
+      },
+      {
+        "id": "C",
+        "text": "52 minutos."
+      },
+      {
+        "id": "D",
+        "text": "56 minutos."
+      },
+      {
+        "id": "E",
+        "text": "57 minutos."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 12 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-13",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 13"
+    ],
+    "enunciado": "13. Foram arrecadadas 132 cédulas de 100 reais, 156 de 50 reais e 180 de 20 reais, para serem divididas em premiações diversas em uma gincana. Essas premiações seriam colocadas no maior número possível de envelopes, de tal modo que cada envelope contenha x cédulas de 100 reais, y cédulas de 50 reais e z cédulas de 20 reais. Realizada a divisão dessa maneira, um ganhador receberia como prêmio, em seu envelope, a quantia de",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "R$ 2.000,00."
+      },
+      {
+        "id": "B",
+        "text": "R$ 2.050,00."
+      },
+      {
+        "id": "C",
+        "text": "R$ 2.100,00."
+      },
+      {
+        "id": "D",
+        "text": "R$ 2.150,00."
+      },
+      {
+        "id": "E",
+        "text": "R$ 2.200,00.\n\n7"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 13 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-15",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 15"
+    ],
+    "enunciado": "15. Em um grupo de voluntários que se dedicam a trabalhos de assistência social, a razão entre o número de homens e o número de mulheres é 3 8 . Com a intenção de aumentar a participação masculina no grupo, foi feita uma campanha que visava a adesão de mais homens para o grupo. Para surpresa de todos, a participação de mulheres havia aumentado em 20%. Para que a razão mencionada, que era 3 8 , se tornasse 7 8 , a porcentagem de aumento da participação masculina deveria subir, como resultado da campanha, em:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "180%"
+      },
+      {
+        "id": "B",
+        "text": "166,666... %"
+      },
+      {
+        "id": "C",
+        "text": "150%"
+      },
+      {
+        "id": "D",
+        "text": "133,333... %"
+      },
+      {
+        "id": "E",
+        "text": "120%"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 15 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-16",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 16"
+    ],
+    "enunciado": "16. Uma construtora contratou 3 funcionários para executarem a limpeza das paredes de apartamentos para entrega. Sabe-se que esses funcionários conseguiram limpar 2.520 m2 de paredes trabalhando 6 horas por dia durante 7 dias. A área total a ser limpa era de 16.920 m 2 e, para terminar esse trabalho, além dos 3 funcionários já contratados, a empresa contratou outros 2 funcionários e todos eles trabalhariam 9 horas por dia. Considerando que todos os funcionários têm a mesma velocidade de trabalho, é correto afirmar que o número total de dias de trabalho, para que os 16.920 m 2 fossem limpos, foi de",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "16."
+      },
+      {
+        "id": "B",
+        "text": "20."
+      },
+      {
+        "id": "C",
+        "text": "23."
+      },
+      {
+        "id": "D",
+        "text": "26."
+      },
+      {
+        "id": "E",
+        "text": "29.\n\n8"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 16 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-18",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 18"
+    ],
+    "enunciado": "18. Uma loja vende estes seis produtos: F, G, H, J, K e L. Quem compra um F e um G, paga R$ 13,00; quem compra um G e um H, paga R$ 11,00; quem compra um H e um J, paga R$10,00; quem compra um J e um K, paga R$ 11,00; quem compra um K e um L, paga R$ 13,00 e quem compra um F e um L, paga R$ 14,00. Quem comprar um F, um G, dois H, um J, um K e dois L, pagará, por esses oito produtos, o valor de",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "R$ 45,00."
+      },
+      {
+        "id": "B",
+        "text": "R$ 46,00."
+      },
+      {
+        "id": "C",
+        "text": "R$ 47,00."
+      },
+      {
+        "id": "D",
+        "text": "R$ 48,00."
+      },
+      {
+        "id": "E",
+        "text": "R$ 49,00.\n\n9"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 18 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-20",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 20"
+    ],
+    "enunciado": "20. Um reservatório de água, cujo formato interno é de um paralelepípedo reto com medidas da base de 2 m por 1,5 m. Em um certo dia, esse reservatório foi enchido até a água atingir a altura de 0,8 m e nada mais foi acrescentado. Exatamente ao ser atingida essa altura da água, foi aberto um registro de vazão que possibilitava a saída de 200 mL de água por minuto. Por quanto tempo esse registro deve ficar aberto para que a altura da água no reservatório seja de 0,73 m?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "23 horas."
+      },
+      {
+        "id": "B",
+        "text": "21 horas e 40 minutos."
+      },
+      {
+        "id": "C",
+        "text": "19 horas e 30 minutos."
+      },
+      {
+        "id": "D",
+        "text": "18 horas e 20 minutos."
+      },
+      {
+        "id": "E",
+        "text": "17 horas e 30 minutos.\n\n10"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 20 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-21",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 21"
+    ],
+    "enunciado": "21. Tendo em vista a Resolução n o 04, de 26 de setembro de 2023, da Câmara Municipal de Votorantim, é correto afirmar que a Diretoria Legislativa é diretamente subordinada à",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Assessoria da Presidência."
+      },
+      {
+        "id": "B",
+        "text": "Assessoria da Mesa Diretora."
+      },
+      {
+        "id": "C",
+        "text": "Diretoria de Administração."
+      },
+      {
+        "id": "D",
+        "text": "Procuradoria Jurídica."
+      },
+      {
+        "id": "E",
+        "text": "Mesa Diretora."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 21 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-22",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 22"
+    ],
+    "enunciado": "22. Considerando o que dispõe a Resolução no 04, de 26 de setembro de 2023, da Câmara Municipal de Votorantim, a função de conferir os textos das leis publicadas com os respectivos autógrafos, comunicando incoerências observadas, é de competência da",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Coordenadoria de Serviços Legislativos."
+      },
+      {
+        "id": "B",
+        "text": "Diretoria Legislativa."
+      },
+      {
+        "id": "C",
+        "text": "Consultoria do Processo Legislativo."
+      },
+      {
+        "id": "D",
+        "text": "Assessoria da Mesa Diretora."
+      },
+      {
+        "id": "E",
+        "text": "Assessoria das Comissões."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 22 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-23",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 23"
+    ],
+    "enunciado": "23. A Procuradoria da Câmara Municipal de Votorantim, tendo em vista o disposto na Resolução n o 04, de 26 de setembro de 2023, da Câmara Municipal de Votorantim,",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "é vinculada diretamente à Assessoria da Presidência."
+      },
+      {
+        "id": "B",
+        "text": "é dividida em duas áreas de concentração: contencioso geral e consultoria geral."
+      },
+      {
+        "id": "C",
+        "text": "não poderá prestar consultoria jurídica aos vereadores nos assuntos pertinentes às suas funções."
+      },
+      {
+        "id": "D",
+        "text": "exerce a função de consultoria junto à Diretoria Legislativa por meio da Consultoria do Processo Legislativo."
+      },
+      {
+        "id": "E",
+        "text": "é chefiada, de acordo com a área de concentração, por portaria da mesa diretora, com prazo máximo de vigência de um ano.\n\n11"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 23 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-24",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 24"
+    ],
+    "enunciado": "24. A lavratura e zelo pelos Termos de Posse do Prefeito, Vice-Prefeito e Vereadores, bem como os de extinção dos respectivos mandatos, devem ser realizados pela",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Assessoria Parlamentar."
+      },
+      {
+        "id": "B",
+        "text": "Diretoria Administrativa."
+      },
+      {
+        "id": "C",
+        "text": "Diretoria Legislativa."
+      },
+      {
+        "id": "D",
+        "text": "Assessoria da Presidência."
+      },
+      {
+        "id": "E",
+        "text": "Assessoria da Mesa Diretora."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 24 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-25",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 25"
+    ],
+    "enunciado": "25. Assinale a alternativa que contém o órgão diretamente subordinado à Diretoria de Administração.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Coordenadoria de Serviços Legislativos."
+      },
+      {
+        "id": "B",
+        "text": "Coordenadoria de Comunicação Organizacional."
+      },
+      {
+        "id": "C",
+        "text": "Departamento de Contabilidade."
+      },
+      {
+        "id": "D",
+        "text": "Assessoria Parlamentar."
+      },
+      {
+        "id": "E",
+        "text": "Assessoria das Comissões. LegisLação"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 25 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-26",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "26. No aplicativo Excel do pacote Microsoft Office, conside - rando a versão 2016, foi elaborada a seguinte planilha: Posteriormente, a seguinte fórmula foi inserida na célula A5 dessa planilha: =MÁXIMO(A1:C3)-MÍNIMO(B2:D4) O resultado que será exibido nessa célula é:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "7"
+      },
+      {
+        "id": "C",
+        "text": "32"
+      },
+      {
+        "id": "D",
+        "text": "63"
+      },
+      {
+        "id": "E",
+        "text": "64"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 26 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-27",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 27"
+    ],
+    "enunciado": "27. No aplicativo PowerPoint do pacote Microsoft Office, considerando a versão 2016, existe uma apresentação composta por 5 slides . Um usuário desse aplicativo, a partir do modo de exibição Normal, clicou no 3 o slide na área de miniaturas, presente no canto esquerdo da janela do aplicativo. Considerando que, a seguir, esse usuário tenha clicado",
+    "alternativas": [
+      {
+        "id": "D",
+        "text": "será criado antes do 3o slide com o mesmo conteúdo do 3o slide."
+      },
+      {
+        "id": "E",
+        "text": "será criado após o 3 o slide com o mesmo conteúdo do 3o slide."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 27 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-28",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 28"
+    ],
+    "enunciado": "28. No LibreOffice Writer, considerando a versão 26.2.3.1, deseja-se inserir uma fórmula matemática no documento em edição. O acesso ao recurso de edição de fórmulas é possível por meio da seguinte Guia  Item de menu:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Inserir  Caixa de"
+      },
+      {
+        "id": "B",
+        "text": "Inserir  Objeto OLE"
+      },
+      {
+        "id": "C",
+        "text": "Inserir  Caracteres especiais..."
+      },
+      {
+        "id": "D",
+        "text": "Formatar  Caractere"
+      },
+      {
+        "id": "E",
+        "text": "Formatar  Fórmula\n\n12"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 28 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-29",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "29. No aplicativo Google Docs, ao se editar um documento, a opção Modo, presente na guia Ver, permite selecionar os seguintes modos:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Abrir comentários, Compartilhamento e Exibir régua."
+      },
+      {
+        "id": "B",
+        "text": "Ocultar comentários, Mostrar layout de impressão e Exibir régua."
+      },
+      {
+        "id": "C",
+        "text": "Visualização, Mostrar layout de impressão e Tela inteira."
+      },
+      {
+        "id": "D",
+        "text": "Edição, Impressão e Compartilhamento."
+      },
+      {
+        "id": "E",
+        "text": "Edição, Sugestões e Visualização."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 29 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-30",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "30. Assinale a alternativa correta em relação ao Gerenciador de Tarefas do sistema operacional Windows 11 em sua configuração padrão.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Ao se clicar em Desempenho, é possível visualizar gráficos relacionados ao uso de recursos do sistema."
+      },
+      {
+        "id": "B",
+        "text": "Ao se selecionar um aplicativo em execução, ele automaticamente é bloqueado."
+      },
+      {
+        "id": "C",
+        "text": "Ele permite realizar reparo físico em setores defeituosos do disco rígido."
+      },
+      {
+        "id": "D",
+        "text": "Uma de suas funções é permitir ao administrador editar diretamente o Registro do Windows."
+      },
+      {
+        "id": "E",
+        "text": "Uma das formas de ativá-lo é por meio das teclas Ctrl + Alt + Windows."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 30 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-31",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "31. Um analista de informática deseja realizar a montagem de um computador com uma placa-mãe moderna que possui um slot do tipo PCI Express x16. Assinale a alternativa correta relacionada a esse slot.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A taxa de transferência máxima do PCI Express x16 é de 16 KB/s."
+      },
+      {
+        "id": "B",
+        "text": "Esse tipo de slot é específico para a instalação de unidades de armazenamento (HDs ou SSDs) do tipo SATA."
+      },
+      {
+        "id": "C",
+        "text": "O PCI Express suporta half-duplex como sua única forma de comunicação."
+      },
+      {
+        "id": "D",
+        "text": "Os slots do tipo PCI Express x16 são recomendados para a instalação de placas de vídeo de alto desempenho."
+      },
+      {
+        "id": "E",
+        "text": "Um slot PCI Express x16 é do tipo paralelo, com 16 sinais em sua via de dados. conHecimentos esPecíficos"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 31 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-32",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 32"
+    ],
+    "enunciado": "32. A norma ABNT NBR 14565:2013 apresenta diversas definições relacionadas ao cabeamento estruturado. Pela definição do “cabo do ponto de distribuição local”, ele conecta",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "a interface de rede externa ao distribuidor principal."
+      },
+      {
+        "id": "B",
+        "text": "o ponto de consolidação às tomadas de telecomu - nicações."
+      },
+      {
+        "id": "C",
+        "text": "o distribuidor de zona à tomada de equipamento."
+      },
+      {
+        "id": "D",
+        "text": "o distribuidor de piso ao distribuidor principal."
+      },
+      {
+        "id": "E",
+        "text": "o ponto de distribuição local à tomada de equipa - mento."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 32 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-33",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "33. Uma rede de computadores com a topologia em malha completa apresenta como uma de suas características:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "alta redundância."
+      },
+      {
+        "id": "B",
+        "text": "baixa tolerância a falhas."
+      },
+      {
+        "id": "C",
+        "text": "dependência de um computador central que geren - cia o seu funcionamento."
+      },
+      {
+        "id": "D",
+        "text": "maior simplicidade de implementação em relação à topologia em barramento."
+      },
+      {
+        "id": "E",
+        "text": "consumir menos cabos do que redes com a topolo - gia em árvore."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 33 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-34",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 34"
+    ],
+    "enunciado": "34. Um analista de informática instalou um switch Ethernet em uma rede. A tabela MAC desse switch se destina a",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "armazenar as senhas de acesso a cada equipamento conectado na rede."
+      },
+      {
+        "id": "B",
+        "text": "definir as rotas mais curtas entre os equipamentos que se comunicam nessa rede."
+      },
+      {
+        "id": "C",
+        "text": "definir quais equipamentos são permitidos ou proibidos de acessar a rede."
+      },
+      {
+        "id": "D",
+        "text": "permitir que o IPv6 seja utilizado nessa rede."
+      },
+      {
+        "id": "E",
+        "text": "mapear as portas físicas do switch aos endereços MAC que forem aprendidos."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 34 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-35",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 35"
+    ],
+    "enunciado": "35. Sobre o protocolo UDP, um dos protocolos de comuni - cação usados na Internet, assinale a alternativa correta.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Atua como protocolo de camada subjacente ao TCP, oferecendo-lhe serviços."
+      },
+      {
+        "id": "B",
+        "text": "Requer o estabelecimento de uma conexão lógica antes do início da comunicação efetiva."
+      },
+      {
+        "id": "C",
+        "text": "Está sujeito a perda de pacotes em trânsito."
+      },
+      {
+        "id": "D",
+        "text": "O uso de portas UDP em servidores que recebem pacotes baseados nesse protocolo é imune a ataques cibernéticos do tipo DDoS."
+      },
+      {
+        "id": "E",
+        "text": "Possui um processo chamado three-way handshake, realizado no início da comunicação.\n\n13"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 35 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-36",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 36"
+    ],
+    "enunciado": "36. Assinale a alternativa que apresenta exclusivamente protocolos de camada de aplicação relacionados à recepção de e-mails no lado do cliente.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "FTP e SSH."
+      },
+      {
+        "id": "B",
+        "text": "POP e FTP."
+      },
+      {
+        "id": "C",
+        "text": "IMAP e SMTP."
+      },
+      {
+        "id": "D",
+        "text": "POP e IMAP."
+      },
+      {
+        "id": "E",
+        "text": "SSH e SMTP."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 36 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-37",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 37"
+    ],
+    "enunciado": "37. Um determinado sistema corporativo armazena senhas de usuários em um arquivo em que os nomes dos usuários estão armazenados em texto claro e suas respectivas senhas estão armazenadas na forma de hashes criptográficos. Cada par usuário/senha está armazenado em uma linha do arquivo. O seguinte trecho do arquivo foi obtido por um usuário malicioso. alice 3102125cae72c19f215480ddf2d0d5c3 bob e10adc3949ba59abbe56e057f20f883e jason 3102125cae72c19f215480ddf2d0d5c3 mike 688c5070d220ad89af28a7b7eb999352 Considerando as informações apresentadas, assinale a alternativa que apresenta uma conclusão correta, possível de ser obtida pelo usuário malicioso, sem que nenhuma ferramenta seja utilizada.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "O sistema não utiliza um salt aleatório para cálculo dos hashes das senhas."
+      },
+      {
+        "id": "B",
+        "text": "Todos os usuários apresentados possuem senhas fortes."
+      },
+      {
+        "id": "C",
+        "text": "Todos os usuários apresentados utilizam senhas de 16 caracteres, já que dois dígitos hexadecimais codificam um caractere."
+      },
+      {
+        "id": "D",
+        "text": "Devido ao tamanho das senhas utilizadas, ataques de força bruta são computacionalmente inviáveis nesse caso."
+      },
+      {
+        "id": "E",
+        "text": "Os usuários alice e jason utilizam senhas fracas, enquanto bob e mike utilizam senhas fortes."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 37 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-38",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "38. Um ataque de ransomware em um computador com sistema operacional Windows criptografou diversos arquivos do usuário por meio de criptografia simétrica AES-256. Cada chave simétrica, uma por arquivo, foi criptografada pela cifra RSA-2048 e então anexada ao respectivo arquivo. A chave usada nas encriptações pelo RSA-2048 é uma só, e a informação necessária para descriptografar é mantida em segredo pelo atacante, que cobra um valor financeiro de resgate para a recuperação dos arquivos. No contexto apresentado, a informação de que o usuário precisaria dispor para ter meios de recuperar todos os seus arquivos, mantida em segredo pelo atacante, é",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "o hash criptográfico SHA-1 da versão original de cada arquivo que foi criptografado."
+      },
+      {
+        "id": "B",
+        "text": "o hash criptográfico SHA-256 da versão original de cada arquivo que foi criptografado."
+      },
+      {
+        "id": "C",
+        "text": "a chave simétrica AES usada na encriptação do primeiro arquivo."
+      },
+      {
+        "id": "D",
+        "text": "a chave privada do RSA-2048."
+      },
+      {
+        "id": "E",
+        "text": "a chave pública do RSA-2048."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 38 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-39",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 39"
+    ],
+    "enunciado": "39. Um determinado codec usado em telefonia IP possui sampling rate de 8 kHz e bitrate de 64 kbps e não utiliza compressão de dados. Isso significa que",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "são obtidas 8 amostras por segundo do sinal analó - gico de áudio a ser transmitido."
+      },
+      {
+        "id": "B",
+        "text": "cada amostra do sinal de áudio é quantizada em 64 bits."
+      },
+      {
+        "id": "C",
+        "text": "é necessário transmitir 64.000 bits por segundo de carga útil pela rede para envio do sinal de áudio digitalizado."
+      },
+      {
+        "id": "D",
+        "text": "o aplicativo que efetua a chamada telefônica no computador ou dispositivo móvel (softphone ) precisa de 512 MB de RAM para operar, resultado de 8 x 64."
+      },
+      {
+        "id": "E",
+        "text": "ele é incompatível com o protocolo SIP, que suporta codecs com bitrate de, no máximo, 16 kbps."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 39 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-40",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "40. Assinale a alternativa que apresenta uma diferença entre os protocolos Telnet e SSH, usados para acesso remoto a computadores.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "O SSH é baseado em terminais de"
+      },
+      {
+        "id": "B",
+        "text": "Por padrão, o Telnet utiliza a porta TCP 23, enquanto o SSH utiliza a porta TCP 22."
+      },
+      {
+        "id": "C",
+        "text": "Enquanto o SSH possibilita apenas o tráfego de"
+      },
+      {
+        "id": "D",
+        "text": "O Telnet utiliza criptografia na comunicação de dados, oferecendo proteção contra ataques do tipo man-in-the-middle, enquanto o SSH trafega dados em"
+      },
+      {
+        "id": "E",
+        "text": "O SSH utiliza o TLS como protocolo criptográfico subjacente, oferecendo proteção contra ataques do tipo man-in-the-middle, enquanto o Telnet trafega dados em"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 40 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-41",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "41. No sistema operacional Linux, tomando a distribuição CentOS 7 como referência, o comando adequado para configurar que o serviço firewalld seja inicializado automaticamente no boot do computador é:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "sudo addservice --name=firewalld"
+      },
+      {
+        "id": "B",
+        "text": "sudo addservice --service=firewalld"
+      },
+      {
+        "id": "C",
+        "text": "sudo systemctl start firewalld"
+      },
+      {
+        "id": "D",
+        "text": "sudo systemctl boot firewalld"
+      },
+      {
+        "id": "E",
+        "text": "sudo systemctl enable firewalld"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 41 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-42",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 42"
+    ],
+    "enunciado": "42. Em um arquivo de configuração do proxy Squid, tomando a versão 7 como referência, foi encontrada a seguinte linha: cache_dir ufs /var/spool/squid 100 16 256 Ela determina que",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "até 100 arquivos de cache de objetos podem ser gravados em /var/spool/squid."
+      },
+      {
+        "id": "B",
+        "text": "até 100 MB de espaço em disco podem ser usados no diretório /var/spool/squid para cache de objetos."
+      },
+      {
+        "id": "C",
+        "text": "até 256 MB de espaço em disco podem ser usados no diretório /var/spool/squid para cache de objetos."
+      },
+      {
+        "id": "D",
+        "text": "são aceitas, no máximo, 100 conexões simultâneas de clientes HTTP que podem utilizar o cache de objetos em /var/spool/squid, com limite de uso máximo de 16 MB de RAM por conexão."
+      },
+      {
+        "id": "E",
+        "text": "o diretório /var/spool/squid pode receber conteúdo de cache de no máximo 256 websites."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 42 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-43",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "43. Nos sistemas operacionais Linux, o arquivo /etc/group é utilizado para armazenar informações dos grupos do sistema. Nesse arquivo, o símbolo utilizado como separador entre os campos é o",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": ","
+      },
+      {
+        "id": "B",
+        "text": ";"
+      },
+      {
+        "id": "C",
+        "text": ":"
+      },
+      {
+        "id": "D",
+        "text": "espaço (\\b)"
+      },
+      {
+        "id": "E",
+        "text": "tab (\\t)"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 43 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-44",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 44"
+    ],
+    "enunciado": "44. Um dos recursos disponíveis no Hyper-V é a virtualiza - ção aninhada. Assinale a alternativa que apresenta afirmação correta relacionada a esse recurso.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A virtualização aninhada permite executar o Hyper-V dentro de uma máquina virtual hospedada no próprio Hyper-V."
+      },
+      {
+        "id": "B",
+        "text": "A virtualização aninhada transforma o Hyper-V em um hipervisor do tipo 1."
+      },
+      {
+        "id": "C",
+        "text": "O uso da virtualização aninhada proporciona ganhos significativos de desempenho às máquinas virtuais internas."
+      },
+      {
+        "id": "D",
+        "text": "O uso da virtualização aninhada reduz a latência das máquinas virtuais internas."
+      },
+      {
+        "id": "E",
+        "text": "Para utilizar corretamente a virtualização aninhada, o sistema operacional convidado também deve ser executado de forma aninhada."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 44 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-45",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 45"
+    ],
+    "enunciado": "45. Os protocolos de rede utilizados na Internet operam, por padrão, em portas específicas, o que evita conflitos entre serviços. Assinale a alternativa que associa corretamente um protocolo à sua porta padrão.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "FTP – 80"
+      },
+      {
+        "id": "B",
+        "text": "HTTP – 22"
+      },
+      {
+        "id": "C",
+        "text": "NFS – 443"
+      },
+      {
+        "id": "D",
+        "text": "POP3 – 110"
+      },
+      {
+        "id": "E",
+        "text": "SSH – 20"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 45 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-46",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 46"
+    ],
+    "enunciado": "46. IPSec é um conjunto de protocolos utilizados para estabelecer comunicação segura por meio de túneis criptográficos em redes IP. Considerando a arquitetura TCP/IP organizada em camadas, o IPSec atua na Camada",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "de Aplicação."
+      },
+      {
+        "id": "B",
+        "text": "de Enlace."
+      },
+      {
+        "id": "C",
+        "text": "de Rede."
+      },
+      {
+        "id": "D",
+        "text": "de Tradução."
+      },
+      {
+        "id": "E",
+        "text": "Física."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 46 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-47",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 47"
+    ],
+    "enunciado": "47. O uso da Internet tal como conhecida é possível mediante um conjunto de protocolos com funções distintas. O protocolo responsável por automatizar a distribuição de endereços IP às máquinas de uma rede é o",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "DHCP."
+      },
+      {
+        "id": "B",
+        "text": "DNS."
+      },
+      {
+        "id": "C",
+        "text": "LDAP."
+      },
+      {
+        "id": "D",
+        "text": "SMB."
+      },
+      {
+        "id": "E",
+        "text": "SSH."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 47 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-48",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Lógica de Programação e Redes",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Lógica de Programação e Redes",
+      "Questão 48"
+    ],
+    "enunciado": "48. A ferramenta samba-tool fornece uma interface de linha de comando para administração do Samba 4. O comando utilizado para apresentar a lista de usuários cadastrados é o",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "samba-tool computer list"
+      },
+      {
+        "id": "B",
+        "text": "samba-tool computer show"
+      },
+      {
+        "id": "C",
+        "text": "samba-tool group list-users"
+      },
+      {
+        "id": "D",
+        "text": "samba-tool user list"
+      },
+      {
+        "id": "E",
+        "text": "samba-tool user show"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 48 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-49",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "49. Algumas versões do sistema operacional Windows possuem um recurso denominado Editor de Política de Grupo Local. O nome dado ao atalho desse editor é",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "cmd.exe"
+      },
+      {
+        "id": "B",
+        "text": "gpedit.msc"
+      },
+      {
+        "id": "C",
+        "text": "msconfig"
+      },
+      {
+        "id": "D",
+        "text": "regedit.exe"
+      },
+      {
+        "id": "E",
+        "text": "services.msc"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 49 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica4-50",
+    "banca": "VUNESP",
+    "ano": 2023,
+    "orgao": "Prefeitura Municipal",
+    "cargo": "Analista de TI - Sistemas",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "50. No sistema operacional Windows 11, as permissões de uma pasta são configuradas no menu “Propriedades”, na aba “Segurança”. Uma das permissões disponíveis é a",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Ler & editar"
+      },
+      {
+        "id": "B",
+        "text": "Ler & executar"
+      },
+      {
+        "id": "C",
+        "text": "Ler & gravar"
+      },
+      {
+        "id": "D",
+        "text": "Ler & modificar"
+      },
+      {
+        "id": "E",
+        "text": "Ler & remover"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 50 da prova oficial de Analista de TI - Sistemas (VUNESP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial VUNESP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura Municipal - 2023",
+    "dificuldade": "médio"
+  }
+]

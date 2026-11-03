@@ -1,0 +1,3598 @@
+[
+  {
+    "id": "q-analista_contabil-01",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 1"
+    ],
+    "enunciado": "1. No título, o emprego do presente do indicativo, “investiga”, aponta para fato ocorrido no passado, como em geral acontece em notícias.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 1 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-02",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 2"
+    ],
+    "enunciado": "2. No título, a forma “veja”, por estar no imperativo, indica possibilidade de interatividade com o leitor.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 2 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-03",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 3"
+    ],
+    "enunciado": "3. A palavra “se”, no trecho “se um contador morto a tiros, sem reagir, foi vítima de latrocínio ou execução na Zona Sul de São Paulo”, atua como um pronome reflexivo.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 3 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-03",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "3. Nos itens que avaliem conhecimentos de informática, a menos que seja explicitamente informado o contrário, considere que: todos os programas mencionados estejam em configuração‑padrão, em português; o mouse esteja configurado para pessoas destras; expressões como clicar, clique simples e clique duplo refiram‑se a cliques com o botão esquerdo do mouse; e teclar corresponda à operação de pressionar uma tecla e, rapidamente, liberá‑la, acionando‑a apenas uma vez. Considere também que não haja restrições de proteção, de funcionamento e de uso em relação aos programas, arquivos, diretórios, recursos e equipamentos mencionados. Existem diversos tipos de computadores (laptop, notebook, desktop, servidor etc.). Com base nessa informação, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 3 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-04",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Língua Portuguesa",
+      "Interpretação e Gramática"
+    ],
+    "enunciado": "4. No trecho “em frente a empresa de contabilidade onde ele trabalhava”, é obrigatório o uso do acento indicativo de crase em “em frente a”.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 4 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-04",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Legislação Municipal e Ética Pública",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Legislação Municipal",
+      "Ética no Serviço Público"
+    ],
+    "enunciado": "4. CONHECIMENTOS COMPLEMENTARES Considerando as normas estabelecidas no Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal – Decreto nº 1.171/1994 –, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 4 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-05",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 5"
+    ],
+    "enunciado": "5. No primeiro parágrafo, a passagem “(veja vídeo abaixo; as cenas são fortes)” aparece entre parênteses por se tratar de comentário do veículo de comunicação julgando os fatos relatados.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 5 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-06",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 6"
+    ],
+    "enunciado": "6. A oração “quando estava dentro de seu carro” classifica‑se como subordinada adverbial temporal.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 6 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-06",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Direito Constitucional e Administrativo",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Constitucional",
+      "Direito Administrativo"
+    ],
+    "enunciado": "6. CONHECIMENTOS ESPECÍFICOS Em relação ao Título IV – Capítulo I – Seção IX da Constituição Federal de 1988, que trata da fiscalização contábil, financeira e orçamentária, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 6 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-07",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 7"
+    ],
+    "enunciado": "7. O verbo “morrer”, em “onde não resistiu aos ferimentos e morreu”, é intransitivo.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 7 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-07",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 7"
+    ],
+    "enunciado": "7. O Conselho Federal de Contabilidade (CFC) é o órgão responsável pela emissão, atualização e supervisão das normas brasileiras de contabilidade aplicáveis à auditoria, especialmente as Normas Brasileiras de Contabilidade – Técnicas de Auditoria (NBC TA). Com base nessas normas de auditoria, julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 7 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-08",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 8"
+    ],
+    "enunciado": "8. No trecho “O criminoso é um motociclista, que fugiu após roubar o relógio e a carteira do contador e atirar ao menos quatro vezes nele”, o pronome em “nele” refere‑se ao contador alvo da notícia.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 8 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-09",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 9"
+    ],
+    "enunciado": "9. No período “Imagens gravadas por câmeras de segurança, e que circulam nas redes sociais, mostram que José não reagiu ao assalto”, por modificar a forma verbal “mostram”, a oração “que José não reagiu ao assalto” é adverbial.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 9 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-10",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 10"
+    ],
+    "enunciado": "10. No trecho “As cenas mostram que o carro, um Chevrolet Cruize vermelho, está parado na rua”, o termo “um Chevrolet Cruize vermelho” ajuda a explicar o termo “carro”, funcionando como adjunto adnominal.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 10 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-100",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 100"
+    ],
+    "enunciado": "100. A demonstração dos fluxos de caixa pode ser elaborada pelo método direto ou indireto, sendo que o método direto é obrigatório para todas as entidades.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 100 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-101",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 101"
+    ],
+    "enunciado": "101. A demonstração do valor adicionado (DVA) é obrigatória para todas as sociedades por ações, conforme determinado pela Lei nº 6.404/1976.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 101 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-102",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 102"
+    ],
+    "enunciado": "102. A demonstração do valor adicionado (DVA) deve apresentar, entre outras informações, o valor adicionado distribuído aos diversos stakeholders, como empregados, governo, financiadores e acionistas.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 102 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-103",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Auditoria",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade",
+      "Auditoria"
+    ],
+    "enunciado": "103. O patrimônio líquido é definido como a diferença entre o ativo e o passivo de uma entidade. Em relação aos registros contábeis, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 103 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-104",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 104"
+    ],
+    "enunciado": "104. No livro diário, devem ser lançadas, em ordem cronológica, com individualização, clareza e referência ao documento probante, todas as operações ocorridas, e quaisquer outros fatos que provoquem variações patrimoniais.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 104 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-105",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 105"
+    ],
+    "enunciado": "105. O nível de detalhamento da escrituração contábil deve estar alinhado às necessidades de informação de seus usuários. Com base na análise das demonstrações financeiras, julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 105 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-106",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 106"
+    ],
+    "enunciado": "106. A liquidez geral é um indicador utilizado para avaliar a capacidade da empresa em saldar apenas as obrigações de curto prazo. Prova aplicada\n\nAnalista Contábil CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO DE SÃO PAULO Quadrix | 2025 8",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 106 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-107",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 107"
+    ],
+    "enunciado": "107. Um índice de liquidez corrente superior a 1,0 garante, necessariamente, uma boa situação financeira da empresa.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 107 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-108",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 108"
+    ],
+    "enunciado": "108. A principal vantagem do EBITDA (Earning Before Interest, Taxes, Depreciation and Amortization), globalmente, é permitir a comparação de desempenho operacional entre empresas de diferentes países.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 108 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-109",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 109"
+    ],
+    "enunciado": "109. A anális e isolada de um índice contábil, sem a consideração de tendências históricas ou comparação com padrões do setor, pode conduzir a interpretações incorretas quanto à saúde financeira da entidade.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 109 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-11",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 11"
+    ],
+    "enunciado": "11. O emprego do presente do indicativo na passagem “quando um homem numa moto sobe a calçada se aproxima e aponta a arma para o veículo” caracteriza‑se pelo uso como presente narrativo (ou histórico). Prova aplicada\n\nAnalista Contábil CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO DE SÃO PAULO Quadrix | 2025 2",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 11 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-110",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 110"
+    ],
+    "enunciado": "110. O uso de índices compostos em série histórica é limitado pela alteração da base contábil e critérios de mensuração ao longo do tempo, o que compromete a comparabilidade.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 110 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-111",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 111"
+    ],
+    "enunciado": "111. Um aumento no índice de endividamento geral indica, necessariamente, deterioração na estrutura financeira da empresa. Em relação à qualidade da informação da contabilidade pública no Brasil, ao Manual de Contabilidade Aplicada ao Setor Público (MCASP) e ao Plano de Contas Aplicado ao Setor Público (PCASP), julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 111 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-112",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 112"
+    ],
+    "enunciado": "112. A in formação contábil útil deve possuir como característica qualitativa essencial a representação fidedigna dos fenômenos econômicos, mesmo que não corresponda à sua forma jurídica.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 112 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-113",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 113"
+    ],
+    "enunciado": "113. O estágio da liquidação da despesa é anterior à fixação da dotação orçamentária.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 113 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-114",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 114"
+    ],
+    "enunciado": "114. O Manual de Contabilidade Aplicado ao Setor Público (MCASP) es tabelece regras exclusivamente para o nível federal de governo.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 114 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-115",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 115"
+    ],
+    "enunciado": "115. Os restos a pagar processados devem ser registrados como passivo financeiro.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 115 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-116",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 116"
+    ],
+    "enunciado": "116. O Plano de Contas Aplicado ao Setor Público (PCASP) classifica as contas segundo a natureza da informação: patrimonial; orçamentária; e de controle. Com base no processo orçamentário brasileiro e na legislação que trata a respeito do orçamento público no Brasil, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 116 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-117",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Direito Constitucional e Administrativo",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Constitucional",
+      "Direito Administrativo"
+    ],
+    "enunciado": "117. A Cons tituição Federal de 1988 estabelece que o Plano Plurianual (PPA), a lei de diretrizes orçamentárias (LDO) e a lei orçamentária anual (LOA) são de iniciativa privativa do Poder Legislativo.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 117 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-118",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 118"
+    ],
+    "enunciado": "118. O princ ípio da não afetação da receita tributária impede qualquer tipo de vinculação, inclusive para saúde e educação.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 118 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-119",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 119"
+    ],
+    "enunciado": "119. O princípio da universalidade determina que o orçamento deve conter todas as receitas e despesas de todos os entes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 119 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-12",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 12"
+    ],
+    "enunciado": "12. No trecho “os vidros escuros fechados”, os dois adjuntos adnominais ligados ao substantivo diferenciam‑se pela natureza: um indica uma característica duradoura, enquanto o outro indica uma característica transitória.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 12 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-120",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 120"
+    ],
+    "enunciado": "120. Os cr éditos adicionais são autorizações de despesa não computadas ou insuficientemente dotadas na lei orçamentária anual (LOA).",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 120 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-13",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 13"
+    ],
+    "enunciado": "13. No período “No vídeo, feito por duas câmeras, ainda é possível ver o contador abrir a porta e entregar os pertences ao criminoso, que atira diversas vezes no motorista.”, a oração “que atira diversas vezes no motorista”, por caracterizar “criminoso”, funciona como subordinada adjetiva.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 13 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-14",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 14"
+    ],
+    "enunciado": "14. Para se atender à regência de “em seguida”, no trecho “foge em seguida na sua motocicleta”, a forma “na” deveria ser substituída por “à”.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 14 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-15",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 15"
+    ],
+    "enunciado": "15. No período “O caso foi registrado inicialmente como latrocínio, que é o roubo seguido de morte, no 95º Distrito Policial (DP), Cohab‑Heliópolis.”, o termo “como latrocínio”, por ser o predicativo do sujeito, não poderia ser preposicionado.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 15 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-16",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 16"
+    ],
+    "enunciado": "16. Na estruturação sintática do sintagma “a morte do contador”, observa‑se que o termo preposicionado representa a ação implícita na ideia do substantivo “morte”.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 16 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-17",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 17"
+    ],
+    "enunciado": "17. No trecho “também está sendo apurada a possibilidade de José ter sido vítima de uma execução”, o substantivo “possibilidade” atua como objeto direto de “está sendo apurada”.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 17 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-18",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 18"
+    ],
+    "enunciado": "18. No trecho “Estamos trabalhando com as duas vertentes”, as duas vertentes referem‑se a: latrocínio e homicídio.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 18 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-19",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 19"
+    ],
+    "enunciado": "19. No trecho “ O celular do contador e um comprovante de transação bancária, no valor de R$ 50 mil, que estavam no automóvel da vítima, foram apreendidos pela polícia.”, o termo “apreendidos” concorda tanto com “contador” quanto com “comprovante”.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 19 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-20",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 20"
+    ],
+    "enunciado": "20. No período “Além de analisar as imagens das câmeras de vídeo, que gravaram a morte do contador, a investigação quer ouvir o depoimento de testemunhas.”, o termo “investigação” passa por um processo de personificação, como é típico em contextos como o apresentado no texto. Um escritório jurídico especializado em causas cíveis possui três advogados: Dr. Andrade; Dra. Barros; e Dr. Costa. Para otimizar o trabalho, os processos são distribuídos entre eles, de acordo com as seguintes regras lógicas. I Se um processo envolve direito do consumidor, então ou dr. Andrade ou dra. Barros deverá atendê‑lo. II Se um processo não envolve contratos, então dr. Costa não deverá atendê‑lo. III Se dra. Barros atende um processo, então ele não envolverá direito de família. Com base nessa situação hipotética e considerando essas regras, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 20 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-21",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 21"
+    ],
+    "enunciado": "21. Se um processo envolve direito do consumidor e direito de família, então o dr. Andrade deverá atendê‑lo.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 21 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-22",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 22"
+    ],
+    "enunciado": "22. Se um processo é atendido pelo dr. Costa, então ele envolverá contratos.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 22 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-23",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 23"
+    ],
+    "enunciado": "23. Se um processo não é atendido pela dra. Barros, então ele envolverá direito de família. Um advogado especializado em direito civil está analisando as estatísticas de seus processos nos últimos 3 anos. Ele observou que: • 40% dos processos são relacionados a direito de família; • 30% dos processos são relacionados a direito imobiliário; • 20% dos processos são relacionados a direito do consumidor; e • Os 10% restantes são de outras áreas. Em um levantamento sobre o tempo médio de duração (em meses) desses processos, ele obteve os seguintes dados: • direito de família: 15 meses; • direito imobiliário: 24 meses; • direito do consumidor: 12 meses; e • outras áreas: 18 meses. Com base nessa situação hipotética e nessas informações, julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 23 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-24",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 24"
+    ],
+    "enunciado": "24. Se o advogado atendeu 200 processos nos últimos 3 anos, então o número de processos de direito imobiliário foi igual a 60.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 24 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-25",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Raciocínio Lógico e Matemático",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Raciocínio Lógico",
+      "Matemática"
+    ],
+    "enunciado": "25. Escolhendo aleatoriamente um processo dos últimos 3 anos, se ele nem é de direito de família, nem de direito imobiliário, então a probabilidade de ser de direito do consumidor será maior que 50%.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 25 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-26",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 26"
+    ],
+    "enunciado": "26. Se o advogado cobrou, em média, R$ 3.000 por processo de direito de família, R$ 5.000 por processo de direito imobiliário, R$ 2.500 por processo de direito do consumidor e R$ 4.000 pelos demais, então seu faturamento médio por processo foi maior que R$ 3.800. Um escritório de advocacia está analisando o tempo gasto em diferentes tipos de processos judiciais. Para um estudo estatístico, eles coletaram os tempos (em meses) para a conclusão de 10 processos similares, obtendo‑se a seguinte amostra: 8, 12, 9, 15, 10, 8, 11, 14, 10, 13. Com base nessa situação hipotética, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 26 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-27",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 27"
+    ],
+    "enunciado": "27. A mediana do tempo de conclusão desses processos é igual a 10,5 meses.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 27 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-28",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Raciocínio Lógico e Matemático",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Raciocínio Lógico",
+      "Matemática"
+    ],
+    "enunciado": "28. A probabilidade de selecionar aleatoriamente um processo dessa amostra cujo tempo de conclusão seja maior que 10 meses é de 50%.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 28 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-29",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 29"
+    ],
+    "enunciado": "29. Se for adicionado um novo processo à amostra e a média passar a ser 12 meses, então o tempo de conclusão desse novo processo foi inferior a 20 meses.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 29 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-30",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 30"
+    ],
+    "enunciado": "30. Se, a todos os valores da amostra, forem somados 2 meses, então a nova média da amostra será alterada para 2 meses a mais, e o desvio padrão não será alterado. Prova aplicada\n\nAnalista Contábil CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO DE SÃO PAULO Quadrix | 2025",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 30 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-31",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "31. Um computador do tipo servidor pode ser utilizado em escritórios de advocacia para centralizar arquivos e facilitar o compartilhamento seguro de documentos entre os colaboradores.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 31 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-32",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "32. O sistema operacional é um tipo de software que atua como intermediário entre o hardware e os programas de aplicação utilizados pelo usuário. Os aplicativos de escritório (Word, Excel e PowerPoint) são ferramentas de produtividade fundamentais para um advogado. Com base nessa informação, julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 32 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-33",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "33. O Microsoft Word, parte do Office 365, permite o uso de controle de alterações, ferramenta essencial para revisar e compartilhar petições ou contratos entre advogados e clientes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 33 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-34",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "34. O Microsoft Word não permite a inserção de comentários em documentos, o que limita sua utilidade para revisão de contratos jurídicos.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 34 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-35",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "35. O Word possui uma funcionalidade robusta de inserção de comentários, essencial para revisões colaborativas de contratos, petições e pareceres jurídicos. A Internet é uma poderosa ferramenta de consultas para os advogados. Com base nessa informação, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 35 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-36",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "36. O uso de aspas (“”) nas pesquisas no Google aumenta a quantidade de resultados e torna a pesquisa mais ampla.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B - ERRADO) É A CORRETA:\nO uso de aspas (\" \") no mecanismo de busca do Google realiza uma busca por termo ou frase EXATA, o que RESTRINGE (reduz) a quantidade de resultados, tornando a pesquisa mais específica e refinada (e não mais ampla).\n\n🔍 ANÁLISE DO ITEM:\n• O item erra ao afirmar que as aspas 'aumentam a quantidade de resultados e tornam a pesquisa mais ampla'.",
+    "baseLegal": "Sintaxe Oficial de Operadores de Pesquisa do Google Search (Pesquisa por Correspondência Exata).",
+    "fontePesquisa": "Central de Ajuda da Pesquisa Google - Refinar pesquisas na Web.",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-37",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 37"
+    ],
+    "enunciado": "37. Advogados podem utilizar operadores como “site:” para restringir pesquisas a domínios jurídicos específicos, como tribunais ou órgãos públicos. Um escritório de advocacia uma gera muitos documentos e a organização deles é fundamental para poder localizá‑los com rapidez e segurança. Com base nessa informação, julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 37 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-38",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "38. Armazenar cópias de arquivos em nuvem, como no OneDrive ou Google Drive, aumenta a segurança e a acessibilidade dos documentos jurídicos.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 38 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-39",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "39. Todos os programas instalados no computador do advogado devem ser removidos automaticamente após 30 dias, para evitar acúmulo. A segurança de informação é um esforço contínuo de todos os envolvidos. Com base nessa informação, julgue o item a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 39 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-40",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "40. Salvar senhas de acesso a sistemas jurídicos no navegador é uma prática recomendada para facilitar o uso diário.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 40 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-41",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Legislação Municipal e Ética Pública",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Legislação Municipal",
+      "Ética no Serviço Público"
+    ],
+    "enunciado": "41. A função pública deve ser tida como exercício profissional e, portanto, integra‑se à vida particular de cada servidor público. Nesse contexto, é correto afirmar que a embriaguez, mesmo que fortuita e involuntária, constitui falta funcional e representa violação ao Código de Ética.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 41 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-42",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Legislação Municipal e Ética Pública",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Legislação Municipal",
+      "Ética no Serviço Público"
+    ],
+    "enunciado": "42. Estão sujeitos às disposições do Código de Ética todos aqueles que prestem serviços de natureza permanente, mediante retribuição financeira, excluindo‑se, portanto, aqueles que possuam vínculo temporário e sem retribuição financeira. Segundo a Lei nº 8.429/1992, que trata das sanções aplicáveis em virtude da prática de atos de improbidade administrativa, julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 42 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-43",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Legislação Municipal e Ética Pública",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Legislação Municipal",
+      "Ética no Serviço Público"
+    ],
+    "enunciado": "43. A conduta culposa do agente público não é suficiente para caracterizar o ato de improbidade administrativa que importe em enriquecimento ilícito, sendo indispensável a presença do dolo.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 43 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-44",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 44"
+    ],
+    "enunciado": "44. A pena de suspensão dos direitos políticos é aplicada ao agente público, em razão de seu vínculo com a Administração Pública, não se estendendo ao terceiro que, com ele, concorreu para a prática do ato de improbidade.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 44 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-45",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Legislação Municipal e Ética Pública",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Legislação Municipal",
+      "Ética no Serviço Público"
+    ],
+    "enunciado": "45. A correção monetária e os juros de mora da pena de multa civil devem incidir desde a data do ato de improbidade administrativa.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 45 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-46",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Legislação Municipal e Ética Pública",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Legislação Municipal",
+      "Ética no Serviço Público"
+    ],
+    "enunciado": "46. A contratação de servidores públicos temporários sem a realização de concurso público, ainda que amparada por legislação local, constitui ato de improbidade administrativa que atenta contra os princípios da Administração Pública.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 46 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-47",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Legislação Municipal e Ética Pública",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Legislação Municipal",
+      "Ética no Serviço Público"
+    ],
+    "enunciado": "47. A ação de improbidade administrativa somente deve ser recebida pelo juiz quando houver elementos concretos que indiquem a presença de dolo específico por parte do agente e a existência de prejuízo ao erário. À luz da Lei nº 9.784/1999, que regula o processo administrativo no âmbito da Administração Pública Federal, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 47 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-48",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 48"
+    ],
+    "enunciado": "48. Os prazos fixados em meses ou anos contam‑se de data a data. Se, no mês do vencimento, não houver o dia equivalente àquele do início do prazo, tem‑se como termo o último dia do mês.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 48 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-49",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 49"
+    ],
+    "enunciado": "49. Caso a Administração identifique que um ato ilegal gerou efeitos favoráveis para os destinatários, poderá, com base no princípio da autotutela, revogá‑lo, no prazo decadencial de cinco anos, respeitando‑se, contudo, os direitos adquiridos pelos interessados de boa‑fé. No que diz respeito à Lei nº 13.709/2018, que trata da proteção de dados pessoais, julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 49 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-50",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 50"
+    ],
+    "enunciado": "50. O princípio da adequação consiste na compatibilidade do tratamento de dados com as finalidades informadas ao titular, de acordo com o contexto do tratamento.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 50 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-51",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 51"
+    ],
+    "enunciado": "51. O tratamento de dados pessoais sensíveis poderá ocorrer, sem o consentimento do titular, quando for indispensável para a proteção da vida ou da incolumidade física do titular ou de terceiro. Quanto à Lei nº 12.846/2013, que trata a respeito da responsabilização administrativa e civil de pessoas jurídicas pela prática de atos contra a Administração Pública, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 51 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-52",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 52"
+    ],
+    "enunciado": "52. Na esfera administrativa, a responsabilidade da pessoa jurídica não afasta a possibilidade de sua responsabilização na esfera judicial.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 52 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-53",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 53"
+    ],
+    "enunciado": "53. Os efeitos do acordo de leniência serão estendidos às pessoas jurídicas que integram o mesmo grupo econômico, de fato e de direito, desde que firmem o acordo em conjunto, respeitadas as condições nele estabelecidas.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 53 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-54",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 54"
+    ],
+    "enunciado": "54. A celebração do acordo de leniência pelo agente infrator elide a condenação judicial por danos morais coletivos.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 54 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-55",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Direito Constitucional e Administrativo",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Constitucional",
+      "Direito Administrativo"
+    ],
+    "enunciado": "55. O Ministério Público Federal é o órgão competente para celebrar os acordos de leniência no âmbito do Poder Executivo federal. De acordo com o Decreto‑Lei nº 9.295/1946, que cria o Conselho Federal de Contabilidade e prerrogativas dos Conselhos Regionais de Contabilidade (CRCs), julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 55 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-56",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 56"
+    ],
+    "enunciado": "56. Compete ao Conselho Federal de Contabilidade (CFC) aprovar os regimentos internos organizados pelos Conselhos Regionais, modificando o que se tornar necessário, a fim de manter a respectiva unidade de ação.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 56 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-57",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 57"
+    ],
+    "enunciado": "57. A carteira profissional, visada pelo presidente do CFC, servirá como documento de identidade e terá fé pública. Prova aplicada\n\nAnalista Contábil CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO DE SÃO PAULO Quadrix | 2025 5",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 57 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-58",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 58"
+    ],
+    "enunciado": "58. A falta de pagamento de multa devidamente confirmada importará, decorridos 30 dias da notificação, em suspensão, por 90 dias, do profissional ou da organização que, nela, tiver incorrido.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 58 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-59",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 59"
+    ],
+    "enunciado": "59. O recurso contra decisões do CRC que aplicarem pena de multa será dirigido ao CFC e terá efeito suspensivo.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 59 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-60",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 60"
+    ],
+    "enunciado": "60. As empresas que atuam no ramo de serviços contábeis devem se registrar e pagar anuidade ao CFC. Quanto ao estabelecido na Resolução CFC nº 1.523/2017, que versa a respeito do Código de Conduta dos Conselheiros, Colaboradores e Funcionários, julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 60 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-61",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 61"
+    ],
+    "enunciado": "61. Segundo o Código de Conduta, a censura ética é o documento que explicita os comportamentos considerados inaceitáveis, bem como as medidas a serem adotadas para assegurar o cumprimento do referido código, indicando a conduta apropriada no ambiente de trabalho.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 61 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-62",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 62"
+    ],
+    "enunciado": "62. A comissão de conduta instituída para apuração de infração cometida por conselheiro do Sistema CFC/CRCs será composta de três conselheiros do CFC e dos respectivos substitutos.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 62 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-63",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 63"
+    ],
+    "enunciado": "63. Os integrantes das comissões de conduta terão mandato de três anos, sendo vedada a recondução.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 63 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-64",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 64"
+    ],
+    "enunciado": "64. O presidente das comissões será eleito pelo plenário do CFC para mandato de dois anos, sendo permitida a recondução.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 64 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-65",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 65"
+    ],
+    "enunciado": "65. O integrante da comissão que estiver respondendo a um processo ético, criminal ou administrativo‑disciplinar ficará suspenso de suas funções até o trânsito em julgado. Segundo as normas previstas na Resolução CRC‑SP nº 1.093/2011 – Regimento Interno do CRC‑SP –, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 65 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-66",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 66"
+    ],
+    "enunciado": "66. O cargo de conselheiro, inclusive quando investido na função de membro de órgão deste CRC, é de exercício gratuito, e será considerado serviço relevante.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 66 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-67",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 67"
+    ],
+    "enunciado": "67. O conselho diretor é composto do presidente, dos vice‑presidentes e de mais três conselheiros efetivos, eleitos pelo plenário, com mandato de dois anos.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 67 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-68",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 68"
+    ],
+    "enunciado": "68. A Câmara de Política Institucional constitui órgão deliberativo superior do CRC do estado de São Paulo.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 68 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-69",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 69"
+    ],
+    "enunciado": "69. Compete ao conselho diretor conceder licença ao presidente, vice‑presidentes e aos demais conselheiros.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 69 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-70",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 70"
+    ],
+    "enunciado": "70. Ao conselheiro que exerceu a presidência no biênio anterior, por período igual ou superior a 40% do mandato, é vedado ocupar uma vice‑presidência no biênio imediatamente posterior.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 70 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-71",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 71"
+    ],
+    "enunciado": "71. É vedado ao Tribunal de Contas da União aplicar sanções diretamente a servidores públicos, uma vez que sua atuação está limitada à fiscalização externa e emissão de pareceres.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 71 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-72",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Direito Constitucional e Administrativo",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Constitucional",
+      "Direito Administrativo"
+    ],
+    "enunciado": "72. É competência do Tribunal de Contas da União julgar as contas do presidente da República, emitindo parecer prévio vinculativo ao Congresso Nacional. Com relação ao Título III – Capítulo VII da Constituição Federal de 1988, que trata da Administração Pública, julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 72 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-73",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 73"
+    ],
+    "enunciado": "73. Os cargos em comissão, de livre nomeação e exoneração, devem ser exclusivamente destinados a atribuições técnicas ou operacionais, que demandam qualificação específica.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 73 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-74",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Direito Constitucional e Administrativo",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Constitucional",
+      "Direito Administrativo"
+    ],
+    "enunciado": "74. A Constituição Federal de 1988 exige que a Administração Pública realize avaliação periódica de desempenho de seus servidores estáveis, como condição para manutenção no cargo.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 74 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-75",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 75"
+    ],
+    "enunciado": "75. É permitida a acumulação remunerada de cargos públicos de qualquer natureza, desde que haja compatibilidade de horários. A respeito da Lei Complementar nº 123/2006, que institui o Estatuto Nacional da Microempresa e da Empresa de Pequeno Porte, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 75 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-76",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 76"
+    ],
+    "enunciado": "76. A Lei Complementar nº 123/2006 institui o regime unificado de arrecadação de tributos e as contribuições, denominado Simples Nacional, aplicável às microempresas e empresas de pequeno porte.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 76 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-77",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 77"
+    ],
+    "enunciado": "77. Para fins da Lei Complementar nº 123/2006, considera‑se microempresa a pessoa jurídica que aufira, em cada ano‑calendário, receita bruta igual ou inferior a R$ 4,8 milhões.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 77 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-78",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 78"
+    ],
+    "enunciado": "78. O ingresso no Simples Nacional é automático para as empresas que se enquadrarem nos limites de receita bruta e que não pratiquem nenhuma vedação legal.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 78 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-79",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Direito Constitucional e Administrativo",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Constitucional",
+      "Direito Administrativo"
+    ],
+    "enunciado": "79. As microempresas e empresas de pequeno porte têm tratamento favorecido quanto ao cumprimento de obrigações trabalhistas e previdenciárias, sem prejuízo dos direitos dos empregados. A Lei nº 14.133/2021 trouxe diversas modificações em relação à legislação anterior (Lei nº 8.666/93). Quanto à Nova Lei de Licitações e Contratos Administrativos, julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 79 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-80",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Direito Constitucional e Administrativo",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Constitucional",
+      "Direito Administrativo"
+    ],
+    "enunciado": "80. A modalidade de licitação denominada \"convite\" permanece válida na Lei nº 14.133/2021, desde que respeitado o limite de valor atualizado.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 80 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-81",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Direito Constitucional e Administrativo",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Constitucional",
+      "Direito Administrativo"
+    ],
+    "enunciado": "81. É dispensável a licitação para contratação de profissional do setor artístico consagrado pela crítica especializada ou pela opinião pública. A Lei nº 10.303/2001 visa aprimorar o funcionamento do mercado de capitais brasileiro, com foco na proteção dos investidores e na garantia de informações transparentes. Com base nessa legislação, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 81 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-82",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 82"
+    ],
+    "enunciado": "82. A Lei nº 10.303/2001 alterou a Lei das Sociedades por Ações (Lei nº 6.404/76) para reforçar a proteção dos acionistas minoritários, especialmente em operações de alienação de controle.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 82 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-83",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 83"
+    ],
+    "enunciado": "83. Com a alteração promovida pela Lei nº 10.303/2001, passou a ser obrigatória a publicação de demonstrações financeiras por todas as sociedades limitadas, independentemente de seu porte.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 83 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-84",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 84"
+    ],
+    "enunciado": "84. A Lei nº 10.303/2001 modificou dispositivos sobre o capital autorizado, permitindo que o estatuto social fixe limite para aumento de capital sem nova deliberação da assembleia geral.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 84 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-85",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 85"
+    ],
+    "enunciado": "85. A Lei nº 10.303/2001 retirou da comissão de valores mobiliários (CVM) o poder de regulamentar e fiscalizar os auditores independentes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 85 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-86",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 86"
+    ],
+    "enunciado": "86. A documentação de auditoria é o registro dos procedimentos de auditoria executados, da evidência de auditoria relevante obtida e das conclusões alcançadas pelo auditor.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 86 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-87",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 87"
+    ],
+    "enunciado": "87. Auditor experiente é um indivíduo (interno ou externo à firma de auditoria) que possui experiência prática de auditoria e certificação profissional de auditor.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 87 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-88",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 88"
+    ],
+    "enunciado": "88. A amostragem em auditoria é a aplicação de procedimentos de auditoria em menos de 100% dos itens de uma população relevante, com o objetivo de obter evidência suficiente e apropriada.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 88 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-89",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 89"
+    ],
+    "enunciado": "89. A execução dos testes de auditoria deve ser realizada conforme o planejamento estabelecido, sendo vedada qualquer alteração nos procedimentos durante a execução dos trabalhos.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 89 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-90",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 90"
+    ],
+    "enunciado": "90. A auditoria operacional é voltada para a avaliação da conformidade das demonstrações contábeis com os princípios contábeis aplicáveis, sendo, portanto, equivalente à auditoria contábil.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 90 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-91",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 91"
+    ],
+    "enunciado": "91. Evidência de auditoria é a informação utilizada pelo auditor para fundamentar suas conclusões, devendo, sempre, ser obtida por meio de testes substantivos.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 91 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-92",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 92"
+    ],
+    "enunciado": "92. Se uma questão relevante é apresentada adequadamente nas demonstrações contábeis, mas o auditor considera importante destacar ao usuário, ele pode incluir um parágrafo de ênfase no relatório, sem modificar sua opinião. As normas globais de auditoria interna do IIA (Institute of Internal Auditors) orientam a prática profissional mundial de auditoria interna e servem como base para avaliar e elevar a qualidade da função de auditoria interna. Com base nessas normas internacionais para o exercício profissional da auditoria interna, julgue os itens a seguir.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 92 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-93",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 93"
+    ],
+    "enunciado": "93. Ao analisar a prestação de contas de uma viagem a serviço, o auditor interno deve verificar a exatidão dos valores e a formalização dos documentos, sem necessidade de avaliar a pertinência dos gastos, uma vez que esta é responsabilidade do gestor que autorizou a viagem.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 93 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-94",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 94"
+    ],
+    "enunciado": "94. Segundo as normas internacionais de auditoria interna, o auditor interno deve exercer o ceticismo profissional, o que inclui questionar e avaliar criticamente a confiabilidade das informações, mesmo quando fornecidas por gestores de alto escalão.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 94 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-95",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 95"
+    ],
+    "enunciado": "95. A objetividade do auditor interno está garantida desde que ele não aceite presentes ou favores de terceiros, não sendo necessário se abster de avaliar atividades pelas quais foi responsável recentemente.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 95 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-96",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 96"
+    ],
+    "enunciado": "96. Ao elaborar o relatório de auditoria, o auditor interno deve comunicar as constatações, mesmo que não tenha conseguido reunir evidências suficientes para sustentá‑las.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 96 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-97",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 97"
+    ],
+    "enunciado": "97. A análise dos papéis de trabalho elaborados por outros auditores deve levar em consideração o julgamento profissional e os critérios previamente definidos no programa de auditoria. Com base nos pronunciamentos técnicos do Comitê de Pronunciamentos Contábeis (CPC), julgue os itens seguintes.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 97 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-98",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 98"
+    ],
+    "enunciado": "98. De acordo com o CPC 16 (R1) – Estoques, os estoques devem ser mensurados pelo menor valor entre o custo e o valor realizável líquido.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 Gabarito Oficial: CERTO.\nItem 98 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_contabil-99",
+    "banca": "QUADRIX",
+    "ano": 2025,
+    "orgao": "CRC-SP",
+    "cargo": "Analista Contábil",
+    "disciplina": "Contabilidade Geral e Legislação do CRC",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade Geral e Legislação do CRC",
+      "Questão 99"
+    ],
+    "enunciado": "99. O CPC 16 (R1) – Estoques permite que os estoques sejam avaliados pelo método Último a Entrar, Primeiro a Sair (UEPS), desde que essa seja a prática usual da entidade.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "CERTO"
+      },
+      {
+        "id": "B",
+        "text": "ERRADO"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 Gabarito Oficial: ERRADO.\nItem 99 da prova oficial de Analista Contábil (QUADRIX). Resposta homologada pela banca.",
+    "baseLegal": "Gabarito Oficial QUADRIX - Caderno de Prova.",
+    "fontePesquisa": "Edital e Caderno Oficial CRC-SP - 2025",
+    "dificuldade": "médio"
+  }
+]

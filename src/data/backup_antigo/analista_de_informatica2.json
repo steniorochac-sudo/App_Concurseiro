@@ -1,0 +1,1642 @@
+[
+  {
+    "id": "q-analista_de_informatica2-01",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 1"
+    ],
+    "enunciado": "1. – Considerando o exposto pelo texto, analise as assertivas a seguir:\n\nI. A autora menciona um estudo cientí fico feito com pessoas originárias do Senegal sobre as \ntemperaturas no Brasil e em seu país.\n\nII. Considerando o evento astrológico mencionado pela autora, ela preferiu não se arriscar a ignorar \ntal evento.\n\nIII. Para a autora, o mundo das redes sociais dificulta seguir o conselho do escritor português \nmencionado no texto. \n \nQuais estão corretas?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Apenas I."
+      },
+      {
+        "id": "B",
+        "text": "Apenas II."
+      },
+      {
+        "id": "C",
+        "text": "Apenas I e II."
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e III."
+      },
+      {
+        "id": "E",
+        "text": "Apenas II e III.\n\n885_BASE_NS_DM\n\nNÍVEL SUPERIOR 2/5/202418:28:36"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 1 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-02",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Língua Portuguesa",
+      "Interpretação e Gramática"
+    ],
+    "enunciado": "2. – Considerando o emprego do acento indicativo de crase, assinale a alternativa que preenche, correta e respectivamente, as lacunas tracejadas das linhas 09, 11 e 23.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "à – às – à"
+      },
+      {
+        "id": "B",
+        "text": "a – às – a"
+      },
+      {
+        "id": "C",
+        "text": "à – às – a"
+      },
+      {
+        "id": "D",
+        "text": "a – as – à"
+      },
+      {
+        "id": "E",
+        "text": "à – as – à"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 2 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-03",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 3"
+    ],
+    "enunciado": "3. – Assinale a alternativa na qual NÃO houve o emprego de linguagem figurada nos trechos retirados do texto.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "“No Senegal não é tão quente, eles disseram”."
+      },
+      {
+        "id": "B",
+        "text": "“que se pense para dentro como um exercício”."
+      },
+      {
+        "id": "C",
+        "text": "“uma mulher de meia idade no outono, ela com ela mesma”."
+      },
+      {
+        "id": "D",
+        "text": "“sempre que por alguma razão ela quase entrou em fria”."
+      },
+      {
+        "id": "E",
+        "text": "“a essa altura do campeonato, está preparada para tudo”."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 3 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-03",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 3"
+    ],
+    "enunciado": "3. Categoria funcional. Coluna 2 ( ) Conjunto de atribuições e responsabilidades, providos pelo critério de confiança, declarados em lei de livre nomeação e exoneração. ( ) Conjunto de atribuições e responsabilidades, criados por Lei, com denominação própria e vencimento pago pelos cofres públicos do Município e acessível a todo brasileiro. ( ) Conjunto de c argos e funções estabelecidas segundo relação existente entre a natureza do trabalho, o grau de conhecimento e a experiência exigida para o desempenho de suas atividades. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "1 – 3 – 2."
+      },
+      {
+        "id": "B",
+        "text": "2 – 3 – 1."
+      },
+      {
+        "id": "C",
+        "text": "2 – 1 – 3."
+      },
+      {
+        "id": "D",
+        "text": "3 – 1 – 2."
+      },
+      {
+        "id": "E",
+        "text": "3 – 2 – 1."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 3 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-03",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "3. Malware. Coluna 2 ( ) É um termo mais amplo que descreve qualquer programa ou código malicioso que seja prejudicial aos sistemas. ( ) É uma nova forma de vírus que bloqueia o acesso do usuário aos seus arquivos ou ao dispositivo, exigindo um pagamento online anônimo para que o acesso seja restabelecido. ( ) Podem se parecer com praticamente qualq uer coisa, desde software e música gratuitos, até anúncios de navegador e aplicativos aparentemente legítimos. Qualquer tipo de comportamento insensato do usuário pode levar a uma infecção por esse tipo de vírus. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "3 – 1 – 2."
+      },
+      {
+        "id": "B",
+        "text": "1 – 2 – 3."
+      },
+      {
+        "id": "C",
+        "text": "2 – 3 – 1."
+      },
+      {
+        "id": "D",
+        "text": "1 – 3 – 2."
+      },
+      {
+        "id": "E",
+        "text": "3 – 2 – 1."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 3 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-04",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 4"
+    ],
+    "enunciado": "4. – Assinale a alternativa na qual a palavra “a” sublinhada NÃO tenha sido empregada como artigo nos trechos retirados do texto.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "“a mulher de meia idade é a sua juíza mais implacável”."
+      },
+      {
+        "id": "B",
+        "text": "“nunca conseguiu ter a autoestima tão trabalhada”."
+      },
+      {
+        "id": "C",
+        "text": "“nada como a realidade para atrapalhar”."
+      },
+      {
+        "id": "D",
+        "text": "“a mulher de meia idade pensa”."
+      },
+      {
+        "id": "E",
+        "text": "“Só não a chamem de guerreira”."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 4 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-05",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 5"
+    ],
+    "enunciado": "5. – Assinale a alternativa que apresenta palavra que NÃO poderia substituir corretamente o vocábulo “implacável” (l. 27) por causar alterações significativas ao sentido do trecho em que ocorre.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Severa."
+      },
+      {
+        "id": "B",
+        "text": "Rigorosa."
+      },
+      {
+        "id": "C",
+        "text": "Indulgente."
+      },
+      {
+        "id": "D",
+        "text": "Inflexível."
+      },
+      {
+        "id": "E",
+        "text": "Impiedosa."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 5 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-06",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 6"
+    ],
+    "enunciado": "6. – Analise as assertivas a seguir a respeito do trecho “todos os corpos estão liberados”, retirado do texto:\n\nI. A palavra “todos” é pronome indefinido e variável.\n\nII. Caso a redação do trecho fosse “todo corpo está liberado”, a supressão do artigo definido manteria \no significado de “qualquer corpo”.\n\nIII. Caso a redação do trecho fosse “todo o corpo está liberado”, a manutenção do artigo definido \nmanteria o significado de “qualquer corpo”. \n \nQuais estão corretas?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Apenas I."
+      },
+      {
+        "id": "B",
+        "text": "Apenas II."
+      },
+      {
+        "id": "C",
+        "text": "Apenas III."
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e II."
+      },
+      {
+        "id": "E",
+        "text": "Apenas I e III.\n\n885_BASE_NS_DM\n\nNÍVEL SUPERIOR 2/5/202418:28:36"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 6 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-07",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 7"
+    ],
+    "enunciado": "7. – Assinale a alternativa que indica uma palavra ou expressão que poderia substitui r corretamente a construção “em que” (l. 16).",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Em cuja."
+      },
+      {
+        "id": "B",
+        "text": "Em cujo."
+      },
+      {
+        "id": "C",
+        "text": "Quando."
+      },
+      {
+        "id": "D",
+        "text": "Onde."
+      },
+      {
+        "id": "E",
+        "text": "No qual."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 7 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-08",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 8"
+    ],
+    "enunciado": "8. – Assinale a alternativa que indica a correta f unção sintática do termo sublinhado no trecho a seguir, retirado do texto: “Nem existe mais o conceito ‘corpo de biquíni’”.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Sujeito."
+      },
+      {
+        "id": "B",
+        "text": "Objeto direto."
+      },
+      {
+        "id": "C",
+        "text": "Predicativo do sujeito."
+      },
+      {
+        "id": "D",
+        "text": "Adjunto adverbial."
+      },
+      {
+        "id": "E",
+        "text": "Adjunto adnominal."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 8 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-09",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 9"
+    ],
+    "enunciado": "9. – Assinale a alternativa que indica o sentido correto da expressão “tã o... quanto” no trecho a seguir, retirado do texto: “nunca conseguiu ter a autoestima tão trabalhada quanto as influencers ensinam”.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Adição."
+      },
+      {
+        "id": "B",
+        "text": "Oposição."
+      },
+      {
+        "id": "C",
+        "text": "Causa."
+      },
+      {
+        "id": "D",
+        "text": "Consequência."
+      },
+      {
+        "id": "E",
+        "text": "Comparação."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 9 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-10",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 10"
+    ],
+    "enunciado": "10. – Assinale a alternativa que apresenta uma forma verbal cla ssificada como verbo de ligação nos trechos retirados do texto.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "“eles disseram”."
+      },
+      {
+        "id": "B",
+        "text": "“as noites ficaram mais amenas”."
+      },
+      {
+        "id": "C",
+        "text": "“A mudança de estação chegou”."
+      },
+      {
+        "id": "D",
+        "text": "“capaz de liberar boas energias a distância mesmo”."
+      },
+      {
+        "id": "E",
+        "text": "“para se avançar em direção aos próprios objetivos”. CONHECIMENTOS GERAIS"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 10 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-11",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 11"
+    ],
+    "enunciado": "11. – Conforme a Lei O rgânica do Município de Balneário da Barra do Sul, é dever do Município garantir:\n\nI. Creches e pré-escolas, de forma que todas as crianças de zero a seis anos que necessitem tenham \nacesso a elas.\n\nII. Programas de alimentação para mulheres carentes, grávidas ou em fase de amamentação.\n\nIII. Redução da oferta de assistência médica e odontológica gratuita, limitando o acesso aos cuidados \nde saúde apenas a casos de emergência e excluindo a prevenção e os tratamentos de rotina. \n \nQuais estão corretas?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Apenas I."
+      },
+      {
+        "id": "B",
+        "text": "Apenas III."
+      },
+      {
+        "id": "C",
+        "text": "Apenas I e II."
+      },
+      {
+        "id": "D",
+        "text": "Apenas II e III."
+      },
+      {
+        "id": "E",
+        "text": "I, II e III.\n\n885_BASE_NS_DM\n\nNÍVEL SUPERIOR 2/5/202418:28:36"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 11 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-12",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Legislação Municipal e Ética Pública",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Legislação Municipal",
+      "Ética no Serviço Público"
+    ],
+    "enunciado": "12. – Conforme a Lei Orgânica do Município de Balneário da Barra do Sul, o Município, no exercício de sua competência:\n\nI. Protegerá, por todos os meios ao seu alcance, obras, projetos, documentos e imóveis de valor \nhistórico, artístico, cultural e paisagístico.\n\nII. Estabelecerá incentivos para a produção e o conhecimento de bens e valores culturais.\n\nIII. Auxiliará as organizações beneficentes culturais. \n \nQuais estão corretas?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Apenas I."
+      },
+      {
+        "id": "B",
+        "text": "Apenas III."
+      },
+      {
+        "id": "C",
+        "text": "Apenas I e II."
+      },
+      {
+        "id": "D",
+        "text": "Apenas II e III."
+      },
+      {
+        "id": "E",
+        "text": "I, II e III."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 12 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-14",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 14"
+    ],
+    "enunciado": "14. – Conforme o Regime Jurídico Único do Município de Balneário da Barra do Sul, a cada triênio de efetivo exercício no serviço público municipal , será concedido ao servidor adicional correspondente a ________ do vencimento de seu cargo efetivo. Assinale a alternativa que preenche corretamente a lacuna do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "2%"
+      },
+      {
+        "id": "B",
+        "text": "4%"
+      },
+      {
+        "id": "C",
+        "text": "6%"
+      },
+      {
+        "id": "D",
+        "text": "8%"
+      },
+      {
+        "id": "E",
+        "text": "10%\n\n885_BASE_NS_DM\n\nNÍVEL SUPERIOR 2/5/202418:28:36"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 14 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-15",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 15"
+    ],
+    "enunciado": "15. – No que diz respeito à história de Balneário Barra do Sul, seus primeiros habitantes foram os nativos: bugres – que residiam à beira do ______________ e somente mais tarde, por volta de 1940, aqui vieram se estabelecer alguns imigrantes, principalmente vindos de Curitiba/PR, qu e assim desbravaram as terras. Assinale a alternativa que preenche corretamente a lacuna do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Rio Capivari"
+      },
+      {
+        "id": "B",
+        "text": "Rio das Antas"
+      },
+      {
+        "id": "C",
+        "text": "Rio Tijucas"
+      },
+      {
+        "id": "D",
+        "text": "Rio Bupeva"
+      },
+      {
+        "id": "E",
+        "text": "Rio Tubarão"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 15 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-16",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 16"
+    ],
+    "enunciado": "16. – O balneário é conhecido pelos aspectos naturais preservados, ainda nativos — mata Atlântica, restingas, dunas, lagoa e também as ilhas. Qual a maior ilha de Balneário Barra do Sul?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Dos Remédios."
+      },
+      {
+        "id": "B",
+        "text": "Araras."
+      },
+      {
+        "id": "C",
+        "text": "Instriptinga."
+      },
+      {
+        "id": "D",
+        "text": "Islobo."
+      },
+      {
+        "id": "E",
+        "text": "Da Magia.\n\n885_BASE_NS_DM\n\nNÍVEL SUPERIOR 2/5/202418:28:36"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 16 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-17",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "17. – A respeito da história do Estado Catarinense, com a descoberta das ricas terras do Brasil, Santa Catarina logo entrou na rota dos navegadores europeus. A primeira expedição significativa a chegar a Santa Catarina foi a do português Juan Dias Solis, em 1515. O litoral catarinense era habitado por índios carijós, do grupo tupi-guarani. Qual nome que o navegador deu às águas entre a Ilha de Santa Catarina e o continente por conta do naufrágio de uma embarcação no local?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Baía da guanabara."
+      },
+      {
+        "id": "B",
+        "text": "Baía dos perdidos."
+      },
+      {
+        "id": "C",
+        "text": "Baía dos naufragados."
+      },
+      {
+        "id": "D",
+        "text": "Horizonte perdido."
+      },
+      {
+        "id": "E",
+        "text": "Horizonte dos naufragados."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 17 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-18",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "18. – Sobre Software Utilitários, analise as assertivas abaixo:\n\nI. É considerado Software Utilitário qualquer programa não obrigatório, mas útil para o bom \nfuncionamento do computador.\n\nII. É um tipo de software projetado para auxiliar na execução de tarefas específicas em um \ncomputador.\n\nIII. Esses programas fornecem recursos extras e funcionalidades que não fazem parte dos sistemas \noperacionais convencionais. \n \nQuais estão corretas?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Apenas I."
+      },
+      {
+        "id": "B",
+        "text": "Apenas II."
+      },
+      {
+        "id": "C",
+        "text": "Apenas III."
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e II."
+      },
+      {
+        "id": "E",
+        "text": "I, II e III."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 18 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-20",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "20. – Qual componente de hardware garante que seus arquivos e aplicativos estejam disponíveis sempre que você ligar o dispositivo , e ainda é responsável por armazenar permanentemente os dados e programas de um computador?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Processador."
+      },
+      {
+        "id": "B",
+        "text": "Memória RAM."
+      },
+      {
+        "id": "C",
+        "text": "Placa de vídeo."
+      },
+      {
+        "id": "D",
+        "text": "Disco rígido (HD ou SSD)."
+      },
+      {
+        "id": "E",
+        "text": "Unidade de CD/DVD-ROM.\n\n885_CE_05_NS_DM\n\nANALISTA DE INFORMÁTICA 3/5/202409:50:18 CONHECIMENTOS ESPECÍFICOS"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 20 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-21",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 21"
+    ],
+    "enunciado": "21. – Muitos projetos compartilham a largura de banda da rede dinamicamente conforme a demanda de cada host a curto prazo. Para não fornecer a cada host uma largura fixa de banda, que ele pode não utilizar, é possível, de acordo com Tanenbaum, utilizar ________ __________, que significa compartilhar com base nas estatísticas de demanda. Isso pode ser aplicado às camadas inferiores para um único enlace , assim como nas camadas altas para uma rede ou mesmo em aplicações que usam a rede. Assinale a alternativa que preenche corretamente a lacuna do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "congestionamento estatístico"
+      },
+      {
+        "id": "B",
+        "text": "aprendizado de máquina funcional"
+      },
+      {
+        "id": "C",
+        "text": "Diffie–Hellman"
+      },
+      {
+        "id": "D",
+        "text": "multiplexação estatística"
+      },
+      {
+        "id": "E",
+        "text": "IPv4"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 21 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-22",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 22"
+    ],
+    "enunciado": "22. – Em relação ao modelo OSI de 7 camadas, programas como NGINX implementam o protocolo ______ situado na camada 7, denominada ____________, enquanto os protocolos TCP, e UDP estão situados na camada 4, denominada ____________. Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "ICMP – Rede – Dados"
+      },
+      {
+        "id": "B",
+        "text": "HTTP – Aplicação – Transporte"
+      },
+      {
+        "id": "C",
+        "text": "HTTP – Apresentação – Rede"
+      },
+      {
+        "id": "D",
+        "text": "SMTP – Sessão – Rede"
+      },
+      {
+        "id": "E",
+        "text": "HTTP – Rede – Transporte"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 22 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-23",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 23"
+    ],
+    "enunciado": "23. – Em relação aos sistemas de arquivo journaling, assinale a alternativa INCORRETA.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "É um sistema com robustez contra falhas."
+      },
+      {
+        "id": "B",
+        "text": "Para que o sistema funcione, as operações devem ser idempotentes."
+      },
+      {
+        "id": "C",
+        "text": "Mantém um diário do que o sistema de arquivos vai fazer antes que ele o faça."
+      },
+      {
+        "id": "D",
+        "text": "NTFS não utiliza journaling."
+      },
+      {
+        "id": "E",
+        "text": "EXT4 utiliza journaling."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 23 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-24",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "24. – Nos provedores de computação em nuvem AWS (Amazon Web Service) e Microsoft Azure, é possível criar máquinas virtuais (não confundir com containers) e criar o que seria equivalente a discos anexados às máquinas virtuais para aumentar o armazenamento disponível para suas aplicações. Em relação a isso, VMs na AWS são chamadas Amazon _____ e os discos virtuais são chamados Amazon _____, enquanto na Azure as VMs são chamadas ________ _______ e os discos são chamados _______________. Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "ECS – S3 – AKS – Azure Managed Disks"
+      },
+      {
+        "id": "B",
+        "text": "EC2 – EDS – Azure Virtual Machines – ABS"
+      },
+      {
+        "id": "C",
+        "text": "EC2 – EBS – Azure Virtual Machines – Azure Managed Disks"
+      },
+      {
+        "id": "D",
+        "text": "EC2 – EBS – Azure Virtual Machines – Azure ARC"
+      },
+      {
+        "id": "E",
+        "text": "ECS – EBS – AKS – Azure Managed Disks\n\n885_CE_05_NS_DM\n\nANALISTA DE INFORMÁTICA 3/5/202409:50:18"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 24 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-25",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "25. – O protocolo HTTP (Hypertext Transfer Protocol) na versão HTTP/1.1, descrito na RFC 2616, descreve alguns métodos (Method) que servem para indicar qual operação a ser realizada , recurso identificado na URI de requisição. Sendo assim, qual dos seguintes métodos NÃO é um método documentado na RFC:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "OPTIONS"
+      },
+      {
+        "id": "B",
+        "text": "GET"
+      },
+      {
+        "id": "C",
+        "text": "POST"
+      },
+      {
+        "id": "D",
+        "text": "HEAD"
+      },
+      {
+        "id": "E",
+        "text": "REMOVE"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 25 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-26",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 26"
+    ],
+    "enunciado": "26. – Ao configurar um servidor que execute um programa MTA (Mail Transfer Agent), pode-se utilizar ________, contudo para executar um programa MDA (Mail Delivery Agent) pode-se utilizar ________. Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Postfix – Dovecot"
+      },
+      {
+        "id": "B",
+        "text": "Dovecot – Postfix"
+      },
+      {
+        "id": "C",
+        "text": "Exim – Amazon SES"
+      },
+      {
+        "id": "D",
+        "text": "POP3 – Postfix"
+      },
+      {
+        "id": "E",
+        "text": "Dovecot – IMAP"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 26 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-27",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 27"
+    ],
+    "enunciado": "27. – Em relação aos algoritmos criptográficos as simétricos, assinale a alternativa INCORRETA.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A criptografia de chave pública é assimétrica, portanto, faz uso de substituição e permutação utilizando uma única chave."
+      },
+      {
+        "id": "B",
+        "text": "A criptografia de chave pública é assimétrica, portanto, faz uso de duas chaves."
+      },
+      {
+        "id": "C",
+        "text": "RSA é um importante algoritmo de encriptação/decriptação viável para criptografia de chave pública."
+      },
+      {
+        "id": "D",
+        "text": "AES não é um algoritmo criptográfico assimétrico."
+      },
+      {
+        "id": "E",
+        "text": "O certificado de chave pública é um documento emitido digitalmente pela chave privada de uma Autoridade de Certificação."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 27 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-28",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 28"
+    ],
+    "enunciado": "28. – Assinale a alternativa correta sobre a diferença de MD5 e SHA-1.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A função de hash MD5 produz um valor de 64-bit, enquanto SHA-1 produz 128-bit."
+      },
+      {
+        "id": "B",
+        "text": "A função de hash MD5 produz um valor de 128-bit, enquanto SHA-1 produz 160-bit."
+      },
+      {
+        "id": "C",
+        "text": "A função de hash MD5 produz um valor de 124-bit, enquanto SHA-1 produz 256-bit."
+      },
+      {
+        "id": "D",
+        "text": "Ambas as funções de hash MD5 produzem um valor de 128-bit."
+      },
+      {
+        "id": "E",
+        "text": "Ambas as funções de hash MD5 produzem um valor de 256-bit."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 28 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-29",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 29"
+    ],
+    "enunciado": "29. – Considerando a escrita da palavra de cinco caracteres MUNDO, em maiúsculo, no formato binário , utilizando o padrão ASCII, assinale a alternativa que apresenta corretamente o conjunto de binários que resultaria dessa conversão texto para binário , sabendo que a letra A do alfabeto começa no decimal 65, que a letra Z termina no decimal 90 e que a letra M da palavra é o conjunto mais à esquerda, enquanto a letra O é o conjunto mais à direita.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "01101101 01010101 01001110 01000100 01001111"
+      },
+      {
+        "id": "B",
+        "text": "01001101 01110101 01001110 01000100 01110011"
+      },
+      {
+        "id": "C",
+        "text": "01001101 01010101 01001110 01000100 01001111"
+      },
+      {
+        "id": "D",
+        "text": "01101101 01110101 01101110 01100100 01100001"
+      },
+      {
+        "id": "E",
+        "text": "01001101 01010101 01001111 01000100 01001111\n\n885_CE_05_NS_DM\n\nANALISTA DE INFORMÁTICA 3/5/202409:50:18"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 29 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-30",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 30"
+    ],
+    "enunciado": "30. – Assinale a alternativa INCORRETA em relação à classe de dispositivos de E/S chamada RAID.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A organização do RAID nível 0 grava faixas consecutivas nos discos em um estilo de alternância circular (round-robin) para um RAID com quatro discos."
+      },
+      {
+        "id": "B",
+        "text": "A organização do RAID nível 1 duplica todos os discos, portanto há quatro discos primários e quatro de backup, ou seja, em uma escrita, cada f aixa é escrita duas vezes, enquanto na leitura cada cópia pode ser usada, distribuindo a carga através de mais discos."
+      },
+      {
+        "id": "C",
+        "text": "A organização do RAID nível 3 é uma versão simplificada do RAID nível 2 e , como este, os discos não precisam estar exatamente sincronizados."
+      },
+      {
+        "id": "D",
+        "text": "A organização do RAID nível 4 é como o RAID nível 0, com uma paridade faixa -por-faixa escrita em um disco extra. Se um disco quebra, os bytes perdidos podem ser recalculados do disco de paridade por uma leitura do conjunto inteiro de discos."
+      },
+      {
+        "id": "E",
+        "text": "A organização do RAID nível 5 distribui os bits de paridade uniformemente por todos os discos, de modo circular (round-robin). No entanto, caso ocorra uma quebra do disco, a reconstrução do disco falhado é um processo complexo."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 30 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-31",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "31. – Assinale a alternativa INCORRETA quanto aos h ipervisores robustos e altamente eficazes em que a virtualização está muito próxima do desempenho do hardware real.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "O hipervisor deve ter controle completo dos recursos virtualizados."
+      },
+      {
+        "id": "B",
+        "text": "O comportamento de um programa em uma máquina virtual deve ser idêntico àquele do mesmo programa executando diretamente no hardware."
+      },
+      {
+        "id": "C",
+        "text": "Grande parte do código na máquina virtual deve executar sem a intervenção do hipervisor."
+      },
+      {
+        "id": "D",
+        "text": "Deve permitir que o sistema hóspede modifique os mapeamentos da tabela de páginas."
+      },
+      {
+        "id": "E",
+        "text": "Deve ser possível inicializar a máquina virtual e instalar sistemas operacionais arbitrários nelas."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 31 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-32",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 32"
+    ],
+    "enunciado": "32. – As estruturas de dados de pilha, fila e lista ligada diferem entre si , porque pilha implementa ______, enquanto fila implementa _____ e lista ligada tem _______________________. Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "FIFO – LIFO – apenas um ponteiro para o próximo elemento"
+      },
+      {
+        "id": "B",
+        "text": "LIFO – FIFO – dois ponteiros, um para o elemento anterior e um para o próximo"
+      },
+      {
+        "id": "C",
+        "text": "FIFO – LIFO – dois ponteiros, um para o elemento anterior e um para o próximo"
+      },
+      {
+        "id": "D",
+        "text": "FIFO – LIFO – três ponteiros, um para o elemento anterior, um para o próximo, e outro para o último"
+      },
+      {
+        "id": "E",
+        "text": "LIFO – FIFO – apenas um ponteiro para o próximo elemento"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 32 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-33",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 33"
+    ],
+    "enunciado": "33. – O algoritmo ________ resolve o problema de caminhos mínimos de fonte única em um grafo dirigido ponderado G = (V, E) para o caso no qual todos os pesos de arestas são não negativos. Assinale a alternativa que preenche corretamente a lacuna do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Quicksort"
+      },
+      {
+        "id": "B",
+        "text": "Dijkstra"
+      },
+      {
+        "id": "C",
+        "text": "Huffman"
+      },
+      {
+        "id": "D",
+        "text": "Ford-Fulkerson"
+      },
+      {
+        "id": "E",
+        "text": "Euclides\n\n885_CE_05_NS_DM\n\nANALISTA DE INFORMÁTICA 3/5/202409:50:18"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 33 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-34",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "34. – Ao utilizar SQL para atualizar uma tabela no banco de dados relacional da empresa, utiliza-se o comando ________ para indicar a tabela a ser atualizada, o comando ________ para indicar a coluna a ser atualizada e o comando ________ para indicar a condição da atualização, ou seja, se a condição for falsa, a atualização não acontece. Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "SET – UPDATE – WHERE"
+      },
+      {
+        "id": "B",
+        "text": "UPDATE – SET – WHERE"
+      },
+      {
+        "id": "C",
+        "text": "SET – UPDATE – WHEN"
+      },
+      {
+        "id": "D",
+        "text": "UPDATE – SET – WHEN"
+      },
+      {
+        "id": "E",
+        "text": "SET – UPDATE – IF"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 34 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-35",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 35"
+    ],
+    "enunciado": "35. – Com a introdução do PHP 8, diversas melhorias de performance e novos recursos foram implementados. Um desses recursos é o JIT. Assinale a alternativa que apresenta a melhor definição para JIT.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Na máquina rodando o código, quando o programa é carregado, oc orre a compilação para a arquitetura que o computador suporte."
+      },
+      {
+        "id": "B",
+        "text": "Na máquina rodando o código, quando o programa é carregado, ocorre a otimização de interpretação sem necessidade de compilar."
+      },
+      {
+        "id": "C",
+        "text": "Na máquina rodando o código, quando o programa é carregado, o sistema operacional, sabendo a arquitetura em que está rodando, baixa o binário mais otimizado do programa carregado."
+      },
+      {
+        "id": "D",
+        "text": "Na máquina do desenvolvedor, o programa é compilado e enviado para produção para ter alta performance."
+      },
+      {
+        "id": "E",
+        "text": "Na máquina definida pelo processo de DevOps, ocorre a compilação para a arquitetura destino onde o binário irá executar."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 35 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-36",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 36"
+    ],
+    "enunciado": "36. – Em relação à declaração de construtores no PHP 8, assinale a alternativa INCORRETA.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Classes que têm um método construtor chamam o método a cada objeto recém-criado."
+      },
+      {
+        "id": "B",
+        "text": "O construtor é definido através da keyword __construct."
+      },
+      {
+        "id": "C",
+        "text": "Parâmetros de construtores não podem ser promovidos a uma propriedade do objeto."
+      },
+      {
+        "id": "D",
+        "text": "Construtores podem definir um número arbitrário de argumentos, os quais podem ser obrigatórios, podem ter um tipo e podem ter valores padrão."
+      },
+      {
+        "id": "E",
+        "text": "Argumentos promovidos não podem ser do tipo callable."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 36 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-37",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 37"
+    ],
+    "enunciado": "37. – Em relação à propriedade CSS “position”, é necessário o uso do valor ________ para que o elemento seja tirado do fluxo (flow) de modo que não tenha impacto no tamanho ou posição de seus irmãos e ancestrais, e que não participe do contexto de formatação do seu elemento pai. O elemento é, então, posicionado apenas com referência às suas coordenadas dentro do seu bloco contenedor. Assinale a alternativa que preenche corretamente a lacuna do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "absolute"
+      },
+      {
+        "id": "B",
+        "text": "fixed"
+      },
+      {
+        "id": "C",
+        "text": "sticky"
+      },
+      {
+        "id": "D",
+        "text": "static"
+      },
+      {
+        "id": "E",
+        "text": "relative\n\n885_CE_05_NS_DM\n\nANALISTA DE INFORMÁTICA 3/5/202409:50:18"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 37 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-38",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "38. – Para registrar um evento em um elemento no JavaScript executado em navegadores, é possível utilizar a função ________________, disponível nos elementos e disponibilizada pela API JavaScript do navegador, e, para remover do registro o evento, é possível utilizar a outra função da API, chamada ________________. Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "insertEventListener – removeEventListener"
+      },
+      {
+        "id": "B",
+        "text": "addEventListener – deleteEventListener"
+      },
+      {
+        "id": "C",
+        "text": "registerEventListener – unregisterEventListener"
+      },
+      {
+        "id": "D",
+        "text": "addEventListener – removeEventListener"
+      },
+      {
+        "id": "E",
+        "text": "injectEventListener – destroyEventListener"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 38 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-39",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 39"
+    ],
+    "enunciado": "39. – Assinale a alternativa INCORRETA quanto à acessibilidade na Web conforme a W3C.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "É recomendado ter disponível um mecanismo para identificar a forma completa ou o significado das abreviações, e isso pode ser feito através do elemento HTML <abbr>."
+      },
+      {
+        "id": "B",
+        "text": "É recomendado definir o idioma humano predefinido de cada página, e isso pode ser feito com o atributo “lang” no elemento HTML <html>."
+      },
+      {
+        "id": "C",
+        "text": "É recomendado utilizar o evento “activate” no lugar de “focus” ao ativar eventos de troca de con"
+      },
+      {
+        "id": "D",
+        "text": "É recomendado ter um mecanismo para permitir que a finalidade de cada hiperligação seja identificada a partir apenas do"
+      },
+      {
+        "id": "E",
+        "text": "É recomendado que toda s as funcionalidades do conteúdo sejam operáveis através de teclado e mouse, de forma que o próximo comando seja indicado no elemento HTM L anterior através da propriedade “next-command”."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 39 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica2-40",
+    "banca": "AOCP",
+    "ano": 2023,
+    "orgao": "Prefeitura / Tribunal",
+    "cargo": "Analista de Informática II",
+    "disciplina": "Desenvolvimento de Sistemas e Segurança da Informação",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Desenvolvimento de Sistemas e Segurança da Informação",
+      "Questão 40"
+    ],
+    "enunciado": "40. – O que é o ataque RST Hijacking?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Um tipo de DDoS que tenta deixar exausto o estado da pilha TCP/IP."
+      },
+      {
+        "id": "B",
+        "text": "Uma técnica inteligente que usa análise de pacotes na rede para buscar vetores de ataque vulneráveis a encriptação por RSA."
+      },
+      {
+        "id": "C",
+        "text": "Um mecanismo de ataque de forma bruta em um cliente até que ele fique incapaz de continuar a negociar com o destino e então o atacante toma o seu lugar na conversa e quebra a encriptação RSA."
+      },
+      {
+        "id": "D",
+        "text": "Uma vulnerabilidade em redes se m fio que permite ao atacante forçar a queda do protocolo TLS para SSL e então executar um ataque de falsificação da comunicação cliente-servidor."
+      },
+      {
+        "id": "E",
+        "text": "Um ataque de falsificação de pacotes TCP/IP entre a vítima e a máquina host que tenta fazer o lado receptor da comunicação acreditar que a origem realmente enviou um pacote de reset."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 40 da prova oficial de Analista de Informática II (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Prefeitura / Tribunal - 2023",
+    "dificuldade": "médio"
+  }
+]
