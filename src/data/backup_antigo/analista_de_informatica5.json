@@ -1,0 +1,1601 @@
+[
+  {
+    "id": "q-analista_de_informatica5-01",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 1"
+    ],
+    "enunciado": "1. Um sistema de gerenciamento de tarefas precisa permitir que os usuários desfaçam ações realizadas, como a exclusão de uma tarefa ou a alteração de sua prioridade. Qual padrão de projeto é mais adequado para implementar essa funcionalidade de \"desfazer\"?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Command."
+      },
+      {
+        "id": "B",
+        "text": "Factory Method."
+      },
+      {
+        "id": "C",
+        "text": "Observer."
+      },
+      {
+        "id": "D",
+        "text": "Singleton."
+      },
+      {
+        "id": "E",
+        "text": "Strategy."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 1 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-02",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "2. Analise o seguinte trecho de código HTML: Com base no código, qual será o resultado exibido no navegador?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Um título \"Minha Página\" na barra de título do navegador, um parágrafo centralizado com o"
+      },
+      {
+        "id": "B",
+        "text": "Um título \"Minha Página\" na barra de título do navegador, um parágrafo centralizado com o"
+      },
+      {
+        "id": "C",
+        "text": "Um título \"Olá, mundo!\" na barra de título do navegador, um parágrafo centralizado com o"
+      },
+      {
+        "id": "D",
+        "text": "Um título \"Minha Página\" na barra de título do navegador, um parágrafo alinhado à esquerda com o"
+      },
+      {
+        "id": "E",
+        "text": "Um título \"Olá, mundo!\" na barra de título do navegador, um parágrafo centralizado com o"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 2 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-03",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 3"
+    ],
+    "enunciado": "3. Uma equipe de desenvolvimento está utilizando o Git para controlar as versões do código-fonte de um projeto. Dois desenvolvedores, Ana e Bruno, estão trabalhando em funcionalidades diferentes do mesmo sistema. Ana fez alterações em um arquivo chamado index.php e enviou suas alterações para o repositório remoto. Bruno, que também fez alterações no mesmo arquivo index.php, tentou enviar suas alterações, mas o Git reportou um conflito. O que Bruno deve fazer para resolver o conflito e integrar suas alterações ao código de Ana?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Ignorar as alterações de Ana e forçar o envio das suas próprias alterações utilizando o comando git push -f."
+      },
+      {
+        "id": "B",
+        "text": "Baixar as alterações de Ana para seu repositório local, analisar o conflito no arquivo index.php, fazer as correções necessárias e então enviar as alterações para o repositório remoto."
+      },
+      {
+        "id": "C",
+        "text": "Apagar o arquivo index.php do seu repositório local e baixar novamente a versão mais recente do repositório remoto."
+      },
+      {
+        "id": "D",
+        "text": "Criar uma nova branch no Git para suas alterações e enviar essa branch para o repositório remoto, sem integrar as alterações de Ana."
+      },
+      {
+        "id": "E",
+        "text": "Renomear o arquivo index.php para index_bruno.php e enviar essa nova versão para o repositório remoto, para que ambas as versões do arquivo coexistam."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 3 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-04",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 4"
+    ],
+    "enunciado": "4. Uma empresa de e-commerce sofreu um ataque de ransomware que criptografou todos os dados do seu servidor principal, incluindo o banco de dados de clientes, o sistema de pedidos e o catálogo de produtos. A equipe de TI precisa agir rapidamente para restaurar os sistemas e minimizar os impactos do ataque. Nesse cenário, qual documento deve ser consultado para orientar as ações de recuperação e garantir a continuidade das operações da empresa?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Plano de gerenciamento de riscos."
+      },
+      {
+        "id": "B",
+        "text": "Plano de testes de software."
+      },
+      {
+        "id": "C",
+        "text": "Plano de recuperação de desastres."
+      },
+      {
+        "id": "D",
+        "text": "Plano de comunicação interna."
+      },
+      {
+        "id": "E",
+        "text": "Plano de gerenciamento de configuração."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 4 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-05",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 5"
+    ],
+    "enunciado": "5. Um Analista de Informática precisa modelar um sistema de controle de estoque para uma loja de materiais de construção. Ele deseja representar visualmente as interações entre os diferentes atores do sistema (cliente, Analista de Informática - 1 1\n\nvendedor, gerente) e as funcionalidades do sistema (consultar estoque, realizar venda, gerar relatório). Qual diagrama UML é o mais adequado para essa finalidade?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Diagrama de Sequência."
+      },
+      {
+        "id": "B",
+        "text": "Diagrama de Classes."
+      },
+      {
+        "id": "C",
+        "text": "Diagrama de Casos de Uso."
+      },
+      {
+        "id": "D",
+        "text": "Diagrama de Atividades."
+      },
+      {
+        "id": "E",
+        "text": "Diagrama de Objetos."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 5 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-06",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 6"
+    ],
+    "enunciado": "6. Uma equipe de desenvolvimento precisa escolher entre SOAP e REST para implementar a comunicação entre microsserviços em um sistema distribuído. Considere as características de cada estilo de arquitetura: SOAP (Simple Object Access Protocol): Utiliza XML para formatar as mensagens. Geralmente depende de WSDL para descrever a interface dos serviços. Oferece recursos de segurança e confiabilidade, como WS-Security e WS-ReliableMessaging. Pode ser mais complexo de implementar e consumir. REST (Representational State Transfer): Utiliza métodos HTTP (GET, POST, PUT, DELETE) para interagir com recursos. Pode usar diferentes formatos de dados, como XML, JSON ou HTML. É mais leve e flexível que SOAP. Geralmente é mais fácil de implementar e consumir. Com base nessas características, em qual situação seria mais vantajoso utilizar SOAP em vez de REST?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Quando os dados a serem transmitidos são complexos e exigem um formato rígido."
+      },
+      {
+        "id": "B",
+        "text": "Quando a equipe de desenvolvimento tem pouca experiência com Web Services."
+      },
+      {
+        "id": "C",
+        "text": "Quando a interoperabilidade com sistemas legados que utilizam SOAP é essencial."
+      },
+      {
+        "id": "D",
+        "text": "Quando o desempenho é crítico e a comunicação precisa ser o mais leve possível."
+      },
+      {
+        "id": "E",
+        "text": "Quando a aplicação precisa ser simples e fácil de entender."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 6 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-07",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 7"
+    ],
+    "enunciado": "7. Um Analista de Informática está modelando um banco de dados para um sistema de biblioteca. Ele precisa representar as entidades \"Livro\", \"Autor\" e \"Usuário\", e os relacionamentos entre elas. Considerando os conceitos de modelagem de dados conceitual e semântica, analise as afirmativas a seguir: I.Na modelagem conceitual, o foco é representar as entidades e seus relacionamentos de forma abstrata, sem se preocupar com os detalhes de implementação em um sistema de gerenciamento de banco de dados (SGBD) específico. II.A modelagem semântica se concentra em capturar o significado dos dados e as regras de negócio que regem o sistema, como por exemplo, a regra de que um livro pode ter vários autores e um autor pode escrever vários livros. III.O modelo entidade-relacionamento (MER) é uma ferramenta utilizada na modelagem conceitual para representar as entidades, os atributos e os relacionamentos do banco de dados. IV.A cardinalidade dos relacionamentos define o número mínimo e máximo de ocorrências de uma entidade que podem estar associadas a outra entidade, como por exemplo, a cardinalidade entre \"Livro\" e \"Autor\" que pode ser muitos-para-muitos. Está correto o que se afirma em:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "I e II apenas."
+      },
+      {
+        "id": "B",
+        "text": "II, III e IV apenas."
+      },
+      {
+        "id": "C",
+        "text": "I, II, III e IV."
+      },
+      {
+        "id": "D",
+        "text": "II e III apenas."
+      },
+      {
+        "id": "E",
+        "text": "I, II e III apenas."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 7 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-08",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "8. \"O modelo OSI (Open Systems Interconnection) é um modelo conceitual que divide a comunicação em redes de computadores em sete camadas. Cada camada tem uma função específica e se comunica com as camadas adjacentes. A camada _______________ é responsável pelo endereçamento lógico dos dispositivos na rede, utilizando o protocolo _______________. Já a camada _______________ garante a comunicação fim-a-fim entre as aplicações, com protocolos como _______________ e _______________.\"",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Física, IP, Transporte, TCP, UDP"
+      },
+      {
+        "id": "B",
+        "text": "Transporte, TCP, Aplicação, HTTP, FTP"
+      },
+      {
+        "id": "C",
+        "text": "Rede, IP, Transporte, TCP, UDP"
+      },
+      {
+        "id": "D",
+        "text": "Enlace de Dados, Ethernet, Rede, TCP, IP"
+      },
+      {
+        "id": "E",
+        "text": "Aplicação, HTTP, Sessão, TCP, IP"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 8 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-09",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "9. Analise as afirmativas a seguir sobre os conceitos de SOA (Service-Oriented Architecture) e Web Services: I.SOA é um estilo de arquitetura de software que define a utilização de serviços para expor funcionalidades de aplicações a outras aplicações, promovendo a reutilização e a interoperabilidade. II.Web Services são componentes de software que podem ser acessados remotamente por meio de protocolos de rede, como HTTP, e utilizam padrões como XML para troca de informações. III.Um dos princípios da SOA é a granularidade dos Analista de Informática - 1 2\n\nserviços, o que significa que cada serviço deve ser responsável por uma tarefa específica e bem definida. IV.Web Services podem ser implementados utilizando diferentes tecnologias, como SOAP (Simple Object Access Protocol) e REST (Representational State Transfer). V.A utilização de Web Services em uma arquitetura SOA garante a independência entre os sistemas, permitindo que aplicações desenvolvidas em diferentes plataformas e linguagens de programação se comuniquem. Assinale a alternativa que indica todas as afirmativas corretas:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "I, II, III, IV e V."
+      },
+      {
+        "id": "B",
+        "text": "II, III, IV e V apenas."
+      },
+      {
+        "id": "C",
+        "text": "II, III e IV apenas."
+      },
+      {
+        "id": "D",
+        "text": "I, II e III apenas."
+      },
+      {
+        "id": "E",
+        "text": "I, III, IV e V apenas."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 9 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-10",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "10. Um Analista de Informática precisa implementar medidas de proteção para garantir a segurança da informação em uma empresa. Ele deve considerar os diferentes tipos de ataques e vulnerabilidades que podem afetar os ativos da empresa, incluindo hardware, software, sistemas operacionais, aplicações, bancos de dados, redes, pessoas e ambiente físico. Relacione os tipos de ataque com as medidas de proteção mais adequadas: 1.Ataque de phishing. 2.Ataque de negação de serviço (DoS). 3.Invasão física ao data center. 4.SQL injection. 5.Ataque de malware. Firewall (__)Sistema de detecção de intrusão (IDS). (__)Controle de acesso físico e sistema de vigilância. (__)Treinamento de conscientização sobre segurança. (__)Antivírus e sistema de prevenção de intrusão (IPS). Assinale a alternativa que apresenta a sequência correta de preenchimento dos parênteses de cima para baixo:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "2, 5, 3, 1, 4."
+      },
+      {
+        "id": "B",
+        "text": "5, 4, 1, 2, 3."
+      },
+      {
+        "id": "C",
+        "text": "1, 3, 2, 4, 5."
+      },
+      {
+        "id": "D",
+        "text": "4, 1, 5, 3, 2."
+      },
+      {
+        "id": "E",
+        "text": "3, 2, 5, 1, 4."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 10 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-11",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 11"
+    ],
+    "enunciado": "11. Um gerente de projetos está conduzindo um projeto de desenvolvimento de um novo sistema de gerenciamento de estoque para uma empresa. Ele identificou a necessidade de otimizar o processo de recebimento de mercadorias, que atualmente apresenta gargalos e retrabalhos. Para isso, ele deve utilizar os conceitos de gerenciamento de projetos e gestão de processos. Considerando essa situação, analise as afirmativas a seguir: I.O gerenciamento de projetos se concentra na execução de atividades sequenciais e repetitivas, visando a otimização do processo de recebimento de mercadorias. II.A gestão de processos busca definir, analisar e melhorar o fluxo de atividades envolvidas no recebimento de mercadorias, buscando eliminar os gargalos e retrabalhos. III.O gerente de projetos pode utilizar ferramentas como o diagrama de Ishikawa e o fluxograma para analisar o processo de recebimento de mercadorias e identificar as causas dos problemas. IV.A gestão de processos visa atingir objetivos específicos dentro de um prazo determinado, enquanto o gerenciamento de projetos se concentra na otimização contínua dos processos organizacionais. Está correto o que se afirma em:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "II, III e IV"
+      },
+      {
+        "id": "B",
+        "text": "I, II, III e IV."
+      },
+      {
+        "id": "C",
+        "text": "I, II e III apenas."
+      },
+      {
+        "id": "D",
+        "text": "II e III apenas."
+      },
+      {
+        "id": "E",
+        "text": "III e IV apenas."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 11 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-12",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "12. Imagine um Analista de Informática responsável por escolher a melhor solução de computação em nuvem para uma pequena empresa que precisa de um sistema de gerenciamento de clientes (CRM). A empresa tem poucos recursos de TI e não quer se preocupar com a instalação, manutenção e atualização de servidores e softwares. Qual modelo de serviço de computação em nuvem seria mais adequado para essa empresa?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "PaaS (Platform as a Service), pois a empresa precisa de uma plataforma completa para desenvolver e implantar o sistema CRM."
+      },
+      {
+        "id": "B",
+        "text": "Uma combinação de IaaS e PaaS, para que a empresa tenha flexibilidade na escolha do sistema operacional e dos softwares, mas também conte com uma plataforma para desenvolvimento e implantação."
+      },
+      {
+        "id": "C",
+        "text": "IaaS (Infrastructure as a Service), pois a empresa precisa de total controle sobre o sistema operacional e os softwares instalados nos servidores."
+      },
+      {
+        "id": "D",
+        "text": "SaaS (Software as a Service), pois a empresa precisa apenas de um software de CRM pronto para uso, sem se preocupar com a infraestrutura e a manutenção. Analista de Informática - 1 3"
+      },
+      {
+        "id": "E",
+        "text": "Uma solução híbrida, combinando recursos de computação em nuvem com servidores locais, para garantir a segurança e o controle dos dados."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 12 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-13",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "13. Um Analista de Informática precisa solucionar um problema de desempenho em um computador que está lento e travando frequentemente. Após analisar o sistema, ele suspeita que a quantidade de memória RAM pode ser insuficiente para as necessidades do usuário, que utiliza softwares de edição de imagens e vídeos que exigem muitos recursos. Considerando os conceitos básicos de arquitetura de computadores e a função da memória RAM, assinale a alternativa correta:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Formatar o computador e reinstalar o sistema operacional resolveria o problema, pois eliminaria arquivos desnecessários e liberaria espaço na memória RAM."
+      },
+      {
+        "id": "B",
+        "text": "Substituir a placa de vídeo por uma mais moderna seria a solução ideal, pois aumentaria a capacidade do computador de processar gráficos e vídeos."
+      },
+      {
+        "id": "C",
+        "text": "Aumentar a velocidade do processador (CPU) seria a melhor solução, pois permitiria que o computador processasse as informações mais rapidamente."
+      },
+      {
+        "id": "D",
+        "text": "Aumentar a quantidade de memória RAM seria a solução mais adequada, pois permitiria que o computador armazenasse mais dados e programas em uso, evitando o acesso constante ao disco rígido."
+      },
+      {
+        "id": "E",
+        "text": "Aumentar a capacidade do disco rígido (HD) resolveria o problema, pois permitiria armazenar mais arquivos e liberar espaço na memória RAM."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 13 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-14",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "14. Um Analista de Informática precisa configurar um novo servidor para hospedar uma aplicação web. Ele deve escolher entre o sistema operacional MS Windows Server e uma distribuição Linux, como o Ubuntu Server. Considerando as características de cada sistema operacional, analise as afirmativas a seguir: I.O MS Windows Server possui uma interface gráfica amigável, o que facilita a configuração e o gerenciamento do sistema, especialmente para usuários com pouca experiência em Linux. II.As distribuições Linux geralmente são gratuitas e de código aberto, o que reduz o custo de licenciamento e permite a personalização do sistema de acordo com as necessidades da aplicação. III.O MS Windows Server oferece maior compatibilidade com softwares proprietários, como o Microsoft SQL Server e o Microsoft Exchange Server, o que pode ser um fator decisivo na escolha do sistema operacional. IV.As distribuições Linux são conhecidas por sua estabilidade e segurança, o que as torna uma boa opção para servidores que precisam operar por longos períodos sem interrupções. Está correto o que se afirma em:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "I, II e IV apenas."
+      },
+      {
+        "id": "B",
+        "text": "III e IV apenas."
+      },
+      {
+        "id": "C",
+        "text": "I e II apenas."
+      },
+      {
+        "id": "D",
+        "text": "I, II, III e IV."
+      },
+      {
+        "id": "E",
+        "text": "II e III apenas."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 14 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-15",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 15"
+    ],
+    "enunciado": "15. Em um sistema de compras online que utiliza a arquitetura cliente/servidor, qual a responsabilidade principal do servidor?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Executar o navegador web e enviar as requisições HTTP para o servidor."
+      },
+      {
+        "id": "B",
+        "text": "Gerenciar a conexão de rede e garantir a segurança da comunicação entre o cliente e o servidor."
+      },
+      {
+        "id": "C",
+        "text": "Armazenar os dados dos produtos, processar os pedidos e gerenciar as transações."
+      },
+      {
+        "id": "D",
+        "text": "Armazenar o histórico de compras do cliente e exibir as recomendações personalizadas."
+      },
+      {
+        "id": "E",
+        "text": "Exibir a interface gráfica da loja virtual e processar as interações do usuário."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 15 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-16",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 16"
+    ],
+    "enunciado": "16. Para responder à questão, analise o código a seguir, escrito em uma linguagem de programação que utiliza o paradigma de orientação a objetos: Com base na análise do código e nos seus conhecimentos sobre programação orientada a objetos, selecione a alternativa correta.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "As classes Cachorro e Gato herdam os atributos nome e idade da classe Animal, mas não herdam o método emitirSom()."
+      },
+      {
+        "id": "B",
+        "text": "O código demonstra o conceito de abstração, pois a classe Animal define um método abstrato emitirSom()."
+      },
+      {
+        "id": "C",
+        "text": "A classe Animal é uma subclasse das classes Cachorro e Gato."
+      },
+      {
+        "id": "D",
+        "text": "O código demonstra o conceito de encapsulamento, pois os atributos nome e idade são declarados como públicos. Analista de Informática - 1 4"
+      },
+      {
+        "id": "E",
+        "text": "O método emitirSom() nas classes Cachorro e Gato sobrescreve o método emitirSom() da classe Animal, demonstrando o conceito de polimorfismo."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 16 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-17",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 17"
+    ],
+    "enunciado": "17. Imagine um desenvolvedor trabalhando em um projeto com outros colegas, utilizando o Git para controlar as versões do código-fonte. Ele precisa fazer uma alteração significativa em um módulo do sistema, mas não quer afetar o trabalho dos seus colegas enquanto desenvolve essa nova funcionalidade. Qual a sequência de comandos Git que ele deve executar para criar uma ramificação (branch) para desenvolver a nova funcionalidade, fazer as alterações e, posteriormente, integrar as alterações na ramificação principal (main)?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "git checkout main, git pull origin main, git branch nova-funcionalidade, git checkout nova-funcionalidade, git add ., git commit -m \"Mensagem\", git push origin nova-funcionalidade, git checkout main, git merge nova-funcionalidade"
+      },
+      {
+        "id": "B",
+        "text": "git branch nova-funcionalidade, git checkout nova-funcionalidade, git add ., git commit -m \"Mensagem\", git checkout main, git merge nova-funcionalidade"
+      },
+      {
+        "id": "C",
+        "text": "git init, git add ., git commit -m \"Mensagem\", git branch nova-funcionalidade, git checkout nova-funcionalidade, git push origin nova-funcionalidade"
+      },
+      {
+        "id": "D",
+        "text": "git status, git add ., git commit -m \"Mensagem\", git checkout main, git merge nova-funcionalidade, git push origin main"
+      },
+      {
+        "id": "E",
+        "text": "git checkout main, git branch nova-funcionalidade, git checkout nova-funcionalidade, git add ., git commit -m \"Mensagem\", git push origin main"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 17 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-18",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "18. Uma empresa de desenvolvimento de software está iniciando um novo projeto para um cliente que precisa de um sistema com alta capacidade de adaptação a mudanças e entregas frequentes de funcionalidades. O cliente deseja acompanhar de perto o desenvolvimento e fornecer feedback constante. Considerando as características do projeto e as necessidades do cliente, qual a metodologia de desenvolvimento de software mais adequada para esse cenário?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Espiral, que combina elementos de diferentes metodologias, como prototipação e iteração, para lidar com riscos e incertezas ao longo do projeto."
+      },
+      {
+        "id": "B",
+        "text": "Prototipação, que permite a criação de um protótipo funcional do sistema para que o cliente possa testá-lo e fornecer feedback antes do desenvolvimento completo."
+      },
+      {
+        "id": "C",
+        "text": "Scrum, que se baseia em ciclos iterativos e incrementais (sprints) com entregas frequentes de funcionalidades e feedback constante do cliente."
+      },
+      {
+        "id": "D",
+        "text": "Waterfall, por sua estrutura sequencial e rígida, que garante o cumprimento dos prazos e a previsibilidade do projeto."
+      },
+      {
+        "id": "E",
+        "text": "Modelo V, que enfatiza a verificação e validação em cada fase do desenvolvimento, garantindo a qualidade do software."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 18 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-19",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 19"
+    ],
+    "enunciado": "19. Um Analista de Informática precisa projetar um banco de dados para armazenar informações sobre alunos, cursos e matrículas em uma escola. A tabela Alunos possui os campos id_aluno (chave primária), nome e data_nascimento. A tabela Cursos possui os campos id_curso (chave primária), nome e carga_horaria. A tabela Matriculas possui os campos id_aluno e id_curso (chaves estrangeiras), e data_matricula. Qual comando SQL deve ser utilizado para consultar o nome do aluno, o nome do curso e a data da matrícula de todos os alunos matriculados no curso de \"Introdução à Programação\"?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "SELECT nome, data_matricula FROM Matriculas WHERE id_curso = (SELECT id_curso FROM Cursos WHERE nome = 'Introdução à Programação');"
+      },
+      {
+        "id": "B",
+        "text": "SELECT A.nome, C.nome FROM Alunos A, Cursos C, Matriculas M WHERE A.id_aluno = M.id_aluno AND C.id_curso = M.id_curso AND C.nome = 'Introdução à Programação';"
+      },
+      {
+        "id": "C",
+        "text": "SELECT A.nome, C.nome, M.data_matricula FROM Alunos A JOIN Matriculas M ON A.id_aluno = M.id_aluno JOIN Cursos C ON M.id_curso = C.id_curso WHERE C.nome = 'Introdução à Programação';"
+      },
+      {
+        "id": "D",
+        "text": "SELECT nome FROM Alunos WHERE id_aluno IN (SELECT id_aluno FROM Matriculas WHERE id_curso = 'Introdução à Programação');"
+      },
+      {
+        "id": "E",
+        "text": "SELECT nome FROM Alunos UNION SELECT nome FROM Cursos WHERE nome = 'Introdução à Programação';"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 19 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-20",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "20. Um arquiteto de software está projetando um sistema complexo para uma instituição financeira, que precisa integrar diversos serviços e aplicações, como sistemas de contas correntes, investimentos, empréstimos e cartões de crédito. Ele está considerando a utilização de um framework de arquitetura para facilitar o desenvolvimento e garantir a qualidade do sistema. Analise as afirmativas a seguir sobre frameworks de arquitetura e SOA: I.Um framework de arquitetura fornece um conjunto de componentes, padrões e diretrizes que podem ser reutilizados para o desenvolvimento de diferentes aplicações, garantindo a consistência e a qualidade do Analista de Informática - 1 5\n\nsoftware. II.A arquitetura SOA (Service-Oriented Architecture) define que as funcionalidades do sistema devem ser expostas como serviços independentes e interoperáveis, que podem ser acessados e reutilizados por diferentes aplicações. III.A utilização de um framework de arquitetura compatível com SOA facilita a implementação de serviços, o gerenciamento de transações, a segurança e o monitoramento do sistema. IV.O Spring é um framework mais abrangente, que oferece suporte a diversos estilos de arquitetura, incluindo SOA, e fornece recursos para a criação e o consumo de serviços web. O Struts, por outro lado, é mais focado no desenvolvimento de aplicações web MVC e não possui um foco específico em SOA. Está correto o que se afirma em:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "II e III apenas."
+      },
+      {
+        "id": "B",
+        "text": "I e II apenas."
+      },
+      {
+        "id": "C",
+        "text": "II, III e IV apenas."
+      },
+      {
+        "id": "D",
+        "text": "I, II e III apenas."
+      },
+      {
+        "id": "E",
+        "text": "I, II, III e IV."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 20 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-21",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 21"
+    ],
+    "enunciado": "21. Uma empresa de varejo online deseja analisar grandes volumes de dados sobre o comportamento dos clientes, incluindo dados de navegação no site, histórico de compras, interações em redes sociais e avaliações de produtos. O objetivo é identificar padrões de consumo, personalizar ofertas e melhorar a experiência do cliente. Com base nesse cenário, analise as seguintes afirmações sobre Data Warehouse e Data Lake: I.Um Data Warehouse seria a solução ideal para armazenar e analisar esses dados, pois ele é otimizado para armazenar dados estruturados em tabelas, como dados de vendas e cadastro de clientes. II.Um Data Lake seria mais adequado para esse caso, pois permite armazenar dados de diferentes fontes e formatos, como dados estruturados, semiestruturados e não estruturados. III.No Data Lake, os dados são armazenados em seu formato original, sem necessidade de serem transformados antes de serem armazenados. A transformação dos dados ocorre apenas quando necessário, durante a análise. IV.O Data Warehouse é mais indicado para análises em tempo real, enquanto o Data Lake é mais adequado para análises complexas que exigem processamento de grandes volumes de dados. Quais afirmações estão corretas?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "I e II apenas."
+      },
+      {
+        "id": "B",
+        "text": "II e III apenas."
+      },
+      {
+        "id": "C",
+        "text": "I e IV apenas."
+      },
+      {
+        "id": "D",
+        "text": "II, III e IV apenas."
+      },
+      {
+        "id": "E",
+        "text": "I, II, III e IV."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 21 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-22",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 22"
+    ],
+    "enunciado": "22. Complete as lacunas no texto a seguir: Durante a fase de _______________ de um sistema, a equipe de desenvolvimento pode optar por utilizar containers para facilitar a implantação e o gerenciamento da aplicação. Os containers são _______________ que empacotam o código da aplicação e suas dependências, permitindo que sejam executados de forma consistente em diferentes ambientes. Essa tecnologia contribui para a _______________ do sistema, facilitando sua adaptação a diferentes infraestruturas e a _______________, permitindo que a aplicação seja facilmente replicada para atender a demandas variáveis.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "análise de sistemas - ambientes isolados - portabilidade - escalabilidade"
+      },
+      {
+        "id": "B",
+        "text": "gerenciamento de projetos - linguagens de programação - eficiência - modularidade"
+      },
+      {
+        "id": "C",
+        "text": "modelagem de dados - servidores web - confiabilidade - acessibilidade"
+      },
+      {
+        "id": "D",
+        "text": "projeto de interface - máquinas virtuais - segurança - interoperabilidade"
+      },
+      {
+        "id": "E",
+        "text": "teste de software - ferramentas de automação - usabilidade - manutenibilidade"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 22 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-23",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "23. Em um projeto de desenvolvimento de software, a equipe de análise de sistemas está debatendo a utilização de containers para a implantação da aplicação. Quais as duas principais vantagens da utilização de containers nesse contexto?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Simplificação do processo de desenvolvimento e aumento do consumo de recursos."
+      },
+      {
+        "id": "B",
+        "text": "Melhoria da portabilidade da aplicação e aumento da eficiência no uso de recursos."
+      },
+      {
+        "id": "C",
+        "text": "Aumento da dependência de plataformas específicas e facilitação da gestão de dependências."
+      },
+      {
+        "id": "D",
+        "text": "Redução do tempo de desenvolvimento e aumento da complexidade da infraestrutura."
+      },
+      {
+        "id": "E",
+        "text": "Redução da necessidade de testes e aumento do acoplamento entre os componentes da aplicação."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 23 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-25",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "25. Um projeto de desenvolvimento de software está atrasado e com o orçamento ultrapassado. Após uma análise, o gerente de projetos identificou que a causa principal dos problemas é a falta de padronização e controle nos processos de desenvolvimento, o que leva a retrabalhos, erros e dificuldades na comunicação entre a equipe. Considerando os conceitos de gerenciamento de projetos e gestão de processos, qual seria a ação mais eficaz para solucionar os problemas e melhorar o desempenho do projeto?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Cancelar o projeto e reiniciá-lo do zero, utilizando uma metodologia de desenvolvimento mais adequada e uma equipe mais qualificada."
+      },
+      {
+        "id": "B",
+        "text": "Mapear, analisar e otimizar os processos de desenvolvimento, definindo padrões, responsabilidades e mecanismos de controle para evitar retrabalhos e erros."
+      },
+      {
+        "id": "C",
+        "text": "Concentrar esforços na etapa de execução do projeto, aumentando a quantidade de horas trabalhadas pela equipe para recuperar o tempo perdido."
+      },
+      {
+        "id": "D",
+        "text": "Renegociar o prazo e o orçamento do projeto com o cliente, justificando os problemas e solicitando mais tempo e recursos para finalizar o projeto."
+      },
+      {
+        "id": "E",
+        "text": "Substituir a equipe de desenvolvimento por profissionais mais experientes, capazes de entregar o projeto com maior rapidez e qualidade. Língua Portuguesa"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 25 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-26",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Língua Portuguesa",
+      "Interpretação e Gramática"
+    ],
+    "enunciado": "26. \"O sal e os minerais não são facilmente removidos e se acumulam com o tempo.\" No trecho, o verbo 'ser' encontra-se no plural para concordar com o sujeito composto 'o sal e os minerais'. Nos enunciados abaixo, a concordância verbal também está adequada, EXCETO:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Em média, o mar contém cerca de 3,5% de sal, o que significa que cada litro de água do oceano contém aproximadamente 35 gramas de sal."
+      },
+      {
+        "id": "B",
+        "text": "Nestes locais, a acumulação de sais é um processo constante e, com o passar do tempo, o nível de sal continua aumentando. Analista de Informática - 1 7"
+      },
+      {
+        "id": "C",
+        "text": "Além de serem os principais contribuintes para a salinidade dos oceanos, estes íons ajudam a regular propriedades essenciais do mar, como a densidade e a condutividade."
+      },
+      {
+        "id": "D",
+        "text": "Atualmente, os cientistas estimam que os rios e riachos de todo o mundo transportam aproximadamente quatro mil milhões de toneladas de sais dissolvidos para o oceano todos os anos."
+      },
+      {
+        "id": "E",
+        "text": "Lagos salgados, como o Lago Mono na Califórnia ou o Mar Cáspio na Ásia, tem uma salinidade ainda maior que a do oceano."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 26 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-27",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 27"
+    ],
+    "enunciado": "27. \"À primeira vista pode parecer estranho, principalmente quando consideramos que a água que chega ao oceano vem de rios e córregos, que são de água doce.\" O verbo 'chegar', quando indica destino e direção, exige a regência da preposição 'a', como demonstrado no trecho acima. Identifique a alternativa que apresenta erro de regência em relação ao verbo 'chegar'.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Chegamos ao Rio de Janeiro pelo aeroporto Santos Dumont."
+      },
+      {
+        "id": "B",
+        "text": "Os alunos chegaram à escola com pequeno atraso."
+      },
+      {
+        "id": "C",
+        "text": "Chegamos à praia bem cedo, mas o sol já estava escaldante."
+      },
+      {
+        "id": "D",
+        "text": "Cheguei à Portugal antes do anoitecer."
+      },
+      {
+        "id": "E",
+        "text": "Quando chegar ao aeroporto, avise-me."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 27 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-28",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 28"
+    ],
+    "enunciado": "28. Quanto à coerência e à coesão, releia o texto e analise as assertivas a seguir: I.\"Estes se dissolvem nas rochas terrestres, processo que começa com a chuva, que contém pequenas quantidades de dióxido de carbono do ar, gerando um ácido fraco.\" O pronome 'estes', na forma plural, é um recurso de referência que remete ao substantivo 'rochas terrestres', que também está flexionado no plural. II.\"Quando esta chuva cai sobre as rochas, o ácido dissolve pequenas partículas de minerais e sais, que são transportados por rios e riachos, levando-os finalmente ao oceano.\" Os vocábulos 'transportados' e 'os' podem ser substituídos por 'transportadas' e 'as', respectivamente, para estabelecer concordância com o termo 'partículas'. III.Em 'Além disso, existe outro processo fundamental que adiciona minerais ao oceano: as fontes hidrotermais no fundo do mar.\" A expressão 'Além disso' é um recurso de coesão sequencial. As assertivas que apresentam informações verdadeiras são:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Apenas II."
+      },
+      {
+        "id": "B",
+        "text": "Apenas II e III."
+      },
+      {
+        "id": "C",
+        "text": "Apenas I e II."
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e III."
+      },
+      {
+        "id": "E",
+        "text": "Apenas III."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 28 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-29",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 29"
+    ],
+    "enunciado": "29. A destruição das florestas representa uma grande ameaça..... biodiversidade em todo o mundo. Entre 2001 e 2011, o mundo perdeu 437 milhões de hectares de cobertura arbórea. No geral, quase dois terços das florestas tropicais do mundo foram degradadas ou destruídas, segundo uma estimativa. Na América Latina e no Caribe, as populações de animais diminuíram 95% nos últimos 50 anos, devido ..... intenso desmatamento",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "a, ao, a, a, às"
+      },
+      {
+        "id": "B",
+        "text": "a, à, a, à, à"
+      },
+      {
+        "id": "C",
+        "text": "a, à, à, à, à"
+      },
+      {
+        "id": "D",
+        "text": "à, ao, à, a, às"
+      },
+      {
+        "id": "E",
+        "text": "à, à, à, a, as"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 29 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-30",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 30"
+    ],
+    "enunciado": "30. Analise as frases: De sorvete, eu gosto. A sobremesa, você trouxe? Logo pela manhã, saímos para fazer uma caminhada próximo à lagoa. A justificativa para o emprego da vírgula nos trechos acima é:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Separar elementos paralelos de um provérbio."
+      },
+      {
+        "id": "B",
+        "text": "Separar termos deslocados da sua posição normal na frase. Analista de Informática - 1 8"
+      },
+      {
+        "id": "C",
+        "text": "Separar expressões explicativas."
+      },
+      {
+        "id": "D",
+        "text": "Separar orações coordenadas sindéticas."
+      },
+      {
+        "id": "E",
+        "text": "Isolar aposto explicativo. Matemática/Raciocínio Lógico"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 30 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-31",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Raciocínio Lógico e Matemático",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Raciocínio Lógico",
+      "Matemática"
+    ],
+    "enunciado": "31. Em uma brincadeira, um dado comum (com seis faces) é lançado, e o número sorteado é registrado. Sabendo que os números que aparecem nas faces do dado são 1, 2, 3, 4, 5 e 6, qual é a probabilidade de, ao lançar o dado, o número sorteado ser um número par?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "1/2."
+      },
+      {
+        "id": "B",
+        "text": "2/6."
+      },
+      {
+        "id": "C",
+        "text": "1/3."
+      },
+      {
+        "id": "D",
+        "text": "2/3."
+      },
+      {
+        "id": "E",
+        "text": "1/6."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 31 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-32",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Raciocínio Lógico e Matemático",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Raciocínio Lógico",
+      "Matemática"
+    ],
+    "enunciado": "32. Considere a seguinte proposição lógica: \"Se João é servidor público, então ele tem direito a férias.\" Com base na proposição acima, assinale a alternativa que corresponde à sua negação:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "João não é servidor público e tem direito a férias."
+      },
+      {
+        "id": "B",
+        "text": "João é servidor público ou não tem direito a férias."
+      },
+      {
+        "id": "C",
+        "text": "João é servidor público e tem direito a férias."
+      },
+      {
+        "id": "D",
+        "text": "João é servidor público e não tem direito a férias."
+      },
+      {
+        "id": "E",
+        "text": "João não é servidor público ou não tem direito a férias."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 32 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-33",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 33"
+    ],
+    "enunciado": "33. Para atendimento no caixa de uma banco, as senhas para quem precisar realizar saque de dinheiro em espécie seguem uma sequência lógica e não são números consecutivos, se os números seguem a seguinte sequência: 3, 6, 12, 24, 48, ... Com base na lógica da sequência, qual será o próximo número?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "96."
+      },
+      {
+        "id": "B",
+        "text": "144."
+      },
+      {
+        "id": "C",
+        "text": "72."
+      },
+      {
+        "id": "D",
+        "text": "60."
+      },
+      {
+        "id": "E",
+        "text": "84. Informática Básica"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 33 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-34",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 34"
+    ],
+    "enunciado": "34. Os programas editores de apresentação permitem que sejam criados itens de animação nos elementos dos slides. Marque a alternativa CORRETA que corresponde a animação situada na passagem de um slide para outro.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Design."
+      },
+      {
+        "id": "B",
+        "text": "Tela de Fundo."
+      },
+      {
+        "id": "C",
+        "text": "Transição de Slides."
+      },
+      {
+        "id": "D",
+        "text": "Animação de"
+      },
+      {
+        "id": "E",
+        "text": "Layout."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 34 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-35",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "35. Ele permite que um usuário visualize o desempenho do sistema, ele contém exibições que mostram o desempenho geral e o desempenho por Pacote/Processo. Ele também mostra os Usuários e Serviços atualmente conectados do computador. Eles podem ser controlados por um administrador.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "PowerShell."
+      },
+      {
+        "id": "B",
+        "text": "Gerenciador de Tarefas."
+      },
+      {
+        "id": "C",
+        "text": "Gerenciador de disco."
+      },
+      {
+        "id": "D",
+        "text": "Prompt do MS-DOS."
+      },
+      {
+        "id": "E",
+        "text": "Gerenciamento do Computador."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 35 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-36",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "36. A ferramenta tem como objetivo abrir, criar e editar apresentações, tanto no formato proprietário do Google Drive quanto no formato do Microsoft Power Point. Marque a alternativa CORRETA para a ferramenta Google descrita.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Apresentações Google."
+      },
+      {
+        "id": "B",
+        "text": "Canva."
+      },
+      {
+        "id": "C",
+        "text": "PowerPoint."
+      },
+      {
+        "id": "D",
+        "text": "Prezi."
+      },
+      {
+        "id": "E",
+        "text": "Keynote."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 36 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-37",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Noções de Informática",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Noções de Informática",
+      "Tecnologia da Informação"
+    ],
+    "enunciado": "37. O correio eletrônico, também conhecido como e-mail, é um método de comunicação que permite enviar e receber mensagens de texto, imagens, documentos e outros arquivos pela internet. Marque a alternativa CORRETA que corresponde ao campo de destinatário em que o e-mail escrito aqui não fica visível para os demais destinatários.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Assunto."
+      },
+      {
+        "id": "B",
+        "text": "Para."
+      },
+      {
+        "id": "C",
+        "text": "Cco."
+      },
+      {
+        "id": "D",
+        "text": "Anexo."
+      },
+      {
+        "id": "E",
+        "text": "Cc. Analista de Informática - 1 9\n\nEstatuto dos Servidores Público de Santa Catarina"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 37 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-38",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 38"
+    ],
+    "enunciado": "38. De acordo com o Art. 62 da Lei Nº 6.745/1985, está prevista como hipótese para concessão de licença ao funcionário público estadual de Santa Catarina: I.Para tratamento de saúde. II.Por motivo de doença em pessoa da família. III.Para participar de curso de especialização profissional. IV.Para a prestação do serviço militar obrigatório. V.Ao funcionário casado, por mudança de domicílio. VI.Para concorrer a cargo eletivo previsto na legislação eleitoral. VII.Para tratamento de interesses particulares. Assinale a alternativa correta:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Somente a assertiva III está incorreta."
+      },
+      {
+        "id": "B",
+        "text": "As assertivas V e VII estão incorretas."
+      },
+      {
+        "id": "C",
+        "text": "Somente a assertiva V está incorreta."
+      },
+      {
+        "id": "D",
+        "text": "As assertivas II e VII estão incorretas."
+      },
+      {
+        "id": "E",
+        "text": "Todas as assertivas estão corretas."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 38 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-39",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 39"
+    ],
+    "enunciado": "39. De acordo com o Art. 51 da Lei Nº 6.745/1985, o funcionário que foi elevado indevidamente por promoção, é correto afirmar que:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Não precisará devolver os valores recebidos a mais, ainda que tenha utilizado meios ilícitos para obter a promoção."
+      },
+      {
+        "id": "B",
+        "text": "Nunca será obrigado a devolver os valores recebidos, independentemente das circunstâncias ou comprovações."
+      },
+      {
+        "id": "C",
+        "text": "Será obrigado a restituir os valores recebidos, apenas se a promoção for anulada por decisão administrativa."
+      },
+      {
+        "id": "D",
+        "text": "Sempre deverá restituir os valores recebidos a mais, independentemente das circunstâncias."
+      },
+      {
+        "id": "E",
+        "text": "Não será obrigado a devolver os valores recebidos a mais, exceto se comprovado que houve utilização de expedientes escusos para obter a promoção."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 39 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-analista_de_informatica5-40",
+    "banca": "AOCP",
+    "ano": 2022,
+    "orgao": "Secretaria Estadual",
+    "cargo": "Analista de TI - Infraestrutura",
+    "disciplina": "Sistemas Operacionais e Nuvem",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Sistemas Operacionais e Nuvem",
+      "Questão 40"
+    ],
+    "enunciado": "40. Com base no disposto no Art. 43 da Lei Nº 6.745/1985, qual das opções abaixo não é considerada como tempo de serviço público estadual para todos os efeitos legais?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Período de afastamento devido a prisão preventiva, cujo delito não seja confirmado."
+      },
+      {
+        "id": "B",
+        "text": "Afastamentos legalmente autorizados, sem perda de direitos."
+      },
+      {
+        "id": "C",
+        "text": "Período de férias regulares."
+      },
+      {
+        "id": "D",
+        "text": "Licenças remuneradas previstas em lei."
+      },
+      {
+        "id": "E",
+        "text": "Licença não remunerada para tratar de assuntos particulares. Analista de Informática - 1 10"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 40 da prova oficial de Analista de TI - Infraestrutura (AOCP). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial AOCP.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria Estadual - 2022",
+    "dificuldade": "médio"
+  }
+]

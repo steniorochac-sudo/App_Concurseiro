@@ -1,0 +1,1297 @@
+[
+  {
+    "id": "q-auditor_fiscal_tributario-01",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "> **[Texto 1]**\n> PETROPOULEAS, Suzana Correa. Letra e melodia. In: Portal de Livros Abertos da USP. São Paulo: Universidade de São Paulo, [s.d.]. Disponível em: https://www.livrosabertos.abcd.usp.br/portaldelivrosUSP/catalog/view/7 30/648/2404 . Acesso em: 16 nov. 2025.\n\n1. O crédito tributário representa o direito de a Fazenda Pública exigir o tributo. Sua constituição formal ocorre pelo lançamento (Art. 142, CTN), e sua extinção (Art. 156, CTN) ocorre por diversas modalidades. Com base na Lei Federal nº 5.172/1966 (Código Tributário Nacional - CTN), assinale a alternativa CORRETA.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "O lançamento por homologação (Art. 150) é a única forma de constituição do crédito, ocorrendo quando o Fisco, após 5 anos, concorda com o pagamento antecipado pelo contribuinte."
+      },
+      {
+        "id": "B",
+        "text": "A anistia (Art. 175) é uma modalidade de extinção do crédito tributário, referindo-se ao perdão do tributo devido (principal), enquanto a remissão (Art. 156) refere-se ao perdão da multa (infrações)."
+      },
+      {
+        "id": "C",
+        "text": "A prescrição (Art. 174) e a decadência (Art. 173) são modalidades de suspensão do crédito tributário, permitindo que o Fisco reative a cobrança se o contribuinte confessar a dívida."
+      },
+      {
+        "id": "D",
+        "text": "O pagamento (Art. 156, I) e a compensação (Art. 156, II) são modalidades de extinção do crédito tributário. O pagamento indevido gera direito à restituição (Art. 165), e a compensação extingue duas dívidas recíprocas entre Fisco e contribuinte, mediante lei."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 1 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-02",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "> **[Texto 1]**\n> PETROPOULEAS, Suzana Correa. Letra e melodia. In: Portal de Livros Abertos da USP. São Paulo: Universidade de São Paulo, [s.d.]. Disponível em: https://www.livrosabertos.abcd.usp.br/portaldelivrosUSP/catalog/view/7 30/648/2404 . Acesso em: 16 nov. 2025.\n\n2. O Artigo 145 da Constituição Federal de 1988 (CF/88) e o Código Tributário Nacional (CTN - Lei Federal nº 5.172/1966) definem as espécies tributárias (impostos, taxas, contribuições de melhoria). A distinção fundamental entre elas reside na vinculação ou não do fato gerador a uma atividade estatal. Assinale a alternativa CORRETA sobre essa distinção.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A Taxa e a Contribuição de Melhoria são sinônimos, ambos destinados a remunerar obras públicas que beneficiam a coletividade, enquanto o imposto remunera serviços."
+      },
+      {
+        "id": "B",
+        "text": "O Imposto é um tributo não vinculado (Art. 16, CTN), pois seu fato gerador é uma situação do contribuinte (ex.: auferir renda); a Taxa (Art. 77, CTN) e a Contribuição de Melhoria (Art. 81, CTN) são tributos vinculados a uma atuação estatal específica."
+      },
+      {
+        "id": "C",
+        "text": "O Imposto é um tributo vinculado a uma contraprestação estatal (ex: pedágio), enquanto a Contribuição de Melhoria é não vinculada, pois incide sobre o patrimônio."
+      },
+      {
+        "id": "D",
+        "text": "A Taxa é um tributo não vinculado, pois remunera serviços gerais e indivisíveis (uti universi), como a segurança pública, sendo de competência exclusiva da União."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 2 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-03",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "3. A Administração Tributária (Art. 142 e 194, CTN) possui o poder-dever de fiscalizar o cumprimento das obrigações e arrecadar os tributos devidos. Sobre os conceitos de arrecadação e fiscalização, analise as afirmativas a seguir. I.A arrecadação é o ato de recebimento dos valores devidos pelos contribuintes, geralmente por meio da rede bancária autorizada, sendo o estágio da receita que segue o lançamento. II.A fiscalização é a atividade de verificação do cumprimento das obrigações (principal e acessória), exercida por autoridade competente (Auditor Fiscal), que pode examinar livros, documentos e mercadorias. III.O sigilo fiscal (Art. 198, CTN) é absoluto, não podendo a Fazenda Pública compartilhar informações do contribuinte nem mesmo com autoridades judiciais ou administrativas no interesse da Justiça. Assinale a alternativa que apresenta apenas as proposições CORRETAS:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "II e III, apenas."
+      },
+      {
+        "id": "B",
+        "text": "I e III, apenas."
+      },
+      {
+        "id": "C",
+        "text": "I, II e III."
+      },
+      {
+        "id": "D",
+        "text": "I e II, apenas."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 3 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-04",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "4. A fiscalização tributária municipal, especialmente do Imposto Sobre Serviços (ISS) e do Imposto Predial e Territorial Urbano (IPTU), utiliza vistorias in loco para verificar a ocorrência do fato gerador. Sobre estas técnicas, analise as afirmativas a seguir. I.Na fiscalização do IPTU, a vistoria (levantamento aerofotogramétrico ou presencial) é usada para verificar alterações de área construída, padrão construtivo ou uso do imóvel, que impactam a base de cálculo (valor venal). II.Na fiscalização do ISS sobre construção civil (subitem 7.02 da LC 116/03), a vistoria da obra é usada para apurar a base de cálculo por arbitramento, caso o contribuinte não apresente documentação idônea (notas fiscais de serviço e material). III.A vistoria fiscal em uma obra ou estabelecimento comercial é um ato que depende de prévia autorização judicial, não podendo o Auditor Fiscal ingressar no local sem mandado. Assinale a alternativa que apresenta apenas as proposições CORRETAS:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "I, II e III."
+      },
+      {
+        "id": "B",
+        "text": "II e III, apenas."
+      },
+      {
+        "id": "C",
+        "text": "I e II, apenas."
+      },
+      {
+        "id": "D",
+        "text": "I e III, apenas."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 4 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-05",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "5. A responsabilidade tributária define quem, além do contribuinte, pode ser chamado a pagar o tributo. O Código Tributário Nacional (CTN - Lei Federal nº 5.172/1966) trata da responsabilidade solidária (Art. 124) e subsidiária (Art. 134 e 133, II). Julgue os itens a seguir",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "F, F, V, V."
+      },
+      {
+        "id": "B",
+        "text": "V, F, F, V."
+      },
+      {
+        "id": "C",
+        "text": "V, V, F, F."
+      },
+      {
+        "id": "D",
+        "text": "V, F, V, F."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 5 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-06",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "6. O Auto de Infração e Imposição de Multa (AIIM) é o ato administrativo que formaliza a constituição do crédito tributário quando a autoridade fiscal (Auditor Fiscal) constata uma infração à legislação. Com base no Art. 142 do Código Tributário Nacional (CTN - Lei Federal nº 5.172/1966), assinale a alternativa CORRETA sobre os requisitos do Auto de Infração.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "O Auto de Infração é um ato discricionário, podendo o"
+      },
+      {
+        "id": "B",
+        "text": "O Auto de Infração pode omitir a base de cálculo e a alíquota, desde que indique o valor total do tributo devido, cabendo ao contribuinte solicitar o detalhamento na impugnação."
+      },
+      {
+        "id": "C",
+        "text": "A lavratura do Auto de Infração encerra definitivamente a discussão administrativa, devendo o contribuinte recorrer diretamente ao Poder Judiciário."
+      },
+      {
+        "id": "D",
+        "text": "O Auto de Infração (ou o lançamento de ofício) deve conter a identificação do sujeito passivo, a descrição do fato gerador ocorrido (motivo), a matéria tributável (base de cálculo), a alíquota aplicável, o montante do tributo e a penalidade (infração), além da intimação para pagamento ou impugnação."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 6 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-07",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "7. O fato gerador é a situação definida em lei como necessária e suficiente para o nascimento da obrigação tributária (Art. 114, CTN), enquanto a base de cálculo é a grandeza que mensura esse fato (Art. 142, CTN). Com base na Lei Federal nº 5.172/1966 (Código Tributário Nacional - CTN), julgue os itens a seguir como (V) Verdadeiros ou (F) Falsos: (__)A definição legal do fato gerador deve ser interpretada considerando-se a ocorrência da situação prevista em lei, independentemente da validade jurídica dos atos praticados pelo contribuinte ou da licitude do objeto, de modo que eventual nulidade civil do negócio não afasta, por si só, a incidência do tributo. (__)A base de cálculo (ex.: valor venal no IPTU) e a alíquota (ex.: 1%) são elementos essenciais para o lançamento, que quantifica o valor do crédito tributário. (__)O fato gerador da obrigação acessória (ex.: emitir nota fiscal) é o mesmo da obrigação principal (ex.: vender a mercadoria), diferindo apenas quanto ao objeto. (__)O Art. 117 do CTN determina que, em situações jurídicas sujeitas a condição suspensiva, o fato gerador considera-se ocorrido no momento da celebração do ato. Após análise, assinale a alternativa que apresenta a sequência CORRETA dos itens acima, de cima para baixo:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "V, F, V, F."
+      },
+      {
+        "id": "B",
+        "text": "V, V, V, F."
+      },
+      {
+        "id": "C",
+        "text": "V, V, F, F."
+      },
+      {
+        "id": "D",
+        "text": "F, F, V, V."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 7 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-08",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "8. A Nota Fiscal Eletrônica (NF-e) é um documento digital que revolucionou a fiscalização tributária. O Ajuste SINIEF 07/2005 (Sistema Nacional Integrado de Informações Econômico-Fiscais) instituiu a NF-e. Julgue os itens a seguir como (V) Verdadeiros ou (F) Falsos: (__)A Nota Fiscal Eletrônica (NF-e) é um documento de existência apenas digital (arquivo XML), emitido e armazenado eletronicamente, com o intuito de documentar operações de circulação de mercadorias ou prestação de serviços. (__)O Documento Auxiliar da Nota Fiscal Eletrônica (DANFE) é uma representação gráfica simplificada da NF-e, impresso em papel, cuja principal função é acompanhar o trânsito das mercadorias. (__)O DANFE (representação gráfica) tem a mesma validade jurídica do arquivo XML e substitui a NF-e para fins de escrituração fiscal, bastando arquivar o DANFE impresso pelo prazo legal. (__)A validade jurídica da NF-e é garantida pela assinatura digital do emitente, que assegura a autoria e a integridade do arquivo eletrônico, e pela Autorização de Uso concedida pela administração tributária após a recepção e validação desse arquivo, condição indispensável para que o documento seja considerado fiscalmente válido. Após análise, assinale a alternativa que apresenta a sequência CORRETA dos itens acima, de cima para baixo:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "V, V, F, F."
+      },
+      {
+        "id": "B",
+        "text": "V, V, F, V."
+      },
+      {
+        "id": "C",
+        "text": "V, F, V, F."
+      },
+      {
+        "id": "D",
+        "text": "F, F, V, V."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 8 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-09",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Constitucional e Administrativo",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Constitucional",
+      "Direito Administrativo"
+    ],
+    "enunciado": "9. A Administração Pública, em todas as esferas, deve obedecer aos princípios fundamentais estabelecidos no Artigo 37, caput, da Constituição Federal de 1988 (CF/88). Esses princípios são a base de validade de todos os atos administrativos. Assinale a alternativa CORRETA que identifica o princípio da Impessoalidade.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "É o princípio que exige que a Administração atue de forma ágil e produtiva, buscando os melhores resultados com o menor custo (economicidade), sem se prender a formalismos desnecessários."
+      },
+      {
+        "id": "B",
+        "text": "É o princípio que exige a divulgação oficial dos atos administrativos (ex.: publicação em Diário Oficial) como requisito de eficácia e para permitir o controle social."
+      },
+      {
+        "id": "C",
+        "text": "É o princípio que exige que a Administração trate a todos sem favoritismos ou perseguições, visando sempre à finalidade pública (interesse coletivo), e proíbe que haja promoção pessoal de agentes ou autoridades em atos e obras públicas."
+      },
+      {
+        "id": "D",
+        "text": "É o princípio que exige que a Administração atue somente quando a lei expressamente permite ou determina (legalidade estrita), diferindo do particular, a quem é permitido fazer tudo o que a lei não proíbe."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 9 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-10",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "10. O Código Tributário Nacional (CTN - Lei Federal nº 5.172/1966) define, em seus artigos 113 e 121, as obrigações e o sujeito passivo da relação tributária. Sobre estes temas, analise as afirmativas a seguir. I.O sujeito passivo da obrigação principal pode ser o contribuinte (quando tem relação pessoal e direta com o fato gerador) ou o responsável (quando, sem ser contribuinte, sua obrigação decorre de lei). II.A obrigação acessória (ex.: dever de escriturar livros fiscais) atinge o sujeito passivo no interesse da arrecadação ou fiscalização e, se descumprida, converte-se em obrigação principal quanto à penalidade pecuniária. III.A capacidade tributária passiva (o dever de pagar tributo) depende da capacidade civil (maioridade, discernimento), sendo nula a obrigação tributária de um menor de idade que aufira renda. Assinale a alternativa que apresenta apenas as proposições CORRETAS:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "I, II e III."
+      },
+      {
+        "id": "B",
+        "text": "I e II, apenas."
+      },
+      {
+        "id": "C",
+        "text": "I e III, apenas."
+      },
+      {
+        "id": "D",
+        "text": "II e III, apenas."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 10 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-11",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "11. Embora resultem no não pagamento do tributo, a imunidade, a isenção e a remissão são institutos juridicamente distintos no Direito Tributário. A imunidade é uma limitação constitucional ao poder de tributar, enquanto a isenção e a remissão são tratadas no Código Tributário Nacional (CTN - Lei Federal nº 5.172/1966). Assinale a alternativa CORRETA que os diferencia.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A imunidade é a dispensa do pagamento concedida pelo Poder Executivo (Decreto); a isenção é a dispensa concedida pelo Poder Legislativo (Lei); e a remissão é a dispensa concedida pelo Poder Judiciário (Sentença)."
+      },
+      {
+        "id": "B",
+        "text": "A isenção e a remissão são sinônimos (ambos significam perdão da dívida), enquanto a imunidade é uma dispensa temporária do pagamento, que pode ser revogada a qualquer tempo por lei ordinária."
+      },
+      {
+        "id": "C",
+        "text": "A imunidade aplica-se apenas a impostos federais; a isenção aplica-se a impostos estaduais (ICMS); e a remissão aplica-se a impostos municipais (IPTU/ISS)."
+      },
+      {
+        "id": "D",
+        "text": "A imunidade impede o nascimento da própria competência para tributar (norma constitucional); a isenção é a dispensa legal do pagamento do tributo devido (causa de exclusão do crédito, Art. 175, CTN); e a remissão é o perdão legal da dívida já constituída."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 11 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-12",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 12"
+    ],
+    "enunciado": "12. A fiscalização moderna utiliza intensamente a tecnologia da informação para cruzar dados. O Sistema Público de Escrituração Digital (SPED), instituído pelo Decreto Federal nº 6.022/2007, é um marco nesse processo. Sobre o SPED, analise as afirmativas a seguir. I.O SPED é um instrumento que unifica as atividades de recepção, validação, armazenamento e autenticação de livros e documentos que integram a escrituração contábil e fiscal (ex: EFD ICMS/IPI, ECF, ECD). II.O SPED substitui as obrigações acessórias em papel por arquivos digitais (XML ou TXT), que são transmitidos ao Fisco com assinatura digital, garantindo a autoria e a integridade. III.A implementação do SPED tornou a fiscalização \"eletrônica\" mais eficiente, permitindo o cruzamento de dados em massa (ex: NF-e vs. EFD vs. Declarações de Cartão de Crédito) para identificar inconsistências e sonegação. Assinale a alternativa que apresenta apenas as proposições CORRETAS:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "I e III, apenas."
+      },
+      {
+        "id": "B",
+        "text": "I e II, apenas."
+      },
+      {
+        "id": "C",
+        "text": "I, II e III."
+      },
+      {
+        "id": "D",
+        "text": "II e III, apenas."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 12 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-13",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Constitucional e Administrativo",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Constitucional",
+      "Direito Administrativo"
+    ],
+    "enunciado": "13. Os instrumentos de planejamento orçamentário (Plano Plurianual - PPA, Lei de Diretrizes Orçamentárias - LDO e Lei Orçamentária Anual - LOA) são integrados e definidos no Art. 165 da Constituição Federal de 1988 (CF/88). Assinale a alternativa CORRETA sobre a função da LDO.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A LDO (Art. 165, § 2º) estabelece as metas e prioridades da administração para o exercício seguinte, orienta a elaboração da LOA, dispõe sobre alterações na legislação tributária e estabelece a política de fomento."
+      },
+      {
+        "id": "B",
+        "text": "A LDO é votada no segundo ano do mandato do Executivo e tem vigência de quatro anos, terminando no primeiro ano do mandato subsequente, estabelecendo o planejamento de médio prazo."
+      },
+      {
+        "id": "C",
+        "text": "A LOA (Art. 165, § 5º) estabelece as diretrizes e objetivos de médio prazo (4 anos), focando nos programas de duração continuada, como grandes obras de infraestrutura."
+      },
+      {
+        "id": "D",
+        "text": "O PPA (Art. 165, § 1º) é o instrumento que orienta a elaboração da LOA, define as metas fiscais anuais e autoriza a contratação de operações de crédito (ARO)."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 13 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-14",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Contabilidade Geral e Auditoria",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade",
+      "Auditoria"
+    ],
+    "enunciado": "14. A auditoria fiscal é o procedimento pelo qual a autoridade tributária verifica a correção dos pagamentos e declarações do sujeito passivo. Para isso, o auditor utiliza diversas técnicas de apuração. Assinale a alternativa CORRETA que descreve um procedimento válido de auditoria tributária.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A verificação física (exame de estoques, vistorias) e a análise documental (cruzamento de notas fiscais, livros contábeis e declarações acessórias, como EFD e NF-e) para identificar omissão de receita ou créditos indevidos."
+      },
+      {
+        "id": "B",
+        "text": "A intimação do contribuinte para que, obrigatoriamente, confesse o débito (obrigação principal), sob pena de enquadramento em crime de sonegação fiscal."
+      },
+      {
+        "id": "C",
+        "text": "O arbitramento da base de cálculo (Art. 148, CTN) como primeira opção de procedimento, dispensando o exame dos livros contábeis do contribuinte, mesmo que estes estejam regulares."
+      },
+      {
+        "id": "D",
+        "text": "A exigência de tributos com base exclusiva em denúncias anônimas, sem a realização de qualquer procedimento subsequente de verificação ou exame de documentos do contribuinte."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 14 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-15",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 15"
+    ],
+    "enunciado": "15. A atuação do Auditor Fiscal é pautada pelo princípio da legalidade estrita e por deveres éticos específicos, dada a sua função de constituir o crédito em nome do Estado. Assinale a alternativa CORRETA sobre a conduta ética do servidor fiscal.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A ética fiscal permite que o Auditor utilize informações obtidas na fiscalização (ex.: planos de expansão da empresa) para realizar investimentos pessoais na bolsa de valores, desde que não revele a informação a terceiros."
+      },
+      {
+        "id": "B",
+        "text": "O sigilo fiscal (Art. 198, CTN) é um dever ético que impede o Auditor de compartilhar informações do contribuinte, exceto se receber autorização do seu superior hierárquico para fins jornalísticos."
+      },
+      {
+        "id": "C",
+        "text": "O"
+      },
+      {
+        "id": "D",
+        "text": "O"
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 15 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-16",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "16. O Sistema Tributário Nacional (STN), delineado nos Artigos 145 a 162 da Constituição Federal de 1988 (CF/88), estabelece a arquitetura da tributação no Brasil. Sua finalidade é estruturar o exercício da competência tributária pelos entes federativos, garantindo a harmonia do sistema e os direitos dos contribuintes. Com base na CF/88, assinale a alternativa CORRETA sobre a finalidade do STN.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A finalidade do STN é centralizar a arrecadação de todos os impostos na União (Tesouro Nacional), que posteriormente os distribui aos Estados e Municípios por meio dos fundos de participação."
+      },
+      {
+        "id": "B",
+        "text": "O STN tem como finalidade exclusiva a repartição das receitas tributárias, não se ocupando da definição das espécies tributárias (impostos, taxas), que são de livre criação dos entes."
+      },
+      {
+        "id": "C",
+        "text": "O STN é regido por normas gerais estabelecidas em Lei Complementar, que visam dirimir conflitos de competência entre os entes federativos e regular as limitações constitucionais ao poder de tributar."
+      },
+      {
+        "id": "D",
+        "text": "A finalidade do STN é estabelecer as alíquotas máximas e mínimas de todos os tributos nacionais por meio de lei ordinária federal, uniformizando a carga tributária em todo o território."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 16 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-17",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Contabilidade Geral e Auditoria",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Contabilidade",
+      "Auditoria"
+    ],
+    "enunciado": "17. A gestão das finanças públicas exige a correta classificação das receitas e despesas. Com base nos conceitos da Lei Federal nº 4.320/1964, analise as afirmativas a seguir. I.Receitas Correntes são ingressos orçamentários que, em regra, representam aumento do patrimônio líquido da entidade, como impostos, taxas, contribuições e outras receitas similares, destinando-se predominantemente ao financiamento de Despesas Correntes. II.Receitas de Capital são ingressos orçamentários",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "II e III, apenas."
+      },
+      {
+        "id": "B",
+        "text": "I e III, apenas."
+      },
+      {
+        "id": "C",
+        "text": "I e II, apenas."
+      },
+      {
+        "id": "D",
+        "text": "I, II e III."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 17 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-18",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "18. A Contabilidade Aplicada ao Setor Público (CASP) foca no controle e informação sobre o patrimônio público. Um dos conceitos fundamentais é o tratamento das Variações Patrimoniais. Julgue os itens a seguir como (V) Verdadeiros ou (F) Falsos: (__)A Variação Patrimonial Aumentativa (VPA) ocorre quando há um aumento no Patrimônio Líquido (PL), como no reconhecimento de um imposto (fato gerador), que aumenta o Ativo (Direito a Receber) sem aumentar o Passivo. (__)A Variação Patrimonial Diminutiva (VPD) ocorre quando há uma redução no PL, como no consumo de material de almoxarifado ou na depreciação de um veículo. (__)A aquisição de um veículo à vista é uma Variação Patrimonial Aumentativa (VPA), pois o Ativo Imobilizado da entidade aumentou. (__)A contratação de um empréstimo (Operação de Crédito) é uma Variação Patrimonial Aumentativa (VPA), pois o Ativo (Caixa/Bancos) aumentou. Após análise, assinale a alternativa que apresenta a sequência CORRETA dos itens acima, de cima para baixo:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "V, V, F, F."
+      },
+      {
+        "id": "B",
+        "text": "V, F, V, F."
+      },
+      {
+        "id": "C",
+        "text": "V, V, V, F."
+      },
+      {
+        "id": "D",
+        "text": "F, F, V, V."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 18 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-19",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 19"
+    ],
+    "enunciado": "19. O Orçamento Público no Brasil é regido por princípios que visam garantir sua clareza, universalidade e controle. Sobre esses princípios, assinale a alternativa CORRETA.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "O Princípio da Universalidade estabelece que a lei orçamentária não pode conter dispositivo estranho à previsão da receita e fixação da despesa (princípio da pureza)."
+      },
+      {
+        "id": "B",
+        "text": "O Princípio do Orçamento Bruto (Art. 6º, Lei 4.320/64) permite que as receitas e despesas sejam computadas pelos seus valores líquidos, sendo permitida a dedução de despesas (ex.: custos) na própria previsão da receita."
+      },
+      {
+        "id": "C",
+        "text": "O Princípio da Unidade (ou Totalidade) estabelece que o orçamento deve ser uno, havendo uma única lei orçamentária (LOA) em cada esfera de governo (União, Estados, Municípios), integrando os orçamentos fiscal, da seguridade social e de investimento das estatais (Art. 165, § 5º, CF/88)."
+      },
+      {
+        "id": "D",
+        "text": "O Princípio da Anualidade (ou Periodicidade) estabelece que o orçamento deve ter vigência superior a um ano (médio prazo), sendo essa a função do Plano Plurianual (PPA)."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 19 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-20",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário e Legislação Municipal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário",
+      "Legislação Tributária"
+    ],
+    "enunciado": "20. Atos administrativos são as manifestações unilaterais de vontade da Administração Pública que produzem efeitos jurídicos. Eles são classificados quanto ao grau de liberdade do agente. Julgue os itens a seguir como (V) Verdadeiros ou (F) Falsos: (__)O ato vinculado é aquele em que a lei define todos os elementos (competência, forma, finalidade, motivo e objeto), não havendo margem de escolha (mérito) para o agente. (__)O ato discricionário é aquele em que a lei confere ao agente certa margem de liberdade para avaliar a conveniência e a oportunidade (mérito) da prática do ato. (__)O ato vinculado (ex.: lançamento tributário) não pode ser controlado pelo Poder Judiciário, pois o juiz não pode interferir na Administração. (__)O ato discricionário, como a autorização de uso de bem público, pode ter seu mérito (juízo de conveniência e oportunidade) reapreciado apenas pela própria Administração, por meio da revogação, cabendo ao Poder Judiciário exclusivamente o controle de legalidade, sem adentrar o mérito administrativo. Após análise, assinale a alternativa que apresenta a sequência CORRETA dos itens acima, de cima para baixo:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "V, V, F, V."
+      },
+      {
+        "id": "B",
+        "text": "V, V, V, F."
+      },
+      {
+        "id": "C",
+        "text": "F, F, V, V."
+      },
+      {
+        "id": "D",
+        "text": "V, F, V, F."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 20 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-21",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 21"
+    ],
+    "enunciado": "21. Com base na leitura analítica do texto \"Letra e melodia\", avalie as afirmativas a seguir quanto à presença de ideias implícitas, inferência e construção argumentativa. I.Ao revelar a descoberta tardia do sentido da canção da infância, o narrador expõe uma contradição entre experiência estética e compreensão racional, sugerindo que a linguagem musical transcende os limites do entendimento literal. II.O vínculo entre a canção \"Africa\", do Toto, e a memória afetiva da infância permite inferir que a música opera como mecanismo de evocação emocional, ainda que seu conteúdo semântico seja desconhecido pelo sujeito. III.A crítica velada às canções com \"letras de abobrinha\" denuncia uma visão elitista da produção musical popular, sugerindo que o apreço musical legítimo requer sofisticação lírica e maturidade interpretativa. IV.A menção à canção \"Como nossos pais\", associada à dor compreendida apenas com o tempo, sugere que a profundidade poética de certos textos musicais exige a vivência do sofrimento para que se revele por completo. É correto o que se afirma em:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "I, II, III e IV."
+      },
+      {
+        "id": "B",
+        "text": "I, II e III, apenas."
+      },
+      {
+        "id": "C",
+        "text": "I, III e IV, apenas."
+      },
+      {
+        "id": "D",
+        "text": "I, II e IV, apenas."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 21 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-22",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 22"
+    ],
+    "enunciado": "22. Segundo o Acordo Ortográfico da Língua Portuguesa, levam acento agudo as chamadas proparoxítonas aparentes, isto é, palavras cuja sílaba tônica apresenta vogais abertas grafadas a, e, o — e também i e u — ou ainda ditongo oral iniciado por vogal aberta, e que terminam em sequências vocálicas pós-tônicas geralmente interpretadas como ditongos crescentes. Nesse contexto, assinale a alternativa cuja palavra em destaque NÃO foi acentuada seguindo essa regra:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Minha mãe sempre foi fã dos hits dos anos 80 e 90, o tipo de música que todo mundo na minha família gosta."
+      },
+      {
+        "id": "B",
+        "text": "Não lembro uma cena marcante sequer, mas a música de abertura está tatuada em minha mente."
+      },
+      {
+        "id": "C",
+        "text": "Às vezes acontece o contrário: você descobre que a música que amava fala um bocado de abobrinhas."
+      },
+      {
+        "id": "D",
+        "text": "Ninguém precisa entender qualquer língua para sentir um arrepio com os acordes iniciais de Africa, do Toto."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 22 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-23",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 23"
+    ],
+    "enunciado": "23. No período \"Talvez bom mesmo seja isso: amar algo mesmo sem compreendê-lo, permitir que desperte afeto, como uma criança que se apaixona pela melodia sem fazer ideia do que ela diz\", duas orações subordinadas introduzidas pelo termo \"que\" podem ser analisadas sob a perspectiva da gramática normativa. Com base na estrutura sintática e no valor semântico dessas orações, pode-se afirmar que:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A oração \"que desperte afeto\" é uma oração subordinada substantiva objetiva direta, pois completa o sentido do verbo \"permitir\", enquanto \"que se apaixona pela melodia\" é uma oração subordinada adjetiva restritiva, por qualificar \"criança\"."
+      },
+      {
+        "id": "B",
+        "text": "Ambas as orações introduzidas pelo pronome \"que\" são subordinadas adjetivas restritivas, pois"
+      },
+      {
+        "id": "C",
+        "text": "Ambas são subordinadas substantivas: a primeira, objetiva direta, por complementar o verbo \"permitir\"; a segunda, subjetiva, pois exprime um sentimento genérico aplicável a qualquer sujeito, caracterizando-se como indeterminação do agente."
+      },
+      {
+        "id": "D",
+        "text": "A oração \"que desperte afeto\" é uma subordinada adjetiva explicativa, pois acrescenta uma característica acessória ao termo \"algo\", enquanto \"que se apaixona pela melodia\" é uma subordinada substantiva subjetiva, uma vez que o sujeito da oração é indeterminado."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 23 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-24",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Língua Portuguesa",
+      "Interpretação e Gramática"
+    ],
+    "enunciado": "24. A expressão \"Às vezes\", no trecho \"Às vezes acontece o contrário\", está corretamente acentuada com o uso do acento grave indicativo da crase. Com base nas regras da norma culta da Língua Portuguesa sobre o uso do acento indicativo de crase, assinale a alternativa correta.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A ocorrência da crase em \"às vezes\" é obrigatória, pois a expressão é formada por um substantivo feminino no plural precedido de determinante, independentemente da função sintática que exerce na frase."
+      },
+      {
+        "id": "B",
+        "text": "A expressão \"às vezes\" não comportaria o uso de crase se estivesse no início da oração, pois a preposição \"a\" não seria exigida nesse con"
+      },
+      {
+        "id": "C",
+        "text": "A crase empregada na locução \"às vezes\" justifica-se porque ela se constitui como locução adverbial de tempo, formada por preposição exigida pelo verbo e artigo definido feminino no plural que acompanha o substantivo \"vezes\"."
+      },
+      {
+        "id": "D",
+        "text": "O uso da crase em \"às vezes\" é opcional, pois a expressão equivale semanticamente a \"algumas vezes\" ou \"em certas ocasiões\", o que dispensa o emprego de preposição antecedente."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 24 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-25",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 25"
+    ],
+    "enunciado": "25. Considere o seguinte trecho do texto-base: \"Essa música, minha preferida, remete a tardes com minha mãe, quando eu não entendia nada do que dizia — e ainda assim já a amava.\" Acerca dos aspectos estilísticos e normativos dessa construção, e considerando os vícios de linguagem clássicos, assinale a alternativa correta.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "O trecho apresenta um caso de ambiguidade sintática quanto ao pronome \"a\" em \"já a amava\", pois não se distingue se o referente é \"a mãe\" ou \"a música\", o que compromete a clareza do enunciado e caracteriza um vício de linguagem."
+      },
+      {
+        "id": "B",
+        "text": "A expressão \"quando eu não entendia nada do que dizia\" caracteriza um solecismo de regência, pois o verbo \"entender\" não pode ser usado com objeto direto de sentido genérico, sendo necessário o uso de preposição para evitar erro gramatical."
+      },
+      {
+        "id": "C",
+        "text": "O emprego da locução \"ainda assim\" constitui um pleonasmo vicioso, pois repete indevidamente a ideia já expressa pelo advérbio \"quando\", gerando uma redundância sintática condenada pelas gramáticas normativas."
+      },
+      {
+        "id": "D",
+        "text": "A forma \"essa música, minha preferida\" apresenta um desvio de concordância, visto que o uso do demonstrativo \"essa\" no início e do possessivo \"minha\" após o substantivo cria um paralelismo falho, caracterizando solecismo de colocação."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 25 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-26",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 26"
+    ],
+    "enunciado": "26. Analise sintaticamente o período \"Quem não achava a melodia de 'Como nossos pais' bonita quando era pequeno?\" e, com base na classificação dos tipos de predicado e das funções do predicativo, assinale a alternativa correta.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "O período apresenta predicado verbo-nominal, pois o verbo \"achar\" é transitivo direto-predicativo, exigindo objeto direto (\"a melodia de 'Como nossos pais'\") e atribuindo-lhe uma característica (\"bonita\"), a qual funciona como predicativo do sujeito."
+      },
+      {
+        "id": "B",
+        "text": "A construção apresenta um predicado verbo-nominal, uma vez que o verbo \"achar\", transitivo direto-predicativo, exige complemento (\"a melodia...\") e ao mesmo tempo atribui uma qualidade ao objeto direto por meio do predicativo do objeto \"bonita\"."
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de um predicado verbal, pois o verbo \"achar\" é transitivo direto e introduz um complemento sem atribuição de qualidade, e o termo \"bonita\" funciona como adjunto adnominal."
+      },
+      {
+        "id": "D",
+        "text": "O predicado é nominal, pois o termo \"bonita\" caracteriza um substantivo em função de núcleo da oração, e o verbo \"achar\" atua como verbo de ligação, ligando o sujeito \"quem\" ao atributo conferido à melodia."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 26 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-27",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Língua Portuguesa",
+      "Interpretação e Gramática"
+    ],
+    "enunciado": "27. Com base na norma culta da Língua Portuguesa e na função sintática e estilística dos sinais de pontuação empregados no trecho \"A letra dizia: 'Ei, criança, não venda seus sonhos tão cedo. Para onde você olhar haverá um coração, alguém para dar a mão'\", é correto afirmar que:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "As aspas que delimitam o trecho \"Ei, criança...\" são utilizadas para destacar uma expressão informal do narrador, funcionando como marca de ênfase e de subjetividade emotiva."
+      },
+      {
+        "id": "B",
+        "text": "A vírgula após a interjeição \"Ei, criança\" é obrigatória, pois isola o vocativo e evita ambiguidade entre o apelo e o restante da mensagem expressa."
+      },
+      {
+        "id": "C",
+        "text": "O uso dos dois-pontos após o verbo \"dizia\" é facultativo e poderia ser substituído por vírgula sem prejuízo da correção sintática ou da clareza do enunciado."
+      },
+      {
+        "id": "D",
+        "text": "A vírgula que antecede o trecho \"alguém para dar a"
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 27 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-28",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 28"
+    ],
+    "enunciado": "28. Com base na norma culta da Língua Portuguesa e na análise sintática da oração \"Sempre me considerei do grupo que gosta da poesia dos versos\", assinale a alternativa que apresenta uma interpretação tecnicamente correta sobre a colocação pronominal empregada.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A próclise é incorreta nesse con"
+      },
+      {
+        "id": "B",
+        "text": "A presença do advérbio \"sempre\" no início da oração atua como fator de atração pronominal, justificando a próclise como construção gramatical preferencial na variedade padrão da língua."
+      },
+      {
+        "id": "C",
+        "text": "O verbo \"considerei\", por estar flexionado no pretérito perfeito, obriga o uso da próclise para evitar ambiguidade interpretativa e preservar a transitividade da estrutura oracional."
+      },
+      {
+        "id": "D",
+        "text": "O emprego da próclise é justificado exclusivamente pela presença do pronome reflexivo \"me\", cuja natureza exige posicionamento anterior ao verbo em todos os tempos e modos."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 28 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-29",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Língua Portuguesa",
+      "Interpretação e Gramática"
+    ],
+    "enunciado": "29. No trecho \"Cinco crianças se sentavam para assistir ao seriado favorito...\", o emprego da forma verbal \"assistir\" obedece à norma culta quanto à regência verbal. Considerando os diferentes usos e regências possíveis do verbo \"assistir\" na Língua Portuguesa, assinale a alternativa correta.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A preposição \"a\" antes de \"seriado\" é exigida porque o verbo \"assistir\", no sentido de \"ver\", é transitivo indireto, sendo esse o emprego normativo consagrado na tradição gramatical."
+      },
+      {
+        "id": "B",
+        "text": "A construção \"assistir ao seriado\" está gramaticalmente correta, pois o verbo \"assistir\", no sentido de \"ver televisão, espetáculo ou evento\", exige objeto direto conforme uso consagrado pelas gramáticas normativas."
+      },
+      {
+        "id": "C",
+        "text": "O uso do artigo definido masculino \"o\" após a preposição \"a\" forma uma estrutura incorreta, pois a fusão dessas palavras não ocorre com nomes comuns, apenas com nomes próprios masculinos, como em \"assistir ao Carlos\"."
+      },
+      {
+        "id": "D",
+        "text": "O verbo \"assistir\", com o sentido de \"ver\" ou \"presenciar\", exige objeto direto, portanto o uso da preposição \"a\" em \"assistir ao seriado\" configura erro de regência na norma-padrão."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 29 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-30",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 30"
+    ],
+    "enunciado": "30. No trecho \"Essa música, minha preferida, remete a tardes com minha mãe, quando eu não entendia nada do que dizia — e ainda assim já a amava\", são empregados recursos coesivos e enunciativos que contribuem para a progressão e para a coerência do texto, uma vez que:",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "o termo \"essa\", por sua natureza demonstrativa, estabelece coesão catafórica ao antecipar um referente que será explicitado posteriormente; por sua vez, \"ainda assim\" opera como conector condicional, introduzindo uma hipótese contraditória à expectativa estabelecida."
+      },
+      {
+        "id": "B",
+        "text": "o emprego do pronome demonstrativo \"essa\" estabelece coesão referencial anafórica, pois retoma uma música mencionada anteriormente no"
+      },
+      {
+        "id": "C",
+        "text": "a referência do pronome \"essa\" é de natureza anafórica, pois retoma um elemento anteriormente mencionado, reforçando a coesão textual; já a locução \"ainda assim\" possui valor concessivo, expressando a ideia de contraste entre o desconhecimento do conteúdo e o sentimento de afeto."
+      },
+      {
+        "id": "D",
+        "text": "o uso do pronome \"essa\" contribui para a progressão temática por meio da coesão lexical reiterativa, enquanto a expressão \"ainda assim\" atua como marcador conclusivo, sintetizando o argumento anterior com finalidade explicativa. Conhecimentos Gerais"
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 30 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-31",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Legislação Municipal e Ética Pública",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Legislação Municipal",
+      "Ética no Serviço Público"
+    ],
+    "enunciado": "31. A Lei Orgânica de Itapiranga/SC diz que \"o serviço público de água e esgoto é atribuição precípua do Município, que deverá estendê-lo progressivamente a toda a população\". Tal afirmação decorre de um dos incisos que definem as competências do município. Qual das alternativas abaixo cita o texto do inciso ao qual esta questão se refere?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Organizar e prestar, diretamente ou sob regime de concessão ou permissão, os serviços públicos."
+      },
+      {
+        "id": "B",
+        "text": "Organizar e prestar diretamente e de maneira exclusiva os serviços públicos."
+      },
+      {
+        "id": "C",
+        "text": "Organizar sob regime de concessão exclusiva a cada comunidade a obrigação de prestar os serviços públicos."
+      },
+      {
+        "id": "D",
+        "text": "Organizar e prestar sob regime de concessão ou permissão os serviços públicos, sendo vedado o seu envolvimento direto."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 31 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-32",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Legislação Municipal e Ética Pública",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Legislação Municipal",
+      "Ética no Serviço Público"
+    ],
+    "enunciado": "32. Segundo o Estatuto dos Servidores Públicos do Município de Itapiranga, o servidor nomeado para cargo de provimento efetivo em virtude de concurso público adquire estabilidade após três anos de efetivo exercício no cargo e, sendo estável, só perderá o cargo em condições específicas. Entre os itens abaixo, qual NÃO",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "Mediante procedimento de avaliação periódica de desempenho, na forma da lei, assegurada ampla defesa."
+      },
+      {
+        "id": "B",
+        "text": "Mediante processo administrativo, em que lhe seja assegurada ampla defesa."
+      },
+      {
+        "id": "C",
+        "text": "Em virtude de sentença judicial transitada em julgado."
+      },
+      {
+        "id": "D",
+        "text": "Em virtude da necessidade imperativa dos organismos públicos."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 32 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-33",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 33"
+    ],
+    "enunciado": "33. A organização territorial de Itapiranga/SC combina atividades rurais diversificadas com um setor urbano em expansão, produzindo fluxos econômicos que integram pequenas propriedades, agroindústrias e serviços locais. Essa configuração influencia padrões de mobilidade, uso do solo e relações com municípios vizinhos, gerando desafios de ordenamento territorial. Nesse contexto, qual fator se destaca como característica central dessa dinâmica municipal?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "As zonas rural e urbana permanecem desconectadas, sem interação econômica relevante."
+      },
+      {
+        "id": "B",
+        "text": "A predominância de grandes propriedades rurais inviabiliza a circulação de bens e serviços."
+      },
+      {
+        "id": "C",
+        "text": "A economia municipal é centralizada exclusivamente em atividades mineradoras."
+      },
+      {
+        "id": "D",
+        "text": "A articulação entre a agricultura familiar e as agroindústrias impulsiona a economia regional."
+      }
+    ],
+    "gabarito": "B",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (B) É A CORRETA:\nQuestão 33 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-34",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 34"
+    ],
+    "enunciado": "34. Desde a redemocratização, o Brasil tem assistido à ampliação e à diversificação dos movimentos sociais, que incluem mobilizações institucionalizadas e coletivos de ação direta. Manifestações como Diretas Já, Caras-Pintadas, MST, MTST, movimentos negros, pautas LGBTQIA+ e grupos como os Black Blocs ilustram essa pluralidade de reivindicações e métodos. Considerando esse cenário, qual característica descreve adequadamente esse conjunto de mobilizações?",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A concentração exclusiva das mobilizações em agendas estudantis, sem participação de setores rurais, urbanos ou comunitários."
+      },
+      {
+        "id": "B",
+        "text": "A predominância de mobilizações homogêneas, com estratégias padronizadas e sem reivindicações identitárias."
+      },
+      {
+        "id": "C",
+        "text": "A substituição completa dos movimentos tradicionais por grupos sem articulação com instituições ou pautas sociais."
+      },
+      {
+        "id": "D",
+        "text": "A coexistência de movimentos institucionalizados e coletivos de ação direta, que ampliaram pautas democráticas, identitárias e sociais em diferentes esferas públicas."
+      }
+    ],
+    "gabarito": "D",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (D) É A CORRETA:\nQuestão 34 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  },
+  {
+    "id": "q-auditor_fiscal_tributario-35",
+    "banca": "FGV",
+    "ano": 2023,
+    "orgao": "Secretaria da Fazenda",
+    "cargo": "Auditor Fiscal Tributário",
+    "disciplina": "Direito Tributário, Processo Administrativo Fiscal",
+    "assunto": "Questões de Concurso",
+    "subtopicos": [
+      "Direito Tributário, Processo Administrativo Fiscal",
+      "Questão 35"
+    ],
+    "enunciado": "35. Em 2025, o Brasil discutiu intensamente o impacto social da inteligência artificial (IA), incluindo riscos de desigualdade, privacidade e segurança digital. Considerando esse cenário de políticas públicas, assinale a alternativa que evidencia um fato que permeia esse tema no Brasil.",
+    "alternativas": [
+      {
+        "id": "A",
+        "text": "A IA já está totalmente regulada no Brasil, sem necessidade de novos debates."
+      },
+      {
+        "id": "B",
+        "text": "A expansão da IA dispensa investimentos públicos em pesquisa e educação."
+      },
+      {
+        "id": "C",
+        "text": "A regulação da IA pode negligenciar diversidade, privacidade e equidade, ampliando desigualdades já existentes."
+      },
+      {
+        "id": "D",
+        "text": "A adoção da IA no setor público elimina todos os riscos sociais e tecnológicos."
+      }
+    ],
+    "gabarito": "A",
+    "explicacao": "🎯 POR QUE A ALTERNATIVA (A) É A CORRETA:\nQuestão 35 da prova oficial de Auditor Fiscal Tributário (FGV). Resposta oficial homologada pela banca examinadora.",
+    "baseLegal": "Gabarito Oficial FGV.",
+    "fontePesquisa": "Edital e Caderno Oficial de Prova Secretaria da Fazenda - 2023",
+    "dificuldade": "médio"
+  }
+]
