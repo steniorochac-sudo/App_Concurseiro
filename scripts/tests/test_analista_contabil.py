@@ -3,6 +3,7 @@ import json
 import os
 import fitz
 import sys
+import re
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from exam_mappings import PROVAS_DIR, GABARITOS_DIR, OUTPUT_DIR
@@ -23,13 +24,16 @@ class TestAnalistaContabilExam(unittest.TestCase):
     def test_schema_version_and_exam_meta(self):
         self.assertEqual(self.data.get('schemaVersion'), '2.0')
         exam = self.data['exam']
-        self.assertEqual(exam['banca'], 'QUADRIX')
+        self.assertEqual(exam['banca'], 'Instituto Quadrix')
         self.assertEqual(exam['cargo'], 'Analista Contábil')
         self.assertEqual(exam['codigoCargo'], '402')
         self.assertEqual(exam['totalQuestoes'], 120)
         self.assertEqual(exam['totalAnuladas'], 0)
         self.assertEqual(exam['formatoQuestoes'], 'certo_errado')
-        self.assertTrue(exam['homologado'])
+        # Gabarito is preliminar -> homologado must be False
+        self.assertFalse(exam['homologado'])
+        self.assertEqual(exam['auditTrail']['tipoGabarito'], 'preliminar')
+        self.assertEqual(exam['auditTrail']['statusAuditoria'], 'fidelidade_documental_aprovada_gabarito_preliminar')
 
     def test_all_120_items_present_and_unique(self):
         questoes = self.data['questoes']
@@ -50,53 +54,140 @@ class TestAnalistaContabilExam(unittest.TestCase):
             self.assertEqual(q['alternativas'][1]['id'], 'E')
             self.assertEqual(q['alternativas'][1]['text'], 'ERRADO')
             self.assertIn(q['gabaritoOficial'], ['C', 'E'])
+            self.assertEqual(q['gabaritoStatus'], 'preliminar')
 
-    def test_blind_pdf_text_match(self):
-        """Verifica se palavras-chave de cada questão existem no PDF original na página correta."""
-        for q in self.data['questoes']:
-            num = q['numeroOriginal']
-            page_no = q['metadados']['paginaOrigem']
-            page_text = self.p_doc[page_no - 1].get_text()
-            
-            # Extract first 4 words of the enunciado
-            words = q['enunciado'].split()[:4]
-            sample = " ".join(words)
-            # Normalize whitespace/hyphens
-            norm_sample = sample.replace('\xa0', ' ').replace('‑', '-')
-            norm_page = page_text.replace('\xa0', ' ').replace('‑', '-')
-            
-            self.assertIn(words[0], norm_page, f"Item {num} (p{page_no}): primeira palavra '{words[0]}' não encontrada no PDF!")
-
-    def test_gabarito_cross_check(self):
-        """Cruza respostas com o gabarito oficial da Seção 2.4."""
-        g_full = ""
-        for p in self.g_doc:
-            g_full += p.get_text() + "\n"
-        start_idx = g_full.find("2.4 ANALISTA CONTÁBIL (CÓDIGO 402)")
-        end_idx = g_full.find("2.5", start_idx)
-        sec_text = g_full[start_idx:end_idx]
-        lines_g = [l.strip() for l in sec_text.splitlines() if l.strip() and not l.startswith('2.4')]
+    def test_gabarito_cross_check_and_distribution(self):
+        """Cruza respostas com o gabarito oficial da Seção 2.4 do PDF."""
+        p2_g = self.g_doc[1].get_text()
+        start_idx = p2_g.find("2.4 ANALISTA CONTÁBIL (CÓDIGO 402)")
+        end_idx = p2_g.find("2.5", start_idx)
+        if end_idx == -1:
+            end_idx = p2_g.find("2.6", start_idx)
+        sec_text = p2_g[start_idx:end_idx]
+        lines_g = [l.strip() for l in sec_text.splitlines() if l.strip()]
         
         answers = {}
-        i = 0
-        while i < len(lines_g):
-            if lines_g[i].isdigit():
-                nums = []
-                while i < len(lines_g) and lines_g[i].isdigit():
-                    nums.append(int(lines_g[i]))
-                    i += 1
-                ans = []
-                while i < len(lines_g) and lines_g[i] in ['C', 'E', 'X']:
-                    ans.append(lines_g[i])
-                    i += 1
-                for n, a in zip(nums, ans):
+        idx = 1
+        while idx < len(lines_g):
+            if lines_g[idx].isdigit():
+                num_block = []
+                while idx < len(lines_g) and lines_g[idx].isdigit():
+                    num_block.append(int(lines_g[idx]))
+                    idx += 1
+                ans_block = []
+                while idx < len(lines_g) and lines_g[idx] in ['C', 'E', 'X']:
+                    ans_block.append(lines_g[idx])
+                    idx += 1
+                for n, a in zip(num_block, ans_block):
                     answers[n] = a
             else:
-                i += 1
+                idx += 1
                 
+        self.assertEqual(len(answers), 120)
+        c_count = sum(1 for a in answers.values() if a == 'C')
+        e_count = sum(1 for a in answers.values() if a == 'E')
+        self.assertEqual(c_count, 60)
+        self.assertEqual(e_count, 60)
+
         for q in self.data['questoes']:
             num = q['numeroOriginal']
             self.assertEqual(q['gabaritoOficial'], answers[num], f"Divergência de gabarito no item {num}!")
+
+    def test_rigorous_full_text_normalized_containment(self):
+        """Verifica se segmentos representativos do texto de cada questão existem no PDF original na página correta."""
+        def normalize_str(s):
+            # Normalize whitespace, hyphens, and quotes
+            s = s.replace('\xa0', ' ').replace('‑', '-').replace('–', '-').replace('“', '"').replace('”', '"')
+            s = re.sub(r'\s+', ' ', s)
+            return s.strip()
+
+        for q in self.data['questoes']:
+            num = q['numeroOriginal']
+            page_no = q['metadados']['paginaOrigem']
+            page_text = normalize_str(self.p_doc[page_no - 1].get_text())
+            enunciado = normalize_str(q['enunciado'])
+            
+            # Extract first 6 words and middle 6 words
+            words = enunciado.split()
+            first_phrase = " ".join(words[:min(6, len(words))])
+            self.assertIn(first_phrase, page_text, f"Item {num} (p.{page_no}): frase inicial '{first_phrase}' não encontrada no PDF!")
+            
+            if len(words) > 12:
+                mid_start = len(words) // 2
+                mid_phrase = " ".join(words[mid_start:mid_start+5])
+                self.assertIn(mid_phrase, page_text, f"Item {num} (p.{page_no}): frase intermediária '{mid_phrase}' não encontrada no PDF!")
+
+    def test_regression_audit_defects(self):
+        """Testes específicos de regressão para os 7 itens apontados na auditoria externa."""
+        qmap = {q['numeroOriginal']: q for q in self.data['questoes']}
+
+        # Q2: Deve ser sobre imperativo 'veja' e interatividade; NÃO estatística
+        q2 = qmap[2]
+        self.assertIn("No título, a forma “veja”, por estar no imperativo", q2['enunciado'])
+        self.assertNotIn("desvio padrão", q2['enunciado'])
+        self.assertNotIn("nova média", q2['enunciado'])
+
+        # Q3: Deve ser sobre pronome reflexivo 'se'; NÃO direito imobiliário / 50%
+        q3 = qmap[3]
+        self.assertIn("A palavra “se”, no trecho", q3['enunciado'])
+        self.assertIn("pronome reflexivo", q3['enunciado'])
+        self.assertNotIn("direito de família", q3['enunciado'])
+        self.assertNotIn("50%", q3['enunciado'])
+
+        # Q6: Deve terminar em 'subordinada adverbial temporal.' sem fragmento de apoio 'Internet:...'
+        q6 = qmap[6]
+        self.assertTrue(q6['enunciado'].endswith("classifica‑se como subordinada adverbial temporal.") or q6['enunciado'].endswith("classifica-se como subordinada adverbial temporal."))
+        self.assertNotIn("Internet: <www.g1.globo.com>", q6['enunciado'])
+
+        # Q23: Não deve conter texto de apoio dos 3 anos
+        q23 = qmap[23]
+        self.assertEqual(q23['enunciado'], "Se um processo não é atendido pela dra. Barros, então ele envolverá direito de família.")
+        self.assertNotIn("Um advogado especializado", q23['enunciado'])
+
+        # Q24: Não deve estar truncado
+        q24 = qmap[24]
+        self.assertIn("últimos 3 anos", q24['enunciado'])
+        self.assertTrue(q24['enunciado'].endswith("processos de direito imobiliário foi igual a 60."))
+
+        # Q25: Não deve estar truncado
+        q25 = qmap[25]
+        self.assertIn("Escolhendo aleatoriamente", q25['enunciado'])
+        self.assertTrue(q25['enunciado'].endswith("direito do consumidor será maior que 50%."))
+
+        # Q30: Não deve estar truncado
+        q30 = qmap[30]
+        self.assertIn("forem somados 2 meses", q30['enunciado'])
+        self.assertTrue(q30['enunciado'].endswith("desvio padrão não será alterado."))
+
+        # Q82: Não deve estar truncado
+        q82 = qmap[82]
+        self.assertIn("A Lei nº", q82['enunciado'])
+        self.assertTrue(q82['enunciado'].endswith("alienação de controle."))
+
+    def test_shared_context_association(self):
+        """Verifica se os blocos contextuais compartilhados estão devidamente vinculados."""
+        qmap = {q['numeroOriginal']: q for q in self.data['questoes']}
+
+        # Q1-Q20: Texto 1 (morte do contador)
+        for i in range(1, 21):
+            self.assertEqual(qmap[i]['textoCompartilhado']['id'], 'quadrix-crcsp-texto-1')
+            self.assertIn("Polícia de SP investiga", qmap[i]['textoCompartilhado']['title'])
+            self.assertIn("Internet: <www.g1.globo.com>", qmap[i]['textoCompartilhado']['content'])
+
+        # Q21-Q23: Regras Dr. Andrade, Barros, Costa
+        for i in range(21, 24):
+            self.assertEqual(qmap[i]['textoCompartilhado']['id'], 'quadrix-crcsp-context-2')
+            self.assertIn("Dr. Andrade", qmap[i]['textoCompartilhado']['content'])
+
+        # Q24-Q26: Estatísticas 3 anos
+        for i in range(24, 27):
+            self.assertEqual(qmap[i]['textoCompartilhado']['id'], 'quadrix-crcsp-context-3')
+            self.assertIn("40% dos processos", qmap[i]['textoCompartilhado']['content'])
+
+        # Q27-Q30: Amostra 10 processos
+        for i in range(27, 31):
+            self.assertEqual(qmap[i]['textoCompartilhado']['id'], 'quadrix-crcsp-context-4')
+            self.assertIn("8, 12, 9, 15, 10, 8, 11, 14, 10, 13", qmap[i]['textoCompartilhado']['content'])
 
 if __name__ == '__main__':
     unittest.main()

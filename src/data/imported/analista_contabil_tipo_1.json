@@ -14,15 +14,16 @@
     "formatoQuestoes": "multipla_escolha_5",
     "totalQuestoes": 70,
     "totalAnuladas": 0,
-    "homologado": true,
+    "homologado": false,
     "auditTrail": {
       "arquivoProvaPdf": "analista_contabil_tipo_1.pdf",
       "arquivoGabaritoPdf": "gabarito_analista_contabil_tipo_1.pdf",
       "secaoGabarito": "Analista da Defensoria Pública - Analista Contábil – Tipo 1",
       "paginaGabarito": 1,
       "tipoGabarito": "preliminar",
+      "statusAuditoria": "fidelidade_documental_aprovada_gabarito_preliminar",
       "responsavelAuditoria": "Antigravity AI Agent",
-      "dataHomologacao": "2026-11-04"
+      "dataAuditoria": "2026-11-04"
     }
   },
   "questoes": [
@@ -30,7 +31,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q01",
       "numeroOriginal": 1,
       "tipo": "multipla_escolha",
-      "enunciado": "Segundo o expresso no texto 1, depreende-se que o autor do\ntexto:",
+      "enunciado": "Segundo o expresso no texto 1, depreende-se que o autor do texto:",
       "alternativas": [
         {
           "id": "A",
@@ -54,7 +55,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -79,7 +80,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q02",
       "numeroOriginal": 2,
       "tipo": "multipla_escolha",
-      "enunciado": "O\nautor\ndo\ntexto\n1\napela\npara\nalgumas\nestratégias\nargumentativas; a estratégia identificada de forma correta e\nadequada ao texto é:",
+      "enunciado": "O autor do texto 1 apela para algumas estratégias argumentativas; a estratégia identificada de forma correta e adequada ao texto é:",
       "alternativas": [
         {
           "id": "A",
@@ -103,7 +104,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -115,7 +116,7 @@
           "Semântica"
         ],
         "paginaOrigem": 2,
-        "temSublinhado": true,
+        "temSublinhado": false,
         "temLacunas": false
       },
       "textoCompartilhado": {
@@ -128,7 +129,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q03",
       "numeroOriginal": 3,
       "tipo": "multipla_escolha",
-      "enunciado": "“Se no banco da escola ou no banco dos réus. Anteontem, o\nCongresso Nacional sinalizou que prefere a segunda opção”.\nA forma correta dos demonstrativos na substituição do termo\nsublinhado é:",
+      "enunciado": "“Se no banco da escola ou no banco dos réus. Anteontem, o Congresso Nacional sinalizou que prefere a segunda opção”. A forma correta dos demonstrativos na substituição do termo sublinhado é:",
       "alternativas": [
         {
           "id": "A",
@@ -152,7 +153,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -177,7 +178,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q04",
       "numeroOriginal": 4,
       "tipo": "multipla_escolha",
-      "enunciado": "A charge abaixo, publicada no jornal O Dia (PI) em 1 de abril de\n2015, produz humor apoiada numa figura de linguagem expressa\ngraficamente, figura essa denominada:",
+      "enunciado": "A charge abaixo, publicada no jornal O Dia (PI) em 1 de abril de 2015, produz humor apoiada numa figura de linguagem expressa graficamente, figura essa denominada:\n\n![Charge](/assets/exams/analista_contabil_tipo_1/q04_charge.png)",
       "alternativas": [
         {
           "id": "A",
@@ -201,7 +202,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -216,6 +217,9 @@
         "temSublinhado": false,
         "temLacunas": false
       },
+      "imagens": [
+        "/assets/exams/analista_contabil_tipo_1/q04_charge.png"
+      ],
       "textoCompartilhado": {
         "id": "fgv-dpero-texto-1",
         "title": "TEXTO 1 – O mito da maioridade penal",
@@ -226,7 +230,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q05",
       "numeroOriginal": 5,
       "tipo": "multipla_escolha",
-      "enunciado": "A charge acima, do caricaturista Samuca, publicada no Diário de\nPernambuco em 1 de abril de 2015, expõe um dos pontos de\nvista sobre a redução da maioridade penal, que pode ser\nexpresso na seguinte frase:",
+      "enunciado": "A charge acima, do caricaturista Samuca, publicada no Diário de Pernambuco em 1 de abril de 2015, expõe um dos pontos de vista sobre a redução da maioridade penal, que pode ser expresso na seguinte frase:",
       "alternativas": [
         {
           "id": "A",
@@ -250,7 +254,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -275,7 +279,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q06",
       "numeroOriginal": 6,
       "tipo": "multipla_escolha",
-      "enunciado": "Abaixo foram transcritos trechos de cartas de leitores de um\njornal sobre a maioridade penal; a opção cujo posicionamento\ncontraria especificamente uma afirmação do texto 1 é:",
+      "enunciado": "Abaixo foram transcritos trechos de cartas de leitores de um jornal sobre a maioridade penal; a opção cujo posicionamento contraria especificamente uma afirmação do texto 1 é:",
       "alternativas": [
         {
           "id": "A",
@@ -299,7 +303,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -324,7 +328,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q07",
       "numeroOriginal": 7,
       "tipo": "multipla_escolha",
-      "enunciado": "Ao intitular o texto 1 como “O mito da maioridade penal” o autor\ndo texto:",
+      "enunciado": "Ao intitular o texto 1 como “O mito da maioridade penal” o autor do texto:",
       "alternativas": [
         {
           "id": "A",
@@ -348,7 +352,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -373,7 +377,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q08",
       "numeroOriginal": 8,
       "tipo": "multipla_escolha",
-      "enunciado": "A UOL Cotidiano lista uma série de razões contra e a favor da\nredução da maioridade penal; a razão abaixo que NÃO está\nadequadamente expressa contra a redução é:",
+      "enunciado": "A UOL Cotidiano lista uma série de razões contra e a favor da redução da maioridade penal; a razão abaixo que NÃO está adequadamente expressa contra a redução é:",
       "alternativas": [
         {
           "id": "A",
@@ -397,7 +401,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -422,7 +426,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q09",
       "numeroOriginal": 9,
       "tipo": "multipla_escolha",
-      "enunciado": "“O Brasil precisa alinhar a sua legislação à de países\ndesenvolvidos como os Estados Unidos, onde, na maioria dos\nEstados, adolescentes acima de 12 anos de idade podem ser\nsubmetidos a processos judiciais da mesma forma que adultos”.\nSobre esse argumento, a afirmação correta é:",
+      "enunciado": "“O Brasil precisa alinhar a sua legislação à de países desenvolvidos como os Estados Unidos, onde, na maioria dos Estados, adolescentes acima de 12 anos de idade podem ser submetidos a processos judiciais da mesma forma que adultos”. Sobre esse argumento, a afirmação correta é:",
       "alternativas": [
         {
           "id": "A",
@@ -446,7 +450,7 @@
         }
       ],
       "gabaritoOficial": "E",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -471,7 +475,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q10",
       "numeroOriginal": 10,
       "tipo": "multipla_escolha",
-      "enunciado": "Em documento que circula pela Internet estão apontadas 18\nrazões para que não haja redução da maioridade penal; entre\nelas, a razão que se apoia em fator sem referência a valor ou\ndesvalor intrínseco da redução é:",
+      "enunciado": "Em documento que circula pela Internet estão apontadas 18 razões para que não haja redução da maioridade penal; entre elas, a razão que se apoia em fator sem referência a valor ou desvalor intrínseco da redução é:",
       "alternativas": [
         {
           "id": "A",
@@ -495,7 +499,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -544,7 +548,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -569,7 +573,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q12",
       "numeroOriginal": 12,
       "tipo": "multipla_escolha",
-      "enunciado": "“O Estatuto da Criança e do Adolescente, o ECA, é uma lei bem\njusta e generosa, ainda largamente ignorada em suas medidas de\nproteção e promoção”.\nA inclusão de uma vírgula entre os dois segmentos (texto 2) faz\nsupor a implícita existência de um conector entre eles; tal\nconector deveria representar:",
+      "enunciado": "“O Estatuto da Criança e do Adolescente, o ECA, é uma lei bem justa e generosa, ainda largamente ignorada em suas medidas de proteção e promoção”. A inclusão de uma vírgula entre os dois segmentos (texto 2) faz supor a implícita existência de um conector entre eles; tal conector deveria representar:",
       "alternativas": [
         {
           "id": "A",
@@ -593,7 +597,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -618,7 +622,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q13",
       "numeroOriginal": 13,
       "tipo": "multipla_escolha",
-      "enunciado": "“<u>Mesmo</u> quanto às sanções previstas no estatuto, antes de se\nchegar à internação, há uma série de outras menos severas,\ncomo a advertência, a prestação de serviços à comunidade e a\nliberdade\nassistida,\nque\nsão\nfrequentemente\nignoradas,\npassando-se diretamente à privação de liberdade, mesmo em\ncasos em que isso não se justifica”.\nNesse segmento do texto 2 há duas ocorrências sublinhadas do\nvocábulo “mesmo”; sobre essas ocorrências, é correto afirmar que:",
+      "enunciado": "“<u>Mesmo</u> quanto às sanções previstas no estatuto, antes de se chegar à internação, há uma série de outras menos severas, como a advertência, a prestação de serviços à comunidade e a liberdade assistida, que são frequentemente ignoradas, passando-se diretamente à privação de liberdade, <u>mesmo</u> em casos em que isso não se justifica”. Nesse segmento do texto 2 há duas ocorrências sublinhadas do vocábulo “mesmo”; sobre essas ocorrências, é correto afirmar que:",
       "alternativas": [
         {
           "id": "A",
@@ -642,7 +646,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -667,7 +671,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q14",
       "numeroOriginal": 14,
       "tipo": "multipla_escolha",
-      "enunciado": "“Mesmo quanto às sanções previstas no estatuto, antes de se\nchegar à internação, há uma série de outras menos severas,\ncomo a advertência, a prestação de serviços à comunidade e a\nliberdade assistida, que (1) são frequentemente ignoradas,\npassando-se diretamente à privação de liberdade, mesmo em\ncasos em que (2) isso não se justifica”.\nNesse segmento do texto 2, o elemento que NÃO estabelece\ncoesão formal com nenhum termo anterior é:",
+      "enunciado": "“Mesmo quanto às sanções previstas no estatuto, antes de se chegar à internação, há uma série de outras menos severas, como a advertência, a prestação de serviços à comunidade e a liberdade assistida, que (1) são frequentemente ignoradas, passando-se diretamente à privação de liberdade, mesmo em casos em que (2) isso não se justifica”. Nesse segmento do texto 2, o elemento que NÃO estabelece coesão formal com nenhum termo anterior é:",
       "alternativas": [
         {
           "id": "A",
@@ -691,7 +695,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -716,7 +720,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q15",
       "numeroOriginal": 15,
       "tipo": "multipla_escolha",
-      "enunciado": "“O Estatuto da Criança e do Adolescente, o ECA, é uma lei bem\njusta e generosa, ainda largamente ignorada em suas medidas de\nproteção e promoção. Mesmo quanto às sanções previstas no\nestatuto, antes de se chegar à internação, há uma série de outras\nmenos severas, como a advertência, a prestação de serviços à\ncomunidade e a liberdade assistida, que são frequentemente\nignoradas, passando-se diretamente à privação de liberdade,\nmesmo em casos em que isso não se justifica”.\nO adjetivo que, por sua tipologia, mostra um tipo diferente dos\ndemais é:",
+      "enunciado": "“O Estatuto da Criança e do Adolescente, o ECA, é uma lei bem justa e generosa, ainda largamente ignorada em suas medidas de proteção e promoção. Mesmo quanto às sanções previstas no estatuto, antes de se chegar à internação, há uma série de outras menos severas, como a advertência, a prestação de serviços à comunidade e a liberdade assistida, que são frequentemente ignoradas, passando-se diretamente à privação de liberdade, mesmo em casos em que isso não se justifica”. O adjetivo que, por sua tipologia, mostra um tipo diferente dos demais é:",
       "alternativas": [
         {
           "id": "A",
@@ -740,7 +744,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -765,7 +769,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q16",
       "numeroOriginal": 16,
       "tipo": "multipla_escolha",
-      "enunciado": "A frase abaixo em que está ausente qualquer processo de\nintensificação de adjetivos é:",
+      "enunciado": "A frase abaixo em que está ausente qualquer processo de intensificação de adjetivos é:",
       "alternativas": [
         {
           "id": "A",
@@ -789,7 +793,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -814,7 +818,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q17",
       "numeroOriginal": 17,
       "tipo": "multipla_escolha",
-      "enunciado": "Observe o gráfico a seguir e destaque a afirmação que se\ncoaduna com os dados apresentados.",
+      "enunciado": "Observe o gráfico a seguir e destaque a afirmação que se coaduna com os dados apresentados.\n\n![Gráfico](/assets/exams/analista_contabil_tipo_1/q17_grafico.png)",
       "alternativas": [
         {
           "id": "A",
@@ -838,7 +842,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -853,6 +857,9 @@
         "temSublinhado": false,
         "temLacunas": false
       },
+      "imagens": [
+        "/assets/exams/analista_contabil_tipo_1/q17_grafico.png"
+      ],
       "textoCompartilhado": {
         "id": "fgv-dpero-texto-2",
         "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
@@ -863,7 +870,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q18",
       "numeroOriginal": 18,
       "tipo": "multipla_escolha",
-      "enunciado": "No texto 2 aparece o seguinte segmento: “Mesmo quanto às\nsanções previstas no estatuto, antes de se chegar à internação,\nhá uma série de outras menos severas, como a advertência, a\nprestação de serviços à comunidade e a liberdade assistida, que\nsão frequentemente ignoradas, passando-se diretamente à\nprivação de liberdade, mesmo em casos em que isso não se\njustifica”.\nSobre as sanções previstas, a afirmação correta é:",
+      "enunciado": "No texto 2 aparece o seguinte segmento: “Mesmo quanto às sanções previstas no estatuto, antes de se chegar à internação, há uma série de outras menos severas, como a advertência, a prestação de serviços à comunidade e a liberdade assistida, que são frequentemente ignoradas, passando-se diretamente à privação de liberdade, mesmo em casos em que isso não se justifica”. Sobre as sanções previstas, a afirmação correta é:",
       "alternativas": [
         {
           "id": "A",
@@ -887,7 +894,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -912,7 +919,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q19",
       "numeroOriginal": 19,
       "tipo": "multipla_escolha",
-      "enunciado": "“Reconheço que a punição não é o único remédio para a violência\ncometida\npelos\njovens.\nEvidentemente,\npolíticas\nsociais,\neducação, prevenção, assistência social são medidas que, se\naplicadas no universo da população jovem, terão o condão,\nefetivamente, de reduzir a violência. Mas, em determinados\ncasos, é preciso uma punição mais eficaz do que aquelas\npreconizadas pelo Estatuto da Criança e do Adolescente”.\nOs termos que, se trocados de posição, acarretam modificação de\nsentido, são:",
+      "enunciado": "“Reconheço que a punição não é o único remédio para a violência cometida pelos jovens. Evidentemente, políticas sociais, educação, prevenção, assistência social são medidas que, se aplicadas no universo da população jovem, terão o condão, efetivamente, de reduzir a violência. Mas, em determinados casos, é preciso uma punição mais eficaz do que aquelas preconizadas pelo Estatuto da Criança e do Adolescente”. Os termos que, se trocados de posição, acarretam modificação de sentido, são:",
       "alternativas": [
         {
           "id": "A",
@@ -936,7 +943,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -961,7 +968,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q20",
       "numeroOriginal": 20,
       "tipo": "multipla_escolha",
-      "enunciado": "Entre as palavras abaixo, aquela que mostra uma formação\ndistinta das demais é:",
+      "enunciado": "Entre as palavras abaixo, aquela que mostra uma formação distinta das demais é:",
       "alternativas": [
         {
           "id": "A",
@@ -985,7 +992,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -1010,7 +1017,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q21",
       "numeroOriginal": 21,
       "tipo": "multipla_escolha",
-      "enunciado": "“Reconheço que a punição não é o único remédio para a violência\ncometida\npelos\njovens.\nEvidentemente,\npolíticas\nsociais,\neducação, prevenção, assistência social são medidas que, se\naplicadas no universo da população jovem, terão o condão,\nefetivamente, de reduzir a violência. Mas, em determinados\ncasos, é preciso uma punição mais eficaz do que aquelas\npreconizadas pelo Estatuto da Criança e do Adolescente”.\nNesse segmento do texto 2, o termo empregado em sentido\nconotativo (ou figurado) é:",
+      "enunciado": "“Reconheço que a punição não é o único remédio para a violência cometida pelos jovens. Evidentemente, políticas sociais, educação, prevenção, assistência social são medidas que, se aplicadas no universo da população jovem, terão o condão, efetivamente, de reduzir a violência. Mas, em determinados casos, é preciso uma punição mais eficaz do que aquelas preconizadas pelo Estatuto da Criança e do Adolescente”. Nesse segmento do texto 2, o termo empregado em sentido conotativo (ou figurado) é:",
       "alternativas": [
         {
           "id": "A",
@@ -1034,7 +1041,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Língua Portuguesa",
         "assunto": "Interpretação e Gramática",
@@ -1083,7 +1090,7 @@
         }
       ],
       "gabaritoOficial": "E",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1103,7 +1110,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q23",
       "numeroOriginal": 23,
       "tipo": "multipla_escolha",
-      "enunciado": "Em 01/01/x1, a empresa de navegação Senrota conquistou o\ndireito de concessão para explorar economicamente o\ntransporte de balsa do rio Tuiuiu, em consonância com seu\nobjetivo social. O contrato previa também a prestação de\nserviços de transporte de balsa para os rios Obaba e Sotutu,\ntodos no estado do Alagados.\nO contrato de concessão irá vigorar por 10 anos, renováveis\npor igual período, caso a Senrota atenda todos os requisitos\ndo contrato, entre eles, disponibilizar nove balsas distribuídas\npelos três rios (vide tabela abaixo).\nOs investimentos necessários para prestar o serviço e atender\no contrato são os seguintes:\n\n\n| Rio | Investimento $ | Nº mínimo de balsas exigidas no contrato |\n| :--- | :--- | :---: |\n| Tuiuiu | 100.000.000,00 | 3 |\n| Obaba | 85.000.000,00 | 4 |\n| Sotutu | 25.000.000,00 | 2 |\n| **TOTAL** | **210.000.000,00** | **9** |\n\n\nEm 01/01/x2, a Senrota fez um teste de recuperabilidade dos\nseus ativos e chegou aos seguintes números:\n\n\n| Rio | Balsa | Valor de Mercado $ | Valor de Uso $ |\n| :--- | :--- | :--- | :--- |\n| Tuiuiu | Balsa 1 | 20.000.000 | 25.000.000 |\n| Tuiuiu | Balsa 2 | 20.000.000 | 35.000.000 |\n| Tuiuiu | Balsa 3 | 20.000.000 | 40.000.000 |\n| Obaba | Balsa 1 | 20.000.000 | 8.000.000 |\n| Obaba | Balsa 2 | 20.000.000 | 20.000.000 |\n| Obaba | Balsa 3 | 20.000.000 | 20.000.000 |\n| Obaba | Balsa 4 | 20.000.000 | 25.000.000 |\n| Sotutu | Balsa 1 | 20.000.000 | 20.000.000 |\n| Sotutu | Balsa 2 | 20.000.000 | 15.000.000 |\n| **TOTAL** | | **180.000.000** | **208.000.000** |\n\n\nConsiderando essas informações, a Senrota deve reconhecer\numa perda de valor recuperável de ativos no valor de:",
+      "enunciado": "Em 01/01/x1, a empresa de navegação Senrota conquistou o direito de concessão para explorar economicamente o transporte de balsa do rio Tuiuiu, em consonância com seu objetivo social. O contrato previa também a prestação de serviços de transporte de balsa para os rios Obaba e Sotutu, todos no estado do Alagados. O contrato de concessão irá vigorar por 10 anos, renováveis por igual período, caso a Senrota atenda todos os requisitos do contrato, entre eles, disponibilizar nove balsas distribuídas pelos três rios (vide tabela abaixo). Os investimentos necessários para prestar o serviço e atender o contrato são os seguintes: | Rio | Investimento $ | Nº mínimo de balsas exigidas no contrato |\n| :--- | :--- | :---: |\n| Tuiuiu | 100.000.000,00 | 3 |\n| Obaba | 85.000.000,00 | 4 |\n| Sotutu | 25.000.000,00 | 2 |\n| **TOTAL** | **210.000.000,00** | **9** | Em 01/01/x2, a Senrota fez um teste de recuperabilidade dos seus ativos e chegou aos seguintes números: | Rio | Balsa | Valor de Mercado $ | Valor de Uso $ |\n| :--- | :--- | :--- | :--- |\n| Tuiuiu | Balsa 1 | 20.000.000 | 25.000.000 |\n| Tuiuiu | Balsa 2 | 20.000.000 | 35.000.000 |\n| Tuiuiu | Balsa 3 | 20.000.000 | 40.000.000 |\n| Obaba | Balsa 1 | 20.000.000 | 8.000.000 |\n| Obaba | Balsa 2 | 20.000.000 | 20.000.000 |\n| Obaba | Balsa 3 | 20.000.000 | 20.000.000 |\n| Obaba | Balsa 4 | 20.000.000 | 25.000.000 |\n| Sotutu | Balsa 1 | 20.000.000 | 20.000.000 |\n| Sotutu | Balsa 2 | 20.000.000 | 15.000.000 |\n| **TOTAL** | | **180.000.000** | **208.000.000** | Considerando essas informações, a Senrota deve reconhecer uma perda de valor recuperável de ativos no valor de:",
       "alternativas": [
         {
           "id": "A",
@@ -1127,7 +1134,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1147,7 +1154,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q24",
       "numeroOriginal": 24,
       "tipo": "multipla_escolha",
-      "enunciado": "Pelas práticas contábeis aplicadas no Brasil, uma debênture com\njuros anuais de 10%, e conversível em ações da data de seu\nvencimento por sua emitente, deve ser classificada como:",
+      "enunciado": "Pelas práticas contábeis aplicadas no Brasil, uma debênture com juros anuais de 10%, e conversível em ações da data de seu vencimento por sua emitente, deve ser classificada como:",
       "alternativas": [
         {
           "id": "A",
@@ -1171,7 +1178,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1191,7 +1198,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q25",
       "numeroOriginal": 25,
       "tipo": "multipla_escolha",
-      "enunciado": "A empresa de softwares Marcosoft  S.A. adquiriu, pelo valor\nde $ 7.600.000,00, todos os sistemas desenvolvidos por sua\nconcorrente Sopa Ltda. O valor justo dos sistemas é de\n$ 6.100.000,00. Nas demonstrações financeiras da Sopa\nera possível identificar que o custo para desenvolver os sistemas\ncorrespondia ao valor líquido de $ 3.000.000,00.\nConsiderando as informações acima, a Marcosoft deve classificar\nessa aquisição da seguinte forma:",
+      "enunciado": "A empresa de softwares Marcosoft  S.A. adquiriu, pelo valor de $ 7.600.000,00, todos os sistemas desenvolvidos por sua concorrente Sopa Ltda. O valor justo dos sistemas é de $ 6.100.000,00. Nas demonstrações financeiras da Sopa era possível identificar que o custo para desenvolver os sistemas correspondia ao valor líquido de $ 3.000.000,00. Considerando as informações acima, a Marcosoft deve classificar essa aquisição da seguinte forma:",
       "alternativas": [
         {
           "id": "A",
@@ -1215,7 +1222,7 @@
         }
       ],
       "gabaritoOficial": "E",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1235,7 +1242,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q26",
       "numeroOriginal": 26,
       "tipo": "multipla_escolha",
-      "enunciado": "Nas demonstrações financeiras do ano de X1, a companhia de\nautomóveis japonesa Cainaxon apresentou o maior prejuízo de\nsua história. Pressionado pelo Conselho de Administração, o\npresidente\nda\ncompanhia\napresentou\num\nplano\nde\nreestruturação:\n1)\nEncerramento das unidades deficitárias nos anos de X2\ne X3;\n2)\nPrograma de demissão da metade dos executivos com\ninício em 01/01/X3;\n3)\nConstrução de um prédio administrativo;\n4)\nEncerramento do contrato de aluguel do prédio\nadministrativo no momento em que o novo prédio ficar\npronto.\nConsiderando que todas as medidas foram aprovadas pelo\nconselho de administração no primeiro semestre de X2, deverão\nser provisionadas no balanço do segundo trimestre de X2 a(s)\nseguinte(s) medidas:",
+      "enunciado": "Nas demonstrações financeiras do ano de X1, a companhia de automóveis japonesa Cainaxon apresentou o maior prejuízo de sua história. Pressionado pelo Conselho de Administração, o presidente da companhia apresentou um plano de reestruturação: 1) Encerramento das unidades deficitárias nos anos de X2 e X3; 2) Programa de demissão da metade dos executivos com início em 01/01/X3; 3) Construção de um prédio administrativo; 4) Encerramento do contrato de aluguel do prédio administrativo no momento em que o novo prédio ficar pronto. Considerando que todas as medidas foram aprovadas pelo conselho de administração no primeiro semestre de X2, deverão ser provisionadas no balanço do segundo trimestre de X2 a(s) seguinte(s) medidas:",
       "alternativas": [
         {
           "id": "A",
@@ -1259,7 +1266,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1279,7 +1286,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q27",
       "numeroOriginal": 27,
       "tipo": "multipla_escolha",
-      "enunciado": "A empresa de mergulho Corujá S.A. fez um aumento de capital\npara ampliar a sua área de atuação. Foram emitidas 100.000\nnovas ações ao preço de $ 15,00 cada. O preço nominal de cada\nação corresponde a $ 10,00 e foram incorridos gastos no valor de\n$ 200.000,00 para a emissão das novas ações.\nSupondo que todas as ações tenham sido vendidas, a\ncontabilização mais adequada para a operação é:",
+      "enunciado": "A empresa de mergulho Corujá S.A. fez um aumento de capital para ampliar a sua área de atuação. Foram emitidas 100.000 novas ações ao preço de $ 15,00 cada. O preço nominal de cada ação corresponde a $ 10,00 e foram incorridos gastos no valor de $ 200.000,00 para a emissão das novas ações. Supondo que todas as ações tenham sido vendidas, a contabilização mais adequada para a operação é:",
       "alternativas": [
         {
           "id": "A",
@@ -1303,7 +1310,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1347,7 +1354,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1367,7 +1374,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q29",
       "numeroOriginal": 29,
       "tipo": "multipla_escolha",
-      "enunciado": "A empresa de papel e celulose Sem Cor construiu sua nova planta\nindustrial perto da plantação de eucaliptos. A cidade mais\npróxima está localizada a mais de 100 km de distância. Com o\nintuito de auxiliar seus empregados, a empresa construiu um\nalojamento para ser alugado a eles. No que tange aos gastos com\nesse alojamento, a classificação correta a ser feita pela Sem Cor é:",
+      "enunciado": "A empresa de papel e celulose Sem Cor construiu sua nova planta industrial perto da plantação de eucaliptos. A cidade mais próxima está localizada a mais de 100 km de distância. Com o intuito de auxiliar seus empregados, a empresa construiu um alojamento para ser alugado a eles. No que tange aos gastos com esse alojamento, a classificação correta a ser feita pela Sem Cor é:",
       "alternativas": [
         {
           "id": "A",
@@ -1391,7 +1398,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1411,7 +1418,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q30",
       "numeroOriginal": 30,
       "tipo": "multipla_escolha",
-      "enunciado": "Uma empresa de limpeza de tubulação de esgoto – Clean\nTubus – foi constituída para atender a Companhia de Água e\nEsgoto do Estado (CAESG). Eventualmente a Clean Tubus pode\natender outras companhias quando autorizada pela CAESG.\nTambém é responsabilidade da CAESG definir o preço da\nprestação de serviços e dar aval para qualquer risco\noperacional da Clean Tubus.\nA CAESG efetuou um empréstimo de $ 500.000,00 com taxa\nde juros de 10% a.a. para que a Clean Tubus pudesse iniciar\nsuas operações. Tal empréstimo é passível de conversão em\ncapital social a qualquer momento por interesse da CAESG.\nSeguem informações sobre o capital social das duas empresas:\nCAESG\nAcionistas\nValor - $\nPart. %\nFIP - Água e Esgoto\n250.000.000,00\n98%\nMercado - Bovespa\n5.000.000,00\n2%\nTOTAL\n255.000.000,00\n100%\nClean Tubus\nAcionistas\nValor - $\nPart. %\nLimpeza Sanitária Ltda.\n9.900,00\n99%\nCAESG\n100,00\n1%\nTOTAL\n10.000,00\n100%\nConsiderando apenas as informações acima, a relação da\nempresa Clean Tubus com a CAESG é:",
+      "enunciado": "Uma empresa de limpeza de tubulação de esgoto – Clean Tubus – foi constituída para atender a Companhia de Água e Esgoto do Estado (CAESG). Eventualmente a Clean Tubus pode atender outras companhias quando autorizada pela CAESG. Também é responsabilidade da CAESG definir o preço da prestação de serviços e dar aval para qualquer risco operacional da Clean Tubus. A CAESG efetuou um empréstimo de $ 500.000,00 com taxa de juros de 10% a.a. para que a Clean Tubus pudesse iniciar suas operações. Tal empréstimo é passível de conversão em capital social a qualquer momento por interesse da CAESG. Seguem informações sobre o capital social das duas empresas: **CAESG**\n\n| Acionistas | Valor - $ | Part. % |\n| :--- | :--- | :---: |\n| FIP - Água e Esgoto | 250.000.000,00 | 98% |\n| Mercado - Bovespa | 5.000.000,00 | 2% |\n| **TOTAL** | **255.000.000,00** | **100%** |\n\n**Clean Tubus**\n\n| Acionistas | Valor - $ | Part. % |\n| :--- | :--- | :---: |\n| Limpeza Sanitária Ltda. | 9.900,00 | 99% |\n| CAESG | 100,00 | 1% |\n| **TOTAL** | **10.000,00** | **100%** | Considerando apenas as informações acima, a relação da empresa Clean Tubus com a CAESG é:",
       "alternativas": [
         {
           "id": "A",
@@ -1435,7 +1442,7 @@
         }
       ],
       "gabaritoOficial": "E",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1455,7 +1462,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q31",
       "numeroOriginal": 31,
       "tipo": "multipla_escolha",
-      "enunciado": "Uma empresa controladora possui uma controlada com\npatrimônio líquido negativo. A prática contábil aplicável nesse\ncaso é:",
+      "enunciado": "Uma empresa controladora possui uma controlada com patrimônio líquido negativo. A prática contábil aplicável nesse caso é:",
       "alternativas": [
         {
           "id": "A",
@@ -1479,7 +1486,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1499,7 +1506,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q32",
       "numeroOriginal": 32,
       "tipo": "multipla_escolha",
-      "enunciado": "Um grupo de ativo imobilizado tinha como critério de\ndepreciação o número de unidades produzidas. Sua produção\nvariava entre 950 e 1050 unidades por mês. Após perder um\ncliente, a produção reduziu para 700 unidades ao mês.\nEntretanto a depreciação continuou considerando uma produção\nde 950 unidades por 14 meses, o que ocasionou uma distorção\nexpressiva do valor líquido contábil.\nNessa situação, a empresa deve adotar o seguinte procedimento:",
+      "enunciado": "Um grupo de ativo imobilizado tinha como critério de depreciação o número de unidades produzidas. Sua produção variava entre 950 e 1050 unidades por mês. Após perder um cliente, a produção reduziu para 700 unidades ao mês. Entretanto a depreciação continuou considerando uma produção de 950 unidades por 14 meses, o que ocasionou uma distorção expressiva do valor líquido contábil. Nessa situação, a empresa deve adotar o seguinte procedimento:",
       "alternativas": [
         {
           "id": "A",
@@ -1523,7 +1530,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1543,7 +1550,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q33",
       "numeroOriginal": 33,
       "tipo": "multipla_escolha",
-      "enunciado": "A Cia Catabento fabrica 2.500 cadernos por dia e possui as\nseguintes contas de estoques:\nContas\n$\nMatéria Prima\n100.000,00\nMateriais Destinados a Obras\n125.000,00\nMatérias de Consumo\n150.000,00\nMercadorias em Trânsito\n175.000,00\nPara Revenda\n200.000,00\nPeças de Reposição de Equipamentos\n225.000,00\nProdutos Acabados\n250.000,00\nProdutos em Elaboração\n275.000,00\nDeve ser classificado no Ativo Não Circulante o seguinte saldo:",
+      "enunciado": "A Cia Catabento fabrica 2.500 cadernos por dia e possui as seguintes contas de estoques: Contas $ Matéria Prima 100.000,00 Materiais Destinados a Obras 125.000,00 Matérias de Consumo 150.000,00 Mercadorias em Trânsito 175.000,00 Para Revenda 200.000,00 Peças de Reposição de Equipamentos 225.000,00 Produtos Acabados 250.000,00 Produtos em Elaboração 275.000,00 Deve ser classificado no Ativo Não Circulante o seguinte saldo:",
       "alternativas": [
         {
           "id": "A",
@@ -1567,7 +1574,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1587,7 +1594,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q34",
       "numeroOriginal": 34,
       "tipo": "multipla_escolha",
-      "enunciado": "Uma empresa possui necessidade de capital de giro negativa\nquando:",
+      "enunciado": "Uma empresa possui necessidade de capital de giro negativa quando:",
       "alternativas": [
         {
           "id": "A",
@@ -1611,7 +1618,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1631,7 +1638,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q35",
       "numeroOriginal": 35,
       "tipo": "multipla_escolha",
-      "enunciado": "Uma empresa comercial possuía um índice de liquidez corrente\nde 1,5 e de liquidez geral de 1,0.\nEssa empresa registrou as seguintes operações:\nOperação\n$\nAdiantamento de férias concedido a funcionário\n140\n120\nAquisição a prazo de material de construção para\nmanutenção do estacionamento\nCompra a prazo de 15 mesas para revenda\n320\n200\nCompra de imobilizado através de financiamento\nde longo prazo\n60\nDesconto concedido a clientes por pagamento\nantecipado\n80\nLançamento de encargos sobre empréstimos de\nlongo prazo\n120\nPagamento\nde\nparcela\nde\narrendamento\noperacional\nPagamento de parcela de empréstimo\n100\nRecebimento de clientes\n180\nApós o lançamento das operações listadas, os índices de liquidez\ncorrente e geral tiveram o seguinte comportamento:",
+      "enunciado": "Uma empresa comercial possuía um índice de liquidez corrente de 1,5 e de liquidez geral de 1,0. Essa empresa registrou as seguintes operações: Operação $ Adiantamento de férias concedido a funcionário 140 120 Aquisição a prazo de material de construção para manutenção do estacionamento Compra a prazo de 15 mesas para revenda 320 200 Compra de imobilizado através de financiamento de longo prazo 60 Desconto concedido a clientes por pagamento antecipado 80 Lançamento de encargos sobre empréstimos de longo prazo 120 Pagamento de parcela de arrendamento operacional Pagamento de parcela de empréstimo 100 Recebimento de clientes 180 Após o lançamento das operações listadas, os índices de liquidez corrente e geral tiveram o seguinte comportamento:",
       "alternativas": [
         {
           "id": "A",
@@ -1655,7 +1662,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1675,7 +1682,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q36",
       "numeroOriginal": 36,
       "tipo": "multipla_escolha",
-      "enunciado": "Quando uma empresa apresenta em sua demonstração de\nresultados do exercício um valor classificado como “Lucro do\nexercício de operações descontinuadas”, um analista de mercado\ndeve previamente saber que:",
+      "enunciado": "Quando uma empresa apresenta em sua demonstração de resultados do exercício um valor classificado como “Lucro do exercício de operações descontinuadas”, um analista de mercado deve previamente saber que:",
       "alternativas": [
         {
           "id": "A",
@@ -1699,7 +1706,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1719,7 +1726,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q37",
       "numeroOriginal": 37,
       "tipo": "multipla_escolha",
-      "enunciado": "Quando uma empresa recebe um terreno por uma doação de\numa prefeitura, sem que haja uma obrigação condicionada\natrelada a tal fato, NÃO são impactados diretamente os seguintes\nindicadores:",
+      "enunciado": "Quando uma empresa recebe um terreno por uma doação de uma prefeitura, sem que haja uma obrigação condicionada atrelada a tal fato, NÃO são impactados diretamente os seguintes indicadores:",
       "alternativas": [
         {
           "id": "A",
@@ -1743,7 +1750,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1787,7 +1794,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1807,7 +1814,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q39",
       "numeroOriginal": 39,
       "tipo": "multipla_escolha",
-      "enunciado": "De acordo com a NBC T 16.1 – Conceituação, Objeto e Campo de\nAplicação, as entidades abrangidas pelo campo de aplicação da\nContabilidade Aplicada ao Setor Público devem observar as\nnormas e as técnicas próprias da Contabilidade Aplicada ao Setor\nPúblico. A observância de tais normas pode ser parcial pelos(as):",
+      "enunciado": "De acordo com a NBC T 16.1 – Conceituação, Objeto e Campo de Aplicação, as entidades abrangidas pelo campo de aplicação da Contabilidade Aplicada ao Setor Público devem observar as normas e as técnicas próprias da Contabilidade Aplicada ao Setor Público. A observância de tais normas pode ser parcial pelos(as):",
       "alternativas": [
         {
           "id": "A",
@@ -1831,7 +1838,7 @@
         }
       ],
       "gabaritoOficial": "E",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1851,7 +1858,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q40",
       "numeroOriginal": 40,
       "tipo": "multipla_escolha",
-      "enunciado": "Acerca das definições e classificações do patrimônio e dos bens\npúblicos, analise as afirmações a seguir.\nI – Sob o enfoque contábil, o patrimônio público é estruturado\nem três grupos: ativo, passivo e patrimônio líquido.\nII – A classificação legal do patrimônio público em bens de uso\ncomum, de uso especial e dominicais está em consonância com o\nenfoque contábil.\nIII – A classificação dos elementos patrimoniais tem como base os\natributos de conversibilidade e exigibilidade.\nÉ correto o que se afirma em:",
+      "enunciado": "Acerca das definições e classificações do patrimônio e dos bens públicos, analise as afirmações a seguir. I – Sob o enfoque contábil, o patrimônio público é estruturado em três grupos: ativo, passivo e patrimônio líquido. II – A classificação legal do patrimônio público em bens de uso comum, de uso especial e dominicais está em consonância com o enfoque contábil. III – A classificação dos elementos patrimoniais tem como base os atributos de conversibilidade e exigibilidade. É correto o que se afirma em:",
       "alternativas": [
         {
           "id": "A",
@@ -1875,7 +1882,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1895,7 +1902,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q41",
       "numeroOriginal": 41,
       "tipo": "multipla_escolha",
-      "enunciado": "As variações patrimoniais decorrem de transações que\npromovem alterações nos elementos patrimoniais da entidade do\nsetor público, e podem ser classificadas em quantitativas e\nqualitativas. Constitui um exemplo de variação qualitativa:",
+      "enunciado": "As variações patrimoniais decorrem de transações que promovem alterações nos elementos patrimoniais da entidade do setor público, e podem ser classificadas em quantitativas e qualitativas. Constitui um exemplo de variação qualitativa:",
       "alternativas": [
         {
           "id": "A",
@@ -1919,7 +1926,7 @@
         }
       ],
       "gabaritoOficial": "E",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1939,7 +1946,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q42",
       "numeroOriginal": 42,
       "tipo": "multipla_escolha",
-      "enunciado": "Em um processo de exame das contas de uma entidade pública,\nfoi detectado que havia registros contábeis realizados com\nomissão de parte do fato gerador. Tais registros deram origem a\ninformações sobre alterações nos fenômenos patrimoniais. De\nacordo com as definições da NBC T 16.5, nessa situação, foi\ninfringida a seguinte característica do registro contábil:",
+      "enunciado": "Em um processo de exame das contas de uma entidade pública, foi detectado que havia registros contábeis realizados com omissão de parte do fato gerador. Tais registros deram origem a informações sobre alterações nos fenômenos patrimoniais. De acordo com as definições da NBC T 16.5, nessa situação, foi infringida a seguinte característica do registro contábil:",
       "alternativas": [
         {
           "id": "A",
@@ -1963,7 +1970,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -1983,7 +1990,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q43",
       "numeroOriginal": 43,
       "tipo": "multipla_escolha",
-      "enunciado": "A NBCT SP 16.6 (R1) define as demonstrações contábeis que\ndevem ser elaboradas e publicadas pelas entidades circunscritas\nno campo da Contabilidade Aplicada ao Setor Público. Uma\ndemonstração não incluída neste rol é o(a):",
+      "enunciado": "A NBCT SP 16.6 (R1) define as demonstrações contábeis que devem ser elaboradas e publicadas pelas entidades circunscritas no campo da Contabilidade Aplicada ao Setor Público. Uma demonstração não incluída neste rol é o(a):",
       "alternativas": [
         {
           "id": "A",
@@ -2007,7 +2014,7 @@
         }
       ],
       "gabaritoOficial": "E",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -2027,7 +2034,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q44",
       "numeroOriginal": 44,
       "tipo": "multipla_escolha",
-      "enunciado": "Em um determinado ente da administração pública foi adquirido\num conjunto de móveis, composto por armários de aço, por R$\n36.000,00 para instalação na Secretaria de Serviços Públicos. O\nente espera utilizar este conjunto por dez anos e em seguida\naliená-lo por 10% do valor de aquisição. Com base nessas\ninformações e nas definições da NBC T 16.9, pode-se afirmar que:",
+      "enunciado": "Em um determinado ente da administração pública foi adquirido um conjunto de móveis, composto por armários de aço, por R$ 36.000,00 para instalação na Secretaria de Serviços Públicos. O ente espera utilizar este conjunto por dez anos e em seguida aliená-lo por 10% do valor de aquisição. Com base nessas informações e nas definições da NBC T 16.9, pode-se afirmar que:",
       "alternativas": [
         {
           "id": "A",
@@ -2051,7 +2058,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -2071,7 +2078,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q45",
       "numeroOriginal": 45,
       "tipo": "multipla_escolha",
-      "enunciado": "A implantação do Plano de Contas  Aplicado ao  Setor  Público\n(PCASP) gerou a necessidade de observar algumas regras para\nassegurar a integridade dos procedimentos, bem como a\nqualidade, consistência e transparência das informações geradas.\nSobre as regras de integridade do PCASP, é correto afirmar que:",
+      "enunciado": "A implantação do Plano de Contas  Aplicado ao  Setor  Público (PCASP) gerou a necessidade de observar algumas regras para assegurar a integridade dos procedimentos, bem como a qualidade, consistência e transparência das informações geradas. Sobre as regras de integridade do PCASP, é correto afirmar que:",
       "alternativas": [
         {
           "id": "A",
@@ -2095,7 +2102,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -2115,7 +2122,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q46",
       "numeroOriginal": 46,
       "tipo": "multipla_escolha",
-      "enunciado": "Em decorrência da necessidade de cumprir o disposto na Lei\ncomplementar nº 101/2000, art. 51, que prevê que o Poder\nExecutivo da União promoverá a consolidação, nacional e por\nesfera de governo, das contas dos entes da Federação relativas\nao exercício anterior, o Plano de Contas Aplicado ao Setor Público\ncontém algumas regras que devem ser observadas. Sobre as\nregras de consolidação do PCASP, analise as afirmativas a seguir.\nI – Todas as classes de contas devem utilizar o 5º nível para\nidentificação de saldos recíprocos.\nII – As contas do PCASP identificadas com o dígito 2 no 5º nível\n(INTRA-OFSS) deverão ser excluídas no processo de consolidação\nde cada ente.\nIII – As contas identificadas no 5º nível com o dígito 1\n(Consolidação) compreende os saldos que não serão excluídos\nnos demonstrativos consolidados.\nÉ correto apenas o que se afirma em:",
+      "enunciado": "Em decorrência da necessidade de cumprir o disposto na Lei complementar nº 101/2000, art. 51, que prevê que o Poder Executivo da União promoverá a consolidação, nacional e por esfera de governo, das contas dos entes da Federação relativas ao exercício anterior, o Plano de Contas Aplicado ao Setor Público contém algumas regras que devem ser observadas. Sobre as regras de consolidação do PCASP, analise as afirmativas a seguir. I – Todas as classes de contas devem utilizar o 5º nível para identificação de saldos recíprocos. II – As contas do PCASP identificadas com o dígito 2 no 5º nível (INTRA-OFSS) deverão ser excluídas no processo de consolidação de cada ente. III – As contas identificadas no 5º nível com o dígito 1 (Consolidação) compreende os saldos que não serão excluídos nos demonstrativos consolidados. É correto apenas o que se afirma em:",
       "alternativas": [
         {
           "id": "A",
@@ -2139,7 +2146,7 @@
         }
       ],
       "gabaritoOficial": "E",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -2159,7 +2166,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q47",
       "numeroOriginal": 47,
       "tipo": "multipla_escolha",
-      "enunciado": "A Demonstração dos Fluxos de Caixa (DFC) tem o objetivo de\ncontribuir para a transparência da gestão pública, pois permite\num melhor gerenciamento e controle financeiro dos órgãos e\nentidades do setor público (MCASP/STN). De acordo com as\norientações do MCASP, na elaboração da DFC, um item que\ncompõe os fluxos de caixa das atividades de financiamento é:",
+      "enunciado": "A Demonstração dos Fluxos de Caixa (DFC) tem o objetivo de contribuir para a transparência da gestão pública, pois permite um melhor gerenciamento e controle financeiro dos órgãos e entidades do setor público (MCASP/STN). De acordo com as orientações do MCASP, na elaboração da DFC, um item que compõe os fluxos de caixa das atividades de financiamento é:",
       "alternativas": [
         {
           "id": "A",
@@ -2179,11 +2186,11 @@
         },
         {
           "id": "E",
-          "text": "transferências intergovernamentais. Quadro I – Dados da execução orçamentária de uma unidade da federação no exercício de 2010 (em milhares de reais). RECEITAS Previsão Arrecadação Receitas Correntes 4.600.000,00    4.460.000,00 Receitas de Capital 300.000,00       160.000,00 DESPESAS Fixação Empenho Despesas Correntes 3.800.000,00    3.850.000,00 Despesas de Capital 1.100.000,00       710.000,00"
+          "text": "transferências intergovernamentais."
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -2203,7 +2210,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q48",
       "numeroOriginal": 48,
       "tipo": "multipla_escolha",
-      "enunciado": "De acordo com as informações do Quadro I, o resultado da\nexecução orçamentária foi de:",
+      "enunciado": "De acordo com as informações do Quadro I, o resultado da execução orçamentária foi de:",
       "alternativas": [
         {
           "id": "A",
@@ -2227,7 +2234,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -2241,13 +2248,18 @@
         "paginaOrigem": 10,
         "temSublinhado": false,
         "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-quadro-1",
+        "title": "Quadro I – Dados da execução orçamentária de uma unidade da federação no exercício de 2010 (em milhares de reais)",
+        "content": "Quadro I – Dados da execução orçamentária de uma unidade da federação no exercício de 2010 (em milhares de reais).\n\n| RECEITAS | Previsão | Arrecadação |\n| :--- | :--- | :--- |\n| Receitas Correntes | 4.600.000,00 | 4.460.000,00 |\n| Receitas de Capital | 300.000,00 | 160.000,00 |\n\n| DESPESAS | Fixação | Empenho |\n| :--- | :--- | :--- |\n| Despesas Correntes | 3.800.000,00 | 3.850.000,00 |\n| Despesas de Capital | 1.100.000,00 | 710.000,00 |"
       }
     },
     {
       "id": "fgv-2015-dpero-analista-contabil-q49",
       "numeroOriginal": 49,
       "tipo": "multipla_escolha",
-      "enunciado": "De acordo com as informações do Quadro I, pode-se afirmar\nque houve:",
+      "enunciado": "De acordo com as informações do Quadro I, pode-se afirmar que houve:",
       "alternativas": [
         {
           "id": "A",
@@ -2271,7 +2283,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -2285,13 +2297,18 @@
         "paginaOrigem": 10,
         "temSublinhado": false,
         "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-quadro-1",
+        "title": "Quadro I – Dados da execução orçamentária de uma unidade da federação no exercício de 2010 (em milhares de reais)",
+        "content": "Quadro I – Dados da execução orçamentária de uma unidade da federação no exercício de 2010 (em milhares de reais).\n\n| RECEITAS | Previsão | Arrecadação |\n| :--- | :--- | :--- |\n| Receitas Correntes | 4.600.000,00 | 4.460.000,00 |\n| Receitas de Capital | 300.000,00 | 160.000,00 |\n\n| DESPESAS | Fixação | Empenho |\n| :--- | :--- | :--- |\n| Despesas Correntes | 3.800.000,00 | 3.850.000,00 |\n| Despesas de Capital | 1.100.000,00 | 710.000,00 |"
       }
     },
     {
       "id": "fgv-2015-dpero-analista-contabil-q50",
       "numeroOriginal": 50,
       "tipo": "multipla_escolha",
-      "enunciado": "Se em um determinado exercício, um Estado da Federação\napurou uma Receita Corrente Líquida de R$ 7,2 bilhões, o limite\npara contratação de operações de crédito pelo ente no exercício\nserá (em reais):",
+      "enunciado": "Se em um determinado exercício, um Estado da Federação apurou uma Receita Corrente Líquida de R$ 7,2 bilhões, o limite para contratação de operações de crédito pelo ente no exercício será (em reais):",
       "alternativas": [
         {
           "id": "A",
@@ -2315,7 +2332,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Conhecimentos Específicos",
         "assunto": "Contabilidade Geral, Societária e Pública",
@@ -2335,7 +2352,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q51",
       "numeroOriginal": 51,
       "tipo": "multipla_escolha",
-      "enunciado": "De acordo com as disposições da Lei nº 4.320/1964 e as\norientações do MCASP, no que tange aos procedimentos\norçamentários, o orçamento anual pode ser alterado por meio de\ncréditos adicionais. Por crédito adicional, entendem-se as\nautorizações de despesas não computadas ou insuficientemente\ndotadas na Lei Orçamentária. Acerca dos créditos adicionais, é\ncorreto afirmar que:",
+      "enunciado": "De acordo com as disposições da Lei nº 4.320/1964 e as orientações do MCASP, no que tange aos procedimentos orçamentários, o orçamento anual pode ser alterado por meio de créditos adicionais. Por crédito adicional, entendem-se as autorizações de despesas não computadas ou insuficientemente dotadas na Lei Orçamentária. Acerca dos créditos adicionais, é correto afirmar que:",
       "alternativas": [
         {
           "id": "A",
@@ -2359,7 +2376,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Legislação Institucional",
         "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
@@ -2377,7 +2394,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q52",
       "numeroOriginal": 52,
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma entidade da administração pública, durante o exercício\nde 2008 foi emitida uma nota de empenho para prestação de\nserviços de manutenção no sistema de ar refrigerado. A\nprestação de serviço foi iniciada em 2008, mas encerrada apenas\nno exercício seguinte. A empresa prestadora de serviço enviou a\ndocumentação de cobrança comprobatória da prestação do\nserviço somente em 2013. A partir do recebimento da cobrança,\nessa despesa deve ser tratada pelo ente como:",
+      "enunciado": "Em uma entidade da administração pública, durante o exercício de 2008 foi emitida uma nota de empenho para prestação de serviços de manutenção no sistema de ar refrigerado. A prestação de serviço foi iniciada em 2008, mas encerrada apenas no exercício seguinte. A empresa prestadora de serviço enviou a documentação de cobrança comprobatória da prestação do serviço somente em 2013. A partir do recebimento da cobrança, essa despesa deve ser tratada pelo ente como:",
       "alternativas": [
         {
           "id": "A",
@@ -2401,7 +2418,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Legislação Institucional",
         "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
@@ -2419,7 +2436,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q53",
       "numeroOriginal": 53,
       "tipo": "multipla_escolha",
-      "enunciado": "Em decorrência da falta de pessoal capacitado para elaborar as\npeças orçamentárias e de falta de recursos para contratar esse\nserviço de terceiros, uma prefeitura apresentou uma proposta\norçamentária ao Poder Legislativo com dotações globais\ndestinadas a atender indistintamente a despesas de pessoal,\nmaterial, serviços de terceiros e investimentos, comprometendo-\nse a prestar contas ao final do exercício financeiro.\nNão obstante as razões apresentadas e a obrigação inequívoca de\nprestar contas, esta situação está em desacordo com o princípio\norçamentário da:",
+      "enunciado": "Em decorrência da falta de pessoal capacitado para elaborar as peças orçamentárias e de falta de recursos para contratar esse serviço de terceiros, uma prefeitura apresentou uma proposta orçamentária ao Poder Legislativo com dotações globais destinadas a atender indistintamente a despesas de pessoal, material, serviços de terceiros e investimentos, comprometendo- se a prestar contas ao final do exercício financeiro. Não obstante as razões apresentadas e a obrigação inequívoca de prestar contas, esta situação está em desacordo com o princípio orçamentário da:",
       "alternativas": [
         {
           "id": "A",
@@ -2443,7 +2460,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Legislação Institucional",
         "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
@@ -2461,7 +2478,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q54",
       "numeroOriginal": 54,
       "tipo": "multipla_escolha",
-      "enunciado": "Consoante dispõe a Constituição do Estado de Rondônia, é\nexemplo de garantia dos membros da Defensoria Pública a:",
+      "enunciado": "Consoante dispõe a Constituição do Estado de Rondônia, é exemplo de garantia dos membros da Defensoria Pública a:",
       "alternativas": [
         {
           "id": "A",
@@ -2485,7 +2502,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Legislação Institucional",
         "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
@@ -2503,7 +2520,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q55",
       "numeroOriginal": 55,
       "tipo": "multipla_escolha",
-      "enunciado": "De acordo com a Lei Complementar Federal nº 80/94, que\norganiza a Defensoria Pública da União, do Distrito Federal e dos\nTerritórios e prescreve normas gerais para sua organização nos\nEstados, é função institucional da Defensoria Pública, dentre\noutras:",
+      "enunciado": "De acordo com a Lei Complementar Federal nº 80/94, que organiza a Defensoria Pública da União, do Distrito Federal e dos Territórios e prescreve normas gerais para sua organização nos Estados, é função institucional da Defensoria Pública, dentre outras:",
       "alternativas": [
         {
           "id": "A",
@@ -2527,7 +2544,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Legislação Institucional",
         "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
@@ -2545,7 +2562,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q56",
       "numeroOriginal": 56,
       "tipo": "multipla_escolha",
-      "enunciado": "É prerrogativa dos membros da Defensoria Pública do Estado\nprevista na Lei Complementar Federal nº 80/94:",
+      "enunciado": "É prerrogativa dos membros da Defensoria Pública do Estado prevista na Lei Complementar Federal nº 80/94:",
       "alternativas": [
         {
           "id": "A",
@@ -2569,7 +2586,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Legislação Institucional",
         "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
@@ -2587,7 +2604,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q57",
       "numeroOriginal": 57,
       "tipo": "multipla_escolha",
-      "enunciado": "Ao dispor sobre normas gerais para a organização da Defensoria\nPública dos Estados, a Lei Complementar Federal nº 80/94\nestabelece que a fiscalização contábil, financeira, orçamentária,\noperacional e patrimonial da Defensoria Pública do Estado,\nquanto à legalidade, legitimidade, aplicação de dotações e\nrecursos próprios e renúncia de receitas, será exercida pelo:",
+      "enunciado": "Ao dispor sobre normas gerais para a organização da Defensoria Pública dos Estados, a Lei Complementar Federal nº 80/94 estabelece que a fiscalização contábil, financeira, orçamentária, operacional e patrimonial da Defensoria Pública do Estado, quanto à legalidade, legitimidade, aplicação de dotações e recursos próprios e renúncia de receitas, será exercida pelo:",
       "alternativas": [
         {
           "id": "A",
@@ -2611,7 +2628,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Legislação Institucional",
         "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
@@ -2629,7 +2646,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q58",
       "numeroOriginal": 58,
       "tipo": "multipla_escolha",
-      "enunciado": "O Estatuto dos Servidores Públicos Civis do Estado de Rondônia\ndispõe que o serviço extraordinário tem caráter eventual e só\nserá admitido em situações excepcionais e temporárias, sendo\nremunerado com acréscimo de cinquenta por cento em relação à\nhora\nnormal\nde\ntrabalho.\nNesse\ncontexto,\naponte\nas\nconsequências das condutas dos seguintes servidores estaduais\nocupantes de cargo efetivo:\nCaso 1: Alberto atestou falsamente a prestação de serviço\nextraordinário.\nCaso 2: João se recusou, sem justo motivo, à prestação de serviço\nextraordinário.",
+      "enunciado": "O Estatuto dos Servidores Públicos Civis do Estado de Rondônia dispõe que o serviço extraordinário tem caráter eventual e só será admitido em situações excepcionais e temporárias, sendo remunerado com acréscimo de cinquenta por cento em relação à hora normal de trabalho. Nesse contexto, aponte as consequências das condutas dos seguintes servidores estaduais ocupantes de cargo efetivo: Caso 1: Alberto atestou falsamente a prestação de serviço extraordinário. Caso 2: João se recusou, sem justo motivo, à prestação de serviço extraordinário.",
       "alternativas": [
         {
           "id": "A",
@@ -2653,7 +2670,7 @@
         }
       ],
       "gabaritoOficial": "E",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Legislação Institucional",
         "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
@@ -2671,7 +2688,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q59",
       "numeroOriginal": 59,
       "tipo": "multipla_escolha",
-      "enunciado": "Marcela, servidora pública civil estável estadual de Rondônia\nocupante de cargo efetivo, pretende obter licença por motivo de\ndoença em pessoa da família para dar assistência a seu irmão,\nacometido de grave enfermidade. Com base no regime jurídico\nque disciplina a matéria previsto na Lei Complementar Estadual\nnº 68/1992, é correto afirmar que a licença pretendida por\nMarcela será concedida:",
+      "enunciado": "Marcela, servidora pública civil estável estadual de Rondônia ocupante de cargo efetivo, pretende obter licença por motivo de doença em pessoa da família para dar assistência a seu irmão, acometido de grave enfermidade. Com base no regime jurídico que disciplina a matéria previsto na Lei Complementar Estadual nº 68/1992, é correto afirmar que a licença pretendida por Marcela será concedida:",
       "alternativas": [
         {
           "id": "A",
@@ -2695,7 +2712,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Legislação Institucional",
         "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
@@ -2713,7 +2730,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q60",
       "numeroOriginal": 60,
       "tipo": "multipla_escolha",
-      "enunciado": "Consoante dispõe o Estatuto dos Servidores Públicos Civis do\nEstado de Rondônia (Lei Complementar Estadual nº 68/1992), é\ndever do servidor:",
+      "enunciado": "Consoante dispõe o Estatuto dos Servidores Públicos Civis do Estado de Rondônia (Lei Complementar Estadual nº 68/1992), é dever do servidor:",
       "alternativas": [
         {
           "id": "A",
@@ -2737,7 +2754,7 @@
         }
       ],
       "gabaritoOficial": "E",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Legislação Institucional",
         "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
@@ -2755,7 +2772,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q61",
       "numeroOriginal": 61,
       "tipo": "multipla_escolha",
-      "enunciado": "O Conselho Superior da Defensoria Pública do Estado é órgão\nnormativo, consultivo e deliberativo, incumbido de superintender\na atuação da Defensoria Pública, bem como zelar pela\nobservância dos princípios institucionais do órgão. Nesse\ncontexto, de acordo com a Lei Orgânica da Defensoria Pública do\nEstado de Rondônia (Lei Complementar Estadual nº 117/94),\ncompete ao Conselho Superior da Defensoria Pública:",
+      "enunciado": "O Conselho Superior da Defensoria Pública do Estado é órgão normativo, consultivo e deliberativo, incumbido de superintender a atuação da Defensoria Pública, bem como zelar pela observância dos princípios institucionais do órgão. Nesse contexto, de acordo com a Lei Orgânica da Defensoria Pública do Estado de Rondônia (Lei Complementar Estadual nº 117/94), compete ao Conselho Superior da Defensoria Pública:",
       "alternativas": [
         {
           "id": "A",
@@ -2779,7 +2796,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Geografia e História de Rondônia",
         "assunto": "História, Economia e Geografia Regional",
@@ -2797,7 +2814,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q62",
       "numeroOriginal": 62,
       "tipo": "multipla_escolha",
-      "enunciado": "Em matéria criminal, consoante dispõe a Lei Complementar\nEstadual de Rondônia nº 117/94, compete aos Defensores\nPúblicos:",
+      "enunciado": "Em matéria criminal, consoante dispõe a Lei Complementar Estadual de Rondônia nº 117/94, compete aos Defensores Públicos:",
       "alternativas": [
         {
           "id": "A",
@@ -2821,7 +2838,7 @@
         }
       ],
       "gabaritoOficial": "A",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Geografia e História de Rondônia",
         "assunto": "História, Economia e Geografia Regional",
@@ -2839,7 +2856,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q63",
       "numeroOriginal": 63,
       "tipo": "multipla_escolha",
-      "enunciado": "Edson, Defensor Público Estadual de Rondônia, foi condenado em\nprocesso criminal transitado em julgado, a seis anos de reclusão\npela prática de peculato. Considerando que se trata de crime\ncontra a administração pública, de acordo com a Lei\nComplementar Estadual nº 117/94, tal fato:",
+      "enunciado": "Edson, Defensor Público Estadual de Rondônia, foi condenado em processo criminal transitado em julgado, a seis anos de reclusão pela prática de peculato. Considerando que se trata de crime contra a administração pública, de acordo com a Lei Complementar Estadual nº 117/94, tal fato:",
       "alternativas": [
         {
           "id": "A",
@@ -2863,7 +2880,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Geografia e História de Rondônia",
         "assunto": "História, Economia e Geografia Regional",
@@ -2881,7 +2898,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q64",
       "numeroOriginal": 64,
       "tipo": "multipla_escolha",
-      "enunciado": "A Lei Ordinária Federal nº 1.060/50 dispõe que a assistência\njudiciária aos necessitados:",
+      "enunciado": "A Lei Ordinária Federal nº 1.060/50 dispõe que a assistência judiciária aos necessitados:",
       "alternativas": [
         {
           "id": "A",
@@ -2905,7 +2922,7 @@
         }
       ],
       "gabaritoOficial": "B",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Geografia e História de Rondônia",
         "assunto": "História, Economia e Geografia Regional",
@@ -2923,7 +2940,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q65",
       "numeroOriginal": 65,
       "tipo": "multipla_escolha",
-      "enunciado": "“Há sinais desse movimento desde a época do descobrimento,\nmas foi no governo de Getúlio Vargas (1930/1945) que a\ncolonização da floresta passou a ser vista como estratégica para\nos interesses nacionais. Era a época da Marcha para o Oeste.\n(...) Durante a ditadura militar, a política para a Amazônia ficou\nconhecida pelo lema ‘Integrar para não Entregar’.“\n(Peixoto, Fabrícia. Linha do tempo: Entenda como ocorreu a\nocupação da Amazônia. Disponível em www.bbc.co.uk)\nA ocupação da Amazônia ganhou fôlego no século XX, como\nmostra o trecho da reportagem acima. Sobre as consequências\ndessa ocupação, pode-se destacar:",
+      "enunciado": "“Há sinais desse movimento desde a época do descobrimento, mas foi no governo de Getúlio Vargas (1930/1945) que a colonização da floresta passou a ser vista como estratégica para os interesses nacionais. Era a época da Marcha para o Oeste. (...) Durante a ditadura militar, a política para a Amazônia ficou conhecida pelo lema ‘Integrar para não Entregar’.“ (Peixoto, Fabrícia. Linha do tempo: Entenda como ocorreu a ocupação da Amazônia. Disponível em www.bbc.co.uk) A ocupação da Amazônia ganhou fôlego no século XX, como mostra o trecho da reportagem acima. Sobre as consequências dessa ocupação, pode-se destacar:",
       "alternativas": [
         {
           "id": "A",
@@ -2947,7 +2964,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Geografia e História de Rondônia",
         "assunto": "História, Economia e Geografia Regional",
@@ -2965,7 +2982,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q66",
       "numeroOriginal": 66,
       "tipo": "multipla_escolha",
-      "enunciado": "Em 2012, foi comemorado o centenário de inauguração da\nferrovia Madeira-Mamoré. Tal construção, vista como difícil e\ncomplexa, com tentativas fracassadas no século XIX, custou a vida\nde inúmeros operários, e, durante o período da ditadura militar\nno país, acabou desativada, no governo do presidente Castelo\nBranco, em 1966. A justificativa para tal medida foi:",
+      "enunciado": "Em 2012, foi comemorado o centenário de inauguração da ferrovia Madeira-Mamoré. Tal construção, vista como difícil e complexa, com tentativas fracassadas no século XIX, custou a vida de inúmeros operários, e, durante o período da ditadura militar no país, acabou desativada, no governo do presidente Castelo Branco, em 1966. A justificativa para tal medida foi:",
       "alternativas": [
         {
           "id": "A",
@@ -2989,7 +3006,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Geografia e História de Rondônia",
         "assunto": "História, Economia e Geografia Regional",
@@ -3007,7 +3024,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q67",
       "numeroOriginal": 67,
       "tipo": "multipla_escolha",
-      "enunciado": "A região Norte, em especial o Vale do Madeira, teve a sua\neconomia baseada no extrativismo e, como decorrência da sua\nformação social, o trabalho indígena, escravo ou não, foi\nlargamente utilizado. No entanto, no início do século XX, ocorreu\numa alteração nesse quadro relativo à mão de obra, com a não\nutilização de indígenas.\nO fator que justificou tal alteração foi:",
+      "enunciado": "A região Norte, em especial o Vale do Madeira, teve a sua economia baseada no extrativismo e, como decorrência da sua formação social, o trabalho indígena, escravo ou não, foi largamente utilizado. No entanto, no início do século XX, ocorreu uma alteração nesse quadro relativo à mão de obra, com a não utilização de indígenas. O fator que justificou tal alteração foi:",
       "alternativas": [
         {
           "id": "A",
@@ -3031,7 +3048,7 @@
         }
       ],
       "gabaritoOficial": "C",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Geografia e História de Rondônia",
         "assunto": "História, Economia e Geografia Regional",
@@ -3049,7 +3066,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q68",
       "numeroOriginal": 68,
       "tipo": "multipla_escolha",
-      "enunciado": "“A permanência do Presidente da República em Porto Velho\nserviu para assentar as bases da criação de um Território Federal\nnas áreas dos municípios de Porto Velho e Guajará-Mirim...”\n(PINTO, Emanuel Pontes. Território Federal do Guaporé. Viaman,\n2003)\nA criação do Território do Guaporé foi motivada pela:",
+      "enunciado": "“A permanência do Presidente da República em Porto Velho serviu para assentar as bases da criação de um Território Federal nas áreas dos municípios de Porto Velho e Guajará-Mirim...” (PINTO, Emanuel Pontes. Território Federal do Guaporé. Viaman, 2003) A criação do Território do Guaporé foi motivada pela:",
       "alternativas": [
         {
           "id": "A",
@@ -3073,7 +3090,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Geografia e História de Rondônia",
         "assunto": "História, Economia e Geografia Regional",
@@ -3091,7 +3108,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q69",
       "numeroOriginal": 69,
       "tipo": "multipla_escolha",
-      "enunciado": "“Rondônia passou (...) a representar novamente uma fronteira de\nexpansão da produção de soja, e os atores econômicos devem\ndar o devido destaque para esse espaço juntamente com o\nEstado do Mato Grosso.”\n(EGLER, Claudio. A Pré-Amazônia Mato-Grossense no Contexto\nNacional e Sul Americano. In: Expansão da Soja na Pré-Amazônia\nMato-Grossense:\nImpactos\nSocioambientais.\nCuiabá-MT:\nEntrelinhas: EdUFMT, p. 15-34, 2007)\nA expansão da produção de soja no Estado de Rondônia ocorreu,\nprincipalmente:",
+      "enunciado": "“Rondônia passou (...) a representar novamente uma fronteira de expansão da produção de soja, e os atores econômicos devem dar o devido destaque para esse espaço juntamente com o Estado do Mato Grosso.” (EGLER, Claudio. A Pré-Amazônia Mato-Grossense no Contexto Nacional e Sul Americano. In: Expansão da Soja na Pré-Amazônia Mato-Grossense: Impactos Socioambientais. Cuiabá-MT: Entrelinhas: EdUFMT, p. 15-34, 2007) A expansão da produção de soja no Estado de Rondônia ocorreu, principalmente:",
       "alternativas": [
         {
           "id": "A",
@@ -3115,7 +3132,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Geografia e História de Rondônia",
         "assunto": "História, Economia e Geografia Regional",
@@ -3133,7 +3150,7 @@
       "id": "fgv-2015-dpero-analista-contabil-q70",
       "numeroOriginal": 70,
       "tipo": "multipla_escolha",
-      "enunciado": "A respeito da geodiversidade do relevo do Estado de Rondônia,\nconsidere as seguintes afirmativas:\nI - No Estado de Rondônia, destacam-se os principais padrões\ngeomorfológicos: planícies de inundação, baixadas fluviolacustres\ne terraços fluviais das várzeas dos rios Madeira-Mamoré-\nGuaporé; superfícies aplainadas sobre o embasamento pré-\ncambriano; planaltos e serras decorrentes de dobramentos\nmodernos.\nII - As maiores elevações encontram-se nas Serras dos Pacaás\nNovos e Parecis, atingindo altitudes superiores a 1000 metros\nacima do nível do mar.\nIII - Na faixa sudoeste do estado, na fronteira com a Bolívia,\nocorre uma vasta bacia sedimentar quaternária que se espraia\npelo território boliviano, denominada Depressão do Guaporé.\nEstá correto o que se afirma em:",
+      "enunciado": "A respeito da geodiversidade do relevo do Estado de Rondônia, considere as seguintes afirmativas: I - No Estado de Rondônia, destacam-se os principais padrões geomorfológicos: planícies de inundação, baixadas fluviolacustres e terraços fluviais das várzeas dos rios Madeira-Mamoré- Guaporé; superfícies aplainadas sobre o embasamento pré- cambriano; planaltos e serras decorrentes de dobramentos modernos. II - As maiores elevações encontram-se nas Serras dos Pacaás Novos e Parecis, atingindo altitudes superiores a 1000 metros acima do nível do mar. III - Na faixa sudoeste do estado, na fronteira com a Bolívia, ocorre uma vasta bacia sedimentar quaternária que se espraia pelo território boliviano, denominada Depressão do Guaporé. Está correto o que se afirma em:",
       "alternativas": [
         {
           "id": "A",
@@ -3157,7 +3174,7 @@
         }
       ],
       "gabaritoOficial": "D",
-      "gabaritoStatus": "valido",
+      "gabaritoStatus": "preliminar",
       "metadados": {
         "disciplina": "Geografia e História de Rondônia",
         "assunto": "História, Economia e Geografia Regional",

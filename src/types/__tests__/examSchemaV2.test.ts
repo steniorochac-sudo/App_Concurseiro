@@ -2,7 +2,6 @@ import { describe, it, expect } from 'vitest';
 import {
   ExamDocumentV2,
   validateExamDocumentV2,
-  ExamQuestionV2,
 } from '../examSchemaV2';
 
 describe('ExamSchema v2.0 - Validação de Contrato de Dados', () => {

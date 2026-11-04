@@ -9,7 +9,7 @@
 
 export type QuestionType = 'multipla_escolha' | 'certo_errado';
 
-export type GabaritoStatus = 'valido' | 'anulado' | 'alterado' | 'pendente';
+export type GabaritoStatus = 'valido' | 'anulado' | 'alterado' | 'pendente' | 'preliminar';
 
 export type GabaritoTipoOficial = 'preliminar' | 'definitivo' | 'retificado';
 
@@ -46,6 +46,7 @@ export interface ExamQuestionV2 {
   gabaritoOficial: string; // "A" | "B" | "C" | "D" | "E" | "C" | "E" | "X"
   gabaritoStatus: GabaritoStatus;
   gabaritoDefinitivo?: string; // Se retificado ou alterado pós-recurso
+  imagens?: string[];
   textoCompartilhado?: SharedTextV2;
   metadados: QuestionMetadataV2;
   explicacao?: string; // Comentário didático opcional (separado do texto original)
