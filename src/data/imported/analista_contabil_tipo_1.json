@@ -1,0 +1,3192 @@
+{
+  "schemaVersion": "2.0",
+  "exam": {
+    "id": "fgv-2015-dpero-analista-contabil",
+    "titulo": "Concurso Público DPE-RO 2015 - Analista da Defensoria Pública - Analista Contábil (Tipo 1 - Branca)",
+    "orgao": "Defensoria Pública do Estado de Rondônia (DPE-RO)",
+    "banca": "FGV",
+    "cargo": "Analista da Defensoria Pública - Especialidade: Analista Contábil",
+    "codigoCargo": "Analista Contábil",
+    "ano": 2015,
+    "edital": "Concurso Público DPE-RO 2015",
+    "caderno": "Tipo 1 – Cor BRANCA",
+    "turno": "manhã",
+    "formatoQuestoes": "multipla_escolha_5",
+    "totalQuestoes": 70,
+    "totalAnuladas": 0,
+    "homologado": false,
+    "auditTrail": {
+      "arquivoProvaPdf": "analista_contabil_tipo_1.pdf",
+      "arquivoGabaritoPdf": "gabarito_analista_contabil_tipo_1.pdf",
+      "secaoGabarito": "Analista da Defensoria Pública - Analista Contábil – Tipo 1",
+      "paginaGabarito": 1,
+      "tipoGabarito": "preliminar",
+      "statusAuditoria": "fidelidade_documental_aprovada_gabarito_preliminar",
+      "responsavelAuditoria": "Antigravity AI Agent",
+      "dataAuditoria": "2026-11-04"
+    }
+  },
+  "questoes": [
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q01",
+      "numeroOriginal": 1,
+      "tipo": "multipla_escolha",
+      "enunciado": "Segundo o expresso no texto 1, depreende-se que o autor do texto:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "apoia a decisão da Comissão de Constituição e Justiça da Câmara;"
+        },
+        {
+          "id": "B",
+          "text": "critica o sistema educacional, incapaz de manter as crianças na escola;"
+        },
+        {
+          "id": "C",
+          "text": "desaprova a redução da maioridade penal de 18 para 16 anos;"
+        },
+        {
+          "id": "D",
+          "text": "lamenta afetivamente o encaminhamento de menores para a prisão;"
+        },
+        {
+          "id": "E",
+          "text": "aplaude a aprovação da constitucionalidade da PEC que reduz a maioridade penal."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 2,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-1",
+        "title": "TEXTO 1 – O mito da maioridade penal",
+        "content": "TEXTO 1 – O mito da maioridade penal \n \n     Marcelo Freixo, O Globo, 02/04/2015 \n \n“Quando falo sobre redução da maioridade penal, \ncostumo dizer que a sociedade precisa decidir em que banco \nquer ver a juventude. Se no banco da escola ou no banco dos \nréus. Anteontem, o Congresso Nacional sinalizou que prefere a \nsegunda opção. A Comissão de Constituição e Justiça da Câmara \ndos Deputados aprovou a constitucionalidade da PEC que reduz a \nmaioridade penal de 18 para 16 anos”. \n \n1 \nSegundo o expresso no texto 1, depreende-se que o autor do \ntexto: \n(A) apoia a decisão da Comissão de Constituição e Justiça da \nCâmara; \n(B) critica o sistema educacional, incapaz de manter as crianças \nna escola; \n(C) desaprova a redução da maioridade penal de 18 para 16 \nanos; \n(D) lamenta afetivamente o encaminhamento de menores para a \nprisão; \n(E) aplaude a aprovação da constitucionalidade da PEC que reduz \na maioridade penal. \n \n2 \nO \nautor \ndo \ntexto \n1 \napela \npara \nalgumas \nestratégias \nargumentativas; a estratégia identificada de forma correta e \nadequada ao texto é: \n(A) a criação de autoridade para os seus argumentos ao citar a \nComissão de Constituição e Justiça da Câmara dos \nDeputados; \n(B) o aumento da força de seus argumentos ao colocar as \nopiniões em primeira pessoa do singular; \n(C) o apelo à intimidação do leitor, antecipando os perigos sociais \nde uma parte delinquente de nossa juventude; \n(D) a utilização de um falso argumento “ou um ou outro”, ao \ndizer “no banco da escola ou no banco dos réus”; \n(E) o uso de argumento apoiado em pública autoridade ao \nindicar a preferência do Congresso Nacional pela redução da \nmaioridade penal. \n \n3 \n“Se no banco da escola ou no banco dos réus. Anteontem, o \nCongresso Nacional sinalizou que prefere a segunda opção”. \nA forma correta dos demonstrativos na substituição do termo \nsublinhado é: \n(A) esse/àquele; \n(B) este/àquele; \n(C) aquele a esse; \n(D) aquele a este; \n(E) esse a este. \n \n4 \nA charge abaixo, publicada no jornal O Dia (PI) em 1 de abril de \n2015, produz humor apoiada numa figura de linguagem expressa \ngraficamente, figura essa denominada: \n \n(A) metáfora; \n(B) metonímia; \n(C) hipérbole; \n(D) pleonasmo; \n(E) catacrese. \n \n5 \n \nA charge acima, do caricaturista Samuca, publicada no Diário de \nPernambuco em 1 de abril de 2015, expõe um dos pontos de \nvista sobre a redução da maioridade penal, que pode ser \nexpresso na seguinte frase: \n(A) A infância abandonada pelos pais, que passam todo o dia fora \nde casa, acaba por cometer delitos que a levam para a cadeia; \n(B) O fato de muitas crianças trocarem a sala de aula pelo campo \nde futebol pode ser o início de uma vida na ilegalidade; \n(C) Crianças devem ser tratadas como tais e não serem passíveis \nde penas que atingem os adultos; \n(D) O futebol, como outros esportes, pode servir de caminho \npara que as crianças não ingressem no mundo do crime; \n(E) A redução da maioridade penal não deve atingir as crianças \nmuito pequenas, que devem ocupar seu tempo em estudo e \ndivertimento."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q02",
+      "numeroOriginal": 2,
+      "tipo": "multipla_escolha",
+      "enunciado": "O autor do texto 1 apela para algumas estratégias argumentativas; a estratégia identificada de forma correta e adequada ao texto é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "a criação de autoridade para os seus argumentos ao citar a Comissão de Constituição e Justiça da Câmara dos Deputados;"
+        },
+        {
+          "id": "B",
+          "text": "o aumento da força de seus argumentos ao colocar as opiniões em primeira pessoa do singular;"
+        },
+        {
+          "id": "C",
+          "text": "o apelo à intimidação do leitor, antecipando os perigos sociais de uma parte delinquente de nossa juventude;"
+        },
+        {
+          "id": "D",
+          "text": "a utilização de um falso argumento “ou um ou outro”, ao dizer “no banco da escola ou no banco dos réus”;"
+        },
+        {
+          "id": "E",
+          "text": "o uso de argumento apoiado em pública autoridade ao indicar a preferência do Congresso Nacional pela redução da maioridade penal."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 2,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-1",
+        "title": "TEXTO 1 – O mito da maioridade penal",
+        "content": "TEXTO 1 – O mito da maioridade penal \n \n     Marcelo Freixo, O Globo, 02/04/2015 \n \n“Quando falo sobre redução da maioridade penal, \ncostumo dizer que a sociedade precisa decidir em que banco \nquer ver a juventude. Se no banco da escola ou no banco dos \nréus. Anteontem, o Congresso Nacional sinalizou que prefere a \nsegunda opção. A Comissão de Constituição e Justiça da Câmara \ndos Deputados aprovou a constitucionalidade da PEC que reduz a \nmaioridade penal de 18 para 16 anos”. \n \n1 \nSegundo o expresso no texto 1, depreende-se que o autor do \ntexto: \n(A) apoia a decisão da Comissão de Constituição e Justiça da \nCâmara; \n(B) critica o sistema educacional, incapaz de manter as crianças \nna escola; \n(C) desaprova a redução da maioridade penal de 18 para 16 \nanos; \n(D) lamenta afetivamente o encaminhamento de menores para a \nprisão; \n(E) aplaude a aprovação da constitucionalidade da PEC que reduz \na maioridade penal. \n \n2 \nO \nautor \ndo \ntexto \n1 \napela \npara \nalgumas \nestratégias \nargumentativas; a estratégia identificada de forma correta e \nadequada ao texto é: \n(A) a criação de autoridade para os seus argumentos ao citar a \nComissão de Constituição e Justiça da Câmara dos \nDeputados; \n(B) o aumento da força de seus argumentos ao colocar as \nopiniões em primeira pessoa do singular; \n(C) o apelo à intimidação do leitor, antecipando os perigos sociais \nde uma parte delinquente de nossa juventude; \n(D) a utilização de um falso argumento “ou um ou outro”, ao \ndizer “no banco da escola ou no banco dos réus”; \n(E) o uso de argumento apoiado em pública autoridade ao \nindicar a preferência do Congresso Nacional pela redução da \nmaioridade penal. \n \n3 \n“Se no banco da escola ou no banco dos réus. Anteontem, o \nCongresso Nacional sinalizou que prefere a segunda opção”. \nA forma correta dos demonstrativos na substituição do termo \nsublinhado é: \n(A) esse/àquele; \n(B) este/àquele; \n(C) aquele a esse; \n(D) aquele a este; \n(E) esse a este. \n \n4 \nA charge abaixo, publicada no jornal O Dia (PI) em 1 de abril de \n2015, produz humor apoiada numa figura de linguagem expressa \ngraficamente, figura essa denominada: \n \n(A) metáfora; \n(B) metonímia; \n(C) hipérbole; \n(D) pleonasmo; \n(E) catacrese. \n \n5 \n \nA charge acima, do caricaturista Samuca, publicada no Diário de \nPernambuco em 1 de abril de 2015, expõe um dos pontos de \nvista sobre a redução da maioridade penal, que pode ser \nexpresso na seguinte frase: \n(A) A infância abandonada pelos pais, que passam todo o dia fora \nde casa, acaba por cometer delitos que a levam para a cadeia; \n(B) O fato de muitas crianças trocarem a sala de aula pelo campo \nde futebol pode ser o início de uma vida na ilegalidade; \n(C) Crianças devem ser tratadas como tais e não serem passíveis \nde penas que atingem os adultos; \n(D) O futebol, como outros esportes, pode servir de caminho \npara que as crianças não ingressem no mundo do crime; \n(E) A redução da maioridade penal não deve atingir as crianças \nmuito pequenas, que devem ocupar seu tempo em estudo e \ndivertimento."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q03",
+      "numeroOriginal": 3,
+      "tipo": "multipla_escolha",
+      "enunciado": "“Se no banco da escola ou no banco dos réus. Anteontem, o Congresso Nacional sinalizou que prefere a segunda opção”. A forma correta dos demonstrativos na substituição do termo sublinhado é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "esse/àquele;"
+        },
+        {
+          "id": "B",
+          "text": "este/àquele;"
+        },
+        {
+          "id": "C",
+          "text": "aquele a esse;"
+        },
+        {
+          "id": "D",
+          "text": "aquele a este;"
+        },
+        {
+          "id": "E",
+          "text": "esse a este."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 2,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-1",
+        "title": "TEXTO 1 – O mito da maioridade penal",
+        "content": "TEXTO 1 – O mito da maioridade penal \n \n     Marcelo Freixo, O Globo, 02/04/2015 \n \n“Quando falo sobre redução da maioridade penal, \ncostumo dizer que a sociedade precisa decidir em que banco \nquer ver a juventude. Se no banco da escola ou no banco dos \nréus. Anteontem, o Congresso Nacional sinalizou que prefere a \nsegunda opção. A Comissão de Constituição e Justiça da Câmara \ndos Deputados aprovou a constitucionalidade da PEC que reduz a \nmaioridade penal de 18 para 16 anos”. \n \n1 \nSegundo o expresso no texto 1, depreende-se que o autor do \ntexto: \n(A) apoia a decisão da Comissão de Constituição e Justiça da \nCâmara; \n(B) critica o sistema educacional, incapaz de manter as crianças \nna escola; \n(C) desaprova a redução da maioridade penal de 18 para 16 \nanos; \n(D) lamenta afetivamente o encaminhamento de menores para a \nprisão; \n(E) aplaude a aprovação da constitucionalidade da PEC que reduz \na maioridade penal. \n \n2 \nO \nautor \ndo \ntexto \n1 \napela \npara \nalgumas \nestratégias \nargumentativas; a estratégia identificada de forma correta e \nadequada ao texto é: \n(A) a criação de autoridade para os seus argumentos ao citar a \nComissão de Constituição e Justiça da Câmara dos \nDeputados; \n(B) o aumento da força de seus argumentos ao colocar as \nopiniões em primeira pessoa do singular; \n(C) o apelo à intimidação do leitor, antecipando os perigos sociais \nde uma parte delinquente de nossa juventude; \n(D) a utilização de um falso argumento “ou um ou outro”, ao \ndizer “no banco da escola ou no banco dos réus”; \n(E) o uso de argumento apoiado em pública autoridade ao \nindicar a preferência do Congresso Nacional pela redução da \nmaioridade penal. \n \n3 \n“Se no banco da escola ou no banco dos réus. Anteontem, o \nCongresso Nacional sinalizou que prefere a segunda opção”. \nA forma correta dos demonstrativos na substituição do termo \nsublinhado é: \n(A) esse/àquele; \n(B) este/àquele; \n(C) aquele a esse; \n(D) aquele a este; \n(E) esse a este. \n \n4 \nA charge abaixo, publicada no jornal O Dia (PI) em 1 de abril de \n2015, produz humor apoiada numa figura de linguagem expressa \ngraficamente, figura essa denominada: \n \n(A) metáfora; \n(B) metonímia; \n(C) hipérbole; \n(D) pleonasmo; \n(E) catacrese. \n \n5 \n \nA charge acima, do caricaturista Samuca, publicada no Diário de \nPernambuco em 1 de abril de 2015, expõe um dos pontos de \nvista sobre a redução da maioridade penal, que pode ser \nexpresso na seguinte frase: \n(A) A infância abandonada pelos pais, que passam todo o dia fora \nde casa, acaba por cometer delitos que a levam para a cadeia; \n(B) O fato de muitas crianças trocarem a sala de aula pelo campo \nde futebol pode ser o início de uma vida na ilegalidade; \n(C) Crianças devem ser tratadas como tais e não serem passíveis \nde penas que atingem os adultos; \n(D) O futebol, como outros esportes, pode servir de caminho \npara que as crianças não ingressem no mundo do crime; \n(E) A redução da maioridade penal não deve atingir as crianças \nmuito pequenas, que devem ocupar seu tempo em estudo e \ndivertimento."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q04",
+      "numeroOriginal": 4,
+      "tipo": "multipla_escolha",
+      "enunciado": "A charge abaixo, publicada no jornal O Dia (PI) em 1 de abril de 2015, produz humor apoiada numa figura de linguagem expressa graficamente, figura essa denominada:\n\n![Charge](/assets/exams/analista_contabil_tipo_1/q04_charge.png)",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "metáfora;"
+        },
+        {
+          "id": "B",
+          "text": "metonímia;"
+        },
+        {
+          "id": "C",
+          "text": "hipérbole;"
+        },
+        {
+          "id": "D",
+          "text": "pleonasmo;"
+        },
+        {
+          "id": "E",
+          "text": "catacrese."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 2,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "imagens": [
+        "/assets/exams/analista_contabil_tipo_1/q04_charge.png"
+      ],
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-1",
+        "title": "TEXTO 1 – O mito da maioridade penal",
+        "content": "TEXTO 1 – O mito da maioridade penal \n \n     Marcelo Freixo, O Globo, 02/04/2015 \n \n“Quando falo sobre redução da maioridade penal, \ncostumo dizer que a sociedade precisa decidir em que banco \nquer ver a juventude. Se no banco da escola ou no banco dos \nréus. Anteontem, o Congresso Nacional sinalizou que prefere a \nsegunda opção. A Comissão de Constituição e Justiça da Câmara \ndos Deputados aprovou a constitucionalidade da PEC que reduz a \nmaioridade penal de 18 para 16 anos”. \n \n1 \nSegundo o expresso no texto 1, depreende-se que o autor do \ntexto: \n(A) apoia a decisão da Comissão de Constituição e Justiça da \nCâmara; \n(B) critica o sistema educacional, incapaz de manter as crianças \nna escola; \n(C) desaprova a redução da maioridade penal de 18 para 16 \nanos; \n(D) lamenta afetivamente o encaminhamento de menores para a \nprisão; \n(E) aplaude a aprovação da constitucionalidade da PEC que reduz \na maioridade penal. \n \n2 \nO \nautor \ndo \ntexto \n1 \napela \npara \nalgumas \nestratégias \nargumentativas; a estratégia identificada de forma correta e \nadequada ao texto é: \n(A) a criação de autoridade para os seus argumentos ao citar a \nComissão de Constituição e Justiça da Câmara dos \nDeputados; \n(B) o aumento da força de seus argumentos ao colocar as \nopiniões em primeira pessoa do singular; \n(C) o apelo à intimidação do leitor, antecipando os perigos sociais \nde uma parte delinquente de nossa juventude; \n(D) a utilização de um falso argumento “ou um ou outro”, ao \ndizer “no banco da escola ou no banco dos réus”; \n(E) o uso de argumento apoiado em pública autoridade ao \nindicar a preferência do Congresso Nacional pela redução da \nmaioridade penal. \n \n3 \n“Se no banco da escola ou no banco dos réus. Anteontem, o \nCongresso Nacional sinalizou que prefere a segunda opção”. \nA forma correta dos demonstrativos na substituição do termo \nsublinhado é: \n(A) esse/àquele; \n(B) este/àquele; \n(C) aquele a esse; \n(D) aquele a este; \n(E) esse a este. \n \n4 \nA charge abaixo, publicada no jornal O Dia (PI) em 1 de abril de \n2015, produz humor apoiada numa figura de linguagem expressa \ngraficamente, figura essa denominada: \n \n(A) metáfora; \n(B) metonímia; \n(C) hipérbole; \n(D) pleonasmo; \n(E) catacrese. \n \n5 \n \nA charge acima, do caricaturista Samuca, publicada no Diário de \nPernambuco em 1 de abril de 2015, expõe um dos pontos de \nvista sobre a redução da maioridade penal, que pode ser \nexpresso na seguinte frase: \n(A) A infância abandonada pelos pais, que passam todo o dia fora \nde casa, acaba por cometer delitos que a levam para a cadeia; \n(B) O fato de muitas crianças trocarem a sala de aula pelo campo \nde futebol pode ser o início de uma vida na ilegalidade; \n(C) Crianças devem ser tratadas como tais e não serem passíveis \nde penas que atingem os adultos; \n(D) O futebol, como outros esportes, pode servir de caminho \npara que as crianças não ingressem no mundo do crime; \n(E) A redução da maioridade penal não deve atingir as crianças \nmuito pequenas, que devem ocupar seu tempo em estudo e \ndivertimento."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q05",
+      "numeroOriginal": 5,
+      "tipo": "multipla_escolha",
+      "enunciado": "A charge acima, do caricaturista Samuca, publicada no Diário de Pernambuco em 1 de abril de 2015, expõe um dos pontos de vista sobre a redução da maioridade penal, que pode ser expresso na seguinte frase:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "A infância abandonada pelos pais, que passam todo o dia fora de casa, acaba por cometer delitos que a levam para a cadeia;"
+        },
+        {
+          "id": "B",
+          "text": "O fato de muitas crianças trocarem a sala de aula pelo campo de futebol pode ser o início de uma vida na ilegalidade;"
+        },
+        {
+          "id": "C",
+          "text": "Crianças devem ser tratadas como tais e não serem passíveis de penas que atingem os adultos;"
+        },
+        {
+          "id": "D",
+          "text": "O futebol, como outros esportes, pode servir de caminho para que as crianças não ingressem no mundo do crime;"
+        },
+        {
+          "id": "E",
+          "text": "A redução da maioridade penal não deve atingir as crianças muito pequenas, que devem ocupar seu tempo em estudo e divertimento."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 2,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-1",
+        "title": "TEXTO 1 – O mito da maioridade penal",
+        "content": "TEXTO 1 – O mito da maioridade penal \n \n     Marcelo Freixo, O Globo, 02/04/2015 \n \n“Quando falo sobre redução da maioridade penal, \ncostumo dizer que a sociedade precisa decidir em que banco \nquer ver a juventude. Se no banco da escola ou no banco dos \nréus. Anteontem, o Congresso Nacional sinalizou que prefere a \nsegunda opção. A Comissão de Constituição e Justiça da Câmara \ndos Deputados aprovou a constitucionalidade da PEC que reduz a \nmaioridade penal de 18 para 16 anos”. \n \n1 \nSegundo o expresso no texto 1, depreende-se que o autor do \ntexto: \n(A) apoia a decisão da Comissão de Constituição e Justiça da \nCâmara; \n(B) critica o sistema educacional, incapaz de manter as crianças \nna escola; \n(C) desaprova a redução da maioridade penal de 18 para 16 \nanos; \n(D) lamenta afetivamente o encaminhamento de menores para a \nprisão; \n(E) aplaude a aprovação da constitucionalidade da PEC que reduz \na maioridade penal. \n \n2 \nO \nautor \ndo \ntexto \n1 \napela \npara \nalgumas \nestratégias \nargumentativas; a estratégia identificada de forma correta e \nadequada ao texto é: \n(A) a criação de autoridade para os seus argumentos ao citar a \nComissão de Constituição e Justiça da Câmara dos \nDeputados; \n(B) o aumento da força de seus argumentos ao colocar as \nopiniões em primeira pessoa do singular; \n(C) o apelo à intimidação do leitor, antecipando os perigos sociais \nde uma parte delinquente de nossa juventude; \n(D) a utilização de um falso argumento “ou um ou outro”, ao \ndizer “no banco da escola ou no banco dos réus”; \n(E) o uso de argumento apoiado em pública autoridade ao \nindicar a preferência do Congresso Nacional pela redução da \nmaioridade penal. \n \n3 \n“Se no banco da escola ou no banco dos réus. Anteontem, o \nCongresso Nacional sinalizou que prefere a segunda opção”. \nA forma correta dos demonstrativos na substituição do termo \nsublinhado é: \n(A) esse/àquele; \n(B) este/àquele; \n(C) aquele a esse; \n(D) aquele a este; \n(E) esse a este. \n \n4 \nA charge abaixo, publicada no jornal O Dia (PI) em 1 de abril de \n2015, produz humor apoiada numa figura de linguagem expressa \ngraficamente, figura essa denominada: \n \n(A) metáfora; \n(B) metonímia; \n(C) hipérbole; \n(D) pleonasmo; \n(E) catacrese. \n \n5 \n \nA charge acima, do caricaturista Samuca, publicada no Diário de \nPernambuco em 1 de abril de 2015, expõe um dos pontos de \nvista sobre a redução da maioridade penal, que pode ser \nexpresso na seguinte frase: \n(A) A infância abandonada pelos pais, que passam todo o dia fora \nde casa, acaba por cometer delitos que a levam para a cadeia; \n(B) O fato de muitas crianças trocarem a sala de aula pelo campo \nde futebol pode ser o início de uma vida na ilegalidade; \n(C) Crianças devem ser tratadas como tais e não serem passíveis \nde penas que atingem os adultos; \n(D) O futebol, como outros esportes, pode servir de caminho \npara que as crianças não ingressem no mundo do crime; \n(E) A redução da maioridade penal não deve atingir as crianças \nmuito pequenas, que devem ocupar seu tempo em estudo e \ndivertimento."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q06",
+      "numeroOriginal": 6,
+      "tipo": "multipla_escolha",
+      "enunciado": "Abaixo foram transcritos trechos de cartas de leitores de um jornal sobre a maioridade penal; a opção cujo posicionamento contraria especificamente uma afirmação do texto 1 é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "“Ser a favor ou contra a redução da maioridade penal é um direito inalienável de cada cidadão, mas, alegar que a redução de 18 para 16 anos colocará a nossa juventude no sistema prisional é o mesmo que confundir alhos com bugalhos”."
+        },
+        {
+          "id": "B",
+          "text": "“O discurso contrário à redução da maioridade penal é o mesmo, assim como as justificativas para não adotá-la no país. Uma delas é a questão da precariedade do sistema penitenciário no Brasil”."
+        },
+        {
+          "id": "C",
+          "text": "“Preocupante que a CCJ tenha dado aval para que a proposta de redução da menoridade penal seja discutida e até votada no Congresso Nacional”."
+        },
+        {
+          "id": "D",
+          "text": "“Mandar adolescentes para a cadeia só irá piorar as coisas e aumentar ainda mais a violência e o crime na já conturbada sociedade brasileira”."
+        },
+        {
+          "id": "E",
+          "text": "“Ninguém acredita que essa redução da maioridade penal irá resolver a questão da segurança pública. Apenas acreditamos que homicidas serão, realmente, punidos”."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 3,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-1",
+        "title": "TEXTO 1 – O mito da maioridade penal",
+        "content": "TEXTO 1 – O mito da maioridade penal \n \n     Marcelo Freixo, O Globo, 02/04/2015 \n \n“Quando falo sobre redução da maioridade penal, \ncostumo dizer que a sociedade precisa decidir em que banco \nquer ver a juventude. Se no banco da escola ou no banco dos \nréus. Anteontem, o Congresso Nacional sinalizou que prefere a \nsegunda opção. A Comissão de Constituição e Justiça da Câmara \ndos Deputados aprovou a constitucionalidade da PEC que reduz a \nmaioridade penal de 18 para 16 anos”. \n \n1 \nSegundo o expresso no texto 1, depreende-se que o autor do \ntexto: \n(A) apoia a decisão da Comissão de Constituição e Justiça da \nCâmara; \n(B) critica o sistema educacional, incapaz de manter as crianças \nna escola; \n(C) desaprova a redução da maioridade penal de 18 para 16 \nanos; \n(D) lamenta afetivamente o encaminhamento de menores para a \nprisão; \n(E) aplaude a aprovação da constitucionalidade da PEC que reduz \na maioridade penal. \n \n2 \nO \nautor \ndo \ntexto \n1 \napela \npara \nalgumas \nestratégias \nargumentativas; a estratégia identificada de forma correta e \nadequada ao texto é: \n(A) a criação de autoridade para os seus argumentos ao citar a \nComissão de Constituição e Justiça da Câmara dos \nDeputados; \n(B) o aumento da força de seus argumentos ao colocar as \nopiniões em primeira pessoa do singular; \n(C) o apelo à intimidação do leitor, antecipando os perigos sociais \nde uma parte delinquente de nossa juventude; \n(D) a utilização de um falso argumento “ou um ou outro”, ao \ndizer “no banco da escola ou no banco dos réus”; \n(E) o uso de argumento apoiado em pública autoridade ao \nindicar a preferência do Congresso Nacional pela redução da \nmaioridade penal. \n \n3 \n“Se no banco da escola ou no banco dos réus. Anteontem, o \nCongresso Nacional sinalizou que prefere a segunda opção”. \nA forma correta dos demonstrativos na substituição do termo \nsublinhado é: \n(A) esse/àquele; \n(B) este/àquele; \n(C) aquele a esse; \n(D) aquele a este; \n(E) esse a este. \n \n4 \nA charge abaixo, publicada no jornal O Dia (PI) em 1 de abril de \n2015, produz humor apoiada numa figura de linguagem expressa \ngraficamente, figura essa denominada: \n \n(A) metáfora; \n(B) metonímia; \n(C) hipérbole; \n(D) pleonasmo; \n(E) catacrese. \n \n5 \n \nA charge acima, do caricaturista Samuca, publicada no Diário de \nPernambuco em 1 de abril de 2015, expõe um dos pontos de \nvista sobre a redução da maioridade penal, que pode ser \nexpresso na seguinte frase: \n(A) A infância abandonada pelos pais, que passam todo o dia fora \nde casa, acaba por cometer delitos que a levam para a cadeia; \n(B) O fato de muitas crianças trocarem a sala de aula pelo campo \nde futebol pode ser o início de uma vida na ilegalidade; \n(C) Crianças devem ser tratadas como tais e não serem passíveis \nde penas que atingem os adultos; \n(D) O futebol, como outros esportes, pode servir de caminho \npara que as crianças não ingressem no mundo do crime; \n(E) A redução da maioridade penal não deve atingir as crianças \nmuito pequenas, que devem ocupar seu tempo em estudo e \ndivertimento."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q07",
+      "numeroOriginal": 7,
+      "tipo": "multipla_escolha",
+      "enunciado": "Ao intitular o texto 1 como “O mito da maioridade penal” o autor do texto:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "antecipa um posicionamento sobre o tema abordado;"
+        },
+        {
+          "id": "B",
+          "text": "mostra o tema como algo fora de época;"
+        },
+        {
+          "id": "C",
+          "text": "destaca o tema como algo importante;"
+        },
+        {
+          "id": "D",
+          "text": "considera o tema do ponto de vista literário;"
+        },
+        {
+          "id": "E",
+          "text": "condena a discussão do tema."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 3,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-1",
+        "title": "TEXTO 1 – O mito da maioridade penal",
+        "content": "TEXTO 1 – O mito da maioridade penal \n \n     Marcelo Freixo, O Globo, 02/04/2015 \n \n“Quando falo sobre redução da maioridade penal, \ncostumo dizer que a sociedade precisa decidir em que banco \nquer ver a juventude. Se no banco da escola ou no banco dos \nréus. Anteontem, o Congresso Nacional sinalizou que prefere a \nsegunda opção. A Comissão de Constituição e Justiça da Câmara \ndos Deputados aprovou a constitucionalidade da PEC que reduz a \nmaioridade penal de 18 para 16 anos”. \n \n1 \nSegundo o expresso no texto 1, depreende-se que o autor do \ntexto: \n(A) apoia a decisão da Comissão de Constituição e Justiça da \nCâmara; \n(B) critica o sistema educacional, incapaz de manter as crianças \nna escola; \n(C) desaprova a redução da maioridade penal de 18 para 16 \nanos; \n(D) lamenta afetivamente o encaminhamento de menores para a \nprisão; \n(E) aplaude a aprovação da constitucionalidade da PEC que reduz \na maioridade penal. \n \n2 \nO \nautor \ndo \ntexto \n1 \napela \npara \nalgumas \nestratégias \nargumentativas; a estratégia identificada de forma correta e \nadequada ao texto é: \n(A) a criação de autoridade para os seus argumentos ao citar a \nComissão de Constituição e Justiça da Câmara dos \nDeputados; \n(B) o aumento da força de seus argumentos ao colocar as \nopiniões em primeira pessoa do singular; \n(C) o apelo à intimidação do leitor, antecipando os perigos sociais \nde uma parte delinquente de nossa juventude; \n(D) a utilização de um falso argumento “ou um ou outro”, ao \ndizer “no banco da escola ou no banco dos réus”; \n(E) o uso de argumento apoiado em pública autoridade ao \nindicar a preferência do Congresso Nacional pela redução da \nmaioridade penal. \n \n3 \n“Se no banco da escola ou no banco dos réus. Anteontem, o \nCongresso Nacional sinalizou que prefere a segunda opção”. \nA forma correta dos demonstrativos na substituição do termo \nsublinhado é: \n(A) esse/àquele; \n(B) este/àquele; \n(C) aquele a esse; \n(D) aquele a este; \n(E) esse a este. \n \n4 \nA charge abaixo, publicada no jornal O Dia (PI) em 1 de abril de \n2015, produz humor apoiada numa figura de linguagem expressa \ngraficamente, figura essa denominada: \n \n(A) metáfora; \n(B) metonímia; \n(C) hipérbole; \n(D) pleonasmo; \n(E) catacrese. \n \n5 \n \nA charge acima, do caricaturista Samuca, publicada no Diário de \nPernambuco em 1 de abril de 2015, expõe um dos pontos de \nvista sobre a redução da maioridade penal, que pode ser \nexpresso na seguinte frase: \n(A) A infância abandonada pelos pais, que passam todo o dia fora \nde casa, acaba por cometer delitos que a levam para a cadeia; \n(B) O fato de muitas crianças trocarem a sala de aula pelo campo \nde futebol pode ser o início de uma vida na ilegalidade; \n(C) Crianças devem ser tratadas como tais e não serem passíveis \nde penas que atingem os adultos; \n(D) O futebol, como outros esportes, pode servir de caminho \npara que as crianças não ingressem no mundo do crime; \n(E) A redução da maioridade penal não deve atingir as crianças \nmuito pequenas, que devem ocupar seu tempo em estudo e \ndivertimento."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q08",
+      "numeroOriginal": 8,
+      "tipo": "multipla_escolha",
+      "enunciado": "A UOL Cotidiano lista uma série de razões contra e a favor da redução da maioridade penal; a razão abaixo que NÃO está adequadamente expressa contra a redução é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "a redução da maioridade penal fere uma das cláusulas pétreas (aquelas que não podem ser modificadas por congressistas) da Constituição de 1988;"
+        },
+        {
+          "id": "B",
+          "text": "a inclusão de jovens a partir de 16 anos no sistema prisional brasileiro não iria contribuir para a sua reinserção na sociedade;"
+        },
+        {
+          "id": "C",
+          "text": "a pressão para a redução da maioridade penal está baseada em dados estatísticos e não em  casos isolados;"
+        },
+        {
+          "id": "D",
+          "text": "em vez de reduzir a maioridade penal, o governo deveria investir em educação e em políticas públicas para proteger os jovens e diminuir a vulnerabilidade deles ao crime;"
+        },
+        {
+          "id": "E",
+          "text": "a redução da maioridade penal iria afetar, preferencialmente, jovens negros, pobres e moradores de áreas periféricas do Brasil, na medida em que este é o perfil de boa parte da população carcerária brasileira."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 3,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q09",
+      "numeroOriginal": 9,
+      "tipo": "multipla_escolha",
+      "enunciado": "“O Brasil precisa alinhar a sua legislação à de países desenvolvidos como os Estados Unidos, onde, na maioria dos Estados, adolescentes acima de 12 anos de idade podem ser submetidos a processos judiciais da mesma forma que adultos”. Sobre esse argumento, a afirmação correta é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "mostra opinião contrária à redução da maioridade penal;"
+        },
+        {
+          "id": "B",
+          "text": "indica a legislação de todos os estados americanos como parâmetro a ser seguido no Brasil;"
+        },
+        {
+          "id": "C",
+          "text": "destaca os países desenvolvidos como exemplos onde a redução da maioridade penal não foi adotada;"
+        },
+        {
+          "id": "D",
+          "text": "apela a um absurdo a fim de que a força de seu argumento seja intensificada;"
+        },
+        {
+          "id": "E",
+          "text": "aponta um país considerado superior ao Brasil onde já se aplica a redução da maioridade penal para que sirva de exemplo."
+        }
+      ],
+      "gabaritoOficial": "E",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 3,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q10",
+      "numeroOriginal": 10,
+      "tipo": "multipla_escolha",
+      "enunciado": "Em documento que circula pela Internet estão apontadas 18 razões para que não haja redução da maioridade penal; entre elas, a razão que se apoia em fator sem referência a valor ou desvalor intrínseco da redução é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "a redução em foco esbarra no fato de o sistema prisional brasileiro não suportar mais pessoas;"
+        },
+        {
+          "id": "B",
+          "text": "a redução da maioridade penal trata o efeito, mas não a causa;"
+        },
+        {
+          "id": "C",
+          "text": "a redução da maioridade penal não afasta os adolescentes do crime;"
+        },
+        {
+          "id": "D",
+          "text": "a redução pretendida afronta leis brasileiras e internacionais;"
+        },
+        {
+          "id": "E",
+          "text": "a redução almejada não respeita os direitos de crianças e adolescentes. TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma lei bem justa e generosa, ainda largamente ignorada em suas medidas de proteção e promoção. Mesmo quanto às sanções previstas no estatuto, antes de se chegar à internação, há uma série de outras menos severas, como a advertência, a prestação de serviços à comunidade e a liberdade assistida, que são frequentemente ignoradas, passando-se diretamente à privação de liberdade, mesmo em casos em que isso não se justifica. Os poderes públicos, inclusive o Judiciário, estão em dívida com a sociedade por conta da inobservância do estatuto em sua integralidade. Reconheço que a punição não é o único remédio para a violência cometida pelos jovens. Evidentemente, políticas sociais, educação, prevenção, assistência social são medidas que, se aplicadas no universo da população jovem, terão o condão, efetivamente, de reduzir a violência. Mas, em determinados casos, é preciso uma punição mais eficaz do que aquelas preconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio Nunes Ferreira, Época)."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 3,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q11",
+      "numeroOriginal": 11,
+      "tipo": "multipla_escolha",
+      "enunciado": "Argumentativamente falando, as palavras do enunciador do texto 2:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "condenam o ECA por seu excesso de benevolência;"
+        },
+        {
+          "id": "B",
+          "text": "aplaudem o Governo por suas medidas educativas;"
+        },
+        {
+          "id": "C",
+          "text": "criticam os poderes públicos por só aplicarem as leis estabelecidas pelo ECA;"
+        },
+        {
+          "id": "D",
+          "text": "apoiam o ECA, mas reconhecem limitações em alguns casos;"
+        },
+        {
+          "id": "E",
+          "text": "defendem incondicionalmente a redução da maioridade penal."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 3,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q12",
+      "numeroOriginal": 12,
+      "tipo": "multipla_escolha",
+      "enunciado": "“O Estatuto da Criança e do Adolescente, o ECA, é uma lei bem justa e generosa, ainda largamente ignorada em suas medidas de proteção e promoção”. A inclusão de uma vírgula entre os dois segmentos (texto 2) faz supor a implícita existência de um conector entre eles; tal conector deveria representar:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "uma concessão, como “ainda que”;"
+        },
+        {
+          "id": "B",
+          "text": "uma adversidade, como “porém”;"
+        },
+        {
+          "id": "C",
+          "text": "uma conclusão, como “logo”;"
+        },
+        {
+          "id": "D",
+          "text": "uma explicação , como “pois”;"
+        },
+        {
+          "id": "E",
+          "text": "uma proporcionalidade, como “à medida que”."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 4,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q13",
+      "numeroOriginal": 13,
+      "tipo": "multipla_escolha",
+      "enunciado": "“<u>Mesmo</u> quanto às sanções previstas no estatuto, antes de se chegar à internação, há uma série de outras menos severas, como a advertência, a prestação de serviços à comunidade e a liberdade assistida, que são frequentemente ignoradas, passando-se diretamente à privação de liberdade, <u>mesmo</u> em casos em que isso não se justifica”. Nesse segmento do texto 2 há duas ocorrências sublinhadas do vocábulo “mesmo”; sobre essas ocorrências, é correto afirmar que:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "ambas equivalem ao sentido de inclusão;"
+        },
+        {
+          "id": "B",
+          "text": "só a primeira ocorrência indica concessão;"
+        },
+        {
+          "id": "C",
+          "text": "só a segunda ocorrência indica concessão;"
+        },
+        {
+          "id": "D",
+          "text": "só a primeira ocorrência indica inclusão;"
+        },
+        {
+          "id": "E",
+          "text": "só a segunda ocorrência indica inclusão."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 4,
+        "temSublinhado": true,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q14",
+      "numeroOriginal": 14,
+      "tipo": "multipla_escolha",
+      "enunciado": "“Mesmo quanto às sanções previstas no estatuto, antes de se chegar à internação, há uma série de outras menos severas, como a advertência, a prestação de serviços à comunidade e a liberdade assistida, que (1) são frequentemente ignoradas, passando-se diretamente à privação de liberdade, mesmo em casos em que (2) isso não se justifica”. Nesse segmento do texto 2, o elemento que NÃO estabelece coesão formal com nenhum termo anterior é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "outras;"
+        },
+        {
+          "id": "B",
+          "text": "advertência;"
+        },
+        {
+          "id": "C",
+          "text": "que (1);"
+        },
+        {
+          "id": "D",
+          "text": "que (2);"
+        },
+        {
+          "id": "E",
+          "text": "isso."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 4,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q15",
+      "numeroOriginal": 15,
+      "tipo": "multipla_escolha",
+      "enunciado": "“O Estatuto da Criança e do Adolescente, o ECA, é uma lei bem justa e generosa, ainda largamente ignorada em suas medidas de proteção e promoção. Mesmo quanto às sanções previstas no estatuto, antes de se chegar à internação, há uma série de outras menos severas, como a advertência, a prestação de serviços à comunidade e a liberdade assistida, que são frequentemente ignoradas, passando-se diretamente à privação de liberdade, mesmo em casos em que isso não se justifica”. O adjetivo que, por sua tipologia, mostra um tipo diferente dos demais é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "ignorada;"
+        },
+        {
+          "id": "B",
+          "text": "previstas;"
+        },
+        {
+          "id": "C",
+          "text": "severas;"
+        },
+        {
+          "id": "D",
+          "text": "justa;"
+        },
+        {
+          "id": "E",
+          "text": "generosa."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 4,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q16",
+      "numeroOriginal": 16,
+      "tipo": "multipla_escolha",
+      "enunciado": "A frase abaixo em que está ausente qualquer processo de intensificação de adjetivos é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "“O Estatuto da Criança e do Adolescente, o ECA, é uma lei bem justa e generosa”;"
+        },
+        {
+          "id": "B",
+          "text": "“...ainda largamente ignorada em suas medidas de proteção e promoção”;"
+        },
+        {
+          "id": "C",
+          "text": "“Mesmo quanto às sanções previstas no estatuto, antes de se chegar à internação, há uma série de outras menos severas, como a advertência...”;"
+        },
+        {
+          "id": "D",
+          "text": "“...a prestação de serviços à comunidade e a liberdade assistida, que são frequentemente ignoradas”;"
+        },
+        {
+          "id": "E",
+          "text": "“...é preciso uma punição mais eficaz do que aquelas preconizadas pelo Estatuto da Criança e do Adolescente”."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 4,
+        "temSublinhado": true,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q17",
+      "numeroOriginal": 17,
+      "tipo": "multipla_escolha",
+      "enunciado": "Observe o gráfico a seguir e destaque a afirmação que se coaduna com os dados apresentados.\n\n![Gráfico](/assets/exams/analista_contabil_tipo_1/q17_grafico.png)",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Países desenvolvidos apoiam a redução da maioridade penal;"
+        },
+        {
+          "id": "B",
+          "text": "A segurança se consegue com a retirada de elementos perigosos das ruas;"
+        },
+        {
+          "id": "C",
+          "text": "A lei brasileira é mais rígida que a de muitos outros países desenvolvidos;"
+        },
+        {
+          "id": "D",
+          "text": "As dúvidas sobre a idade ideal de responsabilidade penal é visível;"
+        },
+        {
+          "id": "E",
+          "text": "Países subdesenvolvidos pretendem ressocializar os delinquentes."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 4,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "imagens": [
+        "/assets/exams/analista_contabil_tipo_1/q17_grafico.png"
+      ],
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q18",
+      "numeroOriginal": 18,
+      "tipo": "multipla_escolha",
+      "enunciado": "No texto 2 aparece o seguinte segmento: “Mesmo quanto às sanções previstas no estatuto, antes de se chegar à internação, há uma série de outras menos severas, como a advertência, a prestação de serviços à comunidade e a liberdade assistida, que são frequentemente ignoradas, passando-se diretamente à privação de liberdade, mesmo em casos em que isso não se justifica”. Sobre as sanções previstas, a afirmação correta é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "as sanções estão dispostas, no texto, em ordem crescente de penalização;"
+        },
+        {
+          "id": "B",
+          "text": "a internação aparece como menos grave do que a privação de liberdade;"
+        },
+        {
+          "id": "C",
+          "text": "as sanções menos severas incluem a internação;"
+        },
+        {
+          "id": "D",
+          "text": "as sanções aparecem citadas em ordem decrescente de rigor;"
+        },
+        {
+          "id": "E",
+          "text": "as sanções citadas aparecem citadas aleatoriamente."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 4,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q19",
+      "numeroOriginal": 19,
+      "tipo": "multipla_escolha",
+      "enunciado": "“Reconheço que a punição não é o único remédio para a violência cometida pelos jovens. Evidentemente, políticas sociais, educação, prevenção, assistência social são medidas que, se aplicadas no universo da população jovem, terão o condão, efetivamente, de reduzir a violência. Mas, em determinados casos, é preciso uma punição mais eficaz do que aquelas preconizadas pelo Estatuto da Criança e do Adolescente”. Os termos que, se trocados de posição, acarretam modificação de sentido, são:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "o único remédio / o remédio único;"
+        },
+        {
+          "id": "B",
+          "text": "população jovem / jovem população;"
+        },
+        {
+          "id": "C",
+          "text": "determinados casos / casos determinados;"
+        },
+        {
+          "id": "D",
+          "text": "punição mais eficaz / mais eficaz punição;"
+        },
+        {
+          "id": "E",
+          "text": "Estatuto da Criança e do Adolescente / Estatuto do Adolescente e da Criança."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 5,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q20",
+      "numeroOriginal": 20,
+      "tipo": "multipla_escolha",
+      "enunciado": "Entre as palavras abaixo, aquela que mostra uma formação distinta das demais é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "promoção;"
+        },
+        {
+          "id": "B",
+          "text": "proteção;"
+        },
+        {
+          "id": "C",
+          "text": "internação;"
+        },
+        {
+          "id": "D",
+          "text": "população;"
+        },
+        {
+          "id": "E",
+          "text": "prevenção."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 5,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q21",
+      "numeroOriginal": 21,
+      "tipo": "multipla_escolha",
+      "enunciado": "“Reconheço que a punição não é o único remédio para a violência cometida pelos jovens. Evidentemente, políticas sociais, educação, prevenção, assistência social são medidas que, se aplicadas no universo da população jovem, terão o condão, efetivamente, de reduzir a violência. Mas, em determinados casos, é preciso uma punição mais eficaz do que aquelas preconizadas pelo Estatuto da Criança e do Adolescente”. Nesse segmento do texto 2, o termo empregado em sentido conotativo (ou figurado) é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "punição;"
+        },
+        {
+          "id": "B",
+          "text": "remédio;"
+        },
+        {
+          "id": "C",
+          "text": "violência;"
+        },
+        {
+          "id": "D",
+          "text": "população;"
+        },
+        {
+          "id": "E",
+          "text": "Estatuto."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "assunto": "Interpretação e Gramática",
+        "subtopicos": [
+          "Compreensão de Texto",
+          "Tipologia Textual",
+          "Coesão e Coerência",
+          "Sintaxe",
+          "Semântica"
+        ],
+        "paginaOrigem": 5,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-texto-2",
+        "title": "TEXTO 2 – O Estatuto da Criança e do Adolescente",
+        "content": "TEXTO 2 - O Estatuto da Criança e do Adolescente, o ECA, é uma \nlei bem justa e generosa, ainda largamente ignorada em suas \nmedidas de proteção e promoção. Mesmo quanto às sanções \nprevistas no estatuto, antes de se chegar à internação, há uma \nsérie de outras menos severas, como a advertência, a prestação \nde serviços à comunidade e a liberdade assistida, que são \nfrequentemente ignoradas, passando-se diretamente à privação \nde liberdade, mesmo em casos em que isso não se justifica. Os \npoderes públicos, inclusive o Judiciário, estão em dívida com a \nsociedade por conta da inobservância do estatuto em sua \nintegralidade. \nReconheço que a punição não é o único remédio para a violência \ncometida \npelos \njovens. \nEvidentemente, \npolíticas \nsociais, \neducação, prevenção, assistência social são medidas que, se \naplicadas no universo da população jovem, terão o condão, \nefetivamente, de reduzir a violência. Mas, em determinados \ncasos, é preciso uma punição mais eficaz do que aquelas \npreconizadas pelo Estatuto da Criança e do Adolescente. (Aloysio \nNunes Ferreira, Época). \n11 \nArgumentativamente falando, as palavras do enunciador do texto 2: \n(A) condenam o ECA por seu excesso de benevolência; \n(B) aplaudem o Governo por suas medidas educativas; \n(C) criticam os poderes públicos por só aplicarem as leis \nestabelecidas pelo ECA; \n(D) apoiam o ECA, mas reconhecem limitações em alguns casos; \n(E) defendem incondicionalmente a redução da maioridade \npenal."
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q22",
+      "numeroOriginal": 22,
+      "tipo": "multipla_escolha",
+      "enunciado": "A conta de “Ajuste Acumulado de Conversão” não consta na/no:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Demonstração do Resultado Abrangente e Demonstração das Mutações do Patrimônio Líquido;"
+        },
+        {
+          "id": "B",
+          "text": "Demonstração dos Resultados do Exercício e Demonstração das Mutações do Patrimônio Líquido;"
+        },
+        {
+          "id": "C",
+          "text": "Balanço Patrimonial e Demonstração do Resultado Abrangente;"
+        },
+        {
+          "id": "D",
+          "text": "Balanço Patrimonial e Demonstração dos Fluxos de Caixa;"
+        },
+        {
+          "id": "E",
+          "text": "Demonstração dos Fluxos de Caixa e Demonstração do Valor Adicionado."
+        }
+      ],
+      "gabaritoOficial": "E",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 5,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q23",
+      "numeroOriginal": 23,
+      "tipo": "multipla_escolha",
+      "enunciado": "Em 01/01/x1, a empresa de navegação Senrota conquistou o direito de concessão para explorar economicamente o transporte de balsa do rio Tuiuiu, em consonância com seu objetivo social. O contrato previa também a prestação de serviços de transporte de balsa para os rios Obaba e Sotutu, todos no estado do Alagados. O contrato de concessão irá vigorar por 10 anos, renováveis por igual período, caso a Senrota atenda todos os requisitos do contrato, entre eles, disponibilizar nove balsas distribuídas pelos três rios (vide tabela abaixo). Os investimentos necessários para prestar o serviço e atender o contrato são os seguintes: | Rio | Investimento $ | Nº mínimo de balsas exigidas no contrato |\n| :--- | :--- | :---: |\n| Tuiuiu | 100.000.000,00 | 3 |\n| Obaba | 85.000.000,00 | 4 |\n| Sotutu | 25.000.000,00 | 2 |\n| **TOTAL** | **210.000.000,00** | **9** | Em 01/01/x2, a Senrota fez um teste de recuperabilidade dos seus ativos e chegou aos seguintes números: | Rio | Balsa | Valor de Mercado $ | Valor de Uso $ |\n| :--- | :--- | :--- | :--- |\n| Tuiuiu | Balsa 1 | 20.000.000 | 25.000.000 |\n| Tuiuiu | Balsa 2 | 20.000.000 | 35.000.000 |\n| Tuiuiu | Balsa 3 | 20.000.000 | 40.000.000 |\n| Obaba | Balsa 1 | 20.000.000 | 8.000.000 |\n| Obaba | Balsa 2 | 20.000.000 | 20.000.000 |\n| Obaba | Balsa 3 | 20.000.000 | 20.000.000 |\n| Obaba | Balsa 4 | 20.000.000 | 25.000.000 |\n| Sotutu | Balsa 1 | 20.000.000 | 20.000.000 |\n| Sotutu | Balsa 2 | 20.000.000 | 15.000.000 |\n| **TOTAL** | | **180.000.000** | **208.000.000** | Considerando essas informações, a Senrota deve reconhecer uma perda de valor recuperável de ativos no valor de:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Zero;"
+        },
+        {
+          "id": "B",
+          "text": "$ 2.000.000 – para todo o contrato de concessão;"
+        },
+        {
+          "id": "C",
+          "text": "$ 7.000.000 – todas as balsas Obaba;"
+        },
+        {
+          "id": "D",
+          "text": "$ 12.000.000 – Balsa 1 – Obaba; e $ 5.000.000 – Balsa 2 – Sotutu;"
+        },
+        {
+          "id": "E",
+          "text": "$ 30.000.000 – para todo o contrato de concessão."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 5,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q24",
+      "numeroOriginal": 24,
+      "tipo": "multipla_escolha",
+      "enunciado": "Pelas práticas contábeis aplicadas no Brasil, uma debênture com juros anuais de 10%, e conversível em ações da data de seu vencimento por sua emitente, deve ser classificada como:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "instrumento derivativo;"
+        },
+        {
+          "id": "B",
+          "text": "passivo;"
+        },
+        {
+          "id": "C",
+          "text": "capital social;"
+        },
+        {
+          "id": "D",
+          "text": "patrimônio líquido;"
+        },
+        {
+          "id": "E",
+          "text": "título híbrido nas demonstrações consolidadas."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 6,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q25",
+      "numeroOriginal": 25,
+      "tipo": "multipla_escolha",
+      "enunciado": "A empresa de softwares Marcosoft  S.A. adquiriu, pelo valor de $ 7.600.000,00, todos os sistemas desenvolvidos por sua concorrente Sopa Ltda. O valor justo dos sistemas é de $ 6.100.000,00. Nas demonstrações financeiras da Sopa era possível identificar que o custo para desenvolver os sistemas correspondia ao valor líquido de $ 3.000.000,00. Considerando as informações acima, a Marcosoft deve classificar essa aquisição da seguinte forma:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "$ 6.100.000,00 como investimento e $ 1.500.000,00 como goodwill;"
+        },
+        {
+          "id": "B",
+          "text": "$ 3.000.000,00 como intangível e $ 4.600.000,00 como goodwill;"
+        },
+        {
+          "id": "C",
+          "text": "$ 6.100.000,00 como investimento e $ 1.500.000,00 como despesa;"
+        },
+        {
+          "id": "D",
+          "text": "$ 3.000.000,00 como investimento e $ 4.600.000,00 como intangível;"
+        },
+        {
+          "id": "E",
+          "text": "$ 7.600.000,00 como intangível."
+        }
+      ],
+      "gabaritoOficial": "E",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 6,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q26",
+      "numeroOriginal": 26,
+      "tipo": "multipla_escolha",
+      "enunciado": "Nas demonstrações financeiras do ano de X1, a companhia de automóveis japonesa Cainaxon apresentou o maior prejuízo de sua história. Pressionado pelo Conselho de Administração, o presidente da companhia apresentou um plano de reestruturação: 1) Encerramento das unidades deficitárias nos anos de X2 e X3; 2) Programa de demissão da metade dos executivos com início em 01/01/X3; 3) Construção de um prédio administrativo; 4) Encerramento do contrato de aluguel do prédio administrativo no momento em que o novo prédio ficar pronto. Considerando que todas as medidas foram aprovadas pelo conselho de administração no primeiro semestre de X2, deverão ser provisionadas no balanço do segundo trimestre de X2 a(s) seguinte(s) medidas:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "nenhuma;"
+        },
+        {
+          "id": "B",
+          "text": "apenas 1 e 4;"
+        },
+        {
+          "id": "C",
+          "text": "apenas a 2;"
+        },
+        {
+          "id": "D",
+          "text": "apenas a 4;"
+        },
+        {
+          "id": "E",
+          "text": "todas as medidas com mensuração confiável."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 6,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q27",
+      "numeroOriginal": 27,
+      "tipo": "multipla_escolha",
+      "enunciado": "A empresa de mergulho Corujá S.A. fez um aumento de capital para ampliar a sua área de atuação. Foram emitidas 100.000 novas ações ao preço de $ 15,00 cada. O preço nominal de cada ação corresponde a $ 10,00 e foram incorridos gastos no valor de $ 200.000,00 para a emissão das novas ações. Supondo que todas as ações tenham sido vendidas, a contabilização mais adequada para a operação é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "D – Caixa (Ativo) - $ 1.300.000,00 D – Despesa com emissão de ações (DRE) - $ 200.000,00 C – Capital Social (PL) - $ 1.500.000,00"
+        },
+        {
+          "id": "B",
+          "text": "D – Caixa (Ativo) - $ 1.300.000,00 C – Capital Social (PL) - $ 1.300.000,00"
+        },
+        {
+          "id": "C",
+          "text": "D – Caixa (Ativo) - $ 1.300.000,00 D – Despesa com emissão de ações (DRE) - $ 200.000,00 C – Capital Social (PL) - $ 1.000.000,00 C – Reserva de Capital (PL) - $ 500.000,00"
+        },
+        {
+          "id": "D",
+          "text": "D – Caixa (Ativo) - $ 1.300.000,00 C – Capital Social (PL) - $ 1.000.000,00 C – Reserva de Capital (PL) - $ 300.000,00"
+        },
+        {
+          "id": "E",
+          "text": "D – Caixa (Ativo) - $ 1.300.000,00 D – Despesas Financeiras (DRE) - $ 200.000,00 C – Capital Social (PL) - $ 1.500.000,00"
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 6,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q28",
+      "numeroOriginal": 28,
+      "tipo": "multipla_escolha",
+      "enunciado": "Um investimento avaliado pelo método de custo deve:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "ter periodicamente seu valor justo mensurado e os ganhos ou perdas reconhecidos no resultado;"
+        },
+        {
+          "id": "B",
+          "text": "com base na Lei nº 6.404/76, e suas alterações, ser baixado para resultado ou avaliado ao valor justo;"
+        },
+        {
+          "id": "C",
+          "text": "ser avaliado por equivalência patrimonial;"
+        },
+        {
+          "id": "D",
+          "text": "ter seu valor recuperável testado quando houver evidência de perda;"
+        },
+        {
+          "id": "E",
+          "text": "ser ajustado pela deliberação sobre a distribuição de dividendos."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 6,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q29",
+      "numeroOriginal": 29,
+      "tipo": "multipla_escolha",
+      "enunciado": "A empresa de papel e celulose Sem Cor construiu sua nova planta industrial perto da plantação de eucaliptos. A cidade mais próxima está localizada a mais de 100 km de distância. Com o intuito de auxiliar seus empregados, a empresa construiu um alojamento para ser alugado a eles. No que tange aos gastos com esse alojamento, a classificação correta a ser feita pela Sem Cor é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "investimento;"
+        },
+        {
+          "id": "B",
+          "text": "propriedade para investimento;"
+        },
+        {
+          "id": "C",
+          "text": "imobilizado;"
+        },
+        {
+          "id": "D",
+          "text": "como despesa, já que não atua no ramo de locação;"
+        },
+        {
+          "id": "E",
+          "text": "intangível em função da fidelização do aluguel."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 6,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q30",
+      "numeroOriginal": 30,
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma empresa de limpeza de tubulação de esgoto – Clean Tubus – foi constituída para atender a Companhia de Água e Esgoto do Estado (CAESG). Eventualmente a Clean Tubus pode atender outras companhias quando autorizada pela CAESG. Também é responsabilidade da CAESG definir o preço da prestação de serviços e dar aval para qualquer risco operacional da Clean Tubus. A CAESG efetuou um empréstimo de $ 500.000,00 com taxa de juros de 10% a.a. para que a Clean Tubus pudesse iniciar suas operações. Tal empréstimo é passível de conversão em capital social a qualquer momento por interesse da CAESG. Seguem informações sobre o capital social das duas empresas: **CAESG**\n\n| Acionistas | Valor - $ | Part. % |\n| :--- | :--- | :---: |\n| FIP - Água e Esgoto | 250.000.000,00 | 98% |\n| Mercado - Bovespa | 5.000.000,00 | 2% |\n| **TOTAL** | **255.000.000,00** | **100%** |\n\n**Clean Tubus**\n\n| Acionistas | Valor - $ | Part. % |\n| :--- | :--- | :---: |\n| Limpeza Sanitária Ltda. | 9.900,00 | 99% |\n| CAESG | 100,00 | 1% |\n| **TOTAL** | **10.000,00** | **100%** | Considerando apenas as informações acima, a relação da empresa Clean Tubus com a CAESG é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "apenas fornecedora de serviços;"
+        },
+        {
+          "id": "B",
+          "text": "controlada em conjunto em razão de possuir o mesmo acionista;"
+        },
+        {
+          "id": "C",
+          "text": "coligada por pertencer ao mesmo grupo econômico;"
+        },
+        {
+          "id": "D",
+          "text": "coligada em razão da influência significativa exercida pela CAESG;"
+        },
+        {
+          "id": "E",
+          "text": "controlada, e deve compor o balanço consolidado da CAESG."
+        }
+      ],
+      "gabaritoOficial": "E",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 7,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q31",
+      "numeroOriginal": 31,
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma empresa controladora possui uma controlada com patrimônio líquido negativo. A prática contábil aplicável nesse caso é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "deve reconhecer passivos contingentes e outras obrigações cabíveis nas demonstrações separadas;"
+        },
+        {
+          "id": "B",
+          "text": "nas demonstrações consolidadas, as controladas com patrimônio líquido igual a zero ou negativo não devem ser consolidadas por terem efeito nulo;"
+        },
+        {
+          "id": "C",
+          "text": "nas demonstrações individuais, deverá ser refletido o mesmo resultado líquido e o mesmo patrimônio líquido que são obtidos a partir das demonstrações consolidadas do grupo econômico;"
+        },
+        {
+          "id": "D",
+          "text": "quando a participação do investidor nos prejuízos do período se igualar ou exceder o saldo contábil de sua participação na investida, o investidor deve descontinuar o reconhecimento de sua participação em perdas futuras;"
+        },
+        {
+          "id": "E",
+          "text": "reduzir o investimento até zero e um passivo deve ser reconhecido somente na extensão em que o investidor tiver incorrido em obrigações legais."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 7,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q32",
+      "numeroOriginal": 32,
+      "tipo": "multipla_escolha",
+      "enunciado": "Um grupo de ativo imobilizado tinha como critério de depreciação o número de unidades produzidas. Sua produção variava entre 950 e 1050 unidades por mês. Após perder um cliente, a produção reduziu para 700 unidades ao mês. Entretanto a depreciação continuou considerando uma produção de 950 unidades por 14 meses, o que ocasionou uma distorção expressiva do valor líquido contábil. Nessa situação, a empresa deve adotar o seguinte procedimento:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "estornar a diferença imediatamente, creditando a conta de resultados acumulados;"
+        },
+        {
+          "id": "B",
+          "text": "suspender o reconhecimento da depreciação desse ativo para que o valor líquido contábil retrate a situação econômica do bem;"
+        },
+        {
+          "id": "C",
+          "text": "alterar o critério de depreciação para o método de quotas constantes;"
+        },
+        {
+          "id": "D",
+          "text": "manter o nível histórico de depreciação, conforme estebelece o princípio do conservadorismo;"
+        },
+        {
+          "id": "E",
+          "text": "manter a despesa de depreciação, levando em conta a possibilidade de retomada dos níveis anteriores."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 7,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q33",
+      "numeroOriginal": 33,
+      "tipo": "multipla_escolha",
+      "enunciado": "A Cia Catabento fabrica 2.500 cadernos por dia e possui as seguintes contas de estoques: Contas $ Matéria Prima 100.000,00 Materiais Destinados a Obras 125.000,00 Matérias de Consumo 150.000,00 Mercadorias em Trânsito 175.000,00 Para Revenda 200.000,00 Peças de Reposição de Equipamentos 225.000,00 Produtos Acabados 250.000,00 Produtos em Elaboração 275.000,00 Deve ser classificado no Ativo Não Circulante o seguinte saldo:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "zero;"
+        },
+        {
+          "id": "B",
+          "text": "$ 125.000,00;"
+        },
+        {
+          "id": "C",
+          "text": "$ 275.000,00;"
+        },
+        {
+          "id": "D",
+          "text": "$ 350.000,00;"
+        },
+        {
+          "id": "E",
+          "text": "$ 400.000,00."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 8,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q34",
+      "numeroOriginal": 34,
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma empresa possui necessidade de capital de giro negativa quando:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "o saldo em valores monetários de fornecedores é menor que o de clientes;"
+        },
+        {
+          "id": "B",
+          "text": "os empréstimos e financiamento de capital de giro são inferiores ao saldo de caixa e equivalente caixa;"
+        },
+        {
+          "id": "C",
+          "text": "o fluxo de caixa operacional é inferior ao financeiro;"
+        },
+        {
+          "id": "D",
+          "text": "o tempo somado de estocagem e de recebimento de clientes é inferior ao de pagamento de fornecedores;"
+        },
+        {
+          "id": "E",
+          "text": "as aplicações de recursos são superiores às origens de recursos."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 8,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q35",
+      "numeroOriginal": 35,
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma empresa comercial possuía um índice de liquidez corrente de 1,5 e de liquidez geral de 1,0. Essa empresa registrou as seguintes operações: Operação $ Adiantamento de férias concedido a funcionário 140 120 Aquisição a prazo de material de construção para manutenção do estacionamento Compra a prazo de 15 mesas para revenda 320 200 Compra de imobilizado através de financiamento de longo prazo 60 Desconto concedido a clientes por pagamento antecipado 80 Lançamento de encargos sobre empréstimos de longo prazo 120 Pagamento de parcela de arrendamento operacional Pagamento de parcela de empréstimo 100 Recebimento de clientes 180 Após o lançamento das operações listadas, os índices de liquidez corrente e geral tiveram o seguinte comportamento:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "os dois permaneceram iguais;"
+        },
+        {
+          "id": "B",
+          "text": "os dois reduziram;"
+        },
+        {
+          "id": "C",
+          "text": "os dois aumentaram;"
+        },
+        {
+          "id": "D",
+          "text": "o de liquidez corrente permaneceu estável e o de liquidez geral reduziu;"
+        },
+        {
+          "id": "E",
+          "text": "o de liquidez corrente aumentou e o de liquidez geral permaneceu estável."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 8,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q36",
+      "numeroOriginal": 36,
+      "tipo": "multipla_escolha",
+      "enunciado": "Quando uma empresa apresenta em sua demonstração de resultados do exercício um valor classificado como “Lucro do exercício de operações descontinuadas”, um analista de mercado deve previamente saber que:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "a empresa vendeu imobilizado e teve lucro nessa operação;"
+        },
+        {
+          "id": "B",
+          "text": "esse lucro pode ser gerado pela venda de uma importante linha separada de negócio ou o resultado de ativos circulantes mantido para a venda;"
+        },
+        {
+          "id": "C",
+          "text": "o resultado (lucro ou prejuízo) de operações descontinuadas substituiu o resultado não operacional após a Lei nº 11.638/2007;"
+        },
+        {
+          "id": "D",
+          "text": "representa um lucro que será realizado no exercício seguinte;"
+        },
+        {
+          "id": "E",
+          "text": "refere-se a receitas eventuais de uma empresa, como o aluguel de ativos que não opera para suas atividades fim."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 8,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q37",
+      "numeroOriginal": 37,
+      "tipo": "multipla_escolha",
+      "enunciado": "Quando uma empresa recebe um terreno por uma doação de uma prefeitura, sem que haja uma obrigação condicionada atrelada a tal fato, NÃO são impactados diretamente os seguintes indicadores:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "liquidez corrente, perfil do endividamento e margem bruta;"
+        },
+        {
+          "id": "B",
+          "text": "liquidez geral, grau de imobilização dos capitais permanente e retorno sobre o ativo;"
+        },
+        {
+          "id": "C",
+          "text": "liquidez seca, retorno sobre o patrimônio líquido e giro dos recursos próprios;"
+        },
+        {
+          "id": "D",
+          "text": "liquidez imediata, quociente de capital de terceiros sobre capital próprio e retorno sobre o investimento;"
+        },
+        {
+          "id": "E",
+          "text": "liquidez seca, giro dos recursos próprios e margem líquida."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 9,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q38",
+      "numeroOriginal": 38,
+      "tipo": "multipla_escolha",
+      "enunciado": "O princípio do Registro pelo valor original preconiza que:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "o valor original dos componentes patrimoniais ao longo do tempo corresponde  ao custo histórico;"
+        },
+        {
+          "id": "B",
+          "text": "a mensuração para fins de registro pelo valor original deve basear-se apenas em valores de entrada;"
+        },
+        {
+          "id": "C",
+          "text": "para manter o valor original dos elementos patrimoniais, é necessário proceder a avaliações regulares, pois são algumas possibilidades de avaliação não especificadas previamente;"
+        },
+        {
+          "id": "D",
+          "text": "o valor registrado do elemento patrimonial não deve diferir significativamente do custo incorrido para sua obtenção;"
+        },
+        {
+          "id": "E",
+          "text": "a atualização monetária descaracteriza os valores originais dos elementos patrimoniais."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 9,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q39",
+      "numeroOriginal": 39,
+      "tipo": "multipla_escolha",
+      "enunciado": "De acordo com a NBC T 16.1 – Conceituação, Objeto e Campo de Aplicação, as entidades abrangidas pelo campo de aplicação da Contabilidade Aplicada ao Setor Público devem observar as normas e as técnicas próprias da Contabilidade Aplicada ao Setor Público. A observância de tais normas pode ser parcial pelos(as):",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "autarquias;"
+        },
+        {
+          "id": "B",
+          "text": "conselhos profissionais;"
+        },
+        {
+          "id": "C",
+          "text": "fundações públicas;"
+        },
+        {
+          "id": "D",
+          "text": "serviços sociais;"
+        },
+        {
+          "id": "E",
+          "text": "sociedades de economia mista."
+        }
+      ],
+      "gabaritoOficial": "E",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 9,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q40",
+      "numeroOriginal": 40,
+      "tipo": "multipla_escolha",
+      "enunciado": "Acerca das definições e classificações do patrimônio e dos bens públicos, analise as afirmações a seguir. I – Sob o enfoque contábil, o patrimônio público é estruturado em três grupos: ativo, passivo e patrimônio líquido. II – A classificação legal do patrimônio público em bens de uso comum, de uso especial e dominicais está em consonância com o enfoque contábil. III – A classificação dos elementos patrimoniais tem como base os atributos de conversibilidade e exigibilidade. É correto o que se afirma em:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "I;"
+        },
+        {
+          "id": "B",
+          "text": "I e II;"
+        },
+        {
+          "id": "C",
+          "text": "I e III;"
+        },
+        {
+          "id": "D",
+          "text": "II e III;"
+        },
+        {
+          "id": "E",
+          "text": "I, II e III."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 9,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q41",
+      "numeroOriginal": 41,
+      "tipo": "multipla_escolha",
+      "enunciado": "As variações patrimoniais decorrem de transações que promovem alterações nos elementos patrimoniais da entidade do setor público, e podem ser classificadas em quantitativas e qualitativas. Constitui um exemplo de variação qualitativa:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "arrecadação de receitas de origem tributária;"
+        },
+        {
+          "id": "B",
+          "text": "inscrição de valores na dívida ativa;"
+        },
+        {
+          "id": "C",
+          "text": "pagamento de despesa com pessoal;"
+        },
+        {
+          "id": "D",
+          "text": "pagamento de juros;"
+        },
+        {
+          "id": "E",
+          "text": "pagamento do principal de empréstimos."
+        }
+      ],
+      "gabaritoOficial": "E",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 9,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q42",
+      "numeroOriginal": 42,
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um processo de exame das contas de uma entidade pública, foi detectado que havia registros contábeis realizados com omissão de parte do fato gerador. Tais registros deram origem a informações sobre alterações nos fenômenos patrimoniais. De acordo com as definições da NBC T 16.5, nessa situação, foi infringida a seguinte característica do registro contábil:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "confiabilidade;"
+        },
+        {
+          "id": "B",
+          "text": "fidedignidade;"
+        },
+        {
+          "id": "C",
+          "text": "imparcialidade;"
+        },
+        {
+          "id": "D",
+          "text": "integridade;"
+        },
+        {
+          "id": "E",
+          "text": "uniformidade."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 9,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q43",
+      "numeroOriginal": 43,
+      "tipo": "multipla_escolha",
+      "enunciado": "A NBCT SP 16.6 (R1) define as demonstrações contábeis que devem ser elaboradas e publicadas pelas entidades circunscritas no campo da Contabilidade Aplicada ao Setor Público. Uma demonstração não incluída neste rol é o(a):",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Balanço Financeiro;"
+        },
+        {
+          "id": "B",
+          "text": "Demonstração dos Fluxos de Caixa;"
+        },
+        {
+          "id": "C",
+          "text": "Demonstração das Variações Patrimoniais;"
+        },
+        {
+          "id": "D",
+          "text": "Demonstração das Mutações do Patrimônio Líquido;"
+        },
+        {
+          "id": "E",
+          "text": "Demonstrativo dos Restos a Pagar."
+        }
+      ],
+      "gabaritoOficial": "E",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 9,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q44",
+      "numeroOriginal": 44,
+      "tipo": "multipla_escolha",
+      "enunciado": "Em um determinado ente da administração pública foi adquirido um conjunto de móveis, composto por armários de aço, por R$ 36.000,00 para instalação na Secretaria de Serviços Públicos. O ente espera utilizar este conjunto por dez anos e em seguida aliená-lo por 10% do valor de aquisição. Com base nessas informações e nas definições da NBC T 16.9, pode-se afirmar que:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "a cota mensal de depreciação é de R$ 300,00;"
+        },
+        {
+          "id": "B",
+          "text": "a cota anual de depreciação é de R$ 3.600,00;"
+        },
+        {
+          "id": "C",
+          "text": "ao final do primeiro ano de uso, o valor líquido contábil será de R$ 32.760,00;"
+        },
+        {
+          "id": "D",
+          "text": "o valor residual é de R$ 3.240,00;"
+        },
+        {
+          "id": "E",
+          "text": "o valor depreciável é de R$ 36.000,00."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 9,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q45",
+      "numeroOriginal": 45,
+      "tipo": "multipla_escolha",
+      "enunciado": "A implantação do Plano de Contas  Aplicado ao  Setor  Público (PCASP) gerou a necessidade de observar algumas regras para assegurar a integridade dos procedimentos, bem como a qualidade, consistência e transparência das informações geradas. Sobre as regras de integridade do PCASP, é correto afirmar que:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "a natureza de informação patrimonial contempla todos os registros anteriormente classificados como financeiro e patrimonial;"
+        },
+        {
+          "id": "B",
+          "text": "as contas com o atributo Permanente podem ser movimentadas em contrapartida a conta com o atributo Financeiro;"
+        },
+        {
+          "id": "C",
+          "text": "as contas de conta de variação patrimonial aumentativa e diminutiva só podem ser movimentadas entre si;"
+        },
+        {
+          "id": "D",
+          "text": "os lançamentos contábeis podem ser realizados utilizando contas de natureza de informação distintas;"
+        },
+        {
+          "id": "E",
+          "text": "os saldos credores e devedores de uma mesma natureza de informação podem apresentar diferenças, em decorrência da apuração do resultado."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 10,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q46",
+      "numeroOriginal": 46,
+      "tipo": "multipla_escolha",
+      "enunciado": "Em decorrência da necessidade de cumprir o disposto na Lei complementar nº 101/2000, art. 51, que prevê que o Poder Executivo da União promoverá a consolidação, nacional e por esfera de governo, das contas dos entes da Federação relativas ao exercício anterior, o Plano de Contas Aplicado ao Setor Público contém algumas regras que devem ser observadas. Sobre as regras de consolidação do PCASP, analise as afirmativas a seguir. I – Todas as classes de contas devem utilizar o 5º nível para identificação de saldos recíprocos. II – As contas do PCASP identificadas com o dígito 2 no 5º nível (INTRA-OFSS) deverão ser excluídas no processo de consolidação de cada ente. III – As contas identificadas no 5º nível com o dígito 1 (Consolidação) compreende os saldos que não serão excluídos nos demonstrativos consolidados. É correto apenas o que se afirma em:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "I;"
+        },
+        {
+          "id": "B",
+          "text": "II;"
+        },
+        {
+          "id": "C",
+          "text": "III;"
+        },
+        {
+          "id": "D",
+          "text": "I e II;"
+        },
+        {
+          "id": "E",
+          "text": "II e III."
+        }
+      ],
+      "gabaritoOficial": "E",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 10,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q47",
+      "numeroOriginal": 47,
+      "tipo": "multipla_escolha",
+      "enunciado": "A Demonstração dos Fluxos de Caixa (DFC) tem o objetivo de contribuir para a transparência da gestão pública, pois permite um melhor gerenciamento e controle financeiro dos órgãos e entidades do setor público (MCASP/STN). De acordo com as orientações do MCASP, na elaboração da DFC, um item que compõe os fluxos de caixa das atividades de financiamento é:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "amortização de empréstimos concedidos;"
+        },
+        {
+          "id": "B",
+          "text": "concessão de empréstimos;"
+        },
+        {
+          "id": "C",
+          "text": "juros e correção monetária da dívida interna;"
+        },
+        {
+          "id": "D",
+          "text": "operações de crédito;"
+        },
+        {
+          "id": "E",
+          "text": "transferências intergovernamentais."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 10,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q48",
+      "numeroOriginal": 48,
+      "tipo": "multipla_escolha",
+      "enunciado": "De acordo com as informações do Quadro I, o resultado da execução orçamentária foi de:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "50.000,00;"
+        },
+        {
+          "id": "B",
+          "text": "60.000,00;"
+        },
+        {
+          "id": "C",
+          "text": "-140.000,00;"
+        },
+        {
+          "id": "D",
+          "text": "-280.000,00;"
+        },
+        {
+          "id": "E",
+          "text": "-340.000,00."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 10,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-quadro-1",
+        "title": "Quadro I – Dados da execução orçamentária de uma unidade da federação no exercício de 2010 (em milhares de reais)",
+        "content": "Quadro I – Dados da execução orçamentária de uma unidade da federação no exercício de 2010 (em milhares de reais).\n\n| RECEITAS | Previsão | Arrecadação |\n| :--- | :--- | :--- |\n| Receitas Correntes | 4.600.000,00 | 4.460.000,00 |\n| Receitas de Capital | 300.000,00 | 160.000,00 |\n\n| DESPESAS | Fixação | Empenho |\n| :--- | :--- | :--- |\n| Despesas Correntes | 3.800.000,00 | 3.850.000,00 |\n| Despesas de Capital | 1.100.000,00 | 710.000,00 |"
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q49",
+      "numeroOriginal": 49,
+      "tipo": "multipla_escolha",
+      "enunciado": "De acordo com as informações do Quadro I, pode-se afirmar que houve:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "excesso de arrecadação corrente;"
+        },
+        {
+          "id": "B",
+          "text": "déficit no orçamento corrente;"
+        },
+        {
+          "id": "C",
+          "text": "economia orçamentária nas despesas correntes;"
+        },
+        {
+          "id": "D",
+          "text": "abertura de créditos adicionais;"
+        },
+        {
+          "id": "E",
+          "text": "superávit no orçamento de capital."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 10,
+        "temSublinhado": false,
+        "temLacunas": false
+      },
+      "textoCompartilhado": {
+        "id": "fgv-dpero-quadro-1",
+        "title": "Quadro I – Dados da execução orçamentária de uma unidade da federação no exercício de 2010 (em milhares de reais)",
+        "content": "Quadro I – Dados da execução orçamentária de uma unidade da federação no exercício de 2010 (em milhares de reais).\n\n| RECEITAS | Previsão | Arrecadação |\n| :--- | :--- | :--- |\n| Receitas Correntes | 4.600.000,00 | 4.460.000,00 |\n| Receitas de Capital | 300.000,00 | 160.000,00 |\n\n| DESPESAS | Fixação | Empenho |\n| :--- | :--- | :--- |\n| Despesas Correntes | 3.800.000,00 | 3.850.000,00 |\n| Despesas de Capital | 1.100.000,00 | 710.000,00 |"
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q50",
+      "numeroOriginal": 50,
+      "tipo": "multipla_escolha",
+      "enunciado": "Se em um determinado exercício, um Estado da Federação apurou uma Receita Corrente Líquida de R$ 7,2 bilhões, o limite para contratação de operações de crédito pelo ente no exercício será (em reais):",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "1.152.000.000;"
+        },
+        {
+          "id": "B",
+          "text": "3.600.000.000;"
+        },
+        {
+          "id": "C",
+          "text": "4.320.000.000;"
+        },
+        {
+          "id": "D",
+          "text": "8.640.000.000;"
+        },
+        {
+          "id": "E",
+          "text": "14.400.000.000."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "assunto": "Contabilidade Geral, Societária e Pública",
+        "subtopicos": [
+          "Contabilidade Societária",
+          "Demonstrações Contábeis",
+          "CPC",
+          "CASP / MCASP",
+          "Lei nº 4.320/1964"
+        ],
+        "paginaOrigem": 10,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q51",
+      "numeroOriginal": 51,
+      "tipo": "multipla_escolha",
+      "enunciado": "De acordo com as disposições da Lei nº 4.320/1964 e as orientações do MCASP, no que tange aos procedimentos orçamentários, o orçamento anual pode ser alterado por meio de créditos adicionais. Por crédito adicional, entendem-se as autorizações de despesas não computadas ou insuficientemente dotadas na Lei Orçamentária. Acerca dos créditos adicionais, é correto afirmar que:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "a reserva de contingência é prevista em lei como fonte de recurso para abertura de créditos adicionais;"
+        },
+        {
+          "id": "B",
+          "text": "os créditos suplementares incorporam-se ao orçamento, enquanto os créditos especiais  e extraordinários conservam sua especificidade;"
+        },
+        {
+          "id": "C",
+          "text": "todos os créditos adicionais podem ter vigência prorrogada, desde que abertos no último quadrimestre do exercício;"
+        },
+        {
+          "id": "D",
+          "text": "todos os créditos adicionais serão autorizados por lei;"
+        },
+        {
+          "id": "E",
+          "text": "todos os créditos adicionais precisam indicar fonte de recurso para sua abertura."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Legislação Institucional",
+        "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
+        "subtopicos": [
+          "LC Estadual nº 117/1994",
+          "LC Federal nº 80/1994",
+          "Regime Jurídico dos Servidores de RO"
+        ],
+        "paginaOrigem": 11,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q52",
+      "numeroOriginal": 52,
+      "tipo": "multipla_escolha",
+      "enunciado": "Em uma entidade da administração pública, durante o exercício de 2008 foi emitida uma nota de empenho para prestação de serviços de manutenção no sistema de ar refrigerado. A prestação de serviço foi iniciada em 2008, mas encerrada apenas no exercício seguinte. A empresa prestadora de serviço enviou a documentação de cobrança comprobatória da prestação do serviço somente em 2013. A partir do recebimento da cobrança, essa despesa deve ser tratada pelo ente como:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "restos a pagar processados;"
+        },
+        {
+          "id": "B",
+          "text": "operações orçamentárias anuladas;"
+        },
+        {
+          "id": "C",
+          "text": "despesa do exercício em que o pagamento foi reclamado;"
+        },
+        {
+          "id": "D",
+          "text": "despesa de exercícios anteriores, que teve prescrição interrompida;"
+        },
+        {
+          "id": "E",
+          "text": "despesa não passível de pagamento em decorrência de prescrição de prazo de cobrança."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Legislação Institucional",
+        "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
+        "subtopicos": [
+          "LC Estadual nº 117/1994",
+          "LC Federal nº 80/1994",
+          "Regime Jurídico dos Servidores de RO"
+        ],
+        "paginaOrigem": 11,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q53",
+      "numeroOriginal": 53,
+      "tipo": "multipla_escolha",
+      "enunciado": "Em decorrência da falta de pessoal capacitado para elaborar as peças orçamentárias e de falta de recursos para contratar esse serviço de terceiros, uma prefeitura apresentou uma proposta orçamentária ao Poder Legislativo com dotações globais destinadas a atender indistintamente a despesas de pessoal, material, serviços de terceiros e investimentos, comprometendo- se a prestar contas ao final do exercício financeiro. Não obstante as razões apresentadas e a obrigação inequívoca de prestar contas, esta situação está em desacordo com o princípio orçamentário da:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "especificação;"
+        },
+        {
+          "id": "B",
+          "text": "exclusividade;"
+        },
+        {
+          "id": "C",
+          "text": "legalidade;"
+        },
+        {
+          "id": "D",
+          "text": "publicidade;"
+        },
+        {
+          "id": "E",
+          "text": "universalidade."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Legislação Institucional",
+        "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
+        "subtopicos": [
+          "LC Estadual nº 117/1994",
+          "LC Federal nº 80/1994",
+          "Regime Jurídico dos Servidores de RO"
+        ],
+        "paginaOrigem": 11,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q54",
+      "numeroOriginal": 54,
+      "tipo": "multipla_escolha",
+      "enunciado": "Consoante dispõe a Constituição do Estado de Rondônia, é exemplo de garantia dos membros da Defensoria Pública a:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "inamovibilidade, salvo por motivo de interesse público, mediante decisão do Conselho Superior da Defensoria Pública, por voto de dois terços de seus membros, assegurada ampla defesa;"
+        },
+        {
+          "id": "B",
+          "text": "vitaliciedade, que será adquirida após dois anos de exercício, somente podendo ocorrer a perda do cargo mediante sentença judicial transitada em julgado, assegurada ampla defesa;"
+        },
+        {
+          "id": "C",
+          "text": "promoção voluntária de categoria para categoria, sempre por antiguidade, por meio de lista tríplice no terço mais antigo da carreira elaborada pelo Conselho Superior da Defensoria Pública;"
+        },
+        {
+          "id": "D",
+          "text": "estabilidade, após dois anos de exercício, não podendo ser os Defensores Públicos demitidos do cargo senão por sentença judicial em processo em que lhes seja assegurada ampla defesa;"
+        },
+        {
+          "id": "E",
+          "text": "possibilidade de exercício de advocacia privada (exceto contra os interesses do ente federativo a que estiverem vinculados) e de participação em sociedade empresarial, na condição de sócio administrador."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Legislação Institucional",
+        "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
+        "subtopicos": [
+          "LC Estadual nº 117/1994",
+          "LC Federal nº 80/1994",
+          "Regime Jurídico dos Servidores de RO"
+        ],
+        "paginaOrigem": 11,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q55",
+      "numeroOriginal": 55,
+      "tipo": "multipla_escolha",
+      "enunciado": "De acordo com a Lei Complementar Federal nº 80/94, que organiza a Defensoria Pública da União, do Distrito Federal e dos Territórios e prescreve normas gerais para sua organização nos Estados, é função institucional da Defensoria Pública, dentre outras:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "exercer, mediante o recebimento dos autos com vista, a ampla defesa e o contraditório em favor de pessoas naturais (vedado o patrocínio de pessoas jurídicas), em processos administrativos e judiciais, perante todos os órgãos e em todas as instâncias;"
+        },
+        {
+          "id": "B",
+          "text": "promover, prioritariamente, a solução extrajudicial dos litígios, visando à composição entre as pessoas em conflito de interesses, por meio de mediação, conciliação, arbitragem e demais técnicas de composição e administração de conflitos;"
+        },
+        {
+          "id": "C",
+          "text": "prestar orientação jurídica e exercer a defesa dos necessitados, em processos judiciais (vedada a atuação em processos administrativos), perante todos os órgãos e em todas as instâncias, ordinárias ou extraordinárias;"
+        },
+        {
+          "id": "D",
+          "text": "prestar orientação jurídica e promover a defesa dos direitos individuais e coletivos da pessoa jurídica de direito público interno a que estiver vinculada, nos processos judiciais, em todos os graus, de forma integral e gratuita;"
+        },
+        {
+          "id": "E",
+          "text": "promover a ação de inconstitucionalidade ou representação para fins de intervenção da União e dos Estados, nos casos previstos na Constituição, na defesa dos direitos dos necessitados, em todos os graus, de forma integral e gratuita."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Legislação Institucional",
+        "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
+        "subtopicos": [
+          "LC Estadual nº 117/1994",
+          "LC Federal nº 80/1994",
+          "Regime Jurídico dos Servidores de RO"
+        ],
+        "paginaOrigem": 11,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q56",
+      "numeroOriginal": 56,
+      "tipo": "multipla_escolha",
+      "enunciado": "É prerrogativa dos membros da Defensoria Pública do Estado prevista na Lei Complementar Federal nº 80/94:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "não ser preso, inclusive na hipótese de flagrante delito, senão por ordem judicial escrita e devidamente fundamentada, no bojo de processo judicial em que lhes tenham sido assegurados o contraditório e a ampla defesa;"
+        },
+        {
+          "id": "B",
+          "text": "comunicar-se, pessoal e reservadamente, com seus assistidos, exceto quando estes se acharem presos e incomunicáveis, tendo livre ingresso em estabelecimentos policiais e prisionais, independentemente de prévio agendamento;"
+        },
+        {
+          "id": "C",
+          "text": "receber, inclusive quando necessário, mediante entrega dos autos com vista, intimação pessoal em qualquer processo e grau de jurisdição ou instância administrativa, contando-se- lhes em dobro todos os prazos;"
+        },
+        {
+          "id": "D",
+          "text": "representar a parte assistida, em feito administrativo ou judicial, necessariamente mediante instrumento de mandato outorgando-lhes poderes específicos para tal, independentemente de a lei exigir poderes especiais para o caso;"
+        },
+        {
+          "id": "E",
+          "text": "ser investigado pela prática de crime comum exclusivamente pelo Defensor Público-Geral e, quando, no curso de investigação policial, houver indício de prática de crime por Defensor Público, a autoridade policial encaminhará a investigação imediatamente ao chefe institucional."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Legislação Institucional",
+        "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
+        "subtopicos": [
+          "LC Estadual nº 117/1994",
+          "LC Federal nº 80/1994",
+          "Regime Jurídico dos Servidores de RO"
+        ],
+        "paginaOrigem": 12,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q57",
+      "numeroOriginal": 57,
+      "tipo": "multipla_escolha",
+      "enunciado": "Ao dispor sobre normas gerais para a organização da Defensoria Pública dos Estados, a Lei Complementar Federal nº 80/94 estabelece que a fiscalização contábil, financeira, orçamentária, operacional e patrimonial da Defensoria Pública do Estado, quanto à legalidade, legitimidade, aplicação de dotações e recursos próprios e renúncia de receitas, será exercida pelo:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Poder Executivo, mediante controle externo, e pelo sistema de controle interno do Tribunal de Contas;"
+        },
+        {
+          "id": "B",
+          "text": "Tribunal de Contas, mediante controle externo feito pelo Poder Judiciário, e pelo sistema de controle interno estabelecido em lei;"
+        },
+        {
+          "id": "C",
+          "text": "Tribunal de Contas, mediante controle interno, e pelo sistema de controle interno do Poder Judiciário;"
+        },
+        {
+          "id": "D",
+          "text": "Poder Legislativo, mediante controle externo, e pelo sistema de controle interno estabelecido em lei;"
+        },
+        {
+          "id": "E",
+          "text": "Poder Judiciário, mediante controle externo, e pelo sistema de controle interno do Tribunal de Contas."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Legislação Institucional",
+        "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
+        "subtopicos": [
+          "LC Estadual nº 117/1994",
+          "LC Federal nº 80/1994",
+          "Regime Jurídico dos Servidores de RO"
+        ],
+        "paginaOrigem": 12,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q58",
+      "numeroOriginal": 58,
+      "tipo": "multipla_escolha",
+      "enunciado": "O Estatuto dos Servidores Públicos Civis do Estado de Rondônia dispõe que o serviço extraordinário tem caráter eventual e só será admitido em situações excepcionais e temporárias, sendo remunerado com acréscimo de cinquenta por cento em relação à hora normal de trabalho. Nesse contexto, aponte as consequências das condutas dos seguintes servidores estaduais ocupantes de cargo efetivo: Caso 1: Alberto atestou falsamente a prestação de serviço extraordinário. Caso 2: João se recusou, sem justo motivo, à prestação de serviço extraordinário.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Alberto será punido com pena de demissão e João com pena de suspensão;"
+        },
+        {
+          "id": "B",
+          "text": "Alberto será punido com pena de suspensão e João com pena de repreensão;"
+        },
+        {
+          "id": "C",
+          "text": "Alberto será punido com pena de demissão e João com pena de exoneração;"
+        },
+        {
+          "id": "D",
+          "text": "ambos serão punidos com pena de repreensão e, no caso de reincidência, com a suspensão;"
+        },
+        {
+          "id": "E",
+          "text": "ambos serão punidos com pena de suspensão e, no caso de reincidência, com a demissão."
+        }
+      ],
+      "gabaritoOficial": "E",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Legislação Institucional",
+        "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
+        "subtopicos": [
+          "LC Estadual nº 117/1994",
+          "LC Federal nº 80/1994",
+          "Regime Jurídico dos Servidores de RO"
+        ],
+        "paginaOrigem": 12,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q59",
+      "numeroOriginal": 59,
+      "tipo": "multipla_escolha",
+      "enunciado": "Marcela, servidora pública civil estável estadual de Rondônia ocupante de cargo efetivo, pretende obter licença por motivo de doença em pessoa da família para dar assistência a seu irmão, acometido de grave enfermidade. Com base no regime jurídico que disciplina a matéria previsto na Lei Complementar Estadual nº 68/1992, é correto afirmar que a licença pretendida por Marcela será concedida:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "sem remuneração, até noventa dias, podendo ser prorrogada por até doze meses, mediante parecer da Junta Médica, incidindo necessariamente sobre a jornada integral de trabalho da servidora;"
+        },
+        {
+          "id": "B",
+          "text": "sem remuneração, até trinta dias, podendo ser prorrogada por até cento e oitenta dias, mediante parecer da Junta Médica, incidindo necessariamente sobre a jornada integral de trabalho da servidora;"
+        },
+        {
+          "id": "C",
+          "text": "sem prejuízo da remuneração, até noventa dias, podendo ser prorrogada sem remuneração pelo período máximo de até trinta e seis meses, mediante parecer da Junta Médica;"
+        },
+        {
+          "id": "D",
+          "text": "sem prejuízo da remuneração, até noventa dias, podendo ser prorrogada por até noventa dias, mediante parecer da Junta Médica e, excedendo estes prazos, sem remuneração, até o máximo de vinte e quatro meses;"
+        },
+        {
+          "id": "E",
+          "text": "sem prejuízo da remuneração, até trinta dias, podendo ser prorrogada sem remuneração por até seis meses, mediante parecer da Junta Médica, e a servidora tem prazo de quinze dias após a cessação da causa da doença para se apresentar ao serviço."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Legislação Institucional",
+        "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
+        "subtopicos": [
+          "LC Estadual nº 117/1994",
+          "LC Federal nº 80/1994",
+          "Regime Jurídico dos Servidores de RO"
+        ],
+        "paginaOrigem": 12,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q60",
+      "numeroOriginal": 60,
+      "tipo": "multipla_escolha",
+      "enunciado": "Consoante dispõe o Estatuto dos Servidores Públicos Civis do Estado de Rondônia (Lei Complementar Estadual nº 68/1992), é dever do servidor:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "conceder diárias com o objetivo de remunerar outros serviços ou encargos, bem como recebê-las pela mesma razão ou fundamento;"
+        },
+        {
+          "id": "B",
+          "text": "aliciar, de acordo com sua liberdade de manifestação, subordinados no sentido de filiarem-se a associação profissional ou sindical;"
+        },
+        {
+          "id": "C",
+          "text": "promover manifestações de apreço ou desapreço no recinto da repartição, de acordo com sua liberdade de opinião;"
+        },
+        {
+          "id": "D",
+          "text": "manter conduta compatível com a moralidade e a improbidade administrativas;"
+        },
+        {
+          "id": "E",
+          "text": "atender prontamente às requisições para defesa da Fazenda Pública e à expedição de certidões."
+        }
+      ],
+      "gabaritoOficial": "E",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Legislação Institucional",
+        "assunto": "Defensoria Pública e Estatuto dos Servidores de Rondônia",
+        "subtopicos": [
+          "LC Estadual nº 117/1994",
+          "LC Federal nº 80/1994",
+          "Regime Jurídico dos Servidores de RO"
+        ],
+        "paginaOrigem": 13,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q61",
+      "numeroOriginal": 61,
+      "tipo": "multipla_escolha",
+      "enunciado": "O Conselho Superior da Defensoria Pública do Estado é órgão normativo, consultivo e deliberativo, incumbido de superintender a atuação da Defensoria Pública, bem como zelar pela observância dos princípios institucionais do órgão. Nesse contexto, de acordo com a Lei Orgânica da Defensoria Pública do Estado de Rondônia (Lei Complementar Estadual nº 117/94), compete ao Conselho Superior da Defensoria Pública:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "organizar e realizar concursos públicos, elaborar listas de antiguidade, aprovar o funcionamento de estágio probatório, aprovar ou impugnar procedimentos relativos ao estágio probatório e homologar resultados dos concursos de ingresso;"
+        },
+        {
+          "id": "B",
+          "text": "promover os registros estatísticos da produção dos membros da Defensoria Pública e de pastas de assentamentos e prontuários referentes a cada um, para os devidos fins, inclusive para efeito de aferição de merecimento;"
+        },
+        {
+          "id": "C",
+          "text": "estabelecer o horário de funcionamento, a lotação e a distribuição dos membros e dos servidores da Defensoria Pública e autorizar os afastamentos dos membros da Defensoria Pública do Estado;"
+        },
+        {
+          "id": "D",
+          "text": "designar membro da Defensoria Pública do Estado para exercício de suas atribuições em órgão de atuação diverso de sua lotação ou, em caráter excepcional, perante Juízos, Tribunais ou ofícios diferentes dos estabelecidos para cada categoria;"
+        },
+        {
+          "id": "E",
+          "text": "elaborar, anualmente, a lista de antiguidade dos membros da Defensoria Pública, fazendo-a publicar no Diário Oficial e encaminhar ao Poder Executivo os expedientes, atos e estudos do interesse da Defensoria Pública."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Geografia e História de Rondônia",
+        "assunto": "História, Economia e Geografia Regional",
+        "subtopicos": [
+          "Povoamento e Colonização",
+          "Ciclo da Borracha",
+          "Geodiversidade e Relevo de Rondônia"
+        ],
+        "paginaOrigem": 13,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q62",
+      "numeroOriginal": 62,
+      "tipo": "multipla_escolha",
+      "enunciado": "Em matéria criminal, consoante dispõe a Lei Complementar Estadual de Rondônia nº 117/94, compete aos Defensores Públicos:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "defender, nos processos criminais, os réus que não tenham defensor constituído, inclusive os revéis, independentemente da declaração de hipossuficiência econômica;"
+        },
+        {
+          "id": "B",
+          "text": "exercer a defesa, nos processos criminais, dos réus com hipossuficiência econômica, exceto os policiais militares junto à Auditoria Militar;"
+        },
+        {
+          "id": "C",
+          "text": "defender, nos processos criminais, todos os réus com hipossuficiência econômica, e exercer o controle externo da atividade policial;"
+        },
+        {
+          "id": "D",
+          "text": "requerer a transferência de presos para local adequado e propor ação penal pública condicionada à representação, nos casos em que a parte for juridicamente necessitada;"
+        },
+        {
+          "id": "E",
+          "text": "atuar junto aos estabelecimentos policiais e penitenciários, e propor ação penal pública incondicionada, nos casos em que a parte for juridicamente necessitada."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Geografia e História de Rondônia",
+        "assunto": "História, Economia e Geografia Regional",
+        "subtopicos": [
+          "Povoamento e Colonização",
+          "Ciclo da Borracha",
+          "Geodiversidade e Relevo de Rondônia"
+        ],
+        "paginaOrigem": 13,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q63",
+      "numeroOriginal": 63,
+      "tipo": "multipla_escolha",
+      "enunciado": "Edson, Defensor Público Estadual de Rondônia, foi condenado em processo criminal transitado em julgado, a seis anos de reclusão pela prática de peculato. Considerando que se trata de crime contra a administração pública, de acordo com a Lei Complementar Estadual nº 117/94, tal fato:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "não constitui causa para sua demissão, nem que haja processo próprio para tal, pela independência das instâncias civil, penal e administrativa;"
+        },
+        {
+          "id": "B",
+          "text": "não constitui causa para sua demissão, para evitar o bis in idem, ou seja, para impedir que o réu seja punido mais de uma vez pelos mesmos fatos;"
+        },
+        {
+          "id": "C",
+          "text": "constitui causa para sua demissão, cuja pretensão punitiva disciplinar prescreve juntamente com a ação penal, na forma da lei;"
+        },
+        {
+          "id": "D",
+          "text": "constitui causa para sua demissão, cuja pretensão punitiva disciplinar prescreve no prazo de 03 (três) anos, na forma da lei;"
+        },
+        {
+          "id": "E",
+          "text": "constitui causa para sua suspensão durante o período de cumprimento da pena, sem direito à remuneração, na forma da lei."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Geografia e História de Rondônia",
+        "assunto": "História, Economia e Geografia Regional",
+        "subtopicos": [
+          "Povoamento e Colonização",
+          "Ciclo da Borracha",
+          "Geodiversidade e Relevo de Rondônia"
+        ],
+        "paginaOrigem": 13,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q64",
+      "numeroOriginal": 64,
+      "tipo": "multipla_escolha",
+      "enunciado": "A Lei Ordinária Federal nº 1.060/50 dispõe que a assistência judiciária aos necessitados:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "engloba as taxas judiciárias, os selos, os emolumentos e custas devidos aos Juízes e serventuários da justiça, excluídos os devidos a órgãos do Ministério Público;"
+        },
+        {
+          "id": "B",
+          "text": "compreende as despesas com a realização do exame de código genético – DNA que for requisitado pela autoridade judiciária nas ações de investigação de paternidade ou maternidade;"
+        },
+        {
+          "id": "C",
+          "text": "abrange os depósitos previstos em lei para interposição de recurso, ajuizamento de ação e demais atos processuais inerentes ao exercício da ampla defesa, excluídos os honorários dos peritos;"
+        },
+        {
+          "id": "D",
+          "text": "inclui os honorários advocatícios e as custas processuais, excluídas as despesas com as publicações indispensáveis no jornal encarregado da divulgação dos atos oficiais;"
+        },
+        {
+          "id": "E",
+          "text": "abarca os honorários advocatícios, as custas processuais, as taxas e selos judiciários e, quando o beneficiário da assistência for vencedor na causa, metade de tais valores será paga pelo vencido. Geografia e História de Rondônia"
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Geografia e História de Rondônia",
+        "assunto": "História, Economia e Geografia Regional",
+        "subtopicos": [
+          "Povoamento e Colonização",
+          "Ciclo da Borracha",
+          "Geodiversidade e Relevo de Rondônia"
+        ],
+        "paginaOrigem": 14,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q65",
+      "numeroOriginal": 65,
+      "tipo": "multipla_escolha",
+      "enunciado": "“Há sinais desse movimento desde a época do descobrimento, mas foi no governo de Getúlio Vargas (1930/1945) que a colonização da floresta passou a ser vista como estratégica para os interesses nacionais. Era a época da Marcha para o Oeste. (...) Durante a ditadura militar, a política para a Amazônia ficou conhecida pelo lema ‘Integrar para não Entregar’.“ (Peixoto, Fabrícia. Linha do tempo: Entenda como ocorreu a ocupação da Amazônia. Disponível em www.bbc.co.uk) A ocupação da Amazônia ganhou fôlego no século XX, como mostra o trecho da reportagem acima. Sobre as consequências dessa ocupação, pode-se destacar:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "o desenvolvimento econômico baseado nos princípios da sustentabilidade, que garantiu a preservação da floresta;"
+        },
+        {
+          "id": "B",
+          "text": "a demarcação das terras dos grupos indígenas que viviam na região, evitando conflitos por terras;"
+        },
+        {
+          "id": "C",
+          "text": "a forte deterioração do bioma da região norte, como consequência da exploração desenfreada da região;"
+        },
+        {
+          "id": "D",
+          "text": "a adoção de um padrão de transportes ferroviário, distinto do restante do país;"
+        },
+        {
+          "id": "E",
+          "text": "a abertura das fronteiras à penetração de países vizinhos que exploravam a região."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Geografia e História de Rondônia",
+        "assunto": "História, Economia e Geografia Regional",
+        "subtopicos": [
+          "Povoamento e Colonização",
+          "Ciclo da Borracha",
+          "Geodiversidade e Relevo de Rondônia"
+        ],
+        "paginaOrigem": 14,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q66",
+      "numeroOriginal": 66,
+      "tipo": "multipla_escolha",
+      "enunciado": "Em 2012, foi comemorado o centenário de inauguração da ferrovia Madeira-Mamoré. Tal construção, vista como difícil e complexa, com tentativas fracassadas no século XIX, custou a vida de inúmeros operários, e, durante o período da ditadura militar no país, acabou desativada, no governo do presidente Castelo Branco, em 1966. A justificativa para tal medida foi:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "a preservação ambiental local através do fim das atividades econômicas na região;"
+        },
+        {
+          "id": "B",
+          "text": "o incremento do transporte fluvial, aproveitando o potencial dos rios da região;"
+        },
+        {
+          "id": "C",
+          "text": "o redirecionamento dos investimentos para o transporte aéreo com a construção de vários aeroportos;"
+        },
+        {
+          "id": "D",
+          "text": "o incentivo ao transporte rodoviário com a construção de estradas na região;"
+        },
+        {
+          "id": "E",
+          "text": "o afastamento do capital estrangeiro da estrutura de transporte da região norte."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Geografia e História de Rondônia",
+        "assunto": "História, Economia e Geografia Regional",
+        "subtopicos": [
+          "Povoamento e Colonização",
+          "Ciclo da Borracha",
+          "Geodiversidade e Relevo de Rondônia"
+        ],
+        "paginaOrigem": 14,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q67",
+      "numeroOriginal": 67,
+      "tipo": "multipla_escolha",
+      "enunciado": "A região Norte, em especial o Vale do Madeira, teve a sua economia baseada no extrativismo e, como decorrência da sua formação social, o trabalho indígena, escravo ou não, foi largamente utilizado. No entanto, no início do século XX, ocorreu uma alteração nesse quadro relativo à mão de obra, com a não utilização de indígenas. O fator que justificou tal alteração foi:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "o fim da escravidão no Brasil no final do século XIX, atraindo a mão de obra imigrante para a região;"
+        },
+        {
+          "id": "B",
+          "text": "a política oficial dos governos republicanos de forçar a migração do sul para o norte do país;"
+        },
+        {
+          "id": "C",
+          "text": "a seca prolongada no nordeste, que forçou a migração deste contingente populacional para a região norte;"
+        },
+        {
+          "id": "D",
+          "text": "a decadência do café do Vale do Paraíba levando a população camponesa dessa área para o norte do país;"
+        },
+        {
+          "id": "E",
+          "text": "os investimentos do capital japonês na borracha da região norte, trazendo a mão de obra oriental para o Brasil."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Geografia e História de Rondônia",
+        "assunto": "História, Economia e Geografia Regional",
+        "subtopicos": [
+          "Povoamento e Colonização",
+          "Ciclo da Borracha",
+          "Geodiversidade e Relevo de Rondônia"
+        ],
+        "paginaOrigem": 14,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q68",
+      "numeroOriginal": 68,
+      "tipo": "multipla_escolha",
+      "enunciado": "“A permanência do Presidente da República em Porto Velho serviu para assentar as bases da criação de um Território Federal nas áreas dos municípios de Porto Velho e Guajará-Mirim...” (PINTO, Emanuel Pontes. Território Federal do Guaporé. Viaman, 2003) A criação do Território do Guaporé foi motivada pela:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "política industrializante voltada à região amazônica;"
+        },
+        {
+          "id": "B",
+          "text": "pressão política das oligarquias rurais de Porto Velho;"
+        },
+        {
+          "id": "C",
+          "text": "possibilidade de aumento da produção de borracha;"
+        },
+        {
+          "id": "D",
+          "text": "necessidade de proteção das fronteiras brasileiras;"
+        },
+        {
+          "id": "E",
+          "text": "descentralização do poder político nacional."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Geografia e História de Rondônia",
+        "assunto": "História, Economia e Geografia Regional",
+        "subtopicos": [
+          "Povoamento e Colonização",
+          "Ciclo da Borracha",
+          "Geodiversidade e Relevo de Rondônia"
+        ],
+        "paginaOrigem": 14,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q69",
+      "numeroOriginal": 69,
+      "tipo": "multipla_escolha",
+      "enunciado": "“Rondônia passou (...) a representar novamente uma fronteira de expansão da produção de soja, e os atores econômicos devem dar o devido destaque para esse espaço juntamente com o Estado do Mato Grosso.” (EGLER, Claudio. A Pré-Amazônia Mato-Grossense no Contexto Nacional e Sul Americano. In: Expansão da Soja na Pré-Amazônia Mato-Grossense: Impactos Socioambientais. Cuiabá-MT: Entrelinhas: EdUFMT, p. 15-34, 2007) A expansão da produção de soja no Estado de Rondônia ocorreu, principalmente:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "na porção norte do território, em razão da presença da hidrovia do Madeira;"
+        },
+        {
+          "id": "B",
+          "text": "na porção oeste do território, pela facilidade de escoamento da produção pela Bolívia;"
+        },
+        {
+          "id": "C",
+          "text": "na porção central do território, onde houve fixação de muitos migrantes nordestinos;"
+        },
+        {
+          "id": "D",
+          "text": "na porção sudeste do estado, em razão da política territorial dos Eixos Nacionais de Integração;"
+        },
+        {
+          "id": "E",
+          "text": "na porção sul do estado, pela proximidade com a capital, que polarizou o poder político do estado."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Geografia e História de Rondônia",
+        "assunto": "História, Economia e Geografia Regional",
+        "subtopicos": [
+          "Povoamento e Colonização",
+          "Ciclo da Borracha",
+          "Geodiversidade e Relevo de Rondônia"
+        ],
+        "paginaOrigem": 15,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    },
+    {
+      "id": "fgv-2015-dpero-analista-contabil-q70",
+      "numeroOriginal": 70,
+      "tipo": "multipla_escolha",
+      "enunciado": "A respeito da geodiversidade do relevo do Estado de Rondônia, considere as seguintes afirmativas: I - No Estado de Rondônia, destacam-se os principais padrões geomorfológicos: planícies de inundação, baixadas fluviolacustres e terraços fluviais das várzeas dos rios Madeira-Mamoré- Guaporé; superfícies aplainadas sobre o embasamento pré- cambriano; planaltos e serras decorrentes de dobramentos modernos. II - As maiores elevações encontram-se nas Serras dos Pacaás Novos e Parecis, atingindo altitudes superiores a 1000 metros acima do nível do mar. III - Na faixa sudoeste do estado, na fronteira com a Bolívia, ocorre uma vasta bacia sedimentar quaternária que se espraia pelo território boliviano, denominada Depressão do Guaporé. Está correto o que se afirma em:",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "somente I;"
+        },
+        {
+          "id": "B",
+          "text": "somente II;"
+        },
+        {
+          "id": "C",
+          "text": "somente III;"
+        },
+        {
+          "id": "D",
+          "text": "somente II e III;"
+        },
+        {
+          "id": "E",
+          "text": "I, II e III. Realização"
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "preliminar",
+      "metadados": {
+        "disciplina": "Geografia e História de Rondônia",
+        "assunto": "História, Economia e Geografia Regional",
+        "subtopicos": [
+          "Povoamento e Colonização",
+          "Ciclo da Borracha",
+          "Geodiversidade e Relevo de Rondônia"
+        ],
+        "paginaOrigem": 15,
+        "temSublinhado": false,
+        "temLacunas": false
+      }
+    }
+  ]
+}
