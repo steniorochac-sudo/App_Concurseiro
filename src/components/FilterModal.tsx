@@ -19,6 +19,7 @@ export const FilterModal: React.FC<FilterModalProps> = ({
 }) => {
   const [selectedSubject, setSelectedSubject] = useState<string>('todas');
   const [selectedBoard, setSelectedBoard] = useState<string>('todas');
+  const [selectedFormat, setSelectedFormat] = useState<string>('todas');
   const [questionCount, setQuestionCount] = useState<number>(5);
   const [timeLimit, setTimeLimit] = useState<number>(10); // minutos
 
@@ -31,6 +32,7 @@ export const FilterModal: React.FC<FilterModalProps> = ({
       title: `Simulado - ${selectedSubject === 'todas' ? 'Todas Matérias' : selectedSubject}`,
       disciplina: selectedSubject,
       banca: selectedBoard,
+      formato: selectedFormat as any,
       totalQuestions: questionCount,
       timeLimitMinutes: timeLimit > 0 ? timeLimit : undefined
     };
@@ -87,10 +89,27 @@ export const FilterModal: React.FC<FilterModalProps> = ({
               onChange={(e) => setSelectedBoard(e.target.value)}
               className="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-xs sm:text-sm text-slate-100 focus:outline-none focus:border-indigo-500"
             >
-              <option value="todas">Todas as Bancas (FGV, FCC, AOCP, etc.)</option>
+              <option value="todas">Todas as Bancas (FGV, FCC, QUADRIX, VUNESP, etc.)</option>
               {availableBoards.map(b => (
                 <option key={b} value={b}>{b}</option>
               ))}
+            </select>
+          </div>
+
+          {/* Formato de Questão */}
+          <div>
+            <label className="text-xs font-semibold text-slate-300 flex items-center space-x-1.5 mb-1.5">
+              <Filter className="w-3.5 h-3.5 text-indigo-400" />
+              <span>Formato de Questão</span>
+            </label>
+            <select
+              value={selectedFormat}
+              onChange={(e) => setSelectedFormat(e.target.value)}
+              className="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-xs sm:text-sm text-slate-100 focus:outline-none focus:border-indigo-500"
+            >
+              <option value="todas">Todos os Formatos</option>
+              <option value="certo_errado">Certo / Errado (C/E)</option>
+              <option value="multipla_escolha">Múltipla Escolha (4 ou 5 Opções)</option>
             </select>
           </div>
 

@@ -239,6 +239,18 @@ export function useQuestionBank() {
       pool = pool.filter(q => q.banca.toLowerCase() === config.banca?.toLowerCase());
     }
 
+    if (config.formato && config.formato !== 'todas') {
+      if (config.formato === 'certo_errado') {
+        pool = pool.filter(q => q.tipo === 'certo_errado' || (q.alternativas.length === 2 && ['C', 'E'].includes(q.alternativas[0]?.id)));
+      } else if (config.formato === 'multipla_escolha') {
+        pool = pool.filter(q => q.tipo !== 'certo_errado' && q.alternativas.length > 2);
+      }
+    }
+
+    if (config.examId && config.examId !== 'todos') {
+      pool = pool.filter(q => q.examId === config.examId);
+    }
+
     const shuffled = pool.sort(() => 0.5 - Math.random());
     const selected = shuffled.slice(0, Math.min(config.totalQuestions, pool.length));
 

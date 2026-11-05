@@ -18,6 +18,7 @@ export const PracticePage: React.FC<PracticePageProps> = ({
   savedQuestionIds,
 }) => {
   const [selectedSubject, setSelectedSubject] = useState<string>('todas');
+  const [selectedFormat, setSelectedFormat] = useState<'todas' | 'certo_errado' | 'multipla_escolha'>('todas');
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [isRandomMode, setIsRandomMode] = useState<boolean>(true); // Padrão: Modo Aleatório ativado!
   const [shuffleSeed, setShuffleSeed] = useState<number>(0);
@@ -31,9 +32,19 @@ export const PracticePage: React.FC<PracticePageProps> = ({
 
   // Filtered & Shuffled Questions list
   const filteredQuestions = useMemo(() => {
-    let list = selectedSubject === 'todas' 
-      ? [...questions] 
-      : questions.filter(q => q.disciplina === selectedSubject);
+    let list = [...questions];
+
+    if (selectedSubject !== 'todas') {
+      list = list.filter(q => q.disciplina === selectedSubject);
+    }
+
+    if (selectedFormat !== 'todas') {
+      if (selectedFormat === 'certo_errado') {
+        list = list.filter(q => q.tipo === 'certo_errado' || (q.alternativas.length === 2 && ['C', 'E'].includes(q.alternativas[0]?.id)));
+      } else {
+        list = list.filter(q => q.tipo !== 'certo_errado' && q.alternativas.length > 2);
+      }
+    }
 
     if (isRandomMode) {
       // Embaralha aleatoriamente misturando provas, bancas e anos
@@ -42,7 +53,7 @@ export const PracticePage: React.FC<PracticePageProps> = ({
 
     return list;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [questions, selectedSubject, isRandomMode, shuffleSeed]);
+  }, [questions, selectedSubject, selectedFormat, isRandomMode, shuffleSeed]);
 
   const currentQuestion = filteredQuestions[currentIndex] || filteredQuestions[0];
 
@@ -140,6 +151,40 @@ export const PracticePage: React.FC<PracticePageProps> = ({
             <span>{filteredQuestions.length}</span>
           </div>
         </div>
+      </div>
+
+      {/* Format Filter Bar (C/E vs Múltipla Escolha) */}
+      <div className="flex items-center space-x-1.5 overflow-x-auto pb-0.5 scrollbar-none">
+        <button
+          onClick={() => { setSelectedFormat('todas'); setCurrentIndex(0); }}
+          className={`px-3 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap transition-all border ${
+            selectedFormat === 'todas'
+              ? 'bg-purple-600 border-purple-500 text-white shadow-sm'
+              : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200'
+          }`}
+        >
+          Todos Formatos
+        </button>
+        <button
+          onClick={() => { setSelectedFormat('certo_errado'); setCurrentIndex(0); }}
+          className={`px-3 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap transition-all border ${
+            selectedFormat === 'certo_errado'
+              ? 'bg-purple-600 border-purple-500 text-white shadow-sm'
+              : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200'
+          }`}
+        >
+          Certo / Errado (C/E)
+        </button>
+        <button
+          onClick={() => { setSelectedFormat('multipla_escolha'); setCurrentIndex(0); }}
+          className={`px-3 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap transition-all border ${
+            selectedFormat === 'multipla_escolha'
+              ? 'bg-purple-600 border-purple-500 text-white shadow-sm'
+              : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200'
+          }`}
+        >
+          Múltipla Escolha (A-E / A-D)
+        </button>
       </div>
 
       {/* Subject Filter Bar */}

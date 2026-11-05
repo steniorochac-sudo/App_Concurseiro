@@ -12,7 +12,9 @@ import {
   Scissors,
   Send,
   AlertTriangle,
-  Tag
+  Tag,
+  Check,
+  X
 } from 'lucide-react';
 
 interface QuestionCardProps {
@@ -29,6 +31,107 @@ interface QuestionCardProps {
   isAnswered?: boolean;
 }
 
+/**
+ * Utilitário para renderizar markdown simples: parágrafos, tabelas GFM e imagens
+ */
+function renderMarkdownContent(content: string) {
+  const blocks = content.split(/\n\n+/);
+
+  return blocks.map((block, idx) => {
+    const trimmed = block.trim();
+    if (!trimmed) return null;
+
+    // 1. Imagem Markdown Isolada: ![alt](url)
+    const imgMatch = trimmed.match(/^!\[(.*?)\]\((.*?)\)$/);
+    if (imgMatch) {
+      return (
+        <div key={idx} className="my-3 flex justify-center">
+          <img 
+            src={imgMatch[2]} 
+            alt={imgMatch[1] || 'Imagem da questão'} 
+            className="max-w-full rounded-xl border border-slate-700/80 shadow-lg bg-slate-900"
+            loading="lazy"
+          />
+        </div>
+      );
+    }
+
+    // 2. Tabela Markdown GFM: | col1 | col2 |
+    if (trimmed.startsWith('|') && trimmed.includes('\n|')) {
+      const rows = trimmed.split('\n').filter(r => r.trim().startsWith('|'));
+      if (rows.length >= 2) {
+        const headerCols = rows[0].split('|').slice(1, -1).map(c => c.trim());
+        const bodyRows = rows.slice(2).map(r => r.split('|').slice(1, -1).map(c => c.trim()));
+
+        return (
+          <div key={idx} className="overflow-x-auto my-3 rounded-xl border border-slate-800 bg-slate-950/60 shadow-inner">
+            <table className="w-full text-xs text-left text-slate-200">
+              <thead className="bg-slate-900 border-b border-slate-800 text-indigo-300 font-bold">
+                <tr>
+                  {headerCols.map((col, cIdx) => (
+                    <th key={cIdx} className="px-3 py-2 border-r border-slate-800/80 last:border-r-0">
+                      {col}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-800/60">
+                {bodyRows.map((row, rIdx) => (
+                  <tr key={rIdx} className="hover:bg-slate-900/40 transition-colors">
+                    {row.map((cell, cIdx) => (
+                      <td key={cIdx} className="px-3 py-2 border-r border-slate-800/40 last:border-r-0 font-mono text-[11px] sm:text-xs">
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        );
+      }
+    }
+
+    // 3. Parágrafo com possíveis imagens inline
+    if (trimmed.includes('![') && trimmed.includes('](')) {
+      const parts = trimmed.split(/(!\[.*?\]\(.*?\))/g);
+      return (
+        <div key={idx} className="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800/80 my-2">
+          {parts.map((part, pIdx) => {
+            const m = part.match(/^!\[(.*?)\]\((.*?)\)$/);
+            if (m) {
+              return (
+                <div key={pIdx} className="my-2 flex justify-center">
+                  <img 
+                    src={m[2]} 
+                    alt={m[1] || 'Recurso da questão'} 
+                    className="max-w-full rounded-xl border border-slate-700/80 shadow-md bg-slate-900"
+                    loading="lazy"
+                  />
+                </div>
+              );
+            }
+            return (
+              <p key={pIdx} className="text-slate-100 text-sm sm:text-base leading-relaxed whitespace-pre-line">
+                {part.trim()}
+              </p>
+            );
+          })}
+        </div>
+      );
+    }
+
+    // 4. Parágrafo de texto normal
+    return (
+      <div key={idx} className="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800/80 my-2">
+        <p className="text-slate-100 text-sm sm:text-base leading-relaxed font-normal whitespace-pre-line">
+          {trimmed}
+        </p>
+      </div>
+    );
+  });
+}
+
 export const QuestionCard: React.FC<QuestionCardProps> = ({
   question,
   onAnswer,
@@ -42,18 +145,20 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   userSelectedOption,
   isAnswered = false,
 }) => {
-  // Opção temporariamente selecionada antes de clicar em "Responder"
   const [tentativeSelection, setTentativeSelection] = useState<string | null>(userSelectedOption || null);
-  // Estado local de submissão
   const [isSubmittedLocally, setIsSubmittedLocally] = useState<boolean>(false);
-  // Alternativas que o concurseiro riscou/eliminou
   const [eliminatedOptions, setEliminatedOptions] = useState<Set<string>>(new Set());
-  // Controle de colapso do texto de apoio
   const [isSupportTextOpen, setIsSupportTextOpen] = useState<boolean>(true);
 
   const hasSubmitted = isAnswered || isSubmittedLocally || (userSelectedOption !== undefined && userSelectedOption !== null);
 
-  // Selecionar alternativa (Modo Selecionar e Confirmar)
+  // Detecta se a questão é do formato Certo / Errado
+  const isCertoErrado = 
+    question.tipo === 'certo_errado' || 
+    (question.alternativas.length === 2 && 
+      (['C', 'E'].includes(question.alternativas[0]?.id) || 
+       question.alternativas[0]?.text?.toUpperCase() === 'CERTO'));
+
   const handleSelectOption = (optionId: string) => {
     if (hasSubmitted) return;
     if (eliminatedOptions.has(optionId)) {
@@ -66,7 +171,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setTentativeSelection(optionId);
   };
 
-  // Confirmar Resposta ao clicar no botão "Responder"
   const handleConfirmAnswer = () => {
     if (!tentativeSelection || hasSubmitted) return;
     
@@ -80,7 +184,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     onAnswer(tentativeSelection);
   };
 
-  // Alternar Risco / Eliminação da alternativa
   const toggleEliminate = (e: React.MouseEvent, optionId: string) => {
     e.stopPropagation();
     if (hasSubmitted) return;
@@ -103,7 +206,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     const isSelected = tentativeSelection === optionId;
 
     if (!hasSubmitted || !showInstantFeedback) {
-      // Estado antes da confirmação ou no Modo Simulado
       if (isSelected) {
         return 'bg-indigo-900/50 border-indigo-500 text-white shadow-lg shadow-indigo-500/10 ring-2 ring-indigo-500/40';
       }
@@ -113,7 +215,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       return 'bg-slate-900/70 border-slate-800 text-slate-200 hover:bg-slate-800/80 active:bg-slate-800';
     }
 
-    // Feedback Imediato após clicar em "Responder" (Modo Treino)
     const isCorrectOption = optionId.toUpperCase() === question.gabarito.toUpperCase();
     const isUserChoice = tentativeSelection?.toUpperCase() === optionId.toUpperCase();
 
@@ -128,6 +229,30 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     return 'bg-slate-950/40 border-slate-900 text-slate-500 opacity-50';
   };
 
+  const getCertoErradoStyle = (targetId: 'C' | 'E') => {
+    const isSelected = tentativeSelection?.toUpperCase() === targetId;
+
+    if (!hasSubmitted || !showInstantFeedback) {
+      if (isSelected) {
+        return targetId === 'C'
+          ? 'bg-emerald-900/50 border-emerald-500 text-white shadow-lg shadow-emerald-500/20 ring-2 ring-emerald-500/50'
+          : 'bg-rose-900/50 border-rose-500 text-white shadow-lg shadow-rose-500/20 ring-2 ring-rose-500/50';
+      }
+      return 'bg-slate-900/80 border-slate-800 text-slate-200 hover:bg-slate-850 active:scale-[0.98]';
+    }
+
+    const isCorrectTarget = targetId === question.gabarito.toUpperCase();
+    const isUserChoice = tentativeSelection?.toUpperCase() === targetId;
+
+    if (isCorrectTarget) {
+      return 'bg-emerald-950/90 border-emerald-500 text-emerald-100 ring-2 ring-emerald-500 font-bold';
+    }
+    if (isUserChoice && !isCorrectTarget) {
+      return 'bg-rose-950/90 border-rose-500 text-rose-100 ring-2 ring-rose-500 font-bold';
+    }
+    return 'bg-slate-950/50 border-slate-900 text-slate-600 opacity-40';
+  };
+
   return (
     <div className="bg-[#131b2e] border border-slate-800 rounded-2xl p-4 sm:p-5 shadow-xl transition-all">
       {/* Question Header & Badges */}
@@ -139,9 +264,18 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           <span className="bg-slate-800 text-slate-300 px-2 py-0.5 rounded-md text-xs font-medium">
             {question.ano}
           </span>
-          <span className="bg-slate-800 text-slate-300 px-2 py-0.5 rounded-md text-xs font-medium truncate max-w-[130px]">
+          <span className="bg-slate-800 text-slate-300 px-2 py-0.5 rounded-md text-xs font-medium truncate max-w-[140px]">
             {question.orgao}
           </span>
+          {isCertoErrado ? (
+            <span className="bg-purple-950 text-purple-300 border border-purple-800/50 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase">
+              C / E
+            </span>
+          ) : (
+            <span className="bg-blue-950 text-blue-300 border border-blue-800/50 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase">
+              {question.alternativas.length} Opções
+            </span>
+          )}
           {question.dificuldade && (
             <span className={`px-2 py-0.5 rounded-md text-[10px] font-bold uppercase ${
               question.dificuldade === 'fácil' ? 'bg-emerald-950 text-emerald-300 border border-emerald-800/50' :
@@ -197,119 +331,158 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         </div>
       )}
 
-      {/* Enunciado com Suporte a Texto de Apoio Retrátil */}
-      <div className="mb-5 space-y-3">
-        {question.enunciado.split('\n\n').map((paragraph, pIdx) => {
-          const isQuoteBlock = paragraph.trim().startsWith('>') || paragraph.includes('[Texto') || paragraph.includes('Texto 1') || paragraph.includes('Texto 2');
-          
-          if (isQuoteBlock) {
-            const cleanText = paragraph.replace(/^>\s*/gm, '').trim();
+      {/* Texto Compartilhado Retrátil (Accordion v2.0) */}
+      {question.textoCompartilhado && (
+        <div className="mb-4 bg-slate-900/90 border border-slate-700/80 rounded-xl overflow-hidden shadow-inner">
+          <button
+            type="button"
+            onClick={() => setIsSupportTextOpen(prev => !prev)}
+            className="w-full bg-slate-900 px-3.5 py-2.5 flex items-center justify-between border-b border-slate-800 text-left hover:bg-slate-850 transition-colors"
+          >
+            <div className="flex items-center space-x-2 text-xs font-bold text-amber-400">
+              <BookOpen className="w-4 h-4 shrink-0" />
+              <span className="truncate">{question.textoCompartilhado.title || 'TEXTO DE APOIO'}</span>
+              <span className="text-[10px] text-slate-400 font-normal shrink-0">
+                ({isSupportTextOpen ? 'Toque para recolher' : 'Toque para ler'})
+              </span>
+            </div>
+            {isSupportTextOpen ? (
+              <ChevronUp className="w-4 h-4 text-slate-400 shrink-0" />
+            ) : (
+              <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+            )}
+          </button>
+          {isSupportTextOpen && (
+            <div className="p-3.5 bg-slate-900/40 text-slate-300 text-xs sm:text-sm leading-relaxed whitespace-pre-line border-t border-slate-800/40 max-h-80 overflow-y-auto">
+              {question.textoCompartilhado.content}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Enunciado da Questão com Suporte a Markdown, Tabelas e Imagens */}
+      <div className="mb-5">
+        {renderMarkdownContent(question.enunciado)}
+      </div>
+
+      {/* Alternativas — Layout Condicional Inteligente (Dual Layout) */}
+      {isCertoErrado ? (
+        /* DUAL LAYOUT: Certo / Errado (Dois Botões Horizontais Grandes) */
+        <div className="grid grid-cols-2 gap-3 mb-5">
+          {/* Botão CERTO */}
+          <button
+            type="button"
+            onClick={() => handleSelectOption('C')}
+            disabled={hasSubmitted}
+            className={`min-h-[58px] p-3 rounded-2xl border flex items-center justify-center space-x-2 text-sm sm:text-base font-bold transition-all shadow-md ${getCertoErradoStyle(
+              'C'
+            )}`}
+          >
+            <Check className="w-5 h-5 text-emerald-400 shrink-0" />
+            <span>CERTO</span>
+            {hasSubmitted && showInstantFeedback && question.gabarito.toUpperCase() === 'C' && (
+              <CheckCircle className="w-5 h-5 text-emerald-400 ml-1 shrink-0" />
+            )}
+            {hasSubmitted && showInstantFeedback && tentativeSelection?.toUpperCase() === 'C' && question.gabarito.toUpperCase() !== 'C' && (
+              <XCircle className="w-5 h-5 text-rose-400 ml-1 shrink-0" />
+            )}
+          </button>
+
+          {/* Botão ERRADO */}
+          <button
+            type="button"
+            onClick={() => handleSelectOption('E')}
+            disabled={hasSubmitted}
+            className={`min-h-[58px] p-3 rounded-2xl border flex items-center justify-center space-x-2 text-sm sm:text-base font-bold transition-all shadow-md ${getCertoErradoStyle(
+              'E'
+            )}`}
+          >
+            <X className="w-5 h-5 text-rose-400 shrink-0" />
+            <span>ERRADO</span>
+            {hasSubmitted && showInstantFeedback && question.gabarito.toUpperCase() === 'E' && (
+              <CheckCircle className="w-5 h-5 text-emerald-400 ml-1 shrink-0" />
+            )}
+            {hasSubmitted && showInstantFeedback && tentativeSelection?.toUpperCase() === 'E' && question.gabarito.toUpperCase() !== 'E' && (
+              <XCircle className="w-5 h-5 text-rose-400 ml-1 shrink-0" />
+            )}
+          </button>
+        </div>
+      ) : (
+        /* DUAL LAYOUT: Múltipla Escolha (Lista Vertical 4 ou 5 Opções com Riscador) */
+        <div className="space-y-2.5 mb-5">
+          {question.alternativas.map((opt) => {
+            const isCorrect = opt.id.toUpperCase() === question.gabarito.toUpperCase();
+            const isUserChoice = tentativeSelection?.toUpperCase() === opt.id.toUpperCase();
+            const isEliminated = eliminatedOptions.has(opt.id);
+
+            const optImgMatch = opt.text.match(/^!\[(.*?)\]\((.*?)\)$/);
+
             return (
-              <div key={pIdx} className="bg-slate-900/90 border border-slate-700/80 rounded-xl overflow-hidden shadow-inner">
-                {/* Header Retrátil do Texto de Apoio */}
+              <div key={opt.id} className="relative group">
                 <button
                   type="button"
-                  onClick={() => setIsSupportTextOpen(prev => !prev)}
-                  className="w-full bg-slate-900 px-3.5 py-2.5 flex items-center justify-between border-b border-slate-800 text-left hover:bg-slate-850 transition-colors"
+                  onClick={() => handleSelectOption(opt.id)}
+                  disabled={hasSubmitted}
+                  className={`w-full min-h-[48px] p-3 pr-11 rounded-xl border text-left flex items-start space-x-3 transition-all ${getOptionStyle(
+                    opt.id
+                  )}`}
                 >
-                  <div className="flex items-center space-x-2 text-xs font-bold text-amber-400">
-                    <BookOpen className="w-4 h-4" />
-                    <span>TEXTO DE APOIO</span>
-                    <span className="text-[10px] text-slate-400 font-normal">
-                      ({isSupportTextOpen ? 'Toque para recolher' : 'Toque para expandir e ler'})
-                    </span>
+                  {/* Option Letter Badge */}
+                  <span className={`flex shrink-0 items-center justify-center w-7 h-7 rounded-lg text-xs font-bold ${
+                    hasSubmitted && showInstantFeedback && isCorrect
+                      ? 'bg-emerald-500 text-slate-950'
+                      : hasSubmitted && showInstantFeedback && isUserChoice && !isCorrect
+                      ? 'bg-rose-500 text-white'
+                      : tentativeSelection === opt.id
+                      ? 'bg-indigo-500 text-white shadow-md'
+                      : 'bg-slate-800 text-slate-300 border border-slate-700'
+                  }`}>
+                    {opt.id}
+                  </span>
+
+                  {/* Option Content (Texto ou Imagem) */}
+                  <div className="text-xs sm:text-sm pt-0.5 leading-snug flex-1">
+                    {optImgMatch ? (
+                      <img 
+                        src={optImgMatch[2]} 
+                        alt={optImgMatch[1] || `Alternativa ${opt.id}`} 
+                        className="max-h-12 object-contain rounded bg-slate-950 p-1 border border-slate-800"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <span>{opt.text}</span>
+                    )}
                   </div>
-                  {isSupportTextOpen ? (
-                    <ChevronUp className="w-4 h-4 text-slate-400" />
-                  ) : (
-                    <ChevronDown className="w-4 h-4 text-slate-400" />
+
+                  {/* Status Icon Feedback */}
+                  {hasSubmitted && showInstantFeedback && isCorrect && (
+                    <CheckCircle className="w-5 h-5 text-emerald-400 shrink-0 self-center" />
+                  )}
+                  {hasSubmitted && showInstantFeedback && isUserChoice && !isCorrect && (
+                    <XCircle className="w-5 h-5 text-rose-400 shrink-0 self-center" />
                   )}
                 </button>
 
-                {/* Corpo do Texto de Apoio */}
-                {isSupportTextOpen && (
-                  <div className="p-3.5 bg-slate-900/40">
-                    <p className="text-slate-300 text-xs sm:text-sm leading-relaxed italic whitespace-pre-line">
-                      {cleanText}
-                    </p>
-                  </div>
+                {/* Botão Riscador / Eliminar Alternativa (Antes de submeter) */}
+                {!hasSubmitted && (
+                  <button
+                    type="button"
+                    onClick={(e) => toggleEliminate(e, opt.id)}
+                    className={`absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-lg transition-all ${
+                      isEliminated
+                        ? 'bg-rose-950 text-rose-400 border border-rose-800/60'
+                        : 'text-slate-500 hover:text-slate-300 hover:bg-slate-800/80'
+                    }`}
+                    title={isEliminated ? "Restaurar alternativa" : "Riscar / Eliminar alternativa"}
+                  >
+                    <Scissors className="w-3.5 h-3.5" />
+                  </button>
                 )}
               </div>
             );
-          }
-
-          return (
-            <div key={pIdx} className="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800/80">
-              <p className="text-slate-100 text-sm sm:text-base leading-relaxed font-normal whitespace-pre-line">
-                {paragraph.trim()}
-              </p>
-            </div>
-          );
-        })}
-      </div>
-
-      {/* Alternativas (Com Riscador por Eliminação) */}
-      <div className="space-y-2.5 mb-5">
-        {question.alternativas.map((opt) => {
-          const isCorrect = opt.id.toUpperCase() === question.gabarito.toUpperCase();
-          const isUserChoice = tentativeSelection?.toUpperCase() === opt.id.toUpperCase();
-          const isEliminated = eliminatedOptions.has(opt.id);
-
-          return (
-            <div key={opt.id} className="relative group">
-              <button
-                onClick={() => handleSelectOption(opt.id)}
-                disabled={hasSubmitted}
-                className={`w-full min-h-[48px] p-3 pr-11 rounded-xl border text-left flex items-start space-x-3 transition-all ${getOptionStyle(
-                  opt.id
-                )}`}
-              >
-                {/* Option Letter Badge */}
-                <span className={`flex shrink-0 items-center justify-center w-7 h-7 rounded-lg text-xs font-bold ${
-                  hasSubmitted && showInstantFeedback && isCorrect
-                    ? 'bg-emerald-500 text-slate-950'
-                    : hasSubmitted && showInstantFeedback && isUserChoice && !isCorrect
-                    ? 'bg-rose-500 text-white'
-                    : tentativeSelection === opt.id
-                    ? 'bg-indigo-500 text-white shadow-md'
-                    : 'bg-slate-800 text-slate-300 border border-slate-700'
-                }`}>
-                  {opt.id}
-                </span>
-
-                {/* Option Text */}
-                <span className="text-xs sm:text-sm pt-0.5 leading-snug flex-1">
-                  {opt.text}
-                </span>
-
-                {/* Status Icon Feedback */}
-                {hasSubmitted && showInstantFeedback && isCorrect && (
-                  <CheckCircle className="w-5 h-5 text-emerald-400 shrink-0 self-center" />
-                )}
-                {hasSubmitted && showInstantFeedback && isUserChoice && !isCorrect && (
-                  <XCircle className="w-5 h-5 text-rose-400 shrink-0 self-center" />
-                )}
-              </button>
-
-              {/* Botão Riscador / Eliminar Alternativa (Antes de submeter) */}
-              {!hasSubmitted && (
-                <button
-                  type="button"
-                  onClick={(e) => toggleEliminate(e, opt.id)}
-                  className={`absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-lg transition-all ${
-                    isEliminated
-                      ? 'bg-rose-950 text-rose-400 border border-rose-800/60'
-                      : 'text-slate-500 hover:text-slate-300 hover:bg-slate-800/80'
-                  }`}
-                  title={isEliminated ? "Restaurar alternativa" : "Riscar / Eliminar alternativa"}
-                >
-                  <Scissors className="w-3.5 h-3.5" />
-                </button>
-              )}
-            </div>
-          );
-        })}
-      </div>
+          })}
+        </div>
+      )}
 
       {/* Zona do Polegar: Barra de Ações e Confirmação */}
       <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between gap-2">

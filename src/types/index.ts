@@ -5,7 +5,7 @@ export interface Option {
 
 export interface Question {
   id: string;
-  banca: string; // Ex: FGV, FCC, AOCP, CEBRASPE
+  banca: string; // Ex: FGV, FCC, AOCP, CEBRASPE, QUADRIX, VUNESP
   ano: number;
   orgao: string; // Ex: SEFAZ, Prefeitura, TJ, DPE
   cargo?: string; // Ex: Auditor Fiscal Tributário, Analista de TI
@@ -13,13 +13,24 @@ export interface Question {
   assunto: string; // Ex: Controle de Constitucionalidade, Crase
   enunciado: string;
   alternativas: Option[];
-  gabarito: string; // "A" | "B" | "C" | "D" | "E"
+  gabarito: string; // "A" | "B" | "C" | "D" | "E" | "C" | "E"
   explicacao: string; // Explicação detalhada da questão (com dissecador de pegadinhas)
   baseLegal?: string; // Fundamentação jurídica/doutrinária
   fontePesquisa?: string; // Fonte recomendada para pesquisa (ex: CF/88, STF Súmula Vinculante)
   alertaProfessor?: string; // Alerta de jurisprudência recente, divergência ou risco de anulação
   subtopicos?: string[]; // Hierarquia de subtópicos do edital
   dificuldade?: 'fácil' | 'médio' | 'difícil';
+  tipo?: 'multipla_escolha' | 'certo_errado';
+  textoCompartilhado?: {
+    id: string;
+    title?: string;
+    content: string;
+  };
+  imagens?: string[];
+  examId?: string;
+  examTitulo?: string;
+  numeroOriginal?: number;
+  gabaritoStatus?: string;
 }
 
 export interface UserAttempt {
@@ -45,6 +56,8 @@ export interface ExamConfig {
   title: string;
   disciplina?: string;
   banca?: string;
+  formato?: 'todas' | 'certo_errado' | 'multipla_escolha';
+  examId?: string;
   totalQuestions: number;
   timeLimitMinutes?: number;
 }

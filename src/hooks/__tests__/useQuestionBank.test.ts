@@ -114,4 +114,82 @@ describe('useQuestionBank Hook', () => {
     expect(result.current.questions.length).toBe(initialTotal + 1);
     expect(result.current.questions[0].id).toBe("q-custom-unique-999");
   });
+
+  it('deve filtrar simulado por formato Certo / Errado (certo_errado)', () => {
+    const { result } = renderHook(() => useQuestionBank());
+
+    let session: any;
+    act(() => {
+      session = result.current.startExam({
+        id: 'cfg-ce',
+        title: 'Simulado C/E',
+        formato: 'certo_errado',
+        totalQuestions: 10,
+      });
+    });
+
+    expect(session).toBeDefined();
+    expect(session.questionIds.length).toBe(10);
+    const selectedQuestions = session.questionIds.map((id: string) =>
+      result.current.questions.find((q) => q.id === id)
+    );
+    expect(
+      selectedQuestions.every(
+        (q: Question) =>
+          q.tipo === 'certo_errado' ||
+          (q.alternativas.length === 2 && ['C', 'E'].includes(q.alternativas[0]?.id))
+      )
+    ).toBe(true);
+  });
+
+  it('deve filtrar simulado por formato Múltipla Escolha (multipla_escolha)', () => {
+    const { result } = renderHook(() => useQuestionBank());
+
+    let session: any;
+    act(() => {
+      session = result.current.startExam({
+        id: 'cfg-me',
+        title: 'Simulado M/E',
+        formato: 'multipla_escolha',
+        totalQuestions: 10,
+      });
+    });
+
+    expect(session).toBeDefined();
+    expect(session.questionIds.length).toBe(10);
+    const selectedQuestions = session.questionIds.map((id: string) =>
+      result.current.questions.find((q) => q.id === id)
+    );
+    expect(
+      selectedQuestions.every(
+        (q: Question) =>
+          q.tipo !== 'certo_errado' && q.alternativas.length >= 4
+      )
+    ).toBe(true);
+  });
+
+  it('deve filtrar simulado por examId específico', () => {
+    const { result } = renderHook(() => useQuestionBank());
+
+    let session: any;
+    act(() => {
+      session = result.current.startExam({
+        id: 'cfg-exam',
+        title: 'Simulado VUNESP',
+        examId: 'vunesp-2014-pmrp-auditor-fiscal-tributario',
+        totalQuestions: 5,
+      });
+    });
+
+    expect(session).toBeDefined();
+    expect(session.questionIds.length).toBe(5);
+    const selectedQuestions = session.questionIds.map((id: string) =>
+      result.current.questions.find((q) => q.id === id)
+    );
+    expect(
+      selectedQuestions.every(
+        (q: Question) => q.examId === 'vunesp-2014-pmrp-auditor-fiscal-tributario'
+      )
+    ).toBe(true);
+  });
 });
