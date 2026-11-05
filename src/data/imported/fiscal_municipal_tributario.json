@@ -1,0 +1,1256 @@
+{
+  "schemaVersion": "2.0",
+  "exam": {
+    "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario",
+    "titulo": "Concurso Público Santana de Parnaíba - Fiscal Municipal Tributário (Código 231)",
+    "orgao": "Prefeitura do Município de Santana de Parnaíba",
+    "banca": "Instituto Mais",
+    "cargo": "Fiscal Municipal Tributário",
+    "codigoCargo": "231",
+    "ano": 2022,
+    "edital": "Edital Concurso Público nº 07/2022",
+    "caderno": "231 – FISCAL MUNICIPAL TRIBUTÁRIO",
+    "turno": "integral",
+    "formatoQuestoes": "multipla_escolha_4",
+    "totalQuestoes": 40,
+    "totalAnuladas": 0,
+    "homologado": true,
+    "auditTrail": {
+      "arquivoProvaPdf": "fiscal_municipal_tributario.pdf",
+      "arquivoGabaritoPdf": "gabaritos_finais_fiscal_municipal_tributario.pdf",
+      "secaoGabarito": "231 – Fiscal Municipal Tributário",
+      "paginaGabarito": 1,
+      "tipoGabarito": "definitivo",
+      "statusAuditoria": "fidelidade_documental_aprovada_gabarito_definitivo",
+      "responsavelAuditoria": "Antigravity AI Agent",
+      "dataAuditoria": "2026-11-04"
+    }
+  },
+  "questoes": [
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q01",
+      "numeroOriginal": 1,
+      "tipo": "multipla_escolha",
+      "enunciado": "De acordo com o texto, é correto afirmar que",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "ele descreve um processo de tentar encontrar alternativas para lidar com o luto de pessoas com quem se relacionava de forma digital."
+        },
+        {
+          "id": "B",
+          "text": "os e-mails são exatamente como as cartas e nos trazem à memória momentos especiais da vida das pessoas."
+        },
+        {
+          "id": "C",
+          "text": "os perfis de pessoas que já faleceram continuam online porque ninguém tem a senha para deletá-los e, assim, viram uma espécie de memorial."
+        },
+        {
+          "id": "D",
+          "text": "há dois âmbitos em que marcamos presença: o físico e o digital. Quando uma pessoa morre, a física se esgota, mas a digital pode permanecer."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "paginaOrigem": 2
+      },
+      "textoCompartilhado": {
+        "id": "instituto-mais-2022-texto-01",
+        "title": "Texto 1 (questões 1 a 5) - Bia Braune",
+        "content": "Semana passada, um conhecido morreu de forma trágica, o que gerou imensa comoção e o compartilhamento de ternas homenagens pelas redes sociais. Somos adultos, sim. Sabemos que pessoas morrem e que, com o passar do tempo, tendem a morrer com mais frequência. Contudo, nada nos prepara para certas ausências, principalmente porque são duas, na prática: a física e a digital.\n\nConfesso ter dificuldade para o luto online. Até hoje, não consigo desfazer amizade com duas grandes amigas. Ambas morreram há mais de cinco anos e, é claro, eu poderia clicar na opção \"deixar de seguir\". Mas como encará-las como não pessoas? Os avatares resistem e, por vezes, passeio por suas publicações. Algo me escapa entre os retratos, porém segue sendo vínculo. Talvez últimas palavras, numa legenda feliz do Instagram.\n\nAo vasculhar minha caixa de e-mails, é comum que um termo da busca traga por acaso meu pai e nossa antiga troca de mensagens. Vou relendo tudo embargada de emoção, reconhecendo seu modo de se expressar. Ao contrário das cartas, que amarelam, o que corre pela tela é um fluxo vivo de pensamento, como se conversássemos de novo a partir daquelas linhas. Sua voz grave ecoando na minha cabeça.\n\nSeria a vida digital, então, a verdadeira vida após a morte? Afinal, podemos ir para o céu, para o inferno, inclusive para o nada. Certeza, mesmo, apenas a dessa reencarnação promovida não por um deus, mas pelas operadoras de celular: quando o número de telefone enfim muda de dono e nos deparamos com a foto de um estranho entre nossos contatos. Mero “invólucro” de pixels.\n\nÉ por isso que tantos perfis continuam no ar, feito memoriais. Deles surge toda sorte de atualizações, como votos de saudade e feliz aniversário. Memórias datadas de \"há tantos anos, neste dia\". Deixo lá meus likes como se depositasse pedrinhas no jazigo dos entes queridos. Seguem mortos, mas não desconectados da nossa realidade. (Bia Braune. www1.folha.uol.com.br. Adaptado)."
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q02",
+      "numeroOriginal": 2,
+      "tipo": "multipla_escolha",
+      "enunciado": "Analise o trecho abaixo para responder à questão 2.\n\n“Afinal, podemos ir para o céu, para o inferno, inclusive para o nada. Certeza, mesmo, apenas a dessa reencarnação promovida não por um deus, mas pelas operadoras de celular: quando o número de telefone enfim muda de dono e nos deparamos com a foto de um estranho entre nossos contatos”.\n\nAssinale a alternativa que apresenta a correta paráfrase do trecho acima.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Não sabemos para onde iremos depois da morte, porém, podemos ter certeza de que alguém irá ficar com nosso número de telefone depois que morrermos e, quando a foto dessa nova pessoa aparecer para nossos antigos contatos, será como uma reencarnação nossa."
+        },
+        {
+          "id": "B",
+          "text": "Não sabemos para onde iremos depois da morte, porém, podemos ter certeza de que as operadoras de celular se interessam em manter os números de telefone dos falecidos ativos, ainda que nas mãos de outras pessoas, para que os contatos antigos possam lembrar dela."
+        },
+        {
+          "id": "C",
+          "text": "Nós podemos escolher para onde ir depois da morte: céu, inferno ou nada, porém não podemos escolher para quem as operadoras de celular darão nosso número de celular, assim como não podemos escolher em que corpo reencarnaríamos."
+        },
+        {
+          "id": "D",
+          "text": "Nós podemos escolher para onde ir depois da morte: céu, inferno ou nada, mas sem ter certeza de que nossa escolha será respeitada. A única certeza que temos é que alguém ficará com nosso antigo número de celular."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "paginaOrigem": 2
+      },
+      "textoCompartilhado": {
+        "id": "instituto-mais-2022-texto-01",
+        "title": "Texto 1 (questões 1 a 5) - Bia Braune",
+        "content": "Semana passada, um conhecido morreu de forma trágica, o que gerou imensa comoção e o compartilhamento de ternas homenagens pelas redes sociais. Somos adultos, sim. Sabemos que pessoas morrem e que, com o passar do tempo, tendem a morrer com mais frequência. Contudo, nada nos prepara para certas ausências, principalmente porque são duas, na prática: a física e a digital.\n\nConfesso ter dificuldade para o luto online. Até hoje, não consigo desfazer amizade com duas grandes amigas. Ambas morreram há mais de cinco anos e, é claro, eu poderia clicar na opção \"deixar de seguir\". Mas como encará-las como não pessoas? Os avatares resistem e, por vezes, passeio por suas publicações. Algo me escapa entre os retratos, porém segue sendo vínculo. Talvez últimas palavras, numa legenda feliz do Instagram.\n\nAo vasculhar minha caixa de e-mails, é comum que um termo da busca traga por acaso meu pai e nossa antiga troca de mensagens. Vou relendo tudo embargada de emoção, reconhecendo seu modo de se expressar. Ao contrário das cartas, que amarelam, o que corre pela tela é um fluxo vivo de pensamento, como se conversássemos de novo a partir daquelas linhas. Sua voz grave ecoando na minha cabeça.\n\nSeria a vida digital, então, a verdadeira vida após a morte? Afinal, podemos ir para o céu, para o inferno, inclusive para o nada. Certeza, mesmo, apenas a dessa reencarnação promovida não por um deus, mas pelas operadoras de celular: quando o número de telefone enfim muda de dono e nos deparamos com a foto de um estranho entre nossos contatos. Mero “invólucro” de pixels.\n\nÉ por isso que tantos perfis continuam no ar, feito memoriais. Deles surge toda sorte de atualizações, como votos de saudade e feliz aniversário. Memórias datadas de \"há tantos anos, neste dia\". Deixo lá meus likes como se depositasse pedrinhas no jazigo dos entes queridos. Seguem mortos, mas não desconectados da nossa realidade. (Bia Braune. www1.folha.uol.com.br. Adaptado)."
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q03",
+      "numeroOriginal": 3,
+      "tipo": "multipla_escolha",
+      "enunciado": "Assinale a alternativa que apresenta um sinônimo para a palavra “invólucro” destacada no texto.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Revestimento."
+        },
+        {
+          "id": "B",
+          "text": "Ideia."
+        },
+        {
+          "id": "C",
+          "text": "Percepção."
+        },
+        {
+          "id": "D",
+          "text": "Representação."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "paginaOrigem": 2
+      },
+      "textoCompartilhado": {
+        "id": "instituto-mais-2022-texto-01",
+        "title": "Texto 1 (questões 1 a 5) - Bia Braune",
+        "content": "Semana passada, um conhecido morreu de forma trágica, o que gerou imensa comoção e o compartilhamento de ternas homenagens pelas redes sociais. Somos adultos, sim. Sabemos que pessoas morrem e que, com o passar do tempo, tendem a morrer com mais frequência. Contudo, nada nos prepara para certas ausências, principalmente porque são duas, na prática: a física e a digital.\n\nConfesso ter dificuldade para o luto online. Até hoje, não consigo desfazer amizade com duas grandes amigas. Ambas morreram há mais de cinco anos e, é claro, eu poderia clicar na opção \"deixar de seguir\". Mas como encará-las como não pessoas? Os avatares resistem e, por vezes, passeio por suas publicações. Algo me escapa entre os retratos, porém segue sendo vínculo. Talvez últimas palavras, numa legenda feliz do Instagram.\n\nAo vasculhar minha caixa de e-mails, é comum que um termo da busca traga por acaso meu pai e nossa antiga troca de mensagens. Vou relendo tudo embargada de emoção, reconhecendo seu modo de se expressar. Ao contrário das cartas, que amarelam, o que corre pela tela é um fluxo vivo de pensamento, como se conversássemos de novo a partir daquelas linhas. Sua voz grave ecoando na minha cabeça.\n\nSeria a vida digital, então, a verdadeira vida após a morte? Afinal, podemos ir para o céu, para o inferno, inclusive para o nada. Certeza, mesmo, apenas a dessa reencarnação promovida não por um deus, mas pelas operadoras de celular: quando o número de telefone enfim muda de dono e nos deparamos com a foto de um estranho entre nossos contatos. Mero “invólucro” de pixels.\n\nÉ por isso que tantos perfis continuam no ar, feito memoriais. Deles surge toda sorte de atualizações, como votos de saudade e feliz aniversário. Memórias datadas de \"há tantos anos, neste dia\". Deixo lá meus likes como se depositasse pedrinhas no jazigo dos entes queridos. Seguem mortos, mas não desconectados da nossa realidade. (Bia Braune. www1.folha.uol.com.br. Adaptado)."
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q04",
+      "numeroOriginal": 4,
+      "tipo": "multipla_escolha",
+      "enunciado": "Analise a frase abaixo para responder à questão 4.\n\n“Deixo lá meus likes como se depositasse ‘pedrinhas’ no jazigo dos entes queridos”.\n\nDe acordo com a norma-padrão da Língua Portuguesa e quanto à colocação pronominal, assinale a alternativa que substitui corretamente o termo destacado.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Deixo lá meus likes como se depositasse elas no jazigo dos entes queridos."
+        },
+        {
+          "id": "B",
+          "text": "Deixo lá meus likes como se as depositasse no jazigo dos entes queridos."
+        },
+        {
+          "id": "C",
+          "text": "Deixo lá meus likes como se depositasse-nas no jazigo dos entes queridos."
+        },
+        {
+          "id": "D",
+          "text": "Deixo lá meus likes como se lhes depositasse no jazigo dos entes queridos."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "paginaOrigem": 2
+      },
+      "textoCompartilhado": {
+        "id": "instituto-mais-2022-texto-01",
+        "title": "Texto 1 (questões 1 a 5) - Bia Braune",
+        "content": "Semana passada, um conhecido morreu de forma trágica, o que gerou imensa comoção e o compartilhamento de ternas homenagens pelas redes sociais. Somos adultos, sim. Sabemos que pessoas morrem e que, com o passar do tempo, tendem a morrer com mais frequência. Contudo, nada nos prepara para certas ausências, principalmente porque são duas, na prática: a física e a digital.\n\nConfesso ter dificuldade para o luto online. Até hoje, não consigo desfazer amizade com duas grandes amigas. Ambas morreram há mais de cinco anos e, é claro, eu poderia clicar na opção \"deixar de seguir\". Mas como encará-las como não pessoas? Os avatares resistem e, por vezes, passeio por suas publicações. Algo me escapa entre os retratos, porém segue sendo vínculo. Talvez últimas palavras, numa legenda feliz do Instagram.\n\nAo vasculhar minha caixa de e-mails, é comum que um termo da busca traga por acaso meu pai e nossa antiga troca de mensagens. Vou relendo tudo embargada de emoção, reconhecendo seu modo de se expressar. Ao contrário das cartas, que amarelam, o que corre pela tela é um fluxo vivo de pensamento, como se conversássemos de novo a partir daquelas linhas. Sua voz grave ecoando na minha cabeça.\n\nSeria a vida digital, então, a verdadeira vida após a morte? Afinal, podemos ir para o céu, para o inferno, inclusive para o nada. Certeza, mesmo, apenas a dessa reencarnação promovida não por um deus, mas pelas operadoras de celular: quando o número de telefone enfim muda de dono e nos deparamos com a foto de um estranho entre nossos contatos. Mero “invólucro” de pixels.\n\nÉ por isso que tantos perfis continuam no ar, feito memoriais. Deles surge toda sorte de atualizações, como votos de saudade e feliz aniversário. Memórias datadas de \"há tantos anos, neste dia\". Deixo lá meus likes como se depositasse pedrinhas no jazigo dos entes queridos. Seguem mortos, mas não desconectados da nossa realidade. (Bia Braune. www1.folha.uol.com.br. Adaptado)."
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q05",
+      "numeroOriginal": 5,
+      "tipo": "multipla_escolha",
+      "enunciado": "Analise a frase abaixo para responder à questão 5.\n\n“Contudo, nada nos prepara para ‘certas’ ausências”.\n\nDe acordo com a norma-padrão da Língua Portuguesa e quanto às classes de palavras, assinale a alternativa em que a palavra destacada tem a mesma classificação que “certas” destacada na frase acima.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Não sabia a diferença entre o “certo” e o errado."
+        },
+        {
+          "id": "B",
+          "text": "É melhor confiar os segredos aos amigos “certos”."
+        },
+        {
+          "id": "C",
+          "text": "Eu sei que “certo” parente meu deve uma grande quantia."
+        },
+        {
+          "id": "D",
+          "text": "Pelo menos eu e meu amigo ficamos como os “certos” da história."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "paginaOrigem": 3
+      },
+      "textoCompartilhado": {
+        "id": "instituto-mais-2022-texto-01",
+        "title": "Texto 1 (questões 1 a 5) - Bia Braune",
+        "content": "Semana passada, um conhecido morreu de forma trágica, o que gerou imensa comoção e o compartilhamento de ternas homenagens pelas redes sociais. Somos adultos, sim. Sabemos que pessoas morrem e que, com o passar do tempo, tendem a morrer com mais frequência. Contudo, nada nos prepara para certas ausências, principalmente porque são duas, na prática: a física e a digital.\n\nConfesso ter dificuldade para o luto online. Até hoje, não consigo desfazer amizade com duas grandes amigas. Ambas morreram há mais de cinco anos e, é claro, eu poderia clicar na opção \"deixar de seguir\". Mas como encará-las como não pessoas? Os avatares resistem e, por vezes, passeio por suas publicações. Algo me escapa entre os retratos, porém segue sendo vínculo. Talvez últimas palavras, numa legenda feliz do Instagram.\n\nAo vasculhar minha caixa de e-mails, é comum que um termo da busca traga por acaso meu pai e nossa antiga troca de mensagens. Vou relendo tudo embargada de emoção, reconhecendo seu modo de se expressar. Ao contrário das cartas, que amarelam, o que corre pela tela é um fluxo vivo de pensamento, como se conversássemos de novo a partir daquelas linhas. Sua voz grave ecoando na minha cabeça.\n\nSeria a vida digital, então, a verdadeira vida após a morte? Afinal, podemos ir para o céu, para o inferno, inclusive para o nada. Certeza, mesmo, apenas a dessa reencarnação promovida não por um deus, mas pelas operadoras de celular: quando o número de telefone enfim muda de dono e nos deparamos com a foto de um estranho entre nossos contatos. Mero “invólucro” de pixels.\n\nÉ por isso que tantos perfis continuam no ar, feito memoriais. Deles surge toda sorte de atualizações, como votos de saudade e feliz aniversário. Memórias datadas de \"há tantos anos, neste dia\". Deixo lá meus likes como se depositasse pedrinhas no jazigo dos entes queridos. Seguem mortos, mas não desconectados da nossa realidade. (Bia Braune. www1.folha.uol.com.br. Adaptado)."
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q06",
+      "numeroOriginal": 6,
+      "tipo": "multipla_escolha",
+      "enunciado": "Os pais precisam conversar de forma ____________ para não afetar os filhos, é preciso resolver os problemas ____________ e com paciência.\n\nDe acordo com a norma-padrão da Língua Portuguesa e quanto à ortografia, assinale a alternativa que preencha corretamente as lacunas.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "assertiva / devagar"
+        },
+        {
+          "id": "B",
+          "text": "acertiva / devagar"
+        },
+        {
+          "id": "C",
+          "text": "acertiva / de vagar"
+        },
+        {
+          "id": "D",
+          "text": "assertiva / de vagar"
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "paginaOrigem": 3
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q07",
+      "numeroOriginal": 7,
+      "tipo": "multipla_escolha",
+      "enunciado": "Analise a frase abaixo para responder à questão 7.\n\nSob potente tsunami emocional revivi lutos acumulados e buracos por décadas fragilmente acobertados foram escancarados de uma só vez.\n\n(www.semprefamilia.com.br. Adaptado).\n\nDe acordo com a norma-padrão da Língua Portuguesa e quanto à pontuação, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Sob potente tsunami emocional, revivi lutos acumulados e buracos, por décadas fragilmente acobertados foram escancarados de uma só vez."
+        },
+        {
+          "id": "B",
+          "text": "Sob potente tsunami emocional, revivi lutos acumulados e buracos por décadas fragilmente acobertados, foram escancarados de uma só vez."
+        },
+        {
+          "id": "C",
+          "text": "Sob potente tsunami emocional, revivi lutos acumulados e buracos, por décadas fragilmente acobertados, foram escancarados de uma só vez."
+        },
+        {
+          "id": "D",
+          "text": "Sob potente, tsunami emocional, revivi lutos acumulados e buracos, por décadas fragilmente acobertados, foram escancarados de uma só vez."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "paginaOrigem": 3
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q08",
+      "numeroOriginal": 8,
+      "tipo": "multipla_escolha",
+      "enunciado": "De acordo com a norma-padrão da Língua Portuguesa e quanto à acentuação, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Ter gatos é complicado. Não paro de encontrar os pêlos deles pela casa."
+        },
+        {
+          "id": "B",
+          "text": "Estou com enjoo, gostaria que parássemos para descer um pouco do carro."
+        },
+        {
+          "id": "C",
+          "text": "Estou exausta, detesto quando as visitas vem sem avisar, é tão antipático!"
+        },
+        {
+          "id": "D",
+          "text": "Trata-se de ato heróico acolher de bom grado hóspedes muito exigentes."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "paginaOrigem": 3
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q09",
+      "numeroOriginal": 9,
+      "tipo": "multipla_escolha",
+      "enunciado": "A chefia explicou que, __________ rigor, não seria possível escolhermos essa data, ainda que a preferíssemos ____________ determinada por eles.\n\nDe acordo com a norma-padrão da Língua Portuguesa e quanto ao uso da crase, assinale a alternativa que preenche corretamente as lacunas.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "à / àquela"
+        },
+        {
+          "id": "B",
+          "text": "a / aquela"
+        },
+        {
+          "id": "C",
+          "text": "à / aquela"
+        },
+        {
+          "id": "D",
+          "text": "a / àquela"
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "paginaOrigem": 3
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q10",
+      "numeroOriginal": 10,
+      "tipo": "multipla_escolha",
+      "enunciado": "De acordo com a norma-padrão da Língua Portuguesa e quanto à concordância verbal, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Foco, fé e determinação faz toda a diferença para atingir objetivos."
+        },
+        {
+          "id": "B",
+          "text": "“Moramos sozinhos”, respondem com naturalidade meus filhos a quem lhes perguntarem."
+        },
+        {
+          "id": "C",
+          "text": "Tratam-se na mesma clínica de emagrecimento minha mãe e minha professora."
+        },
+        {
+          "id": "D",
+          "text": "Todos sabem que se tratam de questões de grande interesse tudo o que ele diz. RACIOCÍNIO LÓGICO"
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Língua Portuguesa",
+        "paginaOrigem": 3
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q11",
+      "numeroOriginal": 11,
+      "tipo": "multipla_escolha",
+      "enunciado": "Sabendo que no ano de 2023 o Dia das Mães acontecerá em 14 de maio e que o feriado de Corpus Christi acontecerá exatamente 25 dias após essa data, assinale a alternativa que apresenta em qual dia ocorrerá o feriado de Corpus Christi em 2023.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "06 de junho."
+        },
+        {
+          "id": "B",
+          "text": "07 de junho."
+        },
+        {
+          "id": "C",
+          "text": "08 de junho."
+        },
+        {
+          "id": "D",
+          "text": "09 de junho."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Raciocínio Lógico",
+        "paginaOrigem": 3
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q12",
+      "numeroOriginal": 12,
+      "tipo": "multipla_escolha",
+      "enunciado": "Mariana começou a fazer salgados para vender e após um tempo, resolveu comprar uma máquina para ajudar na produção. Sabendo que a máquina faz 204 salgados em uma hora e meia, assinale a alternativa que apresenta quanto tempo demorará para que a máquina produza 816 salgados.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "5 horas."
+        },
+        {
+          "id": "B",
+          "text": "5 horas e meia."
+        },
+        {
+          "id": "C",
+          "text": "6 horas."
+        },
+        {
+          "id": "D",
+          "text": "6 horas e meia."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Raciocínio Lógico",
+        "paginaOrigem": 3
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q13",
+      "numeroOriginal": 13,
+      "tipo": "multipla_escolha",
+      "enunciado": "Assinale a alternativa que apresenta uma sentença lógica equivalente a “Vivian é violinista ou não é baterista”.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Se Vivian não é violinista, então ela não é baterista."
+        },
+        {
+          "id": "B",
+          "text": "Vivian é violinista e não é baterista."
+        },
+        {
+          "id": "C",
+          "text": "Vivian é violinista se, e somente se, ela não é baterista."
+        },
+        {
+          "id": "D",
+          "text": "Vivian não é violinista e não é baterista."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Raciocínio Lógico",
+        "paginaOrigem": 3
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q14",
+      "numeroOriginal": 14,
+      "tipo": "multipla_escolha",
+      "enunciado": "Kleberson possui 5 cachorros, dos quais se sabe o seguinte:\n\n Doug não é mais velho que Bob e é mais novo que Porter;  Lilica não é mais nova que Doug e tem a mesma idade de Lessie;  Porter é mais velho que Lessie e não é mais velho que Bob. Com base nessas informações, é correto afirmar que o cachorro mais novo e o mais velho, respectivamente, são",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Lessie e Bob."
+        },
+        {
+          "id": "B",
+          "text": "Doug e Porter."
+        },
+        {
+          "id": "C",
+          "text": "Lessie e Lilica."
+        },
+        {
+          "id": "D",
+          "text": "Doug e Bob."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Raciocínio Lógico",
+        "paginaOrigem": 3
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q15",
+      "numeroOriginal": 15,
+      "tipo": "multipla_escolha",
+      "enunciado": "Mirela tem o dobro da idade de Camila, que possui a quarta parte da idade de José. Sabendo que José possui 72 anos, assinale a alternativa que apresenta a idade de Mirela.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "18 anos."
+        },
+        {
+          "id": "B",
+          "text": "27 anos."
+        },
+        {
+          "id": "C",
+          "text": "36 anos."
+        },
+        {
+          "id": "D",
+          "text": "45 anos."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Raciocínio Lógico",
+        "paginaOrigem": 3
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q16",
+      "numeroOriginal": 16,
+      "tipo": "multipla_escolha",
+      "enunciado": "Considerando as seguintes sentenças “Se Mario é amigo de Joana, então Carla é amiga de Mariana” e “Se Carla é amiga de Mariana, então José é amigo de Tadeu” como verdadeiras, então, é correto afirmar que se",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Carla é amiga de Mariana, então Mario é amigo de Joana."
+        },
+        {
+          "id": "B",
+          "text": "José não é amigo de Tadeu, então Mario é amigo de Joana."
+        },
+        {
+          "id": "C",
+          "text": "Carla não é amiga de Mariana, então Mario é amigo de Joana."
+        },
+        {
+          "id": "D",
+          "text": "José não é amigo de Tadeu, então Mario não é amigo de Joana."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Raciocínio Lógico",
+        "paginaOrigem": 4
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q17",
+      "numeroOriginal": 17,
+      "tipo": "multipla_escolha",
+      "enunciado": "Maria e Emerson fizeram uma poupança para seu filho Murilo no dia em que este nasceu, em uma quinta-feira de março do ano de 2008. Sabendo que Murilo conseguirá movimentar o dinheiro desta poupança apenas quando completar 18 anos e sabendo que os anos de 2012, 2016, 2020 e 2024 são bissextos, assinale a alternativa que apresenta em qual dia da semana Murilo fará 18 anos e conseguirá movimentar sua conta.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "Terça-feira."
+        },
+        {
+          "id": "B",
+          "text": "Quarta-feira."
+        },
+        {
+          "id": "C",
+          "text": "Quinta-feira."
+        },
+        {
+          "id": "D",
+          "text": "Sexta-feira."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Raciocínio Lógico",
+        "paginaOrigem": 4
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q18",
+      "numeroOriginal": 18,
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre a aplicação das penalidades disciplinares, assegurados o contraditório e a ampla defesa, de acordo com a Lei Complementar n.º 34/2011, analise as proposições abaixo.\n\nI. Serão aplicadas pelo prefeito ou pelo dirigente superior de autarquia quando se tratar de demissão, cassação de aposentadoria ou disponibilidade ou destituição de cargo em comissão ou função de confiança. II. Serão aplicadas pela chefia mediata, quando se tratar de suspensão de até 3 (três) dias, advertência ou multa com a devida fundamentação. III. Serão aplicadas pelo prefeito ou pelo dirigente superior de autarquia, mediante sindicância, quando se tratar de suspensão de até 15 (quinze) dias. IV. Serão aplicadas pelo prefeito ou pelo dirigente superior de autarquia, mediante processo administrativo, quando se tratar de suspensão de até 15 (quinze) dias. É correto o que se afirma em",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "I e II, apenas."
+        },
+        {
+          "id": "B",
+          "text": "II e III, apenas."
+        },
+        {
+          "id": "C",
+          "text": "III e IV, apenas."
+        },
+        {
+          "id": "D",
+          "text": "I, II, III e IV."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Básicos de Legislação Municipal",
+        "paginaOrigem": 4
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q19",
+      "numeroOriginal": 19,
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre o direito de petição, de acordo com a Lei Complementar n.º 34/2011, se extingue em __________ anos, quanto aos atos de demissão, de cassação de aposentadoria ou disponibilidade ou, ainda daqueles que afetem interesse patrimonial, crédito e resultantes das relações funcionais.\n\nAssinale a alternativa que preenche corretamente a lacuna.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "3 (três)"
+        },
+        {
+          "id": "B",
+          "text": "5 (cinco)"
+        },
+        {
+          "id": "C",
+          "text": "7 (sete)"
+        },
+        {
+          "id": "D",
+          "text": "9 (nove)"
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Básicos de Legislação Municipal",
+        "paginaOrigem": 4
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q20",
+      "numeroOriginal": 20,
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre instrução, defesa e relatório no processo administrativo, de acordo com a Lei Complementar n.º 34/2011, é correto afirmar que",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "autuada a portaria e demais peças pré-existentes, o presidente designará dia e hora para audiência de instrução e determinará a citação do acusado."
+        },
+        {
+          "id": "B",
+          "text": "não sendo encontrado o acusado na repartição, será citado por via de edital, publicado em local público, juntando-se ao processo o comprovante de publicação."
+        },
+        {
+          "id": "C",
+          "text": "o processo administrativo deverá ser iniciado dentro do prazo improrrogável de 8 (oito) dias, contados da data da portaria que determinar a instauração, e concluído no de 60 (sessenta) dias, a contar da citação do acusado, prorrogável por mais 30 (trinta) dias."
+        },
+        {
+          "id": "D",
+          "text": "caso haja denunciante, este deverá prestar declarações imediatamente, sendo notificado para tal fim."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Básicos de Legislação Municipal",
+        "paginaOrigem": 4
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q21",
+      "numeroOriginal": 21,
+      "tipo": "multipla_escolha",
+      "enunciado": "De acordo com a Lei Complementar n.º 34/2011, dentre outros, ao servidor é proibido:\n\nI. recusar fé a documentos públicos. II. opor resistência injustificada ao andamento de documento e processo ou à execução de serviço. III. praticar usura sob qualquer de suas formas. É correto o que se afirma em",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "III, apenas."
+        },
+        {
+          "id": "B",
+          "text": "I e II, apenas."
+        },
+        {
+          "id": "C",
+          "text": "I e III, apenas."
+        },
+        {
+          "id": "D",
+          "text": "I, II e III."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Básicos de Legislação Municipal",
+        "paginaOrigem": 4
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q22",
+      "numeroOriginal": 22,
+      "tipo": "multipla_escolha",
+      "enunciado": "De acordo com a Lei Complementar n.º 34/2011, sobre o processo de revisão, contados do recebimento do processo, no curso do qual a autoridade julgadora poderá determinar diligências, o prazo para julgamento da revisão será de até",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "30 (trinta) dias."
+        },
+        {
+          "id": "B",
+          "text": "40 (quarenta) dias."
+        },
+        {
+          "id": "C",
+          "text": "50 (cinquenta) dias."
+        },
+        {
+          "id": "D",
+          "text": "60 (sessenta) dias."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Básicos de Legislação Municipal",
+        "paginaOrigem": 4
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q23",
+      "numeroOriginal": 23,
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre as férias, de acordo com a Lei Complementar n.º 34/2011, quando o servidor contar, no período aquisitivo, tiver de 6 a 14 faltas",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "terá direito ao gozo de 12 dias."
+        },
+        {
+          "id": "B",
+          "text": "terá direito ao gozo de 18 dias."
+        },
+        {
+          "id": "C",
+          "text": "terá direito ao gozo de 24 dias."
+        },
+        {
+          "id": "D",
+          "text": "não terá direito às férias."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Básicos de Legislação Municipal",
+        "paginaOrigem": 4
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q24",
+      "numeroOriginal": 24,
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre a sindicância, de acordo com a Lei Complementar n.º 34/2011, assinale a alternativa correta.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "É competente para determinar a instauração de sindicância o prefeito, que poderá delegar a competência para o secretário responsável pela gestão de pessoal."
+        },
+        {
+          "id": "B",
+          "text": "A sindicância será conduzida por comissão composta por, no máximo, 3 (três) servidores, designados pela autoridade competente, que escolherá dentre eles o presidente, que deverá ser bacharel em recursos humanos."
+        },
+        {
+          "id": "C",
+          "text": "Quando colhidos os elementos necessários à comprovação dos fatos e da autoria, deverão, primeiramente, ser ouvidas as testemunhas."
+        },
+        {
+          "id": "D",
+          "text": "Caso seja necessário, poderá participar de comissão de sindicância, cônjuge, companheiro ou parente do sindicado."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Básicos de Legislação Municipal",
+        "paginaOrigem": 4
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q25",
+      "numeroOriginal": 25,
+      "tipo": "multipla_escolha",
+      "enunciado": "No caso de licença por acidente de trabalho, de acordo com a Lei Complementar n.º 34/2011, o salário de benefício do servidor corresponderá a __________________ da média da remuneração do cargo efetivo nos 12 (doze) meses anteriores ao afastamento. Assinale a alternativa que preenche corretamente a lacuna.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "50% (cinquenta por cento)"
+        },
+        {
+          "id": "B",
+          "text": "60% (sessenta por cento)"
+        },
+        {
+          "id": "C",
+          "text": "70% (setenta por cento)"
+        },
+        {
+          "id": "D",
+          "text": "80% (oitenta por cento) CONHECIMENTOS ESPECÍFICOS"
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Básicos de Legislação Municipal",
+        "paginaOrigem": 5
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q26",
+      "numeroOriginal": 26,
+      "tipo": "multipla_escolha",
+      "enunciado": "A respeito dos impostos, analise as proposições abaixo e assinale (V) para Verdadeiro ou (F) para Falso. (   ) Imposto é o tributo cuja obrigação tem por fato\n\ngerador uma situação independente de qualquer atividade estatal específica, relativa ao contribuinte. (   ) Compete à União, instituir, nos Territórios Federais,\n\nos impostos atribuídos aos estados e, se aqueles não forem divididos em municípios, cumulativamente, os atribuídos a estes. (   ) Compete ao Distrito Federal e aos estados não\n\ndivididos em municípios, instituir, cumulativamente, os impostos atribuídos aos estados e aos municípios. (   ) A lei federal não pode cometer aos estados, ao\n\nDistrito Federal ou aos municípios o encargo de arrecadar os impostos de competência da União cujo produto lhes seja distribuído no todo ou em parte. Assinale a alternativa que apresenta a sequência correta.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "F / F / V / V"
+        },
+        {
+          "id": "B",
+          "text": "F / V / V / F"
+        },
+        {
+          "id": "C",
+          "text": "V / V / V / F"
+        },
+        {
+          "id": "D",
+          "text": "V / F / F / V"
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 5
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q27",
+      "numeroOriginal": 27,
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre as taxas, é correto afirmar que",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "são cobradas pela União, pelos estados, pelo Distrito Federal ou pelos municípios, no âmbito de suas respectivas atribuições, têm como fato gerador o exercício regular do poder de polícia, ou a utilização, efetiva ou potencial, de serviço público específico e divisível, prestado ao contribuinte e o simples fato de o serviço ser posto à disposição do contribuinte não é fato gerador da taxa."
+        },
+        {
+          "id": "B",
+          "text": "os créditos tributários relativos a impostos cujo fato gerador seja a propriedade, o domínio útil ou a posse de bens imóveis, e bem assim os relativos a taxas pela prestação de serviços referentes a tais bens, ou a contribuições de melhoria, não se sub-rogam na pessoa dos respectivos adquirentes, salvo quando conste do título a prova de sua quitação."
+        },
+        {
+          "id": "C",
+          "text": "para efeito de instituição e cobrança de taxas, consideram-se compreendidas no âmbito das atribuições da União, dos estados, do Distrito Federal ou dos municípios, aquelas que, segundo a Constituição Federal, as constituições dos estados, as leis orgânicas do Distrito Federal e dos municípios e a legislação com elas compatível, competem a cada uma dessas pessoas de direito público."
+        },
+        {
+          "id": "D",
+          "text": "se considera irregular o exercício do poder de polícia quando desempenhado pelo órgão competente nos limites da lei aplicável, com observância do processo legal e, tratando-se de atividade que a lei tenha como discricionária, sem abuso ou desvio de poder."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 5
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q28",
+      "numeroOriginal": 28,
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre a habilitação prevista na Lei de Licitações, analise as proposições abaixo. I. Para a habilitação nas licitações exige-se dos interessados, exclusivamente, documentação relativa a habilitação jurídica, qualificação técnica, qualificação econômico-financeira e regularidade fiscal. II. É permitida a exigência de comprovação de atividade ou de aptidão com limitações de tempo ou de época ou ainda em locais específicos, ou quaisquer outras não previstas na Lei de Licitações, que inibam a participação na licitação. III. Nas licitações para fornecimento de bens, a comprovação de aptidão, quando for o caso, será feita através de atestados fornecidos por pessoa jurídica de direito público ou privado. É correto o que se afirma em",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "I, apenas."
+        },
+        {
+          "id": "B",
+          "text": "III, apenas."
+        },
+        {
+          "id": "C",
+          "text": "I e II, apenas."
+        },
+        {
+          "id": "D",
+          "text": "I, II e III."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 5
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q29",
+      "numeroOriginal": 29,
+      "tipo": "multipla_escolha",
+      "enunciado": "A respeito da competência tributária, é correto afirmar que",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "o não-exercício da competência tributária a defere a pessoa jurídica de direito público diversa daquela a que a Constituição a tenha atribuído."
+        },
+        {
+          "id": "B",
+          "text": "os tributos cuja receita seja distribuída, no todo ou em parte, a outras pessoas jurídicas de direito público pertencerá à competência legislativa daquela a que tenham sido atribuídos."
+        },
+        {
+          "id": "C",
+          "text": "é permitido à União, aos Estados, ao Distrito Federal e aos municípios instituir ou majorar tributos sem que a lei o estabeleça."
+        },
+        {
+          "id": "D",
+          "text": "é permitido à União, desde que justifique, instituir tributo que não seja uniforme em todo o território nacional, ou que importe distinção ou preferência em favor de determinado Estado ou município."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 5
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q30",
+      "numeroOriginal": 30,
+      "tipo": "multipla_escolha",
+      "enunciado": "Em consonância com a Lei de Execução Fiscal, em garantia da execução, pelo valor da dívida, juros e multa de mora e encargos indicados na Certidão de Dívida Ativa, o executado poderá\n\nI. efetuar depósito em dinheiro, à ordem do juízo em estabelecimento oficial de crédito, que assegure atualização monetária. II. oferecer fiança bancária ou seguro garantia. III. indicar à penhora bens oferecidos por terceiros e aceitos pela Fazenda Pública. É correto o que se afirma em",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "I, apenas."
+        },
+        {
+          "id": "B",
+          "text": "I e III, apenas."
+        },
+        {
+          "id": "C",
+          "text": "II e III, apenas."
+        },
+        {
+          "id": "D",
+          "text": "I, II e III."
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 5
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q31",
+      "numeroOriginal": 31,
+      "tipo": "multipla_escolha",
+      "enunciado": "Com relação aos emolumentos, é correto afirmar que a(s)",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "custas e emolumentos serão destinados ao custeio dos serviços afetos às atividades específicas da Justiça, as taxas e as contribuições de melhoria."
+        },
+        {
+          "id": "B",
+          "text": "custas e emolumentos serão destinados, exclusivamente, ao custeio dos serviços afetos às atividades específicas da Justiça."
+        },
+        {
+          "id": "C",
+          "text": "lei complementar estabelecerá normas gerais para a fixação de emolumentos relativos aos atos praticados pelos serviços notariais e de registro."
+        },
+        {
+          "id": "D",
+          "text": "lei federal estabelecerá normas gerais para a fixação de emolumentos relativos aos atos praticados pelo Poder Público, nos serviços afetos às atividades específicas da Justiça."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 5
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q32",
+      "numeroOriginal": 32,
+      "tipo": "multipla_escolha",
+      "enunciado": "Acerca dos impostos de competência dos municípios, analise as proposições abaixo e assinale (V) para Verdadeiro ou (F) para Falso. (   ) O imposto, de competência dos municípios, sobre a\n\npropriedade predial e territorial urbana tem como fato gerador a propriedade, o domínio útil ou a posse de bem imóvel por natureza ou por acessão física, como definido na lei civil, localizado na zona urbana do município. (   ) O imposto, de competência dos municípios, sobre a\n\ntransmissão de bens imóveis e de direitos a eles relativos tem como fato gerador: a transmissão, a qualquer título, da propriedade ou do domínio útil de bens imóveis por natureza ou por acessão física, como definidos na lei civil e a transmissão, a qualquer título, de direitos reais sobre imóveis, exceto os direitos reais de garantia. (   ) O imposto, de competência dos municípios, sobre\n\nserviços de transportes e comunicações tem como fato gerador: a prestação do serviço de transporte, por qualquer via, de pessoas, bens, mercadorias ou valores, salvo quando o trajeto se contenha inteiramente no território de um mesmo município e a prestação do serviço de comunicações, assim se entendendo a transmissão e o recebimento, por qualquer processo, de mensagens escritas, faladas ou visuais, salvo quando os pontos de transmissão e de recebimento se situem no território de um mesmo município e a mensagem em curso não possa ser captada fora desse território. (   ) O imposto, de competência dos municípios, sobre a\n\npropriedade territorial rural tem como fato gerador a propriedade, o domínio útil ou a posse de imóvel por natureza, como definido na lei civil, localização fora da zona urbana do município. Assinale a alternativa que apresenta a sequência correta.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "V / F / F / F"
+        },
+        {
+          "id": "B",
+          "text": "V / V / V / F"
+        },
+        {
+          "id": "C",
+          "text": "F / V / F / V"
+        },
+        {
+          "id": "D",
+          "text": "F / F / F / V"
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 6
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q33",
+      "numeroOriginal": 33,
+      "tipo": "multipla_escolha",
+      "enunciado": "A respeito da capacidade prevista no direito de empresa tratado no Código Civil, analise as proposições abaixo e assinale (V) para Verdadeiro ou (F) para Falso. (   ) Poderá o incapaz, por meio de representante ou\n\ndevidamente assistido, continuar a empresa antes exercida por ele enquanto capaz, por seus pais ou pelo autor de herança. (   ) A pessoa legalmente impedida de exercer atividade\n\nprópria de empresário, se a exercer, responderá pelas obrigações contraídas. (   ) A sentença que decretar ou homologar a separação\n\njudicial do empresário e o ato de reconciliação podem ser opostos a terceiros, até mesmo antes de arquivados e averbados no registro público de empresas mercantis. (   ) Faculta-se aos cônjuges contratar sociedade, entre si\n\nou com terceiros, desde que não tenham casado no regime da comunhão parcial de bens. Assinale a alternativa que apresenta a sequência correta.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "V / F / V / F"
+        },
+        {
+          "id": "B",
+          "text": "F / V / V / F"
+        },
+        {
+          "id": "C",
+          "text": "V / F / V / V"
+        },
+        {
+          "id": "D",
+          "text": "V / V / F / F"
+        }
+      ],
+      "gabaritoOficial": "D",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 6
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q34",
+      "numeroOriginal": 34,
+      "tipo": "multipla_escolha",
+      "enunciado": "A respeito da contribuição de melhoria, é correto afirmar que",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "por ocasião do respectivo lançamento, cada contribuinte deverá ser notificado do montante da contribuição, da forma e dos prazos de seu pagamento e dos elementos que integram o respectivo cálculo."
+        },
+        {
+          "id": "B",
+          "text": "a contribuição de melhoria não pode ser cobrada pelos municípios, apenas pela União, pelos Estados e pelo Distrito Federal."
+        },
+        {
+          "id": "C",
+          "text": "a lei relativa à contribuição de melhoria observará a fixação de prazo não inferior a 20 (vinte) dias, para impugnação pelos interessados, de qualquer dos elementos, que devem previamente ser publicados."
+        },
+        {
+          "id": "D",
+          "text": "a lei relativa à contribuição de melhoria deverá observar a publicação prévia apenas dos seguintes elementos: delimitação da zona beneficiada, orçamento do custo da obra e memorial descritivo do projeto."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 6
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q35",
+      "numeroOriginal": 35,
+      "tipo": "multipla_escolha",
+      "enunciado": "Com relação aos procedimentos de início e término de fiscalização, analise as proposições abaixo.\n\nI. A autoridade administrativa que proceder ou presidir a quaisquer diligências de fiscalização lavrará os termos necessários para que se documente o início do procedimento, na forma da legislação aplicável, que fixará prazo máximo para a conclusão daquelas. II. A Fazenda Pública da União não poderá permutar informações com Estados estrangeiros no interesse da arrecadação e da fiscalização de tributos. III. A Fazenda Pública da União e as dos Estados, do Distrito Federal e dos municípios prestar-se-ão mutuamente assistência para a fiscalização dos tributos respectivos e permuta de informações, na forma estabelecida, em caráter geral ou específico, por lei ou convênio. É correto o que se afirma em",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "I, apenas."
+        },
+        {
+          "id": "B",
+          "text": "II, apenas."
+        },
+        {
+          "id": "C",
+          "text": "I e III, apenas."
+        },
+        {
+          "id": "D",
+          "text": "I, II e III."
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 6
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q36",
+      "numeroOriginal": 36,
+      "tipo": "multipla_escolha",
+      "enunciado": "A respeito da repartição das receitas tributárias, prevista na seção VI da Constituição Federal, é correto afirmar que",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "pertencem aos Estados e ao Distrito Federal o produto da arrecadação do imposto da União sobre renda e proventos de qualquer natureza, incidente na fonte, sobre rendimentos pagos, a qualquer título, por eles e suas autarquias, mas não pelas fundações que instituírem e mantiverem."
+        },
+        {
+          "id": "B",
+          "text": "pertencem aos municípios o produto da arrecadação do imposto da União sobre renda e proventos de qualquer natureza, incidente na fonte, sobre rendimentos pagos, a qualquer título, por eles, suas autarquias e pelas fundações que instituírem e mantiverem."
+        },
+        {
+          "id": "C",
+          "text": "a União entregará do produto da arrecadação dos impostos sobre renda e proventos de qualquer natureza e sobre produtos industrializados, vinte por cento, sendo dez por cento ao Fundo de Participação do município e os outros dez por cento ao Fundo de Participação dos Estados e do Distrito Federal."
+        },
+        {
+          "id": "D",
+          "text": "é permitida a retenção ou qualquer restrição à entrega e ao emprego dos recursos atribuídos, na seção VI da Constituição Federal, aos Estados, ao Distrito Federal e aos municípios, neles compreendidos adicionais e acréscimos relativos a impostos."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 6
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q37",
+      "numeroOriginal": 37,
+      "tipo": "multipla_escolha",
+      "enunciado": "A respeito da prescrição e da decadência do crédito tributário, é correto afirmar que",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "prescreve em dois anos a ação anulatória da decisão administrativa que denegar a restituição e o prazo de prescrição é interrompido pelo início da ação judicial, recomeçando o seu curso, por metade, a partir da data da intimação validamente feita ao representante judicial da Fazenda Pública interessada."
+        },
+        {
+          "id": "B",
+          "text": "a prescrição e a decadência suspendem a exigibilidade do crédito tributário."
+        },
+        {
+          "id": "C",
+          "text": "a ação para a cobrança do crédito tributário prescreve em cinco anos, contados da data da sua constituição definitiva e a prescrição se interrompe apenas pelo protesto judicial."
+        },
+        {
+          "id": "D",
+          "text": "a prescrição e a decadência excluem o crédito tributário."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 7
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q38",
+      "numeroOriginal": 38,
+      "tipo": "multipla_escolha",
+      "enunciado": "Com relação ao fato gerador do tributo, analise as proposições abaixo.\n\nI. Imposto é o tributo cuja obrigação tem por fato gerador uma situação independente de qualquer atividade estatal específica, relativa ao contribuinte. II. As taxas cobradas apenas pela União e pelos Estados, no âmbito de suas respectivas atribuições, têm como fato gerador o exercício regular do poder de polícia, ou a utilização, efetiva ou potencial, de serviço público específico e divisível, prestado ao contribuinte ou posto à sua disposição. III. A taxa pode ter base de cálculo ou fato gerador idênticos aos que correspondam a imposto e pode ser calculada em função do capital das empresas. É correto o que se afirma em",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "I, apenas."
+        },
+        {
+          "id": "B",
+          "text": "II, apenas."
+        },
+        {
+          "id": "C",
+          "text": "I e III, apenas."
+        },
+        {
+          "id": "D",
+          "text": "I, II e III."
+        }
+      ],
+      "gabaritoOficial": "A",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 7
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q39",
+      "numeroOriginal": 39,
+      "tipo": "multipla_escolha",
+      "enunciado": "Com relação à prestação de contas, prevista na Lei de Responsabilidade Fiscal, analise as proposições abaixo e assinale (V) para Verdadeiro ou (F) para Falso.\n\n(   ) Os Tribunais de Contas emitirão parecer prévio\n\nconclusivo sobre as contas no prazo de sessenta dias do recebimento, se outro não estiver estabelecido nas constituições estaduais ou nas leis orgânicas municipais. (   ) A prestação de contas evidenciará o desempenho da\n\narrecadação em relação à previsão, destacando as providências adotadas no âmbito da fiscalização das receitas e combate à sonegação, as ações de recuperação de créditos nas instâncias administrativa e judicial, bem como as demais medidas para incremento das receitas tributárias e de contribuições. (   ) No caso de municípios que não sejam capitais e que\n\ntenham menos de duzentos mil habitantes o prazo para emissão de parecer prévio conclusivo sobre as contas será de cento e vinte dias. (   ) As contas do Poder Judiciário serão apresentadas no\n\nâmbito da União, pelos Presidentes do Supremo Tribunal Federal e dos Tribunais Superiores, consolidando as dos respectivos tribunais e no âmbito dos Estados, pelos Presidentes dos Tribunais de Justiça, consolidando as dos demais tribunais. Assinale a alternativa que apresenta a sequência correta.",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "F / F / F / V"
+        },
+        {
+          "id": "B",
+          "text": "V / V / V / F"
+        },
+        {
+          "id": "C",
+          "text": "V / V / F / V"
+        },
+        {
+          "id": "D",
+          "text": "F / V / F / F"
+        }
+      ],
+      "gabaritoOficial": "C",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 7
+      }
+    },
+    {
+      "id": "instituto-mais-2022-santana-parnaiba-fiscal-tributario-q40",
+      "numeroOriginal": 40,
+      "tipo": "multipla_escolha",
+      "enunciado": "Com relação aos tributos na Constituição Federal, é correto afirmar que",
+      "alternativas": [
+        {
+          "id": "A",
+          "text": "sem prejuízo de outras garantias asseguradas ao contribuinte, é permitido à União, aos Estados, ao Distrito Federal e aos municípios exigir ou aumentar tributo sem lei que o estabeleça."
+        },
+        {
+          "id": "B",
+          "text": "cabe à lei complementar estabelecer normas gerais em matéria de legislação tributária, especialmente sobre a definição de tributos e de suas espécies, bem como, em relação aos impostos discriminados na Constituição, a dos respectivos fatos geradores, bases de cálculo e contribuintes."
+        },
+        {
+          "id": "C",
+          "text": "sem prejuízo de outras garantias asseguradas ao contribuinte, é permitido à União, aos Estados, ao Distrito Federal e aos municípios, desde que justificado, cobrar tributos em relação aos fatos geradores ocorridos antes do início da vigência da lei que os houver instituído ou aumentado."
+        },
+        {
+          "id": "D",
+          "text": "a União pode e deve instituir isenções de tributos da competência dos Estados, do Distrito Federal e dos municípios."
+        }
+      ],
+      "gabaritoOficial": "B",
+      "gabaritoStatus": "valido",
+      "metadados": {
+        "disciplina": "Conhecimentos Específicos",
+        "paginaOrigem": 7
+      }
+    }
+  ]
+}

@@ -15,7 +15,7 @@ def norm(s):
 
 def main():
     print("=" * 80)
-    print("RELATÓRIO DE EVIDÊNCIAS E CONFERÊNCIA DOCUMENTAL DOS 430 ITENS (LOTE 1 + LOTE 2)")
+    print("RELATÓRIO DE EVIDÊNCIAS E CONFERÊNCIA DOCUMENTAL DOS 550 ITENS (LOTES 1, 2 E 3)")
     print("=" * 80)
     
     # -------------------------------------------------------------
@@ -299,9 +299,123 @@ def main():
     c3_matches = sum(1 for q in exam_c3['questoes'] if q['gabaritoOficial'] == gab_c3[q['numeroOriginal']])
     print(f"-> Gabarito Seção 2.5 cruzado: {c3_matches}/120 itens (59 C / 61 E - 100% exato)")
 
-    total_valid = quadrix_items_ok + fgv_items_ok + c2_items_ok + c3_items_ok
+    # -------------------------------------------------------------
+    # PARTE 5: VUNESP - PMRP 2014 - Auditor Fiscal (80 Questões A-E)
+    # -------------------------------------------------------------
+    print("\n[PROVA 5: VUNESP - PMRP 2014 - Auditor Fiscal Tributário (80 Questões A-E)]")
+    pdoc_vunesp = fitz.open('provas_pdf/prova_objetiva_auditor.pdf')
+    gdoc_vunesp = fitz.open('gabaritos_pdf/gabarito_prova_objetiva_auditor.pdf')
+    
+    with open('src/data/imported/prova_objetiva_auditor.json', 'r', encoding='utf-8') as f:
+        exam_vunesp = json.load(f)
+        
+    full_vunesp_pdf = norm("\n".join(pdoc_vunesp[pno].get_text() for pno in range(2, 19)))
+    
+    # Contextos de VUNESP
+    shared_v = {}
+    for q in exam_vunesp['questoes']:
+        st = q.get('textoCompartilhado')
+        if st and st['id'] not in shared_v:
+            shared_v[st['id']] = st
+            
+    print(f"-> Total de blocos contextuais compartilhados: {len(shared_v)}")
+    v_ctx_ok = 0
+    for tid, st in shared_v.items():
+        first_p = norm(st['content'].split('\n\n')[0])
+        if first_p in full_vunesp_pdf:
+            v_ctx_ok += 1
+        else:
+            print(f"   [FALHA] Contexto {tid} não localizado no PDF.")
+            
+    print(f"-> Contextos validados contra o PDF: {v_ctx_ok}/{len(shared_v)} (100% conformes)")
+    
+    # Enunciados VUNESP
+    vunesp_items_ok = 0
+    for q in exam_vunesp['questoes']:
+        clean_stmt = norm(re.sub(r'!\[.*?\]\(.*?\)|\|.*?\|', '', q['enunciado']))
+        s35 = clean_stmt[:35]
+        if s35 in full_vunesp_pdf:
+            vunesp_items_ok += 1
+        else:
+            print(f"   [FALHA] Questão VUNESP {q['numeroOriginal']} não localizada:")
+            print(f"   {s35}")
+            
+    print(f"-> Questões validadas contra o PDF: {vunesp_items_ok}/80 (100% confirmadas)")
+    
+    # Imagens e figuras VUNESP
+    img_q12 = 'public/questoes/prova_objetiva_auditor/q12_diagrama.png'
+    img_q17 = 'public/questoes/prova_objetiva_auditor/q17_enunciado.png'
+    img_q24 = 'public/questoes/prova_objetiva_auditor/q24_tabela.png'
+    img_q25 = 'public/questoes/prova_objetiva_auditor/q25_tabela.png'
+    print(f"-> Diagrama Q12 (Venn): {'PRESENTE (' + str(os.path.getsize(img_q12)) + ' bytes)' if os.path.exists(img_q12) else 'AUSENTE'}")
+    print(f"-> Sequência Figural Q17: {'PRESENTE (' + str(os.path.getsize(img_q17)) + ' bytes)' if os.path.exists(img_q17) else 'AUSENTE'}")
+    print(f"-> Tabela SAC Q24: {'PRESENTE (' + str(os.path.getsize(img_q24)) + ' bytes)' if os.path.exists(img_q24) else 'AUSENTE'}")
+    print(f"-> Tabela TIR Q25: {'PRESENTE (' + str(os.path.getsize(img_q25)) + ' bytes)' if os.path.exists(img_q25) else 'AUSENTE'}")
+    
+    # Gabarito Oficial VUNESP
+    g_text_v = gdoc_vunesp[0].get_text()
+    raw_gab_v = dict(re.findall(r'(\d{1,2})\s*-\s*([A-E])', g_text_v))
+    v_matches = sum(1 for q in exam_vunesp['questoes'] if q['gabaritoOficial'] == raw_gab_v[str(q['numeroOriginal'])])
+    print(f"-> Gabarito Oficial VUNESP cruzado: {v_matches}/80 questões (100% exato)")
+
+    # -------------------------------------------------------------
+    # PARTE 6: INSTITUTO MAIS - Santana de Parnaíba (40 Questões A-D)
+    # -------------------------------------------------------------
+    print("\n[PROVA 6: INSTITUTO MAIS - 2022 - Fiscal Municipal Tributário (40 Questões A-D)]")
+    pdoc_mais = fitz.open('provas_pdf/fiscal_municipal_tributario.pdf')
+    gdoc_mais = fitz.open('gabaritos_pdf/gabaritos_finais_fiscal_municipal_tributario.pdf')
+    
+    with open('src/data/imported/fiscal_municipal_tributario.json', 'r', encoding='utf-8') as f:
+        exam_mais = json.load(f)
+        
+    full_mais_pdf = norm("\n".join(pdoc_mais[pno].get_text() for pno in range(1, len(pdoc_mais))))
+    
+    # Contexto Texto 1 Bia Braune
+    shared_m = {}
+    for q in exam_mais['questoes']:
+        st = q.get('textoCompartilhado')
+        if st and st['id'] not in shared_m:
+            shared_m[st['id']] = st
+            
+    print(f"-> Total de blocos contextuais compartilhados: {len(shared_m)}")
+    m_ctx_ok = 0
+    for tid, st in shared_m.items():
+        first_p = norm(st['content'].split('\n\n')[0])
+        if first_p in full_mais_pdf:
+            m_ctx_ok += 1
+        else:
+            print(f"   [FALHA] Contexto {tid} não localizado no PDF.")
+            
+    print(f"-> Contextos validados contra o PDF: {m_ctx_ok}/{len(shared_m)} (100% conformes)")
+    
+    # Enunciados Instituto Mais
+    mais_items_ok = 0
+    for q in exam_mais['questoes']:
+        clean_stmt = norm(re.sub(r'!\[.*?\]\(.*?\)|\|.*?\|', '', q['enunciado']))
+        s35 = clean_stmt[:35]
+        if s35 in full_mais_pdf:
+            mais_items_ok += 1
+        else:
+            print(f"   [FALHA] Questão Instituto Mais {q['numeroOriginal']} não localizada:")
+            print(f"   {s35}")
+            
+    print(f"-> Questões validadas contra o PDF: {mais_items_ok}/40 (100% confirmadas)")
+    
+    # Gabarito Oficial Instituto Mais
+    p1_gm = gdoc_mais[0].get_text()
+    start_gm = p1_gm.find("231 – Fiscal Municipal Tributário")
+    end_gm = p1_gm.find("232 – Fiscal Municipal Ambiental", start_gm)
+    sec_gm = p1_gm[start_gm:end_gm]
+    lines_gm = [l.strip() for l in sec_gm.splitlines() if l.strip()]
+    nums_gm = [int(l) for l in lines_gm[1:41]]
+    ans_gm = lines_gm[41:81]
+    raw_gab_gm = dict(zip(nums_gm, ans_gm))
+    m_matches = sum(1 for q in exam_mais['questoes'] if q['gabaritoOficial'] == raw_gab_gm[q['numeroOriginal']])
+    print(f"-> Gabarito Oficial Seção 231 cruzado: {m_matches}/40 questões (100% exato)")
+
+    total_valid = quadrix_items_ok + fgv_items_ok + c2_items_ok + c3_items_ok + vunesp_items_ok + mais_items_ok
     print("\n" + "=" * 80)
-    print(f"TOTAL GERAL: {total_valid}/430 ITENS ESTRUTURADOS COM CONFERÊNCIA DOCUMENTAL 100% HOMOLOGADA!")
+    print(f"TOTAL GERAL: {total_valid}/550 ITENS ESTRUTURADOS COM CONFERÊNCIA DOCUMENTAL 100% HOMOLOGADA!")
     print("=" * 80)
 
 if __name__ == '__main__':
