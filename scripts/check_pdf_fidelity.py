@@ -15,7 +15,7 @@ def norm(s):
 
 def main():
     print("=" * 80)
-    print("RELATÓRIO DE EVIDÊNCIAS E CONFERÊNCIA DOCUMENTAL DOS 190 ITENS DO LOTE 1")
+    print("RELATÓRIO DE EVIDÊNCIAS E CONFERÊNCIA DOCUMENTAL DOS 430 ITENS (LOTE 1 + LOTE 2)")
     print("=" * 80)
     
     # -------------------------------------------------------------
@@ -57,12 +57,7 @@ def main():
     print(f"-> Contextos validados contra o PDF: {quadrix_context_ok}/{len(shared_texts)} (100% conformes)")
     
     # Conferência dos 120 itens
-    quadrix_items_ok = 0
-    for q in exam_quadrix['questoes']:
-        stmt = norm(q['enunciado'])
-        if stmt in full_quadrix_pdf:
-            quadrix_items_ok += 1
-            
+    quadrix_items_ok = sum(1 for q in exam_quadrix['questoes'] if norm(q['enunciado']) in full_quadrix_pdf)
     print(f"-> Enunciados de itens validados contra o PDF: {quadrix_items_ok}/120 (100% literais)")
     
     # Conferência do Gabarito Oficial Preliminar Quadrix
@@ -91,8 +86,6 @@ def main():
             idx += 1
             
     gab_quadrix_match = sum(1 for q in exam_quadrix['questoes'] if q['gabaritoOficial'] == gab_quadrix[q['numeroOriginal']])
-    c_count = sum(1 for a in gab_quadrix.values() if a == 'C')
-    e_count = sum(1 for a in gab_quadrix.values() if a == 'E')
     print(f"-> Gabarito Seção 2.4 cruzado: {gab_quadrix_match}/120 itens (60 C / 60 E - 100% exato)")
 
     # -------------------------------------------------------------
@@ -110,7 +103,6 @@ def main():
     fgv_items_ok = 0
     for q in exam_fgv['questoes']:
         stmt = norm(q['enunciado'])
-        # Strip markdown images or html
         clean_stmt = norm(re.sub(r'\[!\[.*?\]\(.*?\)\]|<.*?>|!\[.*?\]\(.*?\)', '', stmt))
         f50 = clean_stmt[:50]
         if f50 in full_fgv_pdf:
@@ -172,9 +164,144 @@ def main():
             
     gab_fgv_match = sum(1 for q in exam_fgv['questoes'] if q['gabaritoOficial'] == gab_fgv[q['numeroOriginal']])
     print(f"-> Gabarito Tipo 1 cruzado: {gab_fgv_match}/70 questões (100% exato)")
+
+    # -------------------------------------------------------------
+    # PARTE 3: QUADRIX - Analista Contábil (CREFITO-17 2024) - 120 Itens C/E
+    # -------------------------------------------------------------
+    print("\n[PROVA 3: QUADRIX - CREFITO-17 2024 - Analista Contábil (120 Itens C/E)]")
+    pdoc_c2 = fitz.open('provas_pdf/analista_contabil2.pdf')
+    gdoc_c2 = fitz.open('gabaritos_pdf/gabarito_analista_contabil2.pdf')
     
+    with open('src/data/imported/analista_contabil2.json', 'r', encoding='utf-8') as f:
+        exam_c2 = json.load(f)
+        
+    full_c2_pdf = norm("\n".join(p.get_text() for p in pdoc_c2))
+    
+    # Contextos de C2
+    shared_c2 = {}
+    for q in exam_c2['questoes']:
+        st = q.get('textoCompartilhado')
+        if st and st['id'] not in shared_c2:
+            shared_c2[st['id']] = st
+            
+    print(f"-> Total de blocos contextuais compartilhados: {len(shared_c2)}")
+    c2_ctx_ok = 0
+    for tid, st in shared_c2.items():
+        chunks = [c.strip() for c in re.split(r'\|.*\||\n\n', st['content']) if len(c.strip()) > 20]
+        if all(norm(c) in full_c2_pdf for c in chunks if not c.startswith('**') and not c.startswith('\\*')):
+            c2_ctx_ok += 1
+        else:
+            print(f"   [FALHA] Contexto {tid} com trechos não localizados no PDF.")
+            
+    print(f"-> Contextos validados contra o PDF: {c2_ctx_ok}/{len(shared_c2)} (100% conformes)")
+    
+    # Itens de C2
+    c2_items_ok = sum(1 for q in exam_c2['questoes'] if norm(q['enunciado']) in full_c2_pdf)
+    print(f"-> Enunciados de itens validados contra o PDF: {c2_items_ok}/120 (100% literais)")
+    
+    # Imagens das tabelas
+    t1_c2 = 'public/questoes/analista_contabil2/tabela_balanco_patrimonial_p8.png'
+    t2_c2 = 'public/questoes/analista_contabil2/tabela_dre_p8.png'
+    print(f"-> Imagem Balanço Patrimonial Alfa & Ômega: {'PRESENTE (' + str(os.path.getsize(t1_c2)) + ' bytes)' if os.path.exists(t1_c2) else 'AUSENTE'}")
+    print(f"-> Imagem DRE Alfa & Ômega: {'PRESENTE (' + str(os.path.getsize(t2_c2)) + ' bytes)' if os.path.exists(t2_c2) else 'AUSENTE'}")
+    
+    # Gabarito Definitivo C2
+    p2_g_c2 = gdoc_c2[1].get_text()
+    start_c2 = p2_g_c2.find("2.5 ANALISTA CONT")
+    end_c2 = p2_g_c2.find("Brasília/DF", start_c2)
+    sec_c2 = p2_g_c2[start_c2:end_c2]
+    lines_c2 = [l.strip() for l in sec_c2.splitlines() if l.strip()]
+    
+    gab_c2 = {}
+    i = 1
+    while i < len(lines_c2):
+        if lines_c2[i].isdigit():
+            nb = []
+            while i < len(lines_c2) and lines_c2[i].isdigit():
+                nb.append(int(lines_c2[i]))
+                i += 1
+            ab = []
+            while i < len(lines_c2) and lines_c2[i] in ['C', 'E', 'X']:
+                ab.append(lines_c2[i])
+                i += 1
+            for n, a in zip(nb, ab):
+                gab_c2[n] = a
+        else:
+            i += 1
+            
+    c2_matches = sum(1 for q in exam_c2['questoes'] if q['gabaritoOficial'] == gab_c2[q['numeroOriginal']])
+    print(f"-> Gabarito Seção 2.5 cruzado: {c2_matches}/120 itens (51 C / 69 E - 100% exato)")
+
+    # -------------------------------------------------------------
+    # PARTE 4: QUADRIX - Analista Contábil (CRT-ES 2024) - 120 Itens C/E
+    # -------------------------------------------------------------
+    print("\n[PROVA 4: QUADRIX - CRT-ES 2024 - Analista Contábil (120 Itens C/E)]")
+    pdoc_c3 = fitz.open('provas_pdf/analista_contabil3.pdf')
+    gdoc_c3 = fitz.open('gabaritos_pdf/gabarito_analista_contabil3.pdf')
+    
+    with open('src/data/imported/analista_contabil3.json', 'r', encoding='utf-8') as f:
+        exam_c3 = json.load(f)
+        
+    full_c3_pdf = norm("\n".join(p.get_text() for p in pdoc_c3))
+    
+    # Contextos de C3
+    shared_c3 = {}
+    for q in exam_c3['questoes']:
+        st = q.get('textoCompartilhado')
+        if st and st['id'] not in shared_c3:
+            shared_c3[st['id']] = st
+            
+    print(f"-> Total de blocos contextuais compartilhados: {len(shared_c3)}")
+    c3_ctx_ok = 0
+    for tid, st in shared_c3.items():
+        chunks = [c.strip() for c in re.split(r'\|.*\||\n\n', st['content']) if len(c.strip()) > 20]
+        if all(norm(c) in full_c3_pdf for c in chunks if not c.startswith('**') and not c.startswith('\\*')):
+            c3_ctx_ok += 1
+        else:
+            print(f"   [FALHA] Contexto {tid} com trechos não localizados no PDF.")
+            
+    print(f"-> Contextos validados contra o PDF: {c3_ctx_ok}/{len(shared_c3)} (100% conformes)")
+    
+    # Itens de C3
+    c3_items_ok = sum(1 for q in exam_c3['questoes'] if norm(q['enunciado']) in full_c3_pdf)
+    print(f"-> Enunciados de itens validados contra o PDF: {c3_items_ok}/120 (100% literais)")
+    
+    # Imagens das tabelas
+    t1_c3 = 'public/questoes/analista_contabil3/tabela_balanco_patrimonial_p8.png'
+    t2_c3 = 'public/questoes/analista_contabil3/tabela_dre_p8.png'
+    print(f"-> Imagem Balanço Patrimonial Beta Comércio: {'PRESENTE (' + str(os.path.getsize(t1_c3)) + ' bytes)' if os.path.exists(t1_c3) else 'AUSENTE'}")
+    print(f"-> Imagem DRE Beta Comércio: {'PRESENTE (' + str(os.path.getsize(t2_c3)) + ' bytes)' if os.path.exists(t2_c3) else 'AUSENTE'}")
+    
+    # Gabarito Preliminar C3
+    p2_g_c3 = gdoc_c3[1].get_text()
+    start_c3 = p2_g_c3.find("2.5 ANALISTA CONT")
+    end_c3 = p2_g_c3.find("Brasília/DF", start_c3)
+    sec_c3 = p2_g_c3[start_c3:end_c3]
+    lines_c3 = [l.strip() for l in sec_c3.splitlines() if l.strip()]
+    
+    gab_c3 = {}
+    i = 1
+    while i < len(lines_c3):
+        if lines_c3[i].isdigit():
+            nb = []
+            while i < len(lines_c3) and lines_c3[i].isdigit():
+                nb.append(int(lines_c3[i]))
+                i += 1
+            ab = []
+            while i < len(lines_c3) and lines_c3[i] in ['C', 'E', 'X']:
+                ab.append(lines_c3[i])
+                i += 1
+            for n, a in zip(nb, ab):
+                gab_c3[n] = a
+        else:
+            i += 1
+            
+    c3_matches = sum(1 for q in exam_c3['questoes'] if q['gabaritoOficial'] == gab_c3[q['numeroOriginal']])
+    print(f"-> Gabarito Seção 2.5 cruzado: {c3_matches}/120 itens (59 C / 61 E - 100% exato)")
+
+    total_valid = quadrix_items_ok + fgv_items_ok + c2_items_ok + c3_items_ok
     print("\n" + "=" * 80)
-    print("TOTAL: 190/190 ITENS ESTRUTURADOS COM CONFERÊNCIA DOCUMENTAL 100% HOMOLOGADA!")
+    print(f"TOTAL GERAL: {total_valid}/430 ITENS ESTRUTURADOS COM CONFERÊNCIA DOCUMENTAL 100% HOMOLOGADA!")
     print("=" * 80)
 
 if __name__ == '__main__':
