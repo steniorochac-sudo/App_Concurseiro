@@ -1,6 +1,7 @@
 import React from 'react';
 import { Question } from '../types';
-import { X, CheckCircle2, Scale, BookOpen, AlertTriangle, Tag, Sparkles } from 'lucide-react';
+import { X, CheckCircle2, Scale, BookOpen, AlertTriangle, Tag, Sparkles, Search } from 'lucide-react';
+import { openQuestionSearchInGoogle } from '../utils/searchExplanation';
 
 interface ExplanationModalProps {
   question: Question | null;
@@ -101,6 +102,16 @@ export const ExplanationModal: React.FC<ExplanationModalProps> = ({
             </div>
           )}
         </div>
+
+        {/* Botão Buscar no Google */}
+        <button
+          type="button"
+          onClick={() => openQuestionSearchInGoogle(question)}
+          className="w-full mt-4 py-3 px-4 bg-slate-900 hover:bg-slate-800 border border-indigo-500/30 text-indigo-300 font-semibold text-xs rounded-xl flex items-center justify-center space-x-2 transition-all shadow-md active:scale-[0.98]"
+        >
+          <Search className="w-4 h-4 text-indigo-400" />
+          <span>Buscar resolução e debates no Google</span>
+        </button>
 
         {/* Close Button */}
         <button

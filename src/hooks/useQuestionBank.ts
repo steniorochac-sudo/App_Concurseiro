@@ -8,6 +8,8 @@ import {
 } from '../types';
 import { INITIAL_QUESTIONS } from '../data/mockQuestions';
 import { ALL_IMPORTED_QUESTIONS, PRELOADED_EXAMS } from '../data/allExamsCatalog';
+import { ExamDocumentV2 } from '../types/examSchemaV2';
+import { examDocV2ToQuestions } from '../data/examsRegistry';
 
 const STORAGE_KEY = 'concurseiro_user_state';
 
@@ -184,6 +186,38 @@ export function useQuestionBank() {
     }
 
     return { added: addedCount, total: questions.length + addedCount };
+  }, [questions]);
+
+  // Importar prova estruturada no padrão ExamDocumentV2 (via IA ou arquivo JSON)
+  const importExamDocument = useCallback((doc: ExamDocumentV2): { added: number; updated: number; total: number } => {
+    const newQuestions = examDocV2ToQuestions(doc);
+    let addedCount = 0;
+    let updatedCount = 0;
+
+    setCustomQuestions(prev => {
+      const questionMap = new Map<string, Question>();
+      // Preserva questões customizadas existentes
+      for (const q of prev) {
+        questionMap.set(q.id, q);
+      }
+
+      for (const newQ of newQuestions) {
+        if (questionMap.has(newQ.id)) {
+          updatedCount++;
+        } else {
+          addedCount++;
+        }
+        questionMap.set(newQ.id, newQ);
+      }
+
+      return Array.from(questionMap.values());
+    });
+
+    return {
+      added: addedCount,
+      updated: updatedCount,
+      total: questions.length + addedCount,
+    };
   }, [questions]);
 
   // Carregar prova pré-carregada
@@ -377,6 +411,7 @@ export function useQuestionBank() {
     recordAttempt,
     toggleSaveQuestion,
     importQuestions,
+    importExamDocument,
     loadPreloadedExam,
     loadAllPreloadedExams,
     clearAllQuestions,

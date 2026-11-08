@@ -4,7 +4,6 @@ import {
   Star, 
   CheckCircle, 
   XCircle, 
-  HelpCircle, 
   ArrowRight, 
   BookOpen, 
   ChevronDown, 
@@ -14,8 +13,10 @@ import {
   AlertTriangle,
   Tag,
   Check,
-  X
+  X,
+  Search
 } from 'lucide-react';
+import { openQuestionSearchInGoogle } from '../utils/searchExplanation';
 
 interface QuestionCardProps {
   question: Question;
@@ -512,13 +513,18 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           </button>
         ) : (
           <div className="flex-1 flex items-center space-x-2 animate-fadeIn">
-            {/* Botão Ver Explicação */}
+            {/* Botão Buscar Explicação (Google) */}
             <button
-              onClick={onOpenExplanation}
+              type="button"
+              onClick={() => {
+                openQuestionSearchInGoogle(question);
+                onOpenExplanation?.();
+              }}
               className="flex-1 py-2.5 px-3 bg-indigo-600/20 border border-indigo-500/40 hover:bg-indigo-600/30 text-indigo-300 rounded-xl text-xs font-semibold flex items-center justify-center space-x-1.5 transition-all active:scale-[0.98]"
+              title="Pesquisar comentários e resolução desta questão no Google"
             >
-              <HelpCircle className="w-4 h-4 text-indigo-400" />
-              <span>Ver Explicação</span>
+              <Search className="w-4 h-4 text-indigo-400" />
+              <span>Buscar Explicação</span>
             </button>
 
             {/* Botão Próxima Questão */}

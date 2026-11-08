@@ -20,6 +20,7 @@ export function App() {
     recordAttempt,
     toggleSaveQuestion,
     importQuestions,
+    importExamDocument,
     loadPreloadedExam,
     loadAllPreloadedExams,
     clearAllQuestions,
@@ -101,6 +102,7 @@ export function App() {
         {activeTab === 'import' && (
           <ImportModal
             onImport={importQuestions}
+            onImportExamDocument={importExamDocument}
             onExport={handleExportBackup}
             onClearAll={clearAllQuestions}
             onResetFactory={resetToFactoryDefaults}

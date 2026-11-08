@@ -129,12 +129,19 @@ describe('QuestionCard Component', () => {
 
     expect(handleAnswer).toHaveBeenCalledWith('A');
 
-    // 3. Botão de explicação surge pós-resposta
-    const explanationBtn = screen.getByText('Ver Explicação');
+    // 3. Botão de busca de explicação surge pós-resposta
+    const openSpy = vi.spyOn(window, 'open').mockImplementation(() => null);
+    const explanationBtn = screen.getByText('Buscar Explicação');
     expect(explanationBtn).toBeInTheDocument();
 
     fireEvent.click(explanationBtn);
     expect(handleOpenExplanation).toHaveBeenCalled();
+    expect(openSpy).toHaveBeenCalledWith(
+      expect.stringContaining('https://www.google.com/search?q='),
+      '_blank',
+      'noopener,noreferrer'
+    );
+    openSpy.mockRestore();
   });
 
   it('deve permitir riscar/eliminar alternativas com o botão de tesoura', () => {
