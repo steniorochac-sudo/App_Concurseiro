@@ -22,10 +22,13 @@ export function useQuestionBank() {
       const stored = localStorage.getItem(`${STORAGE_KEY}_custom_questions`);
       if (!stored) return [];
       const parsed: Question[] = JSON.parse(stored);
-      // Remove cópias obsoletas de questões oficiais do catálogo (P1.1)
+      // Remove cópias obsoletas de questões oficiais do catálogo com BACKUP RECUPERÁVEL (P1)
       const officialIds = new Set(ALL_IMPORTED_QUESTIONS.map(q => q.id));
       const filtered = parsed.filter(q => !officialIds.has(q.id));
       if (filtered.length !== parsed.length) {
+        const staleItems = parsed.filter(q => officialIds.has(q.id));
+        localStorage.setItem(`${STORAGE_KEY}_custom_questions_backup`, JSON.stringify(staleItems));
+        localStorage.setItem('concurseiro_user_state_backup_pre_v2', JSON.stringify(parsed));
         localStorage.setItem(`${STORAGE_KEY}_custom_questions`, JSON.stringify(filtered));
       }
       return filtered;
@@ -48,9 +51,28 @@ export function useQuestionBank() {
         const parsed = JSON.parse(stored);
         const version = parsed.version || '1.0';
 
-        // Migração controlada de versão legada (< 2.0)
+        // Mapa de reconciliação histórica com o acervo oficial (P1 / P0.2)
+        const allKnownQuestions = new Map<string, Question>();
+        ALL_IMPORTED_QUESTIONS.forEach(q => allKnownQuestions.set(q.id, q));
+        INITIAL_QUESTIONS.forEach(q => {
+          if (!allKnownQuestions.has(q.id)) allKnownQuestions.set(q.id, q);
+        });
+
+        // Migração controlada e reconciliação histórica de tentativas
         let attempts: UserAttempt[] = parsed.attempts || [];
         attempts = attempts.map(att => {
+          const targetQ = allKnownQuestions.get(att.questionId);
+          if (targetQ) {
+            const evalResult = evaluateQuestionAnswer(targetQ, att.selectedOption);
+            return {
+              ...att,
+              isCorrect: evalResult.isCorrect,
+              isAnnulled: evalResult.isAnnulled,
+              scoreWeight: evalResult.scoreWeight,
+              officialExamCredit: evalResult.officialExamCredit,
+              countsForDidacticMetrics: evalResult.countsForDidacticMetrics,
+            };
+          }
           if (att.isAnnulled) {
             return {
               ...att,
@@ -76,6 +98,8 @@ export function useQuestionBank() {
         };
 
         if (version !== CURRENT_STORAGE_VERSION) {
+          // Preservação do estado anterior em backup seguro antes de sobrescrever
+          localStorage.setItem('concurseiro_user_state_backup_pre_v2', stored);
           localStorage.setItem(STORAGE_KEY, JSON.stringify(migratedState));
         }
 

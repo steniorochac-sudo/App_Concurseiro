@@ -200,4 +200,83 @@ describe('Storage Migration, Persistence & Regression Gate (P1.1, P1.2, P1.3)', 
     // Pontos oficiais da banca: 1 acerto + 1 crédito por questão anulada = 2 pontos
     expect(stats.totalOfficialCredits).toBe(2);
   });
+
+  it('5. P1: Deve criar backup recuperável (pre_v2 e custom_questions_backup) antes de sanitizar itens obsoletos do storage', () => {
+    const officialQ = ALL_IMPORTED_QUESTIONS[0];
+    const staleCustom: Question[] = [
+      {
+        ...officialQ,
+        enunciado: 'CÓPIA ANTIGA OBSOLETA',
+      },
+      {
+        id: 'user-unique-q123',
+        banca: 'Autoral',
+        ano: 2026,
+        orgao: 'Estudos',
+        disciplina: 'Português',
+        assunto: 'Crase',
+        enunciado: 'Questão autoral do aluno.',
+        alternativas: [
+          { id: 'A', text: 'Opção A' },
+          { id: 'B', text: 'Opção B' },
+        ],
+        gabarito: 'A',
+        explicacao: 'Regra geral de crase.',
+      },
+    ];
+
+    localStorage.setItem(CUSTOM_KEY, JSON.stringify(staleCustom));
+
+    renderHook(() => useQuestionBank());
+
+    // Verifica que foi gerado backup das questões customizadas antes da limpeza
+    const backupCustom = localStorage.getItem(`${STORAGE_KEY}_custom_questions_backup`);
+    expect(backupCustom).toBeDefined();
+    const parsedBackup = JSON.parse(backupCustom || '[]');
+    expect(parsedBackup).toHaveLength(1);
+    expect(parsedBackup[0].id).toBe(officialQ.id);
+
+    // Verifica backup geral pre_v2
+    const backupPreV2 = localStorage.getItem('concurseiro_user_state_backup_pre_v2');
+    expect(backupPreV2).toBeDefined();
+  });
+
+  it('6. P1: Deve reconciliar tentativas históricas quando questões foram posteriormente anuladas no acervo oficial', () => {
+    // FEPESE Q29 foi oficialmente anulada no gabarito definitivo (ID: q-agente_fiscal_tributario_1-29)
+    const fepeseQ29Id = 'q-agente_fiscal_tributario_1-29';
+    const legacyStateWithStaleAttempt = {
+      version: '1.0',
+      attempts: [
+        {
+          id: 'att-hist-fepese-q29',
+          questionId: fepeseQ29Id,
+          selectedOption: 'B', // Aluno marcou B quando o gabarito preliminar era A
+          isCorrect: false, // Antigamente registrado como erro
+          isAnnulled: false, // Não constava como anulada no histórico antigo
+          scoreWeight: 0,
+          officialExamCredit: 0,
+          countsForDidacticMetrics: true,
+          timestamp: 1690000000000,
+          timeSpentSeconds: 20,
+          mode: 'practice',
+        },
+      ],
+      errorNotebook: {},
+      savedQuestionIds: [],
+      exams: [],
+    };
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(legacyStateWithStaleAttempt));
+
+    const { result } = renderHook(() => useQuestionBank());
+
+    // A tentativa histórica DEVE ter sido reconciliada com o gabarito oficial definitivo da Q29 (Anulada / Gabarito X)
+    expect(result.current.attempts).toHaveLength(1);
+    const reconciledAttempt = result.current.attempts[0];
+    expect(reconciledAttempt.isAnnulled).toBe(true);
+    expect(reconciledAttempt.isCorrect).toBe(true); // Não pune visualmente
+    expect(reconciledAttempt.scoreWeight).toBe(0); // Não inflaciona taxa didática
+    expect(reconciledAttempt.officialExamCredit).toBe(1); // Concede crédito oficial da banca
+    expect(reconciledAttempt.countsForDidacticMetrics).toBe(false); // Isolada das métricas didáticas
+  });
 });

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { evaluateQuestionAnswer } from '../answerEvaluation';
+import { evaluateQuestionAnswer, getEffectiveGabarito } from '../answerEvaluation';
 import { Question } from '../../types';
 
 describe('answerEvaluation (P0.2)', () => {
@@ -145,5 +145,48 @@ describe('answerEvaluation (P0.2)', () => {
     const res = evaluateQuestionAnswer(ceQ, 'c');
     expect(res.status).toBe('correta');
     expect(res.isCorrect).toBe(true);
+  });
+
+  describe('getEffectiveGabarito (P0.3 Fonte Única de Verdade)', () => {
+    it('deve retornar gabaritoDefinitivo quando a questão for retificada (ex: preliminar A e definitivo D)', () => {
+      const q: Partial<Question> = {
+        gabarito: 'A',
+        gabaritoDefinitivo: 'D',
+        gabaritoStatus: 'retificado',
+      };
+      expect(getEffectiveGabarito(q as Question)).toBe('D');
+    });
+
+    it('deve retornar X quando a questão for anulada via gabaritoStatus: anulado', () => {
+      const q: Partial<Question> = {
+        gabarito: 'C',
+        gabaritoStatus: 'anulado',
+      };
+      expect(getEffectiveGabarito(q as Question)).toBe('X');
+    });
+
+    it('deve retornar X quando gabarito original for X', () => {
+      const q: Partial<Question> = {
+        gabarito: 'X',
+        gabaritoStatus: 'valido',
+      };
+      expect(getEffectiveGabarito(q as Question)).toBe('X');
+    });
+
+    it('deve retornar o gabarito padrão quando não houver retificação nem anulação', () => {
+      const q: Partial<Question> = {
+        gabarito: 'B',
+        gabaritoStatus: 'valido',
+      };
+      expect(getEffectiveGabarito(q as Question)).toBe('B');
+    });
+
+    it('deve retornar string vazia para questão com gabarito ausente/pendente', () => {
+      const q: Partial<Question> = {
+        gabarito: '',
+        gabaritoStatus: 'pendente',
+      };
+      expect(getEffectiveGabarito(q as Question)).toBe('');
+    });
   });
 });

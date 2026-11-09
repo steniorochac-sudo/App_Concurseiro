@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { openQuestionSearchInGoogle } from '../utils/searchExplanation';
 import { renderMarkdownContent, renderFormattedText } from '../utils/textFormatting';
+import { getEffectiveGabarito } from '../utils/answerEvaluation';
 
 interface QuestionCardProps {
   question: Question;
@@ -53,8 +54,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   const hasSubmitted = isAnswered || isSubmittedLocally || (userSelectedOption !== undefined && userSelectedOption !== null);
 
-  // Status especiais de gabarito (P0.2)
-  const isAnnulled = question.gabarito?.toUpperCase() === 'X' || question.gabaritoStatus === 'anulado';
+  // Gabarito efetivo unificado e status especiais (P0.3)
+  const effectiveGabarito = getEffectiveGabarito(question);
+  const isAnnulled = effectiveGabarito === 'X' || question.gabaritoStatus === 'anulado';
   const isRectified = question.gabaritoStatus === 'alterado' || question.gabaritoStatus === 'retificado';
   const isPreliminary = question.gabaritoStatus === 'preliminar' || question.gabaritoStatus === 'pendente';
 
@@ -125,7 +127,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       return 'bg-slate-950/40 border-slate-900 text-slate-500 opacity-50';
     }
 
-    const isCorrectOption = optionId.toUpperCase() === question.gabarito.toUpperCase();
+    const isCorrectOption = optionId.toUpperCase() === effectiveGabarito.toUpperCase();
 
     if (isCorrectOption) {
       return 'bg-emerald-950/80 border-emerald-500 text-emerald-100 ring-2 ring-emerald-500/40 font-medium';
@@ -160,7 +162,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       return 'bg-slate-950/50 border-slate-900 text-slate-600 opacity-40';
     }
 
-    const isCorrectTarget = targetId === question.gabarito.toUpperCase();
+    const isCorrectTarget = targetId === effectiveGabarito.toUpperCase();
 
     if (isCorrectTarget) {
       return 'bg-emerald-950/90 border-emerald-500 text-emerald-100 ring-2 ring-emerald-500 font-bold';
@@ -339,10 +341,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           >
             <Check className="w-5 h-5 text-emerald-400 shrink-0" />
             <span>CERTO</span>
-            {hasSubmitted && showInstantFeedback && !isAnnulled && question.gabarito.toUpperCase() === 'C' && (
+            {hasSubmitted && showInstantFeedback && !isAnnulled && effectiveGabarito.toUpperCase() === 'C' && (
               <CheckCircle className="w-5 h-5 text-emerald-400 ml-1 shrink-0" />
             )}
-            {hasSubmitted && showInstantFeedback && !isAnnulled && tentativeSelection?.toUpperCase() === 'C' && question.gabarito.toUpperCase() !== 'C' && (
+            {hasSubmitted && showInstantFeedback && !isAnnulled && tentativeSelection?.toUpperCase() === 'C' && effectiveGabarito.toUpperCase() !== 'C' && (
               <XCircle className="w-5 h-5 text-rose-400 ml-1 shrink-0" />
             )}
             {hasSubmitted && showInstantFeedback && isAnnulled && tentativeSelection?.toUpperCase() === 'C' && (
@@ -361,10 +363,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           >
             <X className="w-5 h-5 text-rose-400 shrink-0" />
             <span>ERRADO</span>
-            {hasSubmitted && showInstantFeedback && !isAnnulled && question.gabarito.toUpperCase() === 'E' && (
+            {hasSubmitted && showInstantFeedback && !isAnnulled && effectiveGabarito.toUpperCase() === 'E' && (
               <CheckCircle className="w-5 h-5 text-emerald-400 ml-1 shrink-0" />
             )}
-            {hasSubmitted && showInstantFeedback && !isAnnulled && tentativeSelection?.toUpperCase() === 'E' && question.gabarito.toUpperCase() !== 'E' && (
+            {hasSubmitted && showInstantFeedback && !isAnnulled && tentativeSelection?.toUpperCase() === 'E' && effectiveGabarito.toUpperCase() !== 'E' && (
               <XCircle className="w-5 h-5 text-rose-400 ml-1 shrink-0" />
             )}
             {hasSubmitted && showInstantFeedback && isAnnulled && tentativeSelection?.toUpperCase() === 'E' && (
@@ -376,7 +378,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         /* DUAL LAYOUT: Múltipla Escolha (Lista Vertical 4 ou 5 Opções com Riscador) */
         <div className="space-y-2.5 mb-5">
           {question.alternativas.map((opt) => {
-            const isCorrect = opt.id.toUpperCase() === question.gabarito.toUpperCase();
+            const isCorrect = opt.id.toUpperCase() === effectiveGabarito.toUpperCase();
             const isUserChoice = tentativeSelection?.toUpperCase() === opt.id.toUpperCase();
             const isEliminated = eliminatedOptions.has(opt.id);
 

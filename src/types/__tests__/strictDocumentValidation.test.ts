@@ -71,11 +71,26 @@ describe('Strict Document Validation (P0.1)', () => {
     ],
   });
 
-  it('deve aprovar um documento 100% íntegro com zero pendências', () => {
+  it('deve aprovar um documento 100% íntegro com comprovação documental e fidelidade textual verificada', () => {
     const doc = createValidDoc();
-    const result = validateExamHomologation(doc);
+    const result = validateExamHomologation(doc, {
+      checkFileExists: () => true,
+      textualFidelityStatus: 'verificada_integralmente',
+    });
     expect(result.isValid).toBe(true);
+    expect(result.isHomologated).toBe(true);
+    expect(result.statusHomologacao).toBe('homologado');
     expect(result.errors).toHaveLength(0);
+  });
+
+  it('TESTE NEGATIVO (P0.1): documento estruturalmente perfeito mas sem evidência física de PDFs e sem fidelidade textual NÃO pode ser homologado por presunção', () => {
+    const doc = createValidDoc();
+    // Chamada sem checkFileExists e sem textualFidelityStatus
+    const result = validateExamHomologation(doc);
+    expect(result.isHomologated).toBe(false);
+    expect(result.statusHomologacao).toBe('validacao_pendente');
+    expect(result.errors.some(e => e.includes('existência dos PDFs oficiais não foi comprovada fisicamente'))).toBe(true);
+    expect(result.errors.some(e => e.includes('fidelidade textual aos PDFs oficiais não comprovada'))).toBe(true);
   });
 
   it('deve rejeitar homologação se houver lacuna na numeração sequencial original (gaps)', () => {

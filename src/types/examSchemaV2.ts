@@ -102,13 +102,25 @@ export interface StructuralValidationResult {
   totalRetificadas: number;
 }
 
+export type TextualFidelityStatus =
+  | 'nao_verificada'
+  | 'verificacao_parcial'
+  | 'verificada_integralmente'
+  | 'divergente';
+
 export interface DocumentaryValidationResult {
   isValidDocumentary: boolean;
   errors: string[];
   warnings: string[];
-  provaPdfVerified: boolean;
-  gabaritoPdfVerified: boolean;
-  gabaritoDefinitivoReconciled: boolean;
+  
+  // As 6 evidências documentais distintas exigidas na 3ª auditoria (P0.1)
+  provaPdfVerified: boolean; // 1. Existência física do PDF da prova comprovada
+  gabaritoPdfVerified: boolean; // 2. Existência física do PDF do gabarito comprovada
+  cargoCadernoIdentified: boolean; // 3. Identificação do cargo, código e caderno
+  gabaritoDefinitivoReconciled: boolean; // 4. Reconciliação do gabarito oficial definitivo
+  textualFidelityStatus: TextualFidelityStatus; // 5. Comprovação de fidelidade textual ao PDF
+  homologacaoFormal: boolean; // 6. Homologação formal com aprovação de auditoria
+
   gabaritoTipo: GabaritoTipoOficial | 'desconhecido';
   imagesVerifiedCount: number;
   missingImages: string[];
@@ -325,15 +337,18 @@ export function validateExamStructure(doc: ExamDocumentV2): StructuralValidation
 }
 
 /**
- * 2. Validação Documental (P0.1)
+ * 2. Validação Documental Estrita (P0.1)
  * Confronta a existência e integridade dos PDFs oficiais, seções do gabarito,
  * status do gabarito (preliminar x definitivo) e integridade de ativos de imagem.
+ * ELIMINAÇÃO TOTAL DE PRESUNÇÃO: a ausência de verificador físico (checkFileExists)
+ * resulta em prova não comprovada (false), jamais em aprovação presumida.
  */
 export function validateExamDocumentary(
   doc: ExamDocumentV2,
   options?: {
     checkFileExists?: (filePath: string) => boolean;
     checkImageFiles?: (imagePath: string) => boolean;
+    textualFidelityStatus?: TextualFidelityStatus;
   }
 ): DocumentaryValidationResult {
   const errors: string[] = [];
@@ -349,7 +364,10 @@ export function validateExamDocumentary(
       warnings,
       provaPdfVerified: false,
       gabaritoPdfVerified: false,
+      cargoCadernoIdentified: false,
       gabaritoDefinitivoReconciled: false,
+      textualFidelityStatus: 'nao_verificada',
+      homologacaoFormal: false,
       gabaritoTipo: 'desconhecido',
       imagesVerifiedCount: 0,
       missingImages: [],
@@ -360,6 +378,7 @@ export function validateExamDocumentary(
   let provaPdfVerified = false;
   let gabaritoPdfVerified = false;
 
+  // 1. Verificação do PDF da Prova (sem presunção)
   if (!at.arquivoProvaPdf?.trim()) {
     errors.push('auditTrail.arquivoProvaPdf é obrigatório.');
   } else if (options?.checkFileExists) {
@@ -368,9 +387,12 @@ export function validateExamDocumentary(
       errors.push(`Arquivo PDF da prova não encontrado no disco: ${at.arquivoProvaPdf}`);
     }
   } else {
-    provaPdfVerified = true;
+    // ELIMINAÇÃO DE PRESUNÇÃO: ausência de checagem física = NÃO COMPROVADO
+    provaPdfVerified = false;
+    warnings.push(`Verificação física do PDF da prova (${at.arquivoProvaPdf}) não executada nesta validação.`);
   }
 
+  // 2. Verificação do PDF do Gabarito (sem presunção)
   if (!at.arquivoGabaritoPdf?.trim()) {
     errors.push('auditTrail.arquivoGabaritoPdf é obrigatório.');
   } else if (options?.checkFileExists) {
@@ -379,19 +401,23 @@ export function validateExamDocumentary(
       errors.push(`Arquivo PDF do gabarito não encontrado no disco: ${at.arquivoGabaritoPdf}`);
     }
   } else {
-    gabaritoPdfVerified = true;
+    // ELIMINAÇÃO DE PRESUNÇÃO: ausência de checagem física = NÃO COMPROVADO
+    gabaritoPdfVerified = false;
+    warnings.push(`Verificação física do PDF do gabarito (${at.arquivoGabaritoPdf}) não executada nesta validação.`);
   }
 
-  if (!at.secaoGabarito?.trim()) {
-    errors.push('auditTrail.secaoGabarito é obrigatória.');
-  }
-  if (!at.paginaGabarito || at.paginaGabarito <= 0) {
-    errors.push(`auditTrail.paginaGabarito inválida: ${at.paginaGabarito}`);
-  }
-  if (!at.responsavelAuditoria?.trim()) {
-    errors.push('auditTrail.responsavelAuditoria é obrigatório.');
+  // 3. Identificação do Cargo, Código e Caderno
+  const cargoCadernoIdentified = Boolean(
+    doc.exam.cargo?.trim() &&
+    doc.exam.caderno?.trim() &&
+    at.secaoGabarito?.trim() &&
+    at.paginaGabarito && at.paginaGabarito > 0
+  );
+  if (!cargoCadernoIdentified) {
+    errors.push('Identificação documental incompleta: cargo, caderno, seção ou página do gabarito ausente.');
   }
 
+  // 4. Reconciliação do Gabarito Oficial Definitivo
   const gabaritoTipo = at.tipoGabarito || 'desconhecido';
   const gabaritoDefinitivoReconciled = gabaritoTipo === 'definitivo';
 
@@ -401,6 +427,23 @@ export function validateExamDocumentary(
     errors.push(`auditTrail.tipoGabarito inválido ou não suportado: '${gabaritoTipo}'`);
   }
 
+  // 5. Comprovação de Fidelidade Textual aos PDFs
+  const textualFidelityStatus: TextualFidelityStatus = options?.textualFidelityStatus || 'nao_verificada';
+  if (textualFidelityStatus === 'nao_verificada') {
+    warnings.push('Fidelidade textual aos PDFs oficiais não foi verificada nesta chamada.');
+  } else if (textualFidelityStatus === 'divergente') {
+    errors.push('Fidelidade textual reprovada: divergências encontradas entre o JSON e o texto do PDF.');
+  } else if (textualFidelityStatus === 'verificacao_parcial') {
+    warnings.push('Fidelidade textual com pendências ou elementos não verificados integralmente.');
+  }
+
+  // 6. Homologação Formal
+  const homologacaoFormal = Boolean(
+    doc.exam.homologado === true &&
+    doc.exam.statusHomologacao !== 'rascunho' &&
+    at.responsavelAuditoria?.trim()
+  );
+
   // Verificação exaustiva de imagens (imagens diretas, metadados.imagens e markdown regex)
   const markdownImgRegex = /!\[.*?\]\((.*?)\)/g;
   for (const q of doc.questoes || []) {
@@ -409,7 +452,6 @@ export function validateExamDocumentary(
       ...(q.metadados?.imagens || []),
     ];
 
-    // Checa markdown regex em enunciado e alternativas
     const textToCheck = `${q.enunciado || ''} ${(q.alternativas || []).map(a => a.text).join(' ')}`;
     let match: RegExpExecArray | null;
     while ((match = markdownImgRegex.exec(textToCheck)) !== null) {
@@ -426,7 +468,11 @@ export function validateExamDocumentary(
     }
   }
 
-  const isValidDocumentary = errors.length === 0 && provaPdfVerified && gabaritoPdfVerified;
+  const isValidDocumentary =
+    errors.length === 0 &&
+    provaPdfVerified &&
+    gabaritoPdfVerified &&
+    cargoCadernoIdentified;
 
   return {
     isValidDocumentary,
@@ -434,7 +480,10 @@ export function validateExamDocumentary(
     warnings,
     provaPdfVerified,
     gabaritoPdfVerified,
+    cargoCadernoIdentified,
     gabaritoDefinitivoReconciled,
+    textualFidelityStatus,
+    homologacaoFormal,
     gabaritoTipo,
     imagesVerifiedCount: imagesCount,
     missingImages,
@@ -445,13 +494,15 @@ export function validateExamDocumentary(
  * 3. Homologação Estrita (P0.1)
  * Distingue rigorosamente Validação Estrutural, Validação Documental e Homologação.
  * Uma prova SÓ pode ser homologada se tiver validação estrutural aprovada,
- * comprovação documental plena, gabarito definitivo publicado e homologação explícita.
+ * comprovação documental plena (PDFs verificados sem presunção), gabarito definitivo
+ * publicado, fidelidade textual comprovada integralmente e aprovação formal de auditoria.
  */
 export function validateExamHomologation(
   doc: ExamDocumentV2,
   options?: {
     checkFileExists?: (filePath: string) => boolean;
     checkImageFiles?: (imagePath: string) => boolean;
+    textualFidelityStatus?: TextualFidelityStatus;
     requireHomologatedStatus?: boolean;
   }
 ): ExamValidationReport {
@@ -460,10 +511,11 @@ export function validateExamHomologation(
   // 1. Validação Estrutural
   const structResult = validateExamStructure(doc);
 
-  // 2. Validação Documental
+  // 2. Validação Documental (sem presunção)
   const docResult = validateExamDocumentary(doc, {
     checkFileExists: options?.checkFileExists,
     checkImageFiles: options?.checkImageFiles,
+    textualFidelityStatus: options?.textualFidelityStatus,
   });
 
   const combinedErrors = [...structResult.errors, ...docResult.errors];
@@ -483,9 +535,14 @@ export function validateExamHomologation(
     combinedErrors.push("Homologação rejeitada: a prova declara 'homologado: true', mas o gabarito é preliminar. Homologação requer gabarito definitivo.");
   }
 
-  // Tentativa de homologar sem comprovação documental
-  if (claimedHomologated && !docResult.isValidDocumentary) {
-    combinedErrors.push("Homologação rejeitada: a prova declara 'homologado: true', mas falhou na validação documental (arquivos não comprovados ou ausentes).");
+  // Tentativa de homologar sem comprovação física dos PDFs
+  if (claimedHomologated && (!docResult.provaPdfVerified || !docResult.gabaritoPdfVerified)) {
+    combinedErrors.push("Homologação rejeitada: a prova declara 'homologado: true', mas a existência dos PDFs oficiais não foi comprovada fisicamente.");
+  }
+
+  // Tentativa de homologar sem fidelidade textual verificada integralmente
+  if (claimedHomologated && docResult.textualFidelityStatus !== 'verificada_integralmente') {
+    combinedErrors.push(`Homologação rejeitada: fidelidade textual aos PDFs oficiais não comprovada integralmente (status: '${docResult.textualFidelityStatus}').`);
   }
 
   // Condição estrita para ser formalmente HOMOLOGADO:
@@ -493,6 +550,8 @@ export function validateExamHomologation(
     structResult.isValidStructural &&
     docResult.isValidDocumentary &&
     docResult.gabaritoDefinitivoReconciled &&
+    docResult.textualFidelityStatus === 'verificada_integralmente' &&
+    docResult.homologacaoFormal &&
     !isDraft &&
     claimedHomologated &&
     combinedErrors.length === 0;

@@ -37,7 +37,34 @@ export interface QuestionEvaluationResult {
 }
 
 /**
- * Mecanismo único e centralizado de avaliação de respostas do estudante (P0.2).
+ * Retorna o gabarito oficial efetivo da questão (P0.3).
+ * Fonte única de verdade para toda a interface (QuestionCard, ExamPage, ExplanationModal)
+ * e para o motor de avaliação de respostas:
+ * - Se a questão foi anulada (status 'anulado' ou gabarito 'X'), retorna 'X'.
+ * - Se a questão foi retificada/alterada ou possui gabaritoDefinitivo, este tem precedência absoluta sobre o gabarito preliminar.
+ * - Caso contrário, retorna o gabarito regular.
+ */
+export function getEffectiveGabarito(
+  question: Pick<Question, 'gabarito' | 'gabaritoDefinitivo' | 'gabaritoStatus'>
+): string {
+  if (!question) return '';
+  const rawGabarito = (question.gabarito || '').trim().toUpperCase();
+  const statusGabarito = (question.gabaritoStatus || '').toLowerCase();
+
+  if (rawGabarito === 'X' || statusGabarito === 'anulado') {
+    return 'X';
+  }
+
+  const def = (question.gabaritoDefinitivo || '').trim().toUpperCase();
+  if (def) {
+    return def;
+  }
+
+  return rawGabarito;
+}
+
+/**
+ * Mecanismo único e centralizado de avaliação de respostas do estudante (P0.2/P0.3).
  * Trata de forma determinística questões válidas, anuladas, retificadas, preliminares e pendentes.
  * 
  * Reconciliação Rigorosa:
@@ -56,7 +83,7 @@ export function evaluateQuestionAnswer(
   const isAnnulled = rawGabarito === 'X' || statusGabarito === 'anulado';
   const isRectified = statusGabarito === 'alterado' || statusGabarito === 'retificado';
   const isPreliminary = statusGabarito === 'preliminar';
-  const isPending = statusGabarito === 'pendente' || rawGabarito === '';
+  const isPending = statusGabarito === 'pendente' || (rawGabarito === '' && !question.gabaritoDefinitivo);
 
   // 1. Tratamento Especial de Questões Anuladas
   // Excluídas do Caderno de Erros e isoladas da taxa de acerto didático do estudante.
@@ -105,8 +132,8 @@ export function evaluateQuestionAnswer(
     };
   }
 
-  // 3. Determinação da Resposta Efetiva (gabaritoDefinitivo tem precedência sobre gabarito)
-  const effectiveAnswer = (question.gabaritoDefinitivo || rawGabarito).trim().toUpperCase();
+  // 3. Determinação da Resposta Efetiva (P0.3 - Fonte única via getEffectiveGabarito)
+  const effectiveAnswer = getEffectiveGabarito(question);
   const isMatch = normSelected.length > 0 && normSelected === effectiveAnswer;
 
   let feedbackMessage = '';

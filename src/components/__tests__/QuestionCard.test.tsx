@@ -308,4 +308,59 @@ describe('QuestionCard Component', () => {
     // Banner explicativo didático
     expect(screen.getByText(/QUESTÃO ANULADA PELA BANCA/i)).toBeInTheDocument();
   });
+
+  it('P0.3: deve destacar corretamente o gabarito definitivo retificado na UI (preliminar A vs definitivo D)', () => {
+    const rectifiedQ: Question = {
+      ...mockQuestionME,
+      alternativas: [
+        { id: 'A', text: 'União (antigo preliminar)' },
+        { id: 'B', text: 'Estados' },
+        { id: 'C', text: 'Municípios' },
+        { id: 'D', text: 'Distrito Federal (retificado definitivo)' },
+      ],
+      gabarito: 'A', // Preliminar original
+      gabaritoDefinitivo: 'D', // Retificado para D
+      gabaritoStatus: 'retificado',
+    };
+
+    // Caso 1: Usuário acertou marcando D (definitivo)
+    const { unmount } = render(
+      <QuestionCard
+        question={rectifiedQ}
+        onAnswer={vi.fn()}
+        onToggleSave={vi.fn()}
+        isSaved={false}
+        showInstantFeedback={true}
+        userSelectedOption="D"
+        isAnswered={true}
+      />
+    );
+
+    // Botão D deve ter o estilo emerald (correto)
+    const btnD = screen.getByText('Distrito Federal (retificado definitivo)').closest('button');
+    expect(btnD?.className).toContain('emerald');
+
+    unmount();
+
+    // Caso 2: Usuário marcou a opção antiga A (que foi alterada)
+    render(
+      <QuestionCard
+        question={rectifiedQ}
+        onAnswer={vi.fn()}
+        onToggleSave={vi.fn()}
+        isSaved={false}
+        showInstantFeedback={true}
+        userSelectedOption="A"
+        isAnswered={true}
+      />
+    );
+
+    const btnA = screen.getByText('União (antigo preliminar)').closest('button');
+    const btnDRecheck = screen.getByText('Distrito Federal (retificado definitivo)').closest('button');
+
+    // Botão A marcado pelo usuário deve ter o estilo rose (erro)
+    expect(btnA?.className).toContain('rose');
+    // Botão D deve continuar destacado em emerald como o gabarito correto oficial
+    expect(btnDRecheck?.className).toContain('emerald');
+  });
 });
