@@ -148,6 +148,68 @@ describe('Strict Document Validation (P0.1)', () => {
 
     const result = validateExamHomologation(doc);
     expect(result.isValid).toBe(false);
-    expect(result.errors.some((e) => e.includes('Documento marcado como rascunho'))).toBe(true);
+    expect(result.statusHomologacao).toBe('rascunho');
+    expect(result.isHomologated).toBe(false);
+  });
+
+  it('TESTE NEGATIVO: deve rejeitar homologação se o gabarito for PRELIMINAR, mesmo que o documento declare homologado: true', () => {
+    const doc = createValidDoc();
+    doc.exam.homologado = true;
+    doc.exam.auditTrail.tipoGabarito = 'preliminar';
+
+    const result = validateExamHomologation(doc);
+    expect(result.isHomologated).toBe(false);
+    expect(result.statusHomologacao).toBe('validacao_pendente');
+    expect(result.errors.some((e) => e.includes('gabarito é preliminar'))).toBe(true);
+  });
+
+  it('TESTE NEGATIVO: deve rejeitar homologação se arquivos PDF de prova ou gabarito não existirem no disco', () => {
+    const doc = createValidDoc();
+    doc.exam.homologado = true;
+
+    const mockCheckFile = (path: string) => path.includes('arquivo_real_inexistente');
+    const result = validateExamHomologation(doc, { checkFileExists: mockCheckFile });
+
+    expect(result.isHomologated).toBe(false);
+    expect(result.errors.some((e) => e.includes('PDF') && e.includes('não encontrado'))).toBe(true);
+  });
+
+  it('TESTE NEGATIVO: deve rejeitar tentativa de homologar rascunho gerado por IA que tenta forjar homologado: true', () => {
+    const doc = createValidDoc();
+    doc.exam.statusHomologacao = 'rascunho';
+    doc.exam.homologado = true;
+
+    const result = validateExamHomologation(doc);
+    expect(result.isHomologated).toBe(false);
+    expect(result.statusHomologacao).toBe('rascunho');
+    expect(result.errors.some((e) => e.includes('rascunho de IA não podem declarar'))).toBe(true);
+  });
+
+  it('deve aprovar validação estrutural com status validacao_pendente sem exigir homologação definitiva prévia', () => {
+    const doc = createValidDoc();
+    doc.exam.homologado = false;
+    doc.exam.statusHomologacao = 'validacao_pendente';
+    doc.exam.auditTrail.tipoGabarito = 'preliminar';
+
+    const result = validateExamHomologation(doc, { requireHomologatedStatus: false });
+    expect(result.isStructuralValid).toBe(true);
+    expect(result.isValid).toBe(true); // Válido estruturalmente
+    expect(result.isHomologated).toBe(false); // Mas NÃO homologado
+    expect(result.statusHomologacao).toBe('validacao_pendente');
+  });
+
+  it('deve extrair e validar referências a imagens presentes em sintaxe Markdown (![])', () => {
+    const doc = createValidDoc();
+    doc.questoes[0].enunciado = 'Analise a imagem a seguir: ![Gráfico Contábil](/assets/images/grafico_fgv_q17.png)';
+
+    const checked: string[] = [];
+    const mockCheckImage = (img: string) => {
+      checked.push(img);
+      return true;
+    };
+
+    const result = validateExamHomologation(doc, { checkImageFiles: mockCheckImage });
+    expect(checked).toContain('/assets/images/grafico_fgv_q17.png');
+    expect(result.isStructuralValid).toBe(true);
   });
 });

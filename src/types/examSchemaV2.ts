@@ -9,7 +9,7 @@
 
 export type QuestionType = 'multipla_escolha' | 'certo_errado';
 
-export type GabaritoStatus = 'valido' | 'anulado' | 'alterado' | 'pendente' | 'preliminar';
+export type GabaritoStatus = 'valido' | 'anulado' | 'alterado' | 'retificado' | 'pendente' | 'preliminar';
 
 export type GabaritoTipoOficial = 'preliminar' | 'definitivo' | 'retificado';
 
@@ -93,50 +93,60 @@ export interface ExamDocumentV2 {
   questoes: ExamQuestionV2[];
 }
 
+export interface StructuralValidationResult {
+  isValidStructural: boolean;
+  errors: string[];
+  warnings: string[];
+  totalQuestoes: number;
+  totalAnuladas: number;
+  totalRetificadas: number;
+}
+
+export interface DocumentaryValidationResult {
+  isValidDocumentary: boolean;
+  errors: string[];
+  warnings: string[];
+  provaPdfVerified: boolean;
+  gabaritoPdfVerified: boolean;
+  gabaritoDefinitivoReconciled: boolean;
+  gabaritoTipo: GabaritoTipoOficial | 'desconhecido';
+  imagesVerifiedCount: number;
+  missingImages: string[];
+}
+
 export interface ExamValidationReport {
   isValid: boolean;
+  isStructuralValid: boolean;
+  isDocumentaryValid: boolean;
+  isHomologated: boolean;
   statusHomologacao: HomologationStatus;
   errors: string[];
   warnings: string[];
   metrics: {
     totalQuestoes: number;
     totalAnuladas: number;
+    totalRetificadas: number;
     imagensVerificadas: number;
   };
 }
 
 /**
- * Função de validação estrutural básica para um ExamDocumentV2.
- * Garante que a estrutura sintática e campos do schema estejam válidos.
+ * 1. Validação Estrutural (P0.1)
+ * Verifica conformidade do formato JSON, tipos de dados, numeração sequencial 1..N
+ * sem lacunas, integridade das alternativas e consistência interna dos gabaritos.
  */
-export function validateExamDocumentV2(doc: ExamDocumentV2): string[] {
-  const report = validateExamHomologation(doc, { requireHomologatedStatus: false });
-  return report.errors;
-}
-
-/**
- * Validação Documental Estrita para Homologação de Provas (P0.1).
- * Verifica fidelidade sequencial, ausência de lacunas, consistência
- * de gabarito contra alternativas, integridade de auditTrail e imagens.
- */
-export function validateExamHomologation(
-  doc: ExamDocumentV2,
-  options?: {
-    checkImageFiles?: (imagePath: string) => boolean;
-    requireHomologatedStatus?: boolean;
-  }
-): ExamValidationReport {
+export function validateExamStructure(doc: ExamDocumentV2): StructuralValidationResult {
   const errors: string[] = [];
   const warnings: string[] = [];
-  const requireHomologated = options?.requireHomologatedStatus ?? true;
 
   if (!doc) {
     return {
-      isValid: false,
-      statusHomologacao: 'rascunho',
+      isValidStructural: false,
       errors: ['Documento nulo ou indefinido.'],
       warnings: [],
-      metrics: { totalQuestoes: 0, totalAnuladas: 0, imagensVerificadas: 0 },
+      totalQuestoes: 0,
+      totalAnuladas: 0,
+      totalRetificadas: 0,
     };
   }
 
@@ -147,17 +157,17 @@ export function validateExamHomologation(
   if (!doc.exam) {
     errors.push('Campo exam (metadados do exame) é obrigatório.');
     return {
-      isValid: false,
-      statusHomologacao: 'rascunho',
+      isValidStructural: false,
       errors,
       warnings,
-      metrics: { totalQuestoes: 0, totalAnuladas: 0, imagensVerificadas: 0 },
+      totalQuestoes: 0,
+      totalAnuladas: 0,
+      totalRetificadas: 0,
     };
   }
 
   const { exam, questoes } = doc;
 
-  // 1. Metadados Oficiais Obrigatórios
   if (!exam.id?.trim()) errors.push('exam.id é obrigatório.');
   if (!exam.orgao?.trim()) errors.push('exam.orgao é obrigatório.');
   if (!exam.banca?.trim()) errors.push('exam.banca é obrigatório.');
@@ -167,32 +177,15 @@ export function validateExamHomologation(
     errors.push(`exam.ano inválido: ${exam.ano}`);
   }
 
-  // 2. Status de Homologação (exigido quando requireHomologatedStatus for true)
-  if (requireHomologated && (exam.homologado === false || exam.statusHomologacao === 'rascunho')) {
-    errors.push("Documento marcado como rascunho ou pendente de validação. Homologação requer status 'homologado'.");
-  }
-
-  // 3. Rastreabilidade Documental Estrita (AuditTrail)
-  if (!exam.auditTrail) {
-    errors.push('exam.auditTrail é obrigatório para rastreabilidade documental.');
-  } else {
-    const at = exam.auditTrail;
-    if (!at.arquivoProvaPdf?.trim()) errors.push('auditTrail.arquivoProvaPdf é obrigatório.');
-    if (!at.arquivoGabaritoPdf?.trim()) errors.push('auditTrail.arquivoGabaritoPdf é obrigatório.');
-    if (!at.secaoGabarito?.trim()) errors.push('auditTrail.secaoGabarito é obrigatória.');
-    if (!at.paginaGabarito || at.paginaGabarito <= 0) errors.push(`auditTrail.paginaGabarito inválida: ${at.paginaGabarito}`);
-    if (!at.responsavelAuditoria?.trim()) errors.push('auditTrail.responsavelAuditoria é obrigatório.');
-  }
-
-  // 4. Lista de Questões
   if (!Array.isArray(questoes) || questoes.length === 0) {
     errors.push('questoes deve ser um array não-vazio.');
     return {
-      isValid: false,
-      statusHomologacao: exam.statusHomologacao || 'rascunho',
+      isValidStructural: false,
       errors,
       warnings,
-      metrics: { totalQuestoes: 0, totalAnuladas: 0, imagensVerificadas: 0 },
+      totalQuestoes: 0,
+      totalAnuladas: 0,
+      totalRetificadas: 0,
     };
   }
 
@@ -203,7 +196,7 @@ export function validateExamHomologation(
   const seenIds = new Set<string>();
   const seenNumbers = new Set<number>();
   let anuladasCount = 0;
-  let imagesChecked = 0;
+  let retificadasCount = 0;
 
   for (let idx = 0; idx < questoes.length; idx++) {
     const q = questoes[idx];
@@ -249,7 +242,6 @@ export function validateExamHomologation(
         }
       }
 
-      // Verificação por formato
       if (q.tipo === 'multipla_escolha') {
         if (q.alternativas.length !== 4 && q.alternativas.length !== 5) {
           errors.push(`Questão ${q.numeroOriginal} de múltipla escolha deve ter 4 ou 5 alternativas (encontradas ${q.alternativas.length}).`);
@@ -286,58 +278,262 @@ export function validateExamHomologation(
         errors.push(`Questão ${q.numeroOriginal} com status 'anulado' deve ter gabaritoOficial igual a 'X'.`);
       }
     } else {
-      // Gabarito deve corresponder a uma alternativa existente
       if (!altIds.has(gabUpper)) {
         errors.push(`Questão ${q.numeroOriginal} com gabarito '${gabUpper}' não corresponde a nenhuma alternativa existente.`);
       }
     }
 
-    // Metadados
+    // Questões Retificadas
+    if (q.gabaritoStatus === 'alterado' || q.gabaritoStatus === 'retificado') {
+      retificadasCount++;
+      if (q.gabaritoDefinitivo) {
+        const defUpper = q.gabaritoDefinitivo.trim().toUpperCase();
+        if (!altIds.has(defUpper) && defUpper !== 'X') {
+          errors.push(`Questão ${q.numeroOriginal} com gabaritoDefinitivo '${defUpper}' não corresponde a nenhuma alternativa.`);
+        }
+      }
+    }
+
+    // Metadados mínimos obrigatórios
     if (!q.metadados || !q.metadados.disciplina?.trim()) {
       errors.push(`Questão ${q.numeroOriginal} sem disciplina informada.`);
     }
     if (!q.metadados || q.metadados.paginaOrigem === undefined || q.metadados.paginaOrigem <= 0) {
       errors.push(`Questão ${q.numeroOriginal} sem paginaOrigem válida.`);
     }
-
-    // Imagens
-    const allImgs = [...(q.imagens || []), ...(q.metadados?.imagens || [])];
-    for (const imgPath of allImgs) {
-      imagesChecked++;
-      if (options?.checkImageFiles && !options.checkImageFiles(imgPath)) {
-        errors.push(`Arquivo de imagem inexistente no disco: ${imgPath} (Questão ${q.numeroOriginal})`);
-      }
-    }
   }
 
-  // 5. Verificação de Lacunas na Sequência Numérica (1 a totalQuestoes)
+  // Sequencialidade numérica estrita (1 a totalQuestoes)
   for (let expected = 1; expected <= exam.totalQuestoes; expected++) {
     if (!seenNumbers.has(expected)) {
       errors.push(`Lacuna na numeração original: questão ${expected} não encontrada na sequência.`);
     }
   }
 
-  // 6. Consistência do total de anuladas
   if (anuladasCount !== exam.totalAnuladas) {
     errors.push(`Discrepância nas questões anuladas: declarado ${exam.totalAnuladas}, encontradas ${anuladasCount}`);
   }
 
-  const isValid = errors.length === 0;
-  const statusHomologacao: HomologationStatus = isValid
-    ? 'homologado'
-    : exam.statusHomologacao === 'rascunho'
-    ? 'rascunho'
-    : 'validacao_pendente';
+  return {
+    isValidStructural: errors.length === 0,
+    errors,
+    warnings,
+    totalQuestoes: questoes.length,
+    totalAnuladas: anuladasCount,
+    totalRetificadas: retificadasCount,
+  };
+}
+
+/**
+ * 2. Validação Documental (P0.1)
+ * Confronta a existência e integridade dos PDFs oficiais, seções do gabarito,
+ * status do gabarito (preliminar x definitivo) e integridade de ativos de imagem.
+ */
+export function validateExamDocumentary(
+  doc: ExamDocumentV2,
+  options?: {
+    checkFileExists?: (filePath: string) => boolean;
+    checkImageFiles?: (imagePath: string) => boolean;
+  }
+): DocumentaryValidationResult {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const missingImages: string[] = [];
+  let imagesCount = 0;
+
+  if (!doc?.exam?.auditTrail) {
+    errors.push('exam.auditTrail é obrigatório para comprovação documental.');
+    return {
+      isValidDocumentary: false,
+      errors,
+      warnings,
+      provaPdfVerified: false,
+      gabaritoPdfVerified: false,
+      gabaritoDefinitivoReconciled: false,
+      gabaritoTipo: 'desconhecido',
+      imagesVerifiedCount: 0,
+      missingImages: [],
+    };
+  }
+
+  const at = doc.exam.auditTrail;
+  let provaPdfVerified = false;
+  let gabaritoPdfVerified = false;
+
+  if (!at.arquivoProvaPdf?.trim()) {
+    errors.push('auditTrail.arquivoProvaPdf é obrigatório.');
+  } else if (options?.checkFileExists) {
+    provaPdfVerified = options.checkFileExists(at.arquivoProvaPdf);
+    if (!provaPdfVerified) {
+      errors.push(`Arquivo PDF da prova não encontrado no disco: ${at.arquivoProvaPdf}`);
+    }
+  } else {
+    provaPdfVerified = true;
+  }
+
+  if (!at.arquivoGabaritoPdf?.trim()) {
+    errors.push('auditTrail.arquivoGabaritoPdf é obrigatório.');
+  } else if (options?.checkFileExists) {
+    gabaritoPdfVerified = options.checkFileExists(at.arquivoGabaritoPdf);
+    if (!gabaritoPdfVerified) {
+      errors.push(`Arquivo PDF do gabarito não encontrado no disco: ${at.arquivoGabaritoPdf}`);
+    }
+  } else {
+    gabaritoPdfVerified = true;
+  }
+
+  if (!at.secaoGabarito?.trim()) {
+    errors.push('auditTrail.secaoGabarito é obrigatória.');
+  }
+  if (!at.paginaGabarito || at.paginaGabarito <= 0) {
+    errors.push(`auditTrail.paginaGabarito inválida: ${at.paginaGabarito}`);
+  }
+  if (!at.responsavelAuditoria?.trim()) {
+    errors.push('auditTrail.responsavelAuditoria é obrigatório.');
+  }
+
+  const gabaritoTipo = at.tipoGabarito || 'desconhecido';
+  const gabaritoDefinitivoReconciled = gabaritoTipo === 'definitivo';
+
+  if (gabaritoTipo === 'preliminar') {
+    warnings.push('Gabarito registrado como preliminar. Validação documental definitiva requer publicação pós-recurso.');
+  } else if (gabaritoTipo !== 'definitivo' && gabaritoTipo !== 'retificado') {
+    errors.push(`auditTrail.tipoGabarito inválido ou não suportado: '${gabaritoTipo}'`);
+  }
+
+  // Verificação exaustiva de imagens (imagens diretas, metadados.imagens e markdown regex)
+  const markdownImgRegex = /!\[.*?\]\((.*?)\)/g;
+  for (const q of doc.questoes || []) {
+    const rawImgs = [
+      ...(q.imagens || []),
+      ...(q.metadados?.imagens || []),
+    ];
+
+    // Checa markdown regex em enunciado e alternativas
+    const textToCheck = `${q.enunciado || ''} ${(q.alternativas || []).map(a => a.text).join(' ')}`;
+    let match: RegExpExecArray | null;
+    while ((match = markdownImgRegex.exec(textToCheck)) !== null) {
+      if (match[1]) rawImgs.push(match[1]);
+    }
+
+    const uniqueImgs = Array.from(new Set(rawImgs));
+    for (const imgPath of uniqueImgs) {
+      imagesCount++;
+      if (options?.checkImageFiles && !options.checkImageFiles(imgPath)) {
+        missingImages.push(imgPath);
+        errors.push(`Arquivo de imagem inexistente no disco: ${imgPath} (Questão ${q.numeroOriginal})`);
+      }
+    }
+  }
+
+  const isValidDocumentary = errors.length === 0 && provaPdfVerified && gabaritoPdfVerified;
+
+  return {
+    isValidDocumentary,
+    errors,
+    warnings,
+    provaPdfVerified,
+    gabaritoPdfVerified,
+    gabaritoDefinitivoReconciled,
+    gabaritoTipo,
+    imagesVerifiedCount: imagesCount,
+    missingImages,
+  };
+}
+
+/**
+ * 3. Homologação Estrita (P0.1)
+ * Distingue rigorosamente Validação Estrutural, Validação Documental e Homologação.
+ * Uma prova SÓ pode ser homologada se tiver validação estrutural aprovada,
+ * comprovação documental plena, gabarito definitivo publicado e homologação explícita.
+ */
+export function validateExamHomologation(
+  doc: ExamDocumentV2,
+  options?: {
+    checkFileExists?: (filePath: string) => boolean;
+    checkImageFiles?: (imagePath: string) => boolean;
+    requireHomologatedStatus?: boolean;
+  }
+): ExamValidationReport {
+  const requireHomologated = options?.requireHomologatedStatus ?? true;
+
+  // 1. Validação Estrutural
+  const structResult = validateExamStructure(doc);
+
+  // 2. Validação Documental
+  const docResult = validateExamDocumentary(doc, {
+    checkFileExists: options?.checkFileExists,
+    checkImageFiles: options?.checkImageFiles,
+  });
+
+  const combinedErrors = [...structResult.errors, ...docResult.errors];
+  const combinedWarnings = [...structResult.warnings, ...docResult.warnings];
+
+  // 3. Avaliação de Homologação
+  const isDraft = doc?.exam?.statusHomologacao === 'rascunho';
+  const claimedHomologated = doc?.exam?.homologado === true;
+
+  // Tentativa inválida de homologar rascunho de IA
+  if (isDraft && claimedHomologated) {
+    combinedErrors.push("Homologação rejeitada: documentos marcados como rascunho de IA não podem declarar 'homologado: true'.");
+  }
+
+  // Tentativa inválida de homologar com gabarito preliminar
+  if (claimedHomologated && docResult.gabaritoTipo === 'preliminar') {
+    combinedErrors.push("Homologação rejeitada: a prova declara 'homologado: true', mas o gabarito é preliminar. Homologação requer gabarito definitivo.");
+  }
+
+  // Tentativa de homologar sem comprovação documental
+  if (claimedHomologated && !docResult.isValidDocumentary) {
+    combinedErrors.push("Homologação rejeitada: a prova declara 'homologado: true', mas falhou na validação documental (arquivos não comprovados ou ausentes).");
+  }
+
+  // Condição estrita para ser formalmente HOMOLOGADO:
+  const isHomologated =
+    structResult.isValidStructural &&
+    docResult.isValidDocumentary &&
+    docResult.gabaritoDefinitivoReconciled &&
+    !isDraft &&
+    claimedHomologated &&
+    combinedErrors.length === 0;
+
+  // Determinação determinística e não-contraditória de statusHomologacao
+  let statusHomologacao: HomologationStatus = 'rascunho';
+  if (isHomologated) {
+    statusHomologacao = 'homologado';
+  } else if (structResult.isValidStructural && !isDraft) {
+    statusHomologacao = 'validacao_pendente';
+  } else {
+    statusHomologacao = 'rascunho';
+  }
+
+  if (requireHomologated && !isHomologated) {
+    combinedErrors.push(`Homologação documental incompleta. Status resultante: '${statusHomologacao}'.`);
+  }
+
+  const isValid = requireHomologated ? isHomologated : structResult.isValidStructural;
 
   return {
     isValid,
+    isStructuralValid: structResult.isValidStructural,
+    isDocumentaryValid: docResult.isValidDocumentary,
+    isHomologated,
     statusHomologacao,
-    errors,
-    warnings,
+    errors: Array.from(new Set(combinedErrors)),
+    warnings: Array.from(new Set(combinedWarnings)),
     metrics: {
-      totalQuestoes: questoes.length,
-      totalAnuladas: anuladasCount,
-      imagensVerificadas: imagesChecked,
+      totalQuestoes: structResult.totalQuestoes,
+      totalAnuladas: structResult.totalAnuladas,
+      totalRetificadas: structResult.totalRetificadas,
+      imagensVerificadas: docResult.imagesVerifiedCount,
     },
   };
+}
+
+/**
+ * Validação estrutural básica para ExamDocumentV2 (retrocompatibilidade).
+ */
+export function validateExamDocumentV2(doc: ExamDocumentV2): string[] {
+  const result = validateExamStructure(doc);
+  return result.errors;
 }
