@@ -4,6 +4,7 @@ import { QuestionCard } from '../components/QuestionCard';
 import { FilterModal } from '../components/FilterModal';
 import { ExplanationModal } from '../components/ExplanationModal';
 import { FileText, Clock, Play, CheckCircle2, XCircle, Award, RotateCcw } from 'lucide-react';
+import { evaluateQuestionAnswer, getEffectiveGabarito } from '../utils/answerEvaluation';
 
 interface ExamPageProps {
   questions: Question[];
@@ -102,8 +103,11 @@ export const ExamPage: React.FC<ExamPageProps> = ({
     completedReport.questionIds.forEach(qId => {
       const q = questions.find(item => item.id === qId);
       const userAns = completedReport.answers[qId]?.selectedOption;
-      if (q && userAns && userAns.toUpperCase() === q.gabarito.toUpperCase()) {
-        correctCount += 1;
+      if (q && userAns) {
+        const evalResult = evaluateQuestionAnswer(q, userAns);
+        if (evalResult.officialExamCredit > 0) {
+          correctCount += 1;
+        }
       }
     });
 
@@ -144,7 +148,10 @@ export const ExamPage: React.FC<ExamPageProps> = ({
             if (!q) return null;
 
             const userAns = completedReport.answers[qId]?.selectedOption;
-            const isCorrect = userAns && userAns.toUpperCase() === q.gabarito.toUpperCase();
+            const evalResult = userAns ? evaluateQuestionAnswer(q, userAns) : null;
+            const effectiveGab = getEffectiveGabarito(q);
+            const isCorrect = evalResult ? evalResult.isCorrect : false;
+            const isAnnulled = evalResult ? evalResult.isAnnulled : (effectiveGab === 'X');
 
             return (
               <div key={qId} className="bg-[#131b2e] border border-slate-800 rounded-xl p-4 flex items-center justify-between">
@@ -155,13 +162,25 @@ export const ExamPage: React.FC<ExamPageProps> = ({
                       {q.disciplina} • {q.banca}
                     </span>
                     <span className="text-[11px] text-slate-400">
-                      Sua resposta: <strong className={isCorrect ? 'text-emerald-400' : 'text-rose-400'}>{userAns || 'Em branco'}</strong> | Gabarito: <strong className="text-emerald-400">{q.gabarito}</strong>
+                      Sua resposta:{' '}
+                      <strong className={isAnnulled ? 'text-amber-400' : isCorrect ? 'text-emerald-400' : 'text-rose-400'}>
+                        {userAns || 'Em branco'}
+                      </strong>{' '}
+                      | Gabarito:{' '}
+                      <strong className="text-emerald-400">
+                        {effectiveGab}
+                        {isAnnulled ? ' (Anulada)' : ''}
+                      </strong>
                     </span>
                   </div>
                 </div>
 
                 <div className="flex items-center space-x-2">
-                  {isCorrect ? (
+                  {isAnnulled ? (
+                    <span className="text-[10px] bg-amber-950 text-amber-300 border border-amber-800 px-2 py-0.5 rounded font-bold">
+                      ANULADA
+                    </span>
+                  ) : isCorrect ? (
                     <CheckCircle2 className="w-5 h-5 text-emerald-400" />
                   ) : (
                     <XCircle className="w-5 h-5 text-rose-400" />

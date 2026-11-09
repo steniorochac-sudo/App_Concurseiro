@@ -31,6 +31,23 @@ export interface Question {
   examTitulo?: string;
   numeroOriginal?: number;
   gabaritoStatus?: string;
+  gabaritoDefinitivo?: string;
+  statusHomologacao?: 'rascunho' | 'validacao_pendente' | 'homologado';
+  homologado?: boolean;
+  isDraft?: boolean;
+  fonteDocumental?: string;
+}
+
+export interface AttemptReconciliationAudit {
+  reconciledAt: number;
+  reason: string;
+  previousValues: {
+    isCorrect: boolean;
+    isAnnulled?: boolean;
+    scoreWeight?: number;
+    officialExamCredit?: number;
+    countsForDidacticMetrics?: boolean;
+  };
 }
 
 export interface UserAttempt {
@@ -38,10 +55,23 @@ export interface UserAttempt {
   questionId: string;
   selectedOption: string;
   isCorrect: boolean;
+  isAnnulled?: boolean;
+  scoreWeight?: number; // Peso didático (0 para anulada, 1 para acerto válido, 0 para erro)
+  officialExamCredit?: number; // Crédito oficial da banca (1 para acerto e para anulada, 0 para erro)
+  countsForDidacticMetrics?: boolean; // false se anulada (isola de taxas de acerto)
   timestamp: number;
   timeSpentSeconds: number;
   mode: 'practice' | 'exam' | 'notebook';
   examId?: string;
+  // Preservação estrita do registro histórico original e trilha de auditoria (Pendência 2 - 4ª Auditoria)
+  originalAttempt?: {
+    isCorrect: boolean;
+    isAnnulled?: boolean;
+    scoreWeight?: number;
+    officialExamCredit?: number;
+    countsForDidacticMetrics?: boolean;
+  };
+  reconciliationAuditTrail?: AttemptReconciliationAudit;
 }
 
 export interface ErrorNotebookItem {
@@ -75,7 +105,10 @@ export interface ExamSession {
 export interface UserStats {
   totalAnswered: number;
   totalCorrect: number;
-  accuracyRate: number; // Porcentagem de acerto (0 a 100)
+  totalAnnulled?: number;
+  totalValidAnswered?: number; // Questões respondidas excluindo anuladas
+  totalOfficialCredits?: number; // Pontos oficiais de concurso (acertos válidos + anuladas com crédito)
+  accuracyRate: number; // Porcentagem de acerto didático (0 a 100)
   averageTimeSeconds: number;
   accuracyBySubject: Record<string, { total: number; correct: number; accuracy: number }>;
   accuracyByBoard: Record<string, { total: number; correct: number; accuracy: number }>;

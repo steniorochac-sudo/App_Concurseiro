@@ -2,6 +2,7 @@ import React from 'react';
 import { Question } from '../types';
 import { X, CheckCircle2, Scale, BookOpen, AlertTriangle, Tag, Sparkles, Search } from 'lucide-react';
 import { openQuestionSearchInGoogle } from '../utils/searchExplanation';
+import { getEffectiveGabarito } from '../utils/answerEvaluation';
 
 interface ExplanationModalProps {
   question: Question | null;
@@ -28,9 +29,35 @@ export const ExplanationModal: React.FC<ExplanationModalProps> = ({
             </div>
             <div>
               <h3 className="text-base font-bold text-white">Gabarito Comentado</h3>
-              <p className="text-xs text-emerald-400 font-medium">
-                Resposta Oficial: Alternativa ({question.gabarito})
-              </p>
+              {(() => {
+                const eff = getEffectiveGabarito(question);
+                const isAnnulled = eff === 'X' || question.gabaritoStatus === 'anulado';
+                const isRectified = question.gabaritoStatus === 'retificado' || question.gabaritoStatus === 'alterado';
+
+                if (isAnnulled) {
+                  return (
+                    <p className="text-xs text-amber-400 font-bold">
+                      Resposta Oficial: ANULADA (Gabarito X)
+                    </p>
+                  );
+                }
+                if (isRectified) {
+                  return (
+                    <p className="text-xs text-emerald-400 font-medium">
+                      Resposta Oficial: Alternativa ({eff}){' '}
+                      <span className="text-amber-400 font-bold">[Retificado pós-recurso]</span>
+                      {question.gabarito && question.gabarito.toUpperCase() !== eff.toUpperCase() && (
+                        <span className="text-slate-400 ml-1">(Preliminar: {question.gabarito})</span>
+                      )}
+                    </p>
+                  );
+                }
+                return (
+                  <p className="text-xs text-emerald-400 font-medium">
+                    Resposta Oficial: Alternativa ({eff})
+                  </p>
+                );
+              })()}
             </div>
           </div>
           <button
