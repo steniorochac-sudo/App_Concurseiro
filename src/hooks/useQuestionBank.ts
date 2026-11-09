@@ -10,11 +10,13 @@ import { INITIAL_QUESTIONS } from '../data/mockQuestions';
 import { ALL_IMPORTED_QUESTIONS, PRELOADED_EXAMS } from '../data/allExamsCatalog';
 import { ExamDocumentV2 } from '../types/examSchemaV2';
 import { examDocV2ToQuestions } from '../data/examsRegistry';
+import { evaluateQuestionAnswer } from '../utils/answerEvaluation';
 
 const STORAGE_KEY = 'concurseiro_user_state';
+const CURRENT_STORAGE_VERSION = '2.0';
 
 export function useQuestionBank() {
-  // Questões customizadas que o usuário importou manualmente por arquivo
+  // Questões customizadas que o usuário importou manualmente por arquivo ou IA
   const [customQuestions, setCustomQuestions] = useState<Question[]>(() => {
     try {
       const stored = localStorage.getItem(`${STORAGE_KEY}_custom_questions`);
@@ -26,6 +28,7 @@ export function useQuestionBank() {
 
   // Estado do progresso do usuário (tentativas, erros, simulados, favoritos)
   const [userState, setUserState] = useState<{
+    version?: string;
     attempts: UserAttempt[];
     errorNotebook: Record<string, { questionId: string; errorCount: number; consecutiveCorrectCount: number; lastAttemptTimestamp: number }>;
     savedQuestionIds: string[];
@@ -36,6 +39,7 @@ export function useQuestionBank() {
       if (stored) {
         const parsed = JSON.parse(stored);
         return {
+          version: parsed.version || CURRENT_STORAGE_VERSION,
           attempts: parsed.attempts || [],
           errorNotebook: parsed.errorNotebook || {},
           savedQuestionIds: parsed.savedQuestionIds || [],
@@ -46,6 +50,7 @@ export function useQuestionBank() {
       console.error('Erro ao carregar dados do LocalStorage:', e);
     }
     return {
+      version: CURRENT_STORAGE_VERSION,
       attempts: [],
       errorNotebook: {},
       savedQuestionIds: [],
@@ -55,27 +60,23 @@ export function useQuestionBank() {
 
   const [currentExam, setCurrentExam] = useState<ExamSession | null>(null);
 
-  // Sincronização em Tempo Real (Live Hot Reload):
-  // As questões do catálogo (ALL_IMPORTED_QUESTIONS) são SEMPRE lidas em tempo real.
-  // Qualquer alteração nos arquivos reflete instantaneamente no browser/celular sem travar em cache antigo!
+  // Sincronização e Precedência do Catálogo Oficial (P1.1):
+  // O catálogo oficial (ALL_IMPORTED_QUESTIONS) é SEMPRE a fonte de verdade para questões oficiais.
+  // Questões customizadas em cache local NUNCA mascaram correções ou gabaritos retificados do catálogo!
   const questions = useMemo<Question[]>(() => {
     const baseList = ALL_IMPORTED_QUESTIONS.length > 0 ? ALL_IMPORTED_QUESTIONS : INITIAL_QUESTIONS;
-    const customMap = new Map(customQuestions.map(q => [q.id, q]));
-    
-    // Mescla as questões base com as customizadas (customizadas têm precedência de ID)
-    const merged = baseList.map(q => customMap.get(q.id) || q);
-    
-    // Adiciona questões customizadas que não existiam no catálogo base
     const baseIds = new Set(baseList.map(q => q.id));
-    const extraCustom = customQuestions.filter(q => !baseIds.has(q.id));
     
-    return [...extraCustom, ...merged];
+    // Filtra apenas questões genuinamente customizadas do usuário (que não pertencem ao catálogo oficial)
+    const genuineCustom = customQuestions.filter(q => !baseIds.has(q.id));
+    
+    return [...genuineCustom, ...baseList];
   }, [customQuestions]);
 
   // Persiste progresso do usuário
   useEffect(() => {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ ...userState, version: CURRENT_STORAGE_VERSION }));
     } catch (e) {
       console.error('Erro ao salvar progresso:', e);
     }
@@ -90,7 +91,7 @@ export function useQuestionBank() {
     }
   }, [customQuestions]);
 
-  // Registrar tentativa de resposta
+  // Registrar tentativa de resposta com Mecanismo Único de Avaliação (P0.2)
   const recordAttempt = useCallback((
     questionId: string, 
     selectedOption: string, 
@@ -101,12 +102,15 @@ export function useQuestionBank() {
     const question = questions.find(q => q.id === questionId);
     if (!question) return null;
 
-    const isCorrect = selectedOption.toUpperCase() === question.gabarito.toUpperCase();
+    const evalResult = evaluateQuestionAnswer(question, selectedOption);
+
     const newAttempt: UserAttempt = {
       id: `att-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
       questionId,
       selectedOption,
-      isCorrect,
+      isCorrect: evalResult.isCorrect,
+      isAnnulled: evalResult.isAnnulled,
+      scoreWeight: evalResult.scoreWeight,
       timestamp: Date.now(),
       timeSpentSeconds,
       mode,
@@ -116,7 +120,8 @@ export function useQuestionBank() {
     setUserState(prev => {
       const updatedNotebook = { ...prev.errorNotebook };
 
-      if (!isCorrect) {
+      // Questões anuladas NUNCA devem ser adicionadas ao Caderno de Erros (P0.2)
+      if (evalResult.shouldAddToErrorNotebook) {
         const currentItem = updatedNotebook[questionId] || {
           questionId,
           errorCount: 0,
@@ -130,7 +135,7 @@ export function useQuestionBank() {
           consecutiveCorrectCount: 0,
           lastAttemptTimestamp: Date.now()
         };
-      } else {
+      } else if (evalResult.isCorrect && !evalResult.isAnnulled) {
         if (updatedNotebook[questionId]) {
           const newConsecutive = updatedNotebook[questionId].consecutiveCorrectCount + 1;
           if (newConsecutive >= 2) {
@@ -170,17 +175,15 @@ export function useQuestionBank() {
     });
   }, []);
 
-  // Importar novas questões via arquivo
+  // Importar novas questões via arquivo com Importação Incremental Pura (P1.2)
   const importQuestions = useCallback((newQuestions: Question[]): { added: number; total: number } => {
-    let addedCount = 0;
     const existingIds = new Set(questions.map(q => q.id));
     const validNew = newQuestions.filter(q => {
       if (!q.id || !q.enunciado || !q.alternativas || !q.gabarito) return false;
-      if (existingIds.has(q.id)) return false;
-      return true;
+      return !existingIds.has(q.id);
     });
 
-    addedCount = validNew.length;
+    const addedCount = validNew.length;
     if (addedCount > 0) {
       setCustomQuestions(prev => [...validNew, ...prev]);
     }
@@ -188,37 +191,35 @@ export function useQuestionBank() {
     return { added: addedCount, total: questions.length + addedCount };
   }, [questions]);
 
-  // Importar prova estruturada no padrão ExamDocumentV2 (via IA ou arquivo JSON)
+  // Importar prova estruturada no padrão ExamDocumentV2 (P1.2)
   const importExamDocument = useCallback((doc: ExamDocumentV2): { added: number; updated: number; total: number } => {
     const newQuestions = examDocV2ToQuestions(doc);
+    const existingMap = new Map<string, Question>();
+    for (const q of customQuestions) {
+      existingMap.set(q.id, q);
+    }
+
     let addedCount = 0;
     let updatedCount = 0;
 
-    setCustomQuestions(prev => {
-      const questionMap = new Map<string, Question>();
-      // Preserva questões customizadas existentes
-      for (const q of prev) {
-        questionMap.set(q.id, q);
+    for (const newQ of newQuestions) {
+      if (existingMap.has(newQ.id)) {
+        updatedCount++;
+      } else {
+        addedCount++;
       }
+      existingMap.set(newQ.id, newQ);
+    }
 
-      for (const newQ of newQuestions) {
-        if (questionMap.has(newQ.id)) {
-          updatedCount++;
-        } else {
-          addedCount++;
-        }
-        questionMap.set(newQ.id, newQ);
-      }
-
-      return Array.from(questionMap.values());
-    });
+    const nextList = Array.from(existingMap.values());
+    setCustomQuestions(nextList);
 
     return {
       added: addedCount,
       updated: updatedCount,
       total: questions.length + addedCount,
     };
-  }, [questions]);
+  }, [customQuestions, questions.length]);
 
   // Carregar prova pré-carregada
   const loadPreloadedExam = useCallback((examId: string): number => {
@@ -252,6 +253,7 @@ export function useQuestionBank() {
   const resetToFactoryDefaults = useCallback(() => {
     setCustomQuestions([]);
     setUserState({
+      version: CURRENT_STORAGE_VERSION,
       attempts: [],
       errorNotebook: {},
       savedQuestionIds: [],
@@ -341,12 +343,16 @@ export function useQuestionBank() {
     return completedSession;
   }, [currentExam, recordAttempt]);
 
-  // Estatísticas consolidadas
+  // Estatísticas consolidadas com isolamento de questões anuladas (P0.2)
   const stats = useMemo<UserStats>(() => {
     const attempts = userState.attempts;
     const totalAnswered = attempts.length;
-    const totalCorrect = attempts.filter(a => a.isCorrect).length;
-    const accuracyRate = totalAnswered > 0 ? (totalCorrect / totalAnswered) * 100 : 0;
+    const totalAnnulled = attempts.filter(a => a.isAnnulled).length;
+    const totalCorrect = attempts.filter(a => a.isCorrect && !a.isAnnulled).length;
+    
+    // A taxa de acerto é calculada sobre as questões válidas para não distorcer o rendimento
+    const validCount = totalAnswered - totalAnnulled;
+    const accuracyRate = validCount > 0 ? (totalCorrect / validCount) * 100 : (totalAnswered > 0 ? 100 : 0);
     
     const totalTime = attempts.reduce((acc, curr) => acc + (curr.timeSpentSeconds || 0), 0);
     const averageTimeSeconds = totalAnswered > 0 ? Math.round(totalTime / totalAnswered) : 0;
@@ -361,25 +367,30 @@ export function useQuestionBank() {
       if (!accuracyBySubject[q.disciplina]) {
         accuracyBySubject[q.disciplina] = { total: 0, correct: 0, accuracy: 0 };
       }
-      accuracyBySubject[q.disciplina].total += 1;
-      if (att.isCorrect) accuracyBySubject[q.disciplina].correct += 1;
-      accuracyBySubject[q.disciplina].accuracy = Math.round(
-        (accuracyBySubject[q.disciplina].correct / accuracyBySubject[q.disciplina].total) * 100
-      );
+      if (!att.isAnnulled) {
+        accuracyBySubject[q.disciplina].total += 1;
+        if (att.isCorrect) accuracyBySubject[q.disciplina].correct += 1;
+        accuracyBySubject[q.disciplina].accuracy = Math.round(
+          (accuracyBySubject[q.disciplina].correct / accuracyBySubject[q.disciplina].total) * 100
+        );
+      }
 
       if (!accuracyByBoard[q.banca]) {
         accuracyByBoard[q.banca] = { total: 0, correct: 0, accuracy: 0 };
       }
-      accuracyByBoard[q.banca].total += 1;
-      if (att.isCorrect) accuracyByBoard[q.banca].correct += 1;
-      accuracyByBoard[q.banca].accuracy = Math.round(
-        (accuracyByBoard[q.banca].correct / accuracyByBoard[q.banca].total) * 100
-      );
+      if (!att.isAnnulled) {
+        accuracyByBoard[q.banca].total += 1;
+        if (att.isCorrect) accuracyByBoard[q.banca].correct += 1;
+        accuracyByBoard[q.banca].accuracy = Math.round(
+          (accuracyByBoard[q.banca].correct / accuracyByBoard[q.banca].total) * 100
+        );
+      }
     });
 
     return {
       totalAnswered,
       totalCorrect,
+      totalAnnulled,
       accuracyRate: Math.round(accuracyRate * 10) / 10,
       averageTimeSeconds,
       accuracyBySubject,
