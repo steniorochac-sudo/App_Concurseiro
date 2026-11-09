@@ -17,6 +17,7 @@ import {
   Search
 } from 'lucide-react';
 import { openQuestionSearchInGoogle } from '../utils/searchExplanation';
+import { renderMarkdownContent, renderFormattedText } from '../utils/textFormatting';
 
 interface QuestionCardProps {
   question: Question;
@@ -26,111 +27,10 @@ interface QuestionCardProps {
   hasPrev?: boolean;
   onToggleSave: (questionId: string) => void;
   isSaved: boolean;
-  onOpenExplanation: () => void;
+  onOpenExplanation?: () => void;
   showInstantFeedback?: boolean; // true no modo Treino, false no modo Simulado
   userSelectedOption?: string; // Se já foi respondida
   isAnswered?: boolean;
-}
-
-/**
- * Utilitário para renderizar markdown simples: parágrafos, tabelas GFM e imagens
- */
-function renderMarkdownContent(content: string) {
-  const blocks = content.split(/\n\n+/);
-
-  return blocks.map((block, idx) => {
-    const trimmed = block.trim();
-    if (!trimmed) return null;
-
-    // 1. Imagem Markdown Isolada: ![alt](url)
-    const imgMatch = trimmed.match(/^!\[(.*?)\]\((.*?)\)$/);
-    if (imgMatch) {
-      return (
-        <div key={idx} className="my-3 flex justify-center">
-          <img 
-            src={imgMatch[2]} 
-            alt={imgMatch[1] || 'Imagem da questão'} 
-            className="max-w-full rounded-xl border border-slate-700/80 shadow-lg bg-slate-900"
-            loading="lazy"
-          />
-        </div>
-      );
-    }
-
-    // 2. Tabela Markdown GFM: | col1 | col2 |
-    if (trimmed.startsWith('|') && trimmed.includes('\n|')) {
-      const rows = trimmed.split('\n').filter(r => r.trim().startsWith('|'));
-      if (rows.length >= 2) {
-        const headerCols = rows[0].split('|').slice(1, -1).map(c => c.trim());
-        const bodyRows = rows.slice(2).map(r => r.split('|').slice(1, -1).map(c => c.trim()));
-
-        return (
-          <div key={idx} className="overflow-x-auto my-3 rounded-xl border border-slate-800 bg-slate-950/60 shadow-inner">
-            <table className="w-full text-xs text-left text-slate-200">
-              <thead className="bg-slate-900 border-b border-slate-800 text-indigo-300 font-bold">
-                <tr>
-                  {headerCols.map((col, cIdx) => (
-                    <th key={cIdx} className="px-3 py-2 border-r border-slate-800/80 last:border-r-0">
-                      {col}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-800/60">
-                {bodyRows.map((row, rIdx) => (
-                  <tr key={rIdx} className="hover:bg-slate-900/40 transition-colors">
-                    {row.map((cell, cIdx) => (
-                      <td key={cIdx} className="px-3 py-2 border-r border-slate-800/40 last:border-r-0 font-mono text-[11px] sm:text-xs">
-                        {cell}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        );
-      }
-    }
-
-    // 3. Parágrafo com possíveis imagens inline
-    if (trimmed.includes('![') && trimmed.includes('](')) {
-      const parts = trimmed.split(/(!\[.*?\]\(.*?\))/g);
-      return (
-        <div key={idx} className="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800/80 my-2">
-          {parts.map((part, pIdx) => {
-            const m = part.match(/^!\[(.*?)\]\((.*?)\)$/);
-            if (m) {
-              return (
-                <div key={pIdx} className="my-2 flex justify-center">
-                  <img 
-                    src={m[2]} 
-                    alt={m[1] || 'Recurso da questão'} 
-                    className="max-w-full rounded-xl border border-slate-700/80 shadow-md bg-slate-900"
-                    loading="lazy"
-                  />
-                </div>
-              );
-            }
-            return (
-              <p key={pIdx} className="text-slate-100 text-sm sm:text-base leading-relaxed whitespace-pre-line">
-                {part.trim()}
-              </p>
-            );
-          })}
-        </div>
-      );
-    }
-
-    // 4. Parágrafo de texto normal
-    return (
-      <div key={idx} className="bg-slate-900/60 p-3.5 rounded-xl border border-slate-800/80 my-2">
-        <p className="text-slate-100 text-sm sm:text-base leading-relaxed font-normal whitespace-pre-line">
-          {trimmed}
-        </p>
-      </div>
-    );
-  });
 }
 
 export const QuestionCard: React.FC<QuestionCardProps> = ({
@@ -153,6 +53,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   const hasSubmitted = isAnswered || isSubmittedLocally || (userSelectedOption !== undefined && userSelectedOption !== null);
 
+  // Status especiais de gabarito (P0.2)
+  const isAnnulled = question.gabarito?.toUpperCase() === 'X' || question.gabaritoStatus === 'anulado';
+  const isRectified = question.gabaritoStatus === 'alterado' || question.gabaritoStatus === 'retificado';
+  const isPreliminary = question.gabaritoStatus === 'preliminar' || question.gabaritoStatus === 'pendente';
+
   // Detecta se a questão é do formato Certo / Errado
   const isCertoErrado = 
     question.tipo === 'certo_errado' || 
@@ -174,20 +79,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   const handleConfirmAnswer = () => {
     if (!tentativeSelection || hasSubmitted) return;
-    
     setIsSubmittedLocally(true);
-
-    const isCorrect = tentativeSelection.toUpperCase() === question.gabarito.toUpperCase();
-    if (typeof navigator !== 'undefined' && navigator.vibrate) {
-      navigator.vibrate(isCorrect ? 40 : [30, 50, 30]);
-    }
-
     onAnswer(tentativeSelection);
   };
 
   const toggleEliminate = (e: React.MouseEvent, optionId: string) => {
     e.stopPropagation();
     if (hasSubmitted) return;
+
     setEliminatedOptions(prev => {
       const next = new Set(prev);
       if (next.has(optionId)) {
@@ -216,8 +115,17 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       return 'bg-slate-900/70 border-slate-800 text-slate-200 hover:bg-slate-800/80 active:bg-slate-800';
     }
 
-    const isCorrectOption = optionId.toUpperCase() === question.gabarito.toUpperCase();
     const isUserChoice = tentativeSelection?.toUpperCase() === optionId.toUpperCase();
+
+    // Questão anulada não pune o estudante com vermelho (P0.2)
+    if (isAnnulled) {
+      if (isUserChoice) {
+        return 'bg-amber-950/60 border-amber-500 text-amber-200 ring-2 ring-amber-500/30 font-semibold';
+      }
+      return 'bg-slate-950/40 border-slate-900 text-slate-500 opacity-50';
+    }
+
+    const isCorrectOption = optionId.toUpperCase() === question.gabarito.toUpperCase();
 
     if (isCorrectOption) {
       return 'bg-emerald-950/80 border-emerald-500 text-emerald-100 ring-2 ring-emerald-500/40 font-medium';
@@ -242,8 +150,17 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       return 'bg-slate-900/80 border-slate-800 text-slate-200 hover:bg-slate-850 active:scale-[0.98]';
     }
 
-    const isCorrectTarget = targetId === question.gabarito.toUpperCase();
     const isUserChoice = tentativeSelection?.toUpperCase() === targetId;
+
+    // Questão anulada em C/E (P0.2)
+    if (isAnnulled) {
+      if (isUserChoice) {
+        return 'bg-amber-950/70 border-amber-500 text-amber-200 ring-2 ring-amber-500 font-bold';
+      }
+      return 'bg-slate-950/50 border-slate-900 text-slate-600 opacity-40';
+    }
+
+    const isCorrectTarget = targetId === question.gabarito.toUpperCase();
 
     if (isCorrectTarget) {
       return 'bg-emerald-950/90 border-emerald-500 text-emerald-100 ring-2 ring-emerald-500 font-bold';
@@ -286,6 +203,24 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               {question.dificuldade}
             </span>
           )}
+
+          {/* Badges de Status do Gabarito Oficial (P0.2) */}
+          {isAnnulled && (
+            <span className="bg-amber-950 text-amber-300 border border-amber-700/80 font-bold px-2 py-0.5 rounded-md text-[10px] uppercase flex items-center space-x-1">
+              <AlertTriangle className="w-3 h-3 text-amber-400" />
+              <span>Anulada</span>
+            </span>
+          )}
+          {isRectified && (
+            <span className="bg-blue-950 text-blue-300 border border-blue-700/80 font-bold px-2 py-0.5 rounded-md text-[10px] uppercase">
+              Retificada
+            </span>
+          )}
+          {isPreliminary && (
+            <span className="bg-slate-800 text-slate-300 border border-slate-700 font-bold px-2 py-0.5 rounded-md text-[10px] uppercase">
+              Preliminar
+            </span>
+          )}
         </div>
 
         {/* Favorite Button */}
@@ -308,10 +243,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           <BookOpen className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
           <span className="text-slate-300 font-semibold">{question.disciplina}</span>
         </div>
-        <span>•</span>
-        <span className="text-slate-400 truncate">{question.assunto}</span>
-        
-        {/* Subtopicos Badges */}
+        {question.assunto && (
+          <>
+            <span className="text-slate-600">•</span>
+            <span className="text-slate-400">{question.assunto}</span>
+          </>
+        )}
+        {/* Subtópicos do Edital */}
         {question.subtopicos && question.subtopicos.length > 0 && (
           <div className="w-full flex flex-wrap gap-1 mt-1">
             {question.subtopicos.map((sub, sIdx) => (
@@ -324,17 +262,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
         )}
       </div>
 
-      {/* Alerta de Questão Polêmica (Se houver) */}
-      {question.alertaProfessor && (
-        <div className="mb-4 bg-amber-950/30 border border-amber-500/40 p-2.5 rounded-xl flex items-start space-x-2 text-xs text-amber-200">
-          <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-          <span className="leading-snug">{question.alertaProfessor}</span>
-        </div>
-      )}
-
-      {/* Texto Compartilhado Retrátil (Accordion v2.0) */}
+      {/* Texto de Apoio / Contexto Compartilhado (Colapsável) */}
       {question.textoCompartilhado && (
-        <div className="mb-4 bg-slate-900/90 border border-slate-700/80 rounded-xl overflow-hidden shadow-inner">
+        <div className="mb-4 rounded-xl border border-slate-800 bg-slate-950/70 overflow-hidden shadow-inner">
           <button
             type="button"
             onClick={() => setIsSupportTextOpen(prev => !prev)}
@@ -354,14 +284,27 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             )}
           </button>
           {isSupportTextOpen && (
-            <div className="p-3.5 bg-slate-900/40 text-slate-300 text-xs sm:text-sm leading-relaxed whitespace-pre-line border-t border-slate-800/40 max-h-80 overflow-y-auto">
-              {question.textoCompartilhado.content}
+            <div className="p-3.5 bg-slate-900/40 text-slate-300 text-xs sm:text-sm leading-relaxed border-t border-slate-800/40 max-h-80 overflow-y-auto">
+              {renderMarkdownContent(question.textoCompartilhado.content)}
             </div>
           )}
         </div>
       )}
 
-      {/* Enunciado da Questão com Suporte a Markdown, Tabelas e Imagens */}
+      {/* Alerta Didático de Questão Anulada no Feedback Instantâneo (P0.2) */}
+      {hasSubmitted && showInstantFeedback && isAnnulled && (
+        <div className="mb-4 bg-amber-950/40 border border-amber-500/60 p-3.5 rounded-xl flex items-start space-x-2.5 text-xs text-amber-200 shadow-inner animate-fadeIn">
+          <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+          <div className="space-y-0.5">
+            <span className="font-bold block text-amber-300">QUESTÃO ANULADA PELA BANCA (GABARITO X)</span>
+            <p className="leading-relaxed text-amber-200/90 text-[11px] sm:text-xs">
+              Esta questão foi oficialmente anulada pela banca examinadora. A pontuação é computada didacticamante a seu favor e o item não é computado como erro.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Enunciado da Questão com Suporte Seguro a Markdown, Tabelas, Imagens, Lacunas e Sublinhados (P0.3) */}
       <div className="mb-5">
         {renderMarkdownContent(question.enunciado)}
       </div>
@@ -381,11 +324,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           >
             <Check className="w-5 h-5 text-emerald-400 shrink-0" />
             <span>CERTO</span>
-            {hasSubmitted && showInstantFeedback && question.gabarito.toUpperCase() === 'C' && (
+            {hasSubmitted && showInstantFeedback && !isAnnulled && question.gabarito.toUpperCase() === 'C' && (
               <CheckCircle className="w-5 h-5 text-emerald-400 ml-1 shrink-0" />
             )}
-            {hasSubmitted && showInstantFeedback && tentativeSelection?.toUpperCase() === 'C' && question.gabarito.toUpperCase() !== 'C' && (
+            {hasSubmitted && showInstantFeedback && !isAnnulled && tentativeSelection?.toUpperCase() === 'C' && question.gabarito.toUpperCase() !== 'C' && (
               <XCircle className="w-5 h-5 text-rose-400 ml-1 shrink-0" />
+            )}
+            {hasSubmitted && showInstantFeedback && isAnnulled && tentativeSelection?.toUpperCase() === 'C' && (
+              <span className="text-[10px] bg-amber-950 text-amber-300 border border-amber-800 px-1.5 py-0.5 rounded ml-1 font-bold">ANULADA</span>
             )}
           </button>
 
@@ -400,11 +346,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           >
             <X className="w-5 h-5 text-rose-400 shrink-0" />
             <span>ERRADO</span>
-            {hasSubmitted && showInstantFeedback && question.gabarito.toUpperCase() === 'E' && (
+            {hasSubmitted && showInstantFeedback && !isAnnulled && question.gabarito.toUpperCase() === 'E' && (
               <CheckCircle className="w-5 h-5 text-emerald-400 ml-1 shrink-0" />
             )}
-            {hasSubmitted && showInstantFeedback && tentativeSelection?.toUpperCase() === 'E' && question.gabarito.toUpperCase() !== 'E' && (
+            {hasSubmitted && showInstantFeedback && !isAnnulled && tentativeSelection?.toUpperCase() === 'E' && question.gabarito.toUpperCase() !== 'E' && (
               <XCircle className="w-5 h-5 text-rose-400 ml-1 shrink-0" />
+            )}
+            {hasSubmitted && showInstantFeedback && isAnnulled && tentativeSelection?.toUpperCase() === 'E' && (
+              <span className="text-[10px] bg-amber-950 text-amber-300 border border-amber-800 px-1.5 py-0.5 rounded ml-1 font-bold">ANULADA</span>
             )}
           </button>
         </div>
@@ -430,7 +379,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 >
                   {/* Option Letter Badge */}
                   <span className={`flex shrink-0 items-center justify-center w-7 h-7 rounded-lg text-xs font-bold ${
-                    hasSubmitted && showInstantFeedback && isCorrect
+                    hasSubmitted && showInstantFeedback && isAnnulled && isUserChoice
+                      ? 'bg-amber-500 text-slate-950 font-black'
+                      : hasSubmitted && showInstantFeedback && isCorrect
                       ? 'bg-emerald-500 text-slate-950'
                       : hasSubmitted && showInstantFeedback && isUserChoice && !isCorrect
                       ? 'bg-rose-500 text-white'
@@ -441,7 +392,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                     {opt.id}
                   </span>
 
-                  {/* Option Content (Texto ou Imagem) */}
+                  {/* Option Content (Texto Formatado ou Imagem) */}
                   <div className="text-xs sm:text-sm pt-0.5 leading-snug flex-1">
                     {optImgMatch ? (
                       <img 
@@ -451,16 +402,21 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                         loading="lazy"
                       />
                     ) : (
-                      <span>{opt.text}</span>
+                      <span>{renderFormattedText(opt.text)}</span>
                     )}
                   </div>
 
                   {/* Status Icon Feedback */}
-                  {hasSubmitted && showInstantFeedback && isCorrect && (
+                  {hasSubmitted && showInstantFeedback && !isAnnulled && isCorrect && (
                     <CheckCircle className="w-5 h-5 text-emerald-400 shrink-0 self-center" />
                   )}
-                  {hasSubmitted && showInstantFeedback && isUserChoice && !isCorrect && (
+                  {hasSubmitted && showInstantFeedback && !isAnnulled && isUserChoice && !isCorrect && (
                     <XCircle className="w-5 h-5 text-rose-400 shrink-0 self-center" />
+                  )}
+                  {hasSubmitted && showInstantFeedback && isAnnulled && isUserChoice && (
+                    <span className="text-[10px] bg-amber-950 text-amber-300 border border-amber-800 px-1.5 py-0.5 rounded font-bold shrink-0 self-center">
+                      ANULADA
+                    </span>
                   )}
                 </button>
 
@@ -497,7 +453,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           </button>
         )}
 
-        {/* Botão Principal: "Responder" (Antes de submeter) ou "Ver Explicação" (Após responder) */}
+        {/* Botão Principal: "Responder" (Antes de submeter) ou "Buscar Explicação" (Após responder) */}
         {!hasSubmitted ? (
           <button
             onClick={handleConfirmAnswer}

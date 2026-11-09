@@ -282,4 +282,30 @@ describe('QuestionCard Component', () => {
     expect(imgAlternativa).toBeInTheDocument();
     expect(imgAlternativa.getAttribute('src')).toBe('/questoes/opt_a.png');
   });
+
+  it('P0.2: deve exibir banner informativo e badge para questão anulada sem punir com erro vermelho', () => {
+    const annulledQ = {
+      ...mockQuestionME,
+      gabarito: 'X',
+      gabaritoStatus: 'anulado',
+    };
+
+    render(
+      <QuestionCard
+        question={annulledQ}
+        onAnswer={vi.fn()}
+        onToggleSave={vi.fn()}
+        isSaved={false}
+        onOpenExplanation={vi.fn()}
+        showInstantFeedback={true}
+        userSelectedOption="A"
+        isAnswered={true}
+      />
+    );
+
+    // Badge no cabeçalho
+    expect(screen.getByText('Anulada')).toBeInTheDocument();
+    // Banner explicativo didático
+    expect(screen.getByText(/QUESTÃO ANULADA PELA BANCA/i)).toBeInTheDocument();
+  });
 });
