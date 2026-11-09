@@ -20,7 +20,15 @@ export function useQuestionBank() {
   const [customQuestions, setCustomQuestions] = useState<Question[]>(() => {
     try {
       const stored = localStorage.getItem(`${STORAGE_KEY}_custom_questions`);
-      return stored ? JSON.parse(stored) : [];
+      if (!stored) return [];
+      const parsed: Question[] = JSON.parse(stored);
+      // Remove cópias obsoletas de questões oficiais do catálogo (P1.1)
+      const officialIds = new Set(ALL_IMPORTED_QUESTIONS.map(q => q.id));
+      const filtered = parsed.filter(q => !officialIds.has(q.id));
+      if (filtered.length !== parsed.length) {
+        localStorage.setItem(`${STORAGE_KEY}_custom_questions`, JSON.stringify(filtered));
+      }
+      return filtered;
     } catch {
       return [];
     }
@@ -28,7 +36,7 @@ export function useQuestionBank() {
 
   // Estado do progresso do usuário (tentativas, erros, simulados, favoritos)
   const [userState, setUserState] = useState<{
-    version?: string;
+    version: string;
     attempts: UserAttempt[];
     errorNotebook: Record<string, { questionId: string; errorCount: number; consecutiveCorrectCount: number; lastAttemptTimestamp: number }>;
     savedQuestionIds: string[];
@@ -38,13 +46,40 @@ export function useQuestionBank() {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
         const parsed = JSON.parse(stored);
-        return {
-          version: parsed.version || CURRENT_STORAGE_VERSION,
-          attempts: parsed.attempts || [],
+        const version = parsed.version || '1.0';
+
+        // Migração controlada de versão legada (< 2.0)
+        let attempts: UserAttempt[] = parsed.attempts || [];
+        attempts = attempts.map(att => {
+          if (att.isAnnulled) {
+            return {
+              ...att,
+              scoreWeight: 0,
+              officialExamCredit: 1,
+              countsForDidacticMetrics: false,
+            };
+          }
+          return {
+            ...att,
+            scoreWeight: att.scoreWeight ?? (att.isCorrect ? 1 : 0),
+            officialExamCredit: att.officialExamCredit ?? (att.isCorrect ? 1 : 0),
+            countsForDidacticMetrics: att.countsForDidacticMetrics ?? true,
+          };
+        });
+
+        const migratedState = {
+          version: CURRENT_STORAGE_VERSION,
+          attempts,
           errorNotebook: parsed.errorNotebook || {},
           savedQuestionIds: parsed.savedQuestionIds || [],
           exams: parsed.exams || [],
         };
+
+        if (version !== CURRENT_STORAGE_VERSION) {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(migratedState));
+        }
+
+        return migratedState;
       }
     } catch (e) {
       console.error('Erro ao carregar dados do LocalStorage:', e);
@@ -111,6 +146,8 @@ export function useQuestionBank() {
       isCorrect: evalResult.isCorrect,
       isAnnulled: evalResult.isAnnulled,
       scoreWeight: evalResult.scoreWeight,
+      officialExamCredit: evalResult.officialExamCredit,
+      countsForDidacticMetrics: evalResult.countsForDidacticMetrics,
       timestamp: Date.now(),
       timeSpentSeconds,
       mode,
@@ -391,6 +428,8 @@ export function useQuestionBank() {
       totalAnswered,
       totalCorrect,
       totalAnnulled,
+      totalValidAnswered: validCount,
+      totalOfficialCredits: attempts.reduce((acc, curr) => acc + (curr.officialExamCredit ?? (curr.isCorrect ? 1 : 0)), 0),
       accuracyRate: Math.round(accuracyRate * 10) / 10,
       averageTimeSeconds,
       accuracyBySubject,
