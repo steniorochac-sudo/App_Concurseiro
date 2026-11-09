@@ -38,6 +38,8 @@ export interface UserAttempt {
   questionId: string;
   selectedOption: string;
   isCorrect: boolean;
+  isAnnulled?: boolean;
+  scoreWeight?: number;
   timestamp: number;
   timeSpentSeconds: number;
   mode: 'practice' | 'exam' | 'notebook';
@@ -75,6 +77,7 @@ export interface ExamSession {
 export interface UserStats {
   totalAnswered: number;
   totalCorrect: number;
+  totalAnnulled?: number;
   accuracyRate: number; // Porcentagem de acerto (0 a 100)
   averageTimeSeconds: number;
   accuracyBySubject: Record<string, { total: number; correct: number; accuracy: number }>;
