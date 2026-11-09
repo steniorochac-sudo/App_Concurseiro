@@ -4,6 +4,7 @@ import {
   ALL_IMPORTED_QUESTIONS,
   AUDITED_EXAMS,
 } from '../examsRegistry';
+import { resolveEffectiveExamStatus } from '../documentaryStatusRegistry';
 
 describe('examsRegistry - Acervo Unificado e Modular', () => {
   it('deve conter exatamente as 7 provas do acervo pré-carregado', () => {
@@ -97,5 +98,54 @@ describe('examsRegistry - Acervo Unificado e Modular', () => {
     const q12 = vunesp.questions.find((q) => q.numeroOriginal === 12)!;
     expect(q12.imagens && q12.imagens.length > 0).toBe(true);
     expect(q12.imagens![0]).toContain('q12_diagrama.png');
+  });
+
+  describe('Auditoria Externa 5 - Correção A: Sincronização do Status Documental com o Catálogo', () => {
+    it('1. Todas as 7 provas devem refletir o estado de validacao_pendente e NÃO homologado', () => {
+      expect(PRELOADED_EXAMS).toHaveLength(7);
+      for (const exam of PRELOADED_EXAMS) {
+        expect(exam.statusHomologacao).toBe('validacao_pendente');
+        expect(exam.homologado).toBe(false);
+        expect(exam.documentaryStatus).toBe('verificacao_documental_pendente');
+        expect(exam.faseDocumentalPendente).toBe(true);
+      }
+    });
+
+    it('2. Todas as 7 provas devem permanecer 100% disponíveis para treino com questões intactas', () => {
+      for (const exam of PRELOADED_EXAMS) {
+        expect(exam.questions.length).toBeGreaterThan(0);
+        // Cada questão deve indicar fonte de validação documental pendente
+        expect(exam.questions.every((q) => q.fonteDocumental === 'Validação Documental Pendente')).toBe(true);
+      }
+    });
+
+    it('3. O selo de homologação NÃO pode ser concedido apenas pela propriedade homologado: true', () => {
+      // Simula uma prova com declaração histórica homologado: true mas sem conferência documental comprovada
+      const unprovenMeta = { homologado: true, statusHomologacao: 'homologado' };
+      const resolved = resolveEffectiveExamStatus('quadrix-2025-crcsp-analista-contabil', unprovenMeta);
+      
+      expect(resolved.isHomologated).toBe(false);
+      expect(resolved.statusHomologacao).toBe('validacao_pendente');
+      expect(resolved.documentaryStatus).toBe('verificacao_documental_pendente');
+      expect(resolved.faseDocumentalPendente).toBe(true);
+    });
+
+    it('4. O adaptador FEPESE deve calcular status dinamicamente e NÃO utilizar valor fixo true', () => {
+      const fepese = PRELOADED_EXAMS.find((e) => e.id === 'fepese-2023-bc-agente-fiscal-tributario');
+      expect(fepese).toBeDefined();
+      expect(fepese?.statusHomologacao).toBe('validacao_pendente');
+      expect(fepese?.homologado).toBe(false);
+      expect(fepese?.documentaryStatus).toBe('verificacao_documental_pendente');
+    });
+
+    it('5. Provas novas ou desconhecidas devem seguir a mesma regra estrita (Regra 5)', () => {
+      const novaProvaDeclarada = { homologado: true, statusHomologacao: 'homologado' };
+      const resolvedNew = resolveEffectiveExamStatus('nova-prova-inexistente-2026', novaProvaDeclarada);
+
+      expect(resolvedNew.isHomologated).toBe(false);
+      expect(resolvedNew.statusHomologacao).toBe('validacao_pendente');
+      expect(resolvedNew.documentaryStatus).toBe('verificacao_documental_pendente');
+      expect(resolvedNew.faseDocumentalPendente).toBe(true);
+    });
   });
 });

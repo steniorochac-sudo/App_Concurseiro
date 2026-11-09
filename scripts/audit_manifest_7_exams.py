@@ -9,6 +9,12 @@ PROVAS_DIR = BASE_DIR / "provas_pdf"
 GABARITOS_DIR = BASE_DIR / "gabaritos_pdf"
 IMPORTED_DIR = BASE_DIR / "src" / "data" / "imported"
 PUBLIC_DIR = BASE_DIR / "public"
+REGISTRY_FILE = BASE_DIR / "src" / "data" / "documentary_status_registry.json"
+
+DOCUMENTARY_REGISTRY = {}
+if REGISTRY_FILE.exists():
+    with open(REGISTRY_FILE, "r", encoding="utf-8") as rf:
+        DOCUMENTARY_REGISTRY = json.load(rf)
 
 EXAMS = [
     {
@@ -324,15 +330,18 @@ def audit():
 
             gabarito_reconciliado = gabarito_status
 
-            # RECALCULO ESTRITO DE HOMOLOGAÇÃO (Pendência 1 - Regras 2 e 7):
-            # Homologação documental NUNCA é atribuída com base apenas em triagem lexical!
-            # Como a conferência integral das 590 questões prossegue em fase documental dedicada,
-            # NENHUM conteúdo com pendência recebe homologação indevida.
+            exam_id = exam_meta.get("id")
+            reg_entry = DOCUMENTARY_REGISTRY.get(exam_id, {})
+            reg_is_homologated = reg_entry.get("isHomologated", False) and reg_entry.get("isDocumentaryVerified", False)
+
+            # RECALCULO ESTRITO DE HOMOLOGAÇÃO (Pendência 1 / Correção A - 5ª Auditoria):
+            # Homologação documental NUNCA é atribuída com base apenas em triagem lexical ou declaração histórica!
+            # Depende de conferência documental integral comprovada no registro único.
             homologacao_comprovada = (
+                reg_is_homologated and
                 estrutura_validada and 
                 arquivos_encontrados and 
                 (gabarito_reconciliado == "definitivo") and 
-                (homologado is True) and 
                 (len(missing_images) == 0) and
                 (status_documental == "verificacao_documental_concluida")
             )
@@ -406,8 +415,13 @@ def audit():
 
             gabarito_reconciliado = "definitivo"
 
-            # Recálculo sem presunção: não homologa com conferência documental pendente
+            fepese_id = "fepese-2023-bc-agente-fiscal-tributario"
+            reg_entry = DOCUMENTARY_REGISTRY.get(fepese_id, {})
+            reg_is_homologated = reg_entry.get("isHomologated", False) and reg_entry.get("isDocumentaryVerified", False)
+
+            # Recálculo sem presunção (Correção A): não homologa com conferência documental pendente
             homologacao_comprovada = (
+                reg_is_homologated and
                 estrutura_validada and 
                 arquivos_encontrados and 
                 (gabarito_reconciliado == "definitivo") and

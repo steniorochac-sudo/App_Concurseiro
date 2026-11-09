@@ -1,6 +1,16 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { renderHook, act } from '@testing-library/react';
-import { useQuestionBank } from '../useQuestionBank';
+import {
+  useQuestionBank,
+  saveProgressBackup,
+  saveCustomQuestionsBackup,
+  BACKUP_PROGRESS_PREFIX,
+  BACKUP_PROGRESS_LATEST,
+  BACKUP_PROGRESS_REGISTRY,
+  BACKUP_CUSTOM_PREFIX,
+  BACKUP_CUSTOM_LATEST,
+  BACKUP_CUSTOM_REGISTRY,
+} from '../useQuestionBank';
 import { Question } from '../../types';
 import { ALL_IMPORTED_QUESTIONS } from '../../data/allExamsCatalog';
 
@@ -431,5 +441,248 @@ describe('Storage Migration, Persistence & Regression Gate (P1.1, P1.2, P1.3)', 
     const restoredQ = result.current.questions.find((q) => q.id === 'q-restaurada-sucesso-99');
     expect(restoredQ).toBeDefined();
     expect(restoredQ?.enunciado).toBe('Questão recuperada do backup.');
+  });
+
+  describe('Auditoria Externa 5 - Correção B: Backups Resistentes à Sobrescrita e Falha Segura', () => {
+    it('1. Dois backups criados no exato mesmo milissegundo devem gerar chaves distintas sem sobrescrita', () => {
+      const fixedTimestamp = 1715000000000;
+      const dateSpy = vi.spyOn(Date, 'now').mockReturnValue(fixedTimestamp);
+
+      try {
+        const data1 = {
+          attempts: [{ id: 'att-b1', questionId: 'q-1', selectedOption: 'A', isCorrect: true, timestamp: fixedTimestamp, timeSpentSeconds: 5, mode: 'practice' as const }],
+          errorNotebook: {},
+          savedQuestionIds: [],
+          exams: [],
+        };
+        const data2 = {
+          attempts: [{ id: 'att-b2', questionId: 'q-2', selectedOption: 'B', isCorrect: false, timestamp: fixedTimestamp, timeSpentSeconds: 8, mode: 'practice' as const }],
+          errorNotebook: {},
+          savedQuestionIds: [],
+          exams: [],
+        };
+
+        const key1 = saveProgressBackup(data1, '1.0', 'Primeiro backup mesmo milissegundo');
+        const key2 = saveProgressBackup(data2, '1.0', 'Segundo backup mesmo milissegundo');
+
+        // Chaves estritamente distintas mesmo no mesmo milissegundo
+        expect(key1).not.toBe(key2);
+        expect(key1).toContain(String(fixedTimestamp));
+        expect(key2).toContain(String(fixedTimestamp));
+
+        // Ambos os snapshots existem e não foram sobrescritos
+        const raw1 = localStorage.getItem(key1);
+        const raw2 = localStorage.getItem(key2);
+        expect(raw1).toBeDefined();
+        expect(raw2).toBeDefined();
+
+        const snap1 = JSON.parse(raw1!);
+        const snap2 = JSON.parse(raw2!);
+        expect(snap1.data.attempts[0].id).toBe('att-b1');
+        expect(snap2.data.attempts[0].id).toBe('att-b2');
+
+        // Registro contém ambos os snapshots cronologicamente
+        const registry = JSON.parse(localStorage.getItem(BACKUP_PROGRESS_REGISTRY) || '[]');
+        expect(registry).toContain(key1);
+        expect(registry).toContain(key2);
+        expect(registry.indexOf(key1)).toBeLessThan(registry.indexOf(key2));
+
+        // Latest aponta para o segundo
+        expect(localStorage.getItem(BACKUP_PROGRESS_LATEST)).toBe(key2);
+
+        // NUNCA realiza gravação cruzada na chave legada
+        expect(localStorage.getItem('concurseiro_user_state_backup_pre_v2')).toBeNull();
+      } finally {
+        dateSpy.mockRestore();
+      }
+    });
+
+    it('2. Dois backups de questões customizadas no mesmo milissegundo geram chaves distintas sem perda', () => {
+      const fixedTimestamp = 1715000000000;
+      const dateSpy = vi.spyOn(Date, 'now').mockReturnValue(fixedTimestamp);
+
+      try {
+        const q1: Question = {
+          id: 'q-custom-b1',
+          banca: 'Autoral',
+          ano: 2026,
+          orgao: 'Estudos',
+          disciplina: 'Direito',
+          assunto: 'Geral',
+          enunciado: 'Questão B1',
+          alternativas: [{ id: 'A', text: 'A' }, { id: 'B', text: 'B' }],
+          gabarito: 'A',
+          explicacao: 'Exp B1',
+        };
+        const q2: Question = {
+          ...q1,
+          id: 'q-custom-b2',
+          enunciado: 'Questão B2',
+        };
+
+        const key1 = saveCustomQuestionsBackup([q1], [], [q1], 'Snapshot 1');
+        const key2 = saveCustomQuestionsBackup([q2], [], [q2], 'Snapshot 2');
+
+        expect(key1).not.toBe(key2);
+
+        const snap1 = JSON.parse(localStorage.getItem(key1)!);
+        const snap2 = JSON.parse(localStorage.getItem(key2)!);
+        expect(snap1.fullOriginalQuestions[0].id).toBe('q-custom-b1');
+        expect(snap2.fullOriginalQuestions[0].id).toBe('q-custom-b2');
+
+        const registry = JSON.parse(localStorage.getItem(BACKUP_CUSTOM_REGISTRY) || '[]');
+        expect(registry).toEqual([key1, key2]);
+        expect(localStorage.getItem(BACKUP_CUSTOM_LATEST)).toBe(key2);
+
+        // NUNCA escreve questões na chave legada pre_v2
+        expect(localStorage.getItem('concurseiro_user_state_backup_pre_v2')).toBeNull();
+      } finally {
+        dateSpy.mockRestore();
+      }
+    });
+
+    it('3. Falha na gravação do backup obrigatório deve abortar com segurança sem podar dados ativos', () => {
+      const officialQ = ALL_IMPORTED_QUESTIONS[0];
+      const genuineUserQ: Question = {
+        id: 'user-must-survive-99',
+        banca: 'Autoral',
+        ano: 2026,
+        orgao: 'Estudos',
+        disciplina: 'Direito',
+        assunto: 'Geral',
+        enunciado: 'Questão do usuário que não pode ser perdida',
+        alternativas: [{ id: 'A', text: 'A' }, { id: 'B', text: 'B' }],
+        gabarito: 'A',
+        explicacao: 'Explicacao',
+      };
+
+      const customListWithStale: Question[] = [
+        { ...officialQ, enunciado: 'Obsoleta que geraria poda' },
+        genuineUserQ,
+      ];
+
+      localStorage.setItem(CUSTOM_KEY, JSON.stringify(customListWithStale));
+
+      // Simula falha de quota ou erro no localStorage durante o salvamento do backup
+      const realSetItem = localStorage.setItem.bind(localStorage);
+      const setItemSpy = vi.spyOn(localStorage, 'setItem').mockImplementation((k, v) => {
+        if (typeof k === 'string' && k.startsWith(BACKUP_CUSTOM_PREFIX)) {
+          throw new Error('QuotaExceededError: Disco cheio');
+        }
+        return realSetItem(k, v);
+      });
+
+      try {
+        const { result } = renderHook(() => useQuestionBank());
+
+        // Como a gravação do backup falhou, a limpeza DEVE abortar com segurança
+        // NÃO deve podar o estado ativo!
+        expect(result.current.questions.some((q) => q.id === 'user-must-survive-99')).toBe(true);
+
+        // O armazenamento original no localStorage não foi sobrescrito pela versão podada
+        const storedInStorage = JSON.parse(localStorage.getItem(CUSTOM_KEY) || '[]');
+        expect(storedInStorage).toHaveLength(2);
+      } finally {
+        setItemSpy.mockRestore();
+      }
+    });
+
+    it('3b. Falha na gravação do backup de progresso durante migração de versão deve abortar sem corromper estado', () => {
+      const legacyState = {
+        version: '1.0',
+        attempts: [{ id: 'att-safe-1', questionId: 'q-safe', selectedOption: 'A', isCorrect: true, timestamp: 100, timeSpentSeconds: 5, mode: 'practice' as const }],
+        errorNotebook: {},
+        savedQuestionIds: ['q-safe'],
+        exams: [],
+      };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(legacyState));
+
+      const realSetItem = localStorage.setItem.bind(localStorage);
+      const setItemSpy = vi.spyOn(localStorage, 'setItem').mockImplementation((k, v) => {
+        if (typeof k === 'string' && k.startsWith(BACKUP_PROGRESS_PREFIX)) {
+          throw new Error('QuotaExceededError: Backup progress disk full');
+        }
+        return realSetItem(k, v);
+      });
+
+      try {
+        const { result } = renderHook(() => useQuestionBank());
+        // Dados originais do usuário intactos
+        expect(result.current.attempts).toHaveLength(1);
+        expect(result.current.attempts[0].id).toBe('att-safe-1');
+        expect(result.current.savedQuestionIds).toContain('q-safe');
+      } finally {
+        setItemSpy.mockRestore();
+      }
+    });
+
+    it('4. Restauração flexível: por chave explícita, por backupId e pelo ponteiro latest', () => {
+      const dataV1 = {
+        attempts: [{ id: 'att-v1', questionId: 'q-1', selectedOption: 'A', isCorrect: true, timestamp: 1000, timeSpentSeconds: 5, mode: 'practice' as const }],
+        errorNotebook: {},
+        savedQuestionIds: ['q-1'],
+        exams: [],
+      };
+      const dataV2 = {
+        attempts: [{ id: 'att-v2', questionId: 'q-2', selectedOption: 'B', isCorrect: false, timestamp: 2000, timeSpentSeconds: 10, mode: 'practice' as const }],
+        errorNotebook: {},
+        savedQuestionIds: ['q-2'],
+        exams: [],
+      };
+
+      const keyV1 = saveProgressBackup(dataV1, '1.0', 'Versão 1');
+      const keyV2 = saveProgressBackup(dataV2, '1.0', 'Versão 2');
+
+      expect(localStorage.getItem(BACKUP_PROGRESS_LATEST)).toBe(keyV2);
+
+      const snapV1 = JSON.parse(localStorage.getItem(keyV1)!);
+      const backupIdV1 = snapV1.backupId;
+
+      const { result } = renderHook(() => useQuestionBank());
+
+      // 1. Restauração pelo ponteiro latest (sem argumentos) -> restaura V2
+      act(() => {
+        const ok = result.current.restoreProgressFromBackup();
+        expect(ok).toBe(true);
+      });
+      expect(result.current.attempts[0].id).toBe('att-v2');
+      expect(result.current.savedQuestionIds).toEqual(['q-2']);
+
+      // 2. Restauração por chave explícita -> restaura V1
+      act(() => {
+        const ok = result.current.restoreProgressFromBackup(keyV1);
+        expect(ok).toBe(true);
+      });
+      expect(result.current.attempts[0].id).toBe('att-v1');
+      expect(result.current.savedQuestionIds).toEqual(['q-1']);
+
+      // 3. Restauração por backupId -> restaura V1
+      act(() => {
+        const ok = result.current.restoreProgressFromBackup(backupIdV1);
+        expect(ok).toBe(true);
+      });
+      expect(result.current.attempts[0].id).toBe('att-v1');
+    });
+
+    it('5. Compatibilidade retroativa de leitura com a chave legada concurseiro_user_state_backup_pre_v2', () => {
+      // Simula uma chave legada pré-existente
+      const legacyPayload = {
+        attempts: [{ id: 'att-legado-raiz', questionId: 'q-legada', selectedOption: 'A', isCorrect: true, timestamp: 500, timeSpentSeconds: 10, mode: 'practice' as const }],
+        errorNotebook: {},
+        savedQuestionIds: ['q-legada'],
+        exams: [],
+      };
+      localStorage.setItem('concurseiro_user_state_backup_pre_v2', JSON.stringify(legacyPayload));
+
+      const { result } = renderHook(() => useQuestionBank());
+
+      act(() => {
+        const ok = result.current.restoreProgressFromBackup('concurseiro_user_state_backup_pre_v2');
+        expect(ok).toBe(true);
+      });
+
+      expect(result.current.attempts[0].id).toBe('att-legado-raiz');
+      expect(result.current.savedQuestionIds).toContain('q-legada');
+    });
   });
 });

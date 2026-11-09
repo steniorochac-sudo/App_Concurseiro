@@ -55,10 +55,19 @@ export interface CustomQuestionsBackupSnapshot {
   fullOriginalQuestions: Question[];
 }
 
+let backupSequence = 0;
+
+export function generateUniqueBackupKey(prefix: string, timestamp = Date.now()): string {
+  backupSequence = (backupSequence + 1) % 1000000;
+  const seqStr = String(backupSequence).padStart(6, '0');
+  const entropy = Math.random().toString(36).substring(2, 8);
+  return `${prefix}${timestamp}_${seqStr}_${entropy}`;
+}
+
 export function saveProgressBackup(data: any, sourceVersion: string, reason: string): string {
   const timestamp = Date.now();
-  const backupId = `progress-${timestamp}-${Math.random().toString(36).substring(2, 6)}`;
-  const key = `${BACKUP_PROGRESS_PREFIX}${timestamp}`;
+  const key = generateUniqueBackupKey(BACKUP_PROGRESS_PREFIX, timestamp);
+  const backupId = `progress-${key.replace(BACKUP_PROGRESS_PREFIX, '')}`;
   const snapshot: ProgressBackupSnapshot = {
     backupType: 'user_progress_backup',
     backupId,
@@ -69,20 +78,18 @@ export function saveProgressBackup(data: any, sourceVersion: string, reason: str
     reason,
     data,
   };
-  try {
-    localStorage.setItem(key, JSON.stringify(snapshot));
-    localStorage.setItem(BACKUP_PROGRESS_LATEST, key);
-    localStorage.setItem('concurseiro_user_state_backup_pre_v2', JSON.stringify(data));
 
-    const registryRaw = localStorage.getItem(BACKUP_PROGRESS_REGISTRY);
-    const registry: string[] = registryRaw ? JSON.parse(registryRaw) : [];
-    if (!registry.includes(key)) {
-      registry.push(key);
-      localStorage.setItem(BACKUP_PROGRESS_REGISTRY, JSON.stringify(registry));
-    }
-  } catch (e) {
-    console.error('Falha ao salvar backup de progresso:', e);
+  // Persiste snapshot e atualiza ponteiros; lança erro se storage falhar para aborto seguro
+  localStorage.setItem(key, JSON.stringify(snapshot));
+  localStorage.setItem(BACKUP_PROGRESS_LATEST, key);
+
+  const registryRaw = localStorage.getItem(BACKUP_PROGRESS_REGISTRY);
+  const registry: string[] = registryRaw ? JSON.parse(registryRaw) : [];
+  if (!registry.includes(key)) {
+    registry.push(key);
+    localStorage.setItem(BACKUP_PROGRESS_REGISTRY, JSON.stringify(registry));
   }
+
   return key;
 }
 
@@ -93,8 +100,8 @@ export function saveCustomQuestionsBackup(
   reason: string
 ): string {
   const timestamp = Date.now();
-  const backupId = `custom-q-${timestamp}-${Math.random().toString(36).substring(2, 6)}`;
-  const key = `${BACKUP_CUSTOM_PREFIX}${timestamp}`;
+  const key = generateUniqueBackupKey(BACKUP_CUSTOM_PREFIX, timestamp);
+  const backupId = `custom-q-${key.replace(BACKUP_CUSTOM_PREFIX, '')}`;
   const snapshot: CustomQuestionsBackupSnapshot = {
     backupType: 'custom_questions_backup',
     backupId,
@@ -110,21 +117,19 @@ export function saveCustomQuestionsBackup(
     activeQuestionsRemaining: filteredItems,
     fullOriginalQuestions: originalList,
   };
-  try {
-    localStorage.setItem(key, JSON.stringify(snapshot));
-    localStorage.setItem(BACKUP_CUSTOM_LATEST, key);
-    localStorage.setItem(`${STORAGE_KEY}_custom_questions_backup`, JSON.stringify(staleItems));
-    localStorage.setItem('concurseiro_user_state_backup_pre_v2', JSON.stringify(originalList));
 
-    const registryRaw = localStorage.getItem(BACKUP_CUSTOM_REGISTRY);
-    const registry: string[] = registryRaw ? JSON.parse(registryRaw) : [];
-    if (!registry.includes(key)) {
-      registry.push(key);
-      localStorage.setItem(BACKUP_CUSTOM_REGISTRY, JSON.stringify(registry));
-    }
-  } catch (e) {
-    console.error('Falha ao salvar backup de questões customizadas:', e);
+  // Persiste snapshot e atualiza ponteiros; lança erro se storage falhar para aborto seguro
+  localStorage.setItem(key, JSON.stringify(snapshot));
+  localStorage.setItem(BACKUP_CUSTOM_LATEST, key);
+  localStorage.setItem(`${STORAGE_KEY}_custom_questions_backup`, JSON.stringify(staleItems));
+
+  const registryRaw = localStorage.getItem(BACKUP_CUSTOM_REGISTRY);
+  const registry: string[] = registryRaw ? JSON.parse(registryRaw) : [];
+  if (!registry.includes(key)) {
+    registry.push(key);
+    localStorage.setItem(BACKUP_CUSTOM_REGISTRY, JSON.stringify(registry));
   }
+
   return key;
 }
 
@@ -140,13 +145,23 @@ export function useQuestionBank() {
       const filtered = parsed.filter(q => !officialIds.has(q.id));
       if (filtered.length !== parsed.length) {
         const staleItems = parsed.filter(q => officialIds.has(q.id));
-        saveCustomQuestionsBackup(
-          parsed,
-          staleItems,
-          filtered,
-          'Limpeza e isolamento de cópias locais obsoletas de questões oficiais do acervo'
-        );
-        localStorage.setItem(`${STORAGE_KEY}_custom_questions`, JSON.stringify(filtered));
+        try {
+          saveCustomQuestionsBackup(
+            parsed,
+            staleItems,
+            filtered,
+            'Limpeza e isolamento de cópias locais obsoletas de questões oficiais do acervo'
+          );
+          localStorage.setItem(`${STORAGE_KEY}_custom_questions`, JSON.stringify(filtered));
+          return filtered;
+        } catch (backupErr) {
+          console.error(
+            'Gravação obrigatória do backup de questões customizadas falhou. Abortando limpeza para preservar dados intactos.',
+            backupErr
+          );
+          // Falha segura (Correção B): NÃO substitui nem poda dados ativos se o backup não for persistido com sucesso
+          return parsed;
+        }
       }
       return filtered;
     } catch {
@@ -245,12 +260,27 @@ export function useQuestionBank() {
         };
 
         if (version !== CURRENT_STORAGE_VERSION) {
-          saveProgressBackup(
-            parsed,
-            version,
-            `Migração controlada de versão legada (${version} -> ${CURRENT_STORAGE_VERSION})`
-          );
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(migratedState));
+          try {
+            saveProgressBackup(
+              parsed,
+              version,
+              `Migração controlada de versão legada (${version} -> ${CURRENT_STORAGE_VERSION})`
+            );
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(migratedState));
+          } catch (backupErr) {
+            console.error(
+              'Gravação obrigatória do backup de progresso falhou. Abortando migração para preservar dados intactos.',
+              backupErr
+            );
+            // Falha segura (Correção B): se o backup obrigatório falhar, preserva estado do usuário intacto sem sobrescrever
+            return {
+              version: parsed.version || '1.0',
+              attempts: parsed.attempts || [],
+              errorNotebook: parsed.errorNotebook || {},
+              savedQuestionIds: parsed.savedQuestionIds || [],
+              exams: parsed.exams || [],
+            };
+          }
         }
 
         return migratedState;
@@ -622,26 +652,60 @@ export function useQuestionBank() {
     return questions.filter(q => userState.savedQuestionIds.includes(q.id));
   }, [userState.savedQuestionIds, questions]);
 
-  // Restauração de Backups Recuperáveis (Pendência 2 - 4ª Auditoria)
+  // Restauração de Backups Recuperáveis (Pendência 2 / Correção B)
   const restoreProgressFromBackup = useCallback((backupKeyOrId?: string): boolean => {
     try {
       let key = backupKeyOrId;
       if (!key) {
         key = localStorage.getItem(BACKUP_PROGRESS_LATEST) || undefined;
       }
-      if (!key) return false;
-      const raw = localStorage.getItem(key);
-      if (!raw) return false;
-      const parsed: ProgressBackupSnapshot = JSON.parse(raw);
-      if (parsed.backupType !== 'user_progress_backup' || !parsed.data) {
-        return false;
+      if (!key) {
+        const registryRaw = localStorage.getItem(BACKUP_PROGRESS_REGISTRY);
+        if (registryRaw) {
+          const registry: string[] = JSON.parse(registryRaw);
+          if (registry.length > 0) key = registry[registry.length - 1];
+        }
       }
+      if (!key) {
+        // Fallback para chave legada apenas leitura (sem sobrescrita)
+        key = 'concurseiro_user_state_backup_pre_v2';
+      }
+
+      let raw = localStorage.getItem(key);
+      // Se não encontrou diretamente pela chave, busca pelo backupId no registry
+      if (!raw && backupKeyOrId) {
+        const registryRaw = localStorage.getItem(BACKUP_PROGRESS_REGISTRY);
+        if (registryRaw) {
+          const registry: string[] = JSON.parse(registryRaw);
+          for (const candidateKey of registry) {
+            const item = localStorage.getItem(candidateKey);
+            if (item) {
+              try {
+                const parsedItem = JSON.parse(item);
+                if (parsedItem.backupId === backupKeyOrId) {
+                  raw = item;
+                  key = candidateKey;
+                  break;
+                }
+              } catch {}
+            }
+          }
+        }
+      }
+
+      if (!raw) return false;
+      const parsed = JSON.parse(raw);
+
+      // Suporta snapshot estruturado v2 OU payload legado bruto
+      const dataPayload = parsed.backupType === 'user_progress_backup' ? parsed.data : parsed;
+      if (!dataPayload) return false;
+
       const restored = {
         version: CURRENT_STORAGE_VERSION,
-        attempts: parsed.data.attempts || [],
-        errorNotebook: parsed.data.errorNotebook || {},
-        savedQuestionIds: parsed.data.savedQuestionIds || [],
-        exams: parsed.data.exams || [],
+        attempts: dataPayload.attempts || [],
+        errorNotebook: dataPayload.errorNotebook || {},
+        savedQuestionIds: dataPayload.savedQuestionIds || [],
+        exams: dataPayload.exams || [],
       };
       setUserState(restored);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(restored));
@@ -658,15 +722,52 @@ export function useQuestionBank() {
       if (!key) {
         key = localStorage.getItem(BACKUP_CUSTOM_LATEST) || undefined;
       }
-      if (!key) return false;
-      const raw = localStorage.getItem(key);
-      if (!raw) return false;
-      const parsed: CustomQuestionsBackupSnapshot = JSON.parse(raw);
-      if (parsed.backupType !== 'custom_questions_backup' || !parsed.fullOriginalQuestions) {
-        return false;
+      if (!key) {
+        const registryRaw = localStorage.getItem(BACKUP_CUSTOM_REGISTRY);
+        if (registryRaw) {
+          const registry: string[] = JSON.parse(registryRaw);
+          if (registry.length > 0) key = registry[registry.length - 1];
+        }
       }
-      setCustomQuestions(parsed.fullOriginalQuestions);
-      localStorage.setItem(`${STORAGE_KEY}_custom_questions`, JSON.stringify(parsed.fullOriginalQuestions));
+      if (!key) {
+        key = `${STORAGE_KEY}_custom_questions_backup`;
+      }
+
+      let raw = localStorage.getItem(key);
+      if (!raw && backupKeyOrId) {
+        const registryRaw = localStorage.getItem(BACKUP_CUSTOM_REGISTRY);
+        if (registryRaw) {
+          const registry: string[] = JSON.parse(registryRaw);
+          for (const candidateKey of registry) {
+            const item = localStorage.getItem(candidateKey);
+            if (item) {
+              try {
+                const parsedItem = JSON.parse(item);
+                if (parsedItem.backupId === backupKeyOrId) {
+                  raw = item;
+                  key = candidateKey;
+                  break;
+                }
+              } catch {}
+            }
+          }
+        }
+      }
+
+      if (!raw) return false;
+      const parsed = JSON.parse(raw);
+
+      let questionsToRestore: Question[] | null = null;
+      if (parsed.backupType === 'custom_questions_backup' && parsed.fullOriginalQuestions) {
+        questionsToRestore = parsed.fullOriginalQuestions;
+      } else if (Array.isArray(parsed)) {
+        questionsToRestore = parsed;
+      }
+
+      if (!questionsToRestore) return false;
+
+      setCustomQuestions(questionsToRestore);
+      localStorage.setItem(`${STORAGE_KEY}_custom_questions`, JSON.stringify(questionsToRestore));
       return true;
     } catch (e) {
       console.error('Erro ao restaurar backup de questões customizadas:', e);
