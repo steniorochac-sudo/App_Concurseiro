@@ -180,5 +180,37 @@ describe('Auditoria e Validação Integral - Agente Fiscal Tributário 1 (FEPESE
       expect(q9.enunciado).toContain('Barbarismo');
       expect(q9.enunciado).toContain('Solecismo');
     });
+
+    it('todas as 40 questões devem conter metadados forenses demonstrados sem pendências', () => {
+      questions.forEach((q, idx) => {
+        const conf = (q as any).conferenciaDocumental;
+        expect(conf, `Questao ${idx + 1} deve conter conferenciaDocumental`).toBeDefined();
+        expect(conf.sha256Prova).toBe('ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc');
+        expect(conf.sha256Gabarito).toBe('cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf');
+        expect(conf.pagina).toBeGreaterThanOrEqual(3);
+        expect(conf.pagina).toBeLessThanOrEqual(10);
+        expect([0, 1]).toContain(conf.coluna);
+        expect(Array.isArray(conf.coordenadasBbox)).toBe(true);
+        expect(conf.coordenadasBbox).toHaveLength(4);
+        expect(conf.gabaritoConferido).toBe(true);
+        expect(conf.pendencias).toEqual([]);
+        expect(conf.status).toBe('verificacao_documental_concluida');
+      });
+    });
+
+    it('Q16 e Q29 devem documentar explicitamente suas especificidades documentais', () => {
+      // Q16
+      const q16 = questions[15] as any;
+      expect(q16.conferenciaDocumental.trechoLiteralPdf).toContain('presume- -se');
+      expect(q16.conferenciaDocumental.textoNormalizadoJson).toContain('presume-se');
+      expect(q16.conferenciaDocumental.justificativaEditorial).toContain('223/1973');
+
+      // Q29
+      const q29 = questions[28] as any;
+      expect(q29.isAnnulled).toBe(true);
+      expect(q29.gabarito).toBe('X');
+      expect(q29.conferenciaDocumental.decisaoOficialBanca).toContain('Gabarito Oficial Definitivo');
+      expect(q29.conferenciaDocumental.comentarioDidatico).toContain('CTN');
+    });
   });
 });

@@ -50,13 +50,40 @@
     },
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 3,
+      "coluna": 0,
+      "coordenadasBbox": [
+        48.8,
+        547.0,
+        276.4,
+        649.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "E",
+      "gabaritoJson": "E",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -111,13 +138,40 @@
     },
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 3,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.6,
+        73.0,
+        532.6,
+        235.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "A",
+      "gabaritoJson": "A",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -172,13 +226,40 @@
     },
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 3,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.8,
+        253.0,
+        523.8,
+        343.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "C",
+      "gabaritoJson": "C",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -228,13 +309,40 @@
     "paginaOrigem": 3,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 3,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.7,
+        361.0,
+        506.9,
+        463.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "C",
+      "gabaritoJson": "C",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -284,13 +392,40 @@
     "paginaOrigem": 3,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 3,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.8,
+        481.0,
+        526.6,
+        583.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "D",
+      "gabaritoJson": "D",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": true,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral_comprovada_vetorialmente",
+        "B": "fidelidade_integral_comprovada_vetorialmente",
+        "C": "fidelidade_integral_comprovada_vetorialmente",
+        "D": "fidelidade_integral_comprovada_vetorialmente",
+        "E": "fidelidade_integral_comprovada_vetorialmente"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -341,13 +476,40 @@
     "paginaOrigem": 3,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 3,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.9,
+        601.0,
+        530.9,
+        691.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "A",
+      "gabaritoJson": "A",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -398,13 +560,54 @@
     "paginaOrigem": 4,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 4,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.3,
+        73.0,
+        276.6,
+        235.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "D",
+      "gabaritoJson": "D",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "normalizacao_editorial_justificada",
+        "hasUnderlines": false,
+        "hasBlanks": true,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [
+        {
+          "tipo": "representacao_lacunas",
+          "elemento": "enunciado",
+          "descricao": "Lacunas tipográficas sublinhadas no PDF representadas por '________' no JSON.",
+          "justificativa": "Facilitar a visualização didática dos espaços de preenchimento sem alterar a literalidade."
+        }
+      ],
+      "normalizacoesEditoriais": [
+        {
+          "tipo": "representacao_lacunas",
+          "elemento": "enunciado",
+          "descricao": "Lacunas tipográficas sublinhadas no PDF representadas por '________' no JSON.",
+          "justificativa": "Facilitar a visualização didática dos espaços de preenchimento sem alterar a literalidade."
+        }
+      ],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -455,13 +658,40 @@
     "paginaOrigem": 4,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 4,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.8,
+        253.0,
+        266.4,
+        367.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "B",
+      "gabaritoJson": "B",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -512,13 +742,40 @@
     "paginaOrigem": 4,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 4,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.3,
+        385.0,
+        276.6,
+        643.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "E",
+      "gabaritoJson": "E",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": true
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -568,13 +825,40 @@
     "paginaOrigem": 4,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 4,
+      "coluna": 1,
+      "coordenadasBbox": [
+        303.9,
+        73.0,
+        532.0,
+        175.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "B",
+      "gabaritoJson": "B",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -624,13 +908,40 @@
     "paginaOrigem": 4,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 4,
+      "coluna": 1,
+      "coordenadasBbox": [
+        303.9,
+        229.0,
+        533.3,
+        445.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "E",
+      "gabaritoJson": "E",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -680,13 +991,40 @@
     "paginaOrigem": 4,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 4,
+      "coluna": 1,
+      "coordenadasBbox": [
+        303.9,
+        463.0,
+        535.1,
+        691.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "A",
+      "gabaritoJson": "A",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -736,13 +1074,40 @@
     "paginaOrigem": 5,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 5,
+      "coluna": 0,
+      "coordenadasBbox": [
+        48.8,
+        73.0,
+        277.8,
+        325.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "B",
+      "gabaritoJson": "B",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -794,13 +1159,40 @@
     "paginaOrigem": 5,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 5,
+      "coluna": 0,
+      "coordenadasBbox": [
+        48.8,
+        343.0,
+        276.9,
+        637.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "D",
+      "gabaritoJson": "D",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -851,13 +1243,40 @@
     "paginaOrigem": 5,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 5,
+      "coluna": 1,
+      "coordenadasBbox": [
+        303.9,
+        73.0,
+        532.4,
+        337.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "C",
+      "gabaritoJson": "C",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -907,15 +1326,63 @@
     "paginaOrigem": 5,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 5,
+      "coluna": 1,
+      "coordenadasBbox": [
+        303.9,
+        391.0,
+        531.5,
+        637.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "E",
+      "gabaritoJson": "E",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "normalizacao_editorial_justificada",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [
+        {
+          "tipo": "defeito_tipografico_banca",
+          "elemento": "alternativa_D",
+          "trechoLiteralPdf": "A intimação relativa ao auto lavrado presume- -se feita quando descrever o fato que constitui a infração e as circunstâncias pertinentes.",
+          "textoNormalizadoJson": "A intimação relativa ao auto lavrado presume-se feita quando descrever o fato que constitui a infração e as circunstâncias pertinentes.",
+          "classificacao": "normalizacao_editorial_justificada",
+          "justificativa": "Correção de defeito gráfico tipográfico da banca (hífen duplo 'presume- -se' decorrente de quebra de linha diagramada com hifenização automática na página 5), mantendo conformidade literal com o art. 202 da Lei Municipal nº 223/1973."
+        }
+      ],
+      "normalizacoesEditoriais": [
+        {
+          "tipo": "defeito_tipografico_banca",
+          "elemento": "alternativa_D",
+          "trechoLiteralPdf": "A intimação relativa ao auto lavrado presume- -se feita quando descrever o fato que constitui a infração e as circunstâncias pertinentes.",
+          "textoNormalizadoJson": "A intimação relativa ao auto lavrado presume-se feita quando descrever o fato que constitui a infração e as circunstâncias pertinentes.",
+          "classificacao": "normalizacao_editorial_justificada",
+          "justificativa": "Correção de defeito gráfico tipográfico da banca (hífen duplo 'presume- -se' decorrente de quebra de linha diagramada com hifenização automática na página 5), mantendo conformidade literal com o art. 202 da Lei Municipal nº 223/1973."
+        }
+      ],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
-      "status": "verificacao_documental_concluida"
+      "status": "verificacao_documental_concluida",
+      "trechoLiteralPdf": "A intimação relativa ao auto lavrado presume- -se feita quando descrever o fato que constitui a infração e as circunstâncias pertinentes.",
+      "textoNormalizadoJson": "A intimação relativa ao auto lavrado presume-se feita quando descrever o fato que constitui a infração e as circunstâncias pertinentes.",
+      "justificativaEditorial": "Correção de defeito gráfico tipográfico da banca (hífen duplo 'presume- -se' decorrente de quebra de linha diagramada incorretamente pela banca na coluna 1 da página 5), mantendo conformidade literal com o art. 202 da Lei Municipal nº 223/1973."
     }
   },
   {
@@ -964,13 +1431,40 @@
     "paginaOrigem": 6,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 6,
+      "coluna": 0,
+      "coordenadasBbox": [
+        48.8,
+        73.0,
+        276.9,
+        229.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "A",
+      "gabaritoJson": "A",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1019,13 +1513,40 @@
     "paginaOrigem": 6,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 6,
+      "coluna": 0,
+      "coordenadasBbox": [
+        48.8,
+        247.0,
+        278.0,
+        475.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "C",
+      "gabaritoJson": "C",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1075,13 +1596,40 @@
     "paginaOrigem": 6,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 6,
+      "coluna": 0,
+      "coordenadasBbox": [
+        48.8,
+        493.0,
+        275.7,
+        691.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "E",
+      "gabaritoJson": "E",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1131,13 +1679,40 @@
     "paginaOrigem": 6,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 6,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.6,
+        73.0,
+        532.0,
+        307.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "D",
+      "gabaritoJson": "D",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1187,13 +1762,40 @@
     "paginaOrigem": 6,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 6,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.6,
+        325.0,
+        532.9,
+        463.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "C",
+      "gabaritoJson": "C",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1243,13 +1845,40 @@
     "paginaOrigem": 6,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 6,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.6,
+        481.0,
+        526.6,
+        667.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "B",
+      "gabaritoJson": "B",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1300,13 +1929,40 @@
     "paginaOrigem": 7,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 7,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.3,
+        73.0,
+        276.1,
+        343.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "B",
+      "gabaritoJson": "B",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": true
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1356,13 +2012,40 @@
     "paginaOrigem": 7,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 7,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.3,
+        361.0,
+        274.9,
+        637.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "A",
+      "gabaritoJson": "A",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": true
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1412,13 +2095,40 @@
     "paginaOrigem": 7,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 7,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.6,
+        73.0,
+        532.3,
+        307.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "E",
+      "gabaritoJson": "E",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1468,13 +2178,40 @@
     "paginaOrigem": 7,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 7,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.6,
+        325.0,
+        526.1,
+        427.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "D",
+      "gabaritoJson": "D",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1524,13 +2261,40 @@
     "paginaOrigem": 7,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 7,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.4,
+        445.0,
+        526.4,
+        661.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "B",
+      "gabaritoJson": "B",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": true
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1580,13 +2344,40 @@
     "paginaOrigem": 8,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 8,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.3,
+        73.0,
+        274.2,
+        349.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "A",
+      "gabaritoJson": "A",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": true
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1628,7 +2419,7 @@
       }
     ],
     "gabarito": "X",
-    "explicacao": "🎯 Gabarito Oficial: Anulada (X).\n\nA Questão 29 foi ANULADA pela banca organizadora (FEPESE) na publicação do gabarito definitivo oficial. No gabarito preliminar constava a opção E ('Terá efeito suspensivo da cobrança dos tributos lançados, até decisão da autoridade competente'), mas a banca anulou a questão após recursos face a divergências literais com a redação de artigos da Lei nº 223/1973 em cotejo com o art. 151, III, do Código Tributário Nacional.",
+    "explicacao": "🎯 Gabarito Oficial: ANULADA (X).\n\n• Decisão Oficial da Banca: Anulação formal no Gabarito Oficial Definitivo (Seção 6M02, Questão 29 retificada com a marcação 'X'). A banca examinadora não publicou o parecer administrativo dos recursos no arquivo do gabarito.\n\n• Comentário Didático / Doutrinário: No gabarito preliminar constava a opção E ('Terá efeito suspensivo da cobrança dos tributos lançados, até decisão da autoridade competente'). Contudo, a matéria gerou controvérsia em face da redação do art. 206 da Lei Municipal nº 223/1973 c/c art. 151, III do CTN (suspensão da exigibilidade pelas reclamações e recursos). Com a anulação, o ponto foi concedido a todos os candidatos.",
     "baseLegal": "Lei Municipal nº 223/1973 e Gabarito Oficial Definitivo FEPESE (Edital 006/2022).",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
     "dificuldade": "difícil",
@@ -1637,16 +2428,55 @@
     "paginaOrigem": 8,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 8,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.3,
+        367.0,
+        278.1,
+        619.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "X",
+      "gabaritoJson": "X",
+      "gabaritoConferido": true,
       "isAnulada": true,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [
+        {
+          "tipo": "anulacao_oficial_banca",
+          "elemento": "gabarito",
+          "gabaritoPreliminar": "E",
+          "gabaritoDefinitivo": "X",
+          "classificacao": "anulacao_oficial_gabarito",
+          "justificativa": "Anulação formal no Gabarito Oficial Definitivo publicado pela FEPESE (Edital 006/2022, Seção 6M02, Questão 29 retificada com a marcação 'X'). A banca examinadora não publicou o parecer administrativo dos recursos no arquivo do gabarito."
+        }
+      ],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
-      "status": "verificacao_documental_concluida"
-    }
+      "status": "verificacao_documental_concluida",
+      "decisaoOficialBanca": "Anulação formal no Gabarito Oficial Definitivo publicado pela FEPESE (Edital 006/2022, Seção 6M02, Questão 29 retificada com a marcação 'X'). A banca examinadora não publicou o parecer administrativo dos recursos no arquivo do gabarito.",
+      "comentarioDidatico": "Questão ANULADA pela FEPESE no gabarito definitivo. Pontuação atribuída a todos os candidatos. Análise doutrinária: a assertiva preliminar E ('Terá efeito suspensivo da cobrança dos tributos lançados, até decisão da autoridade competente') conflitava com o regime do art. 206 da Lei Municipal nº 223/1973 c/c art. 151, III do CTN sobre suspensão de exigibilidade do crédito tributário."
+    },
+    "isAnnulled": true
   },
   {
     "id": "q-agente_fiscal_tributario_1-30",
@@ -1693,13 +2523,40 @@
     "paginaOrigem": 8,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 8,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.8,
+        73.0,
+        528.4,
+        295.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "B",
+      "gabaritoJson": "B",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1749,13 +2606,40 @@
     "paginaOrigem": 8,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 8,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.4,
+        313.0,
+        533.3,
+        541.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "C",
+      "gabaritoJson": "C",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": true
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1805,13 +2689,40 @@
     "paginaOrigem": 8,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 8,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.8,
+        559.0,
+        531.4,
+        697.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "E",
+      "gabaritoJson": "E",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1861,13 +2772,40 @@
     "paginaOrigem": 9,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 9,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.6,
+        73.0,
+        277.5,
+        271.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "D",
+      "gabaritoJson": "D",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1917,13 +2855,40 @@
     "paginaOrigem": 9,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 9,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.6,
+        289.0,
+        275.4,
+        499.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "A",
+      "gabaritoJson": "A",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -1973,13 +2938,40 @@
     "paginaOrigem": 9,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 9,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.6,
+        517.0,
+        278.1,
+        703.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "D",
+      "gabaritoJson": "D",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -2029,13 +3021,40 @@
     "paginaOrigem": 9,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 9,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.4,
+        73.0,
+        533.1,
+        343.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "C",
+      "gabaritoJson": "C",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -2085,13 +3104,40 @@
     "paginaOrigem": 9,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 9,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.8,
+        361.0,
+        527.9,
+        523.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "B",
+      "gabaritoJson": "B",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -2141,13 +3187,40 @@
     "paginaOrigem": 9,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 9,
+      "coluna": 1,
+      "coordenadasBbox": [
+        304.8,
+        541.0,
+        525.4,
+        679.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "D",
+      "gabaritoJson": "D",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -2197,13 +3270,40 @@
     "paginaOrigem": 10,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 10,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.6,
+        73.0,
+        275.7,
+        211.4
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "C",
+      "gabaritoJson": "C",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "fidelidade_integral"
+      },
+      "diferencasEncontradas": [],
+      "normalizacoesEditoriais": [],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
@@ -2253,13 +3353,58 @@
     "paginaOrigem": 10,
     "conferenciaDocumental": {
       "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
       "pagina": 10,
+      "coluna": 0,
+      "coordenadasBbox": [
+        49.6,
+        229.0,
+        531.5,
+        466.2
+      ],
       "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf",
       "secaoGabarito": "6M02",
       "cargoCodigo": "6M02",
       "gabaritoOficial": "A",
+      "gabaritoJson": "A",
+      "gabaritoConferido": true,
       "isAnulada": false,
-      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "confrontoEnunciado": {
+        "status": "fidelidade_integral",
+        "hasUnderlines": false,
+        "hasBlanks": false,
+        "hasPropositions": false
+      },
+      "confrontoAlternativas": {
+        "A": "fidelidade_integral",
+        "B": "fidelidade_integral",
+        "C": "fidelidade_integral",
+        "D": "fidelidade_integral",
+        "E": "normalizacao_editorial_justificada"
+      },
+      "diferencasEncontradas": [
+        {
+          "tipo": "exclusao_banner_diagramacao",
+          "elemento": "alternativa_E",
+          "trechoLiteralPdf": "Débitos de terceiros. Coluna em Branco. (rascunho)",
+          "textoNormalizadoJson": "Débitos de terceiros.",
+          "classificacao": "normalizacao_editorial_justificada",
+          "justificativa": "Exclusão do marcador 'Coluna em Branco. (rascunho)' impresso após a alternativa E na diagramação final da página 10."
+        }
+      ],
+      "normalizacoesEditoriais": [
+        {
+          "tipo": "exclusao_banner_diagramacao",
+          "elemento": "alternativa_E",
+          "trechoLiteralPdf": "Débitos de terceiros. Coluna em Branco. (rascunho)",
+          "textoNormalizadoJson": "Débitos de terceiros.",
+          "classificacao": "normalizacao_editorial_justificada",
+          "justificativa": "Exclusão do marcador 'Coluna em Branco. (rascunho)' impresso após a alternativa E na diagramação final da página 10."
+        }
+      ],
+      "pendencias": [],
+      "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
       "conferidoEm": "2026-11-09",
       "status": "verificacao_documental_concluida"
     }
