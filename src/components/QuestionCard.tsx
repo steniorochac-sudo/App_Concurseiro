@@ -221,6 +221,21 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               Preliminar
             </span>
           )}
+
+          {/* Badge de Homologação e Status Documental (P1) */}
+          {question.statusHomologacao === 'rascunho' || question.isDraft ? (
+            <span className="bg-amber-950/80 text-amber-300 border border-amber-600/80 font-bold px-2 py-0.5 rounded-md text-[10px] uppercase flex items-center space-x-1" title="Conteúdo importado não certificado documentalmente">
+              <span>📝 Rascunho IA</span>
+            </span>
+          ) : question.statusHomologacao === 'validacao_pendente' ? (
+            <span className="bg-slate-800 text-amber-300 border border-slate-700 font-bold px-2 py-0.5 rounded-md text-[10px] uppercase" title="Gabarito preliminar ou validação pendente de comprovação definitiva">
+              ⏳ Validação Pendente
+            </span>
+          ) : question.homologado || question.statusHomologacao === 'homologado' ? (
+            <span className="bg-emerald-950 text-emerald-300 border border-emerald-800/60 font-bold px-2 py-0.5 rounded-md text-[10px] uppercase" title="Prova e gabarito oficial homologados com fidelidade documental">
+              ✓ Oficial Homologada
+            </span>
+          ) : null}
         </div>
 
         {/* Favorite Button */}

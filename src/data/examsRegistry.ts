@@ -22,6 +22,15 @@ export interface PreloadedExam {
 }
 
 export function examDocV2ToQuestions(doc: ExamDocumentV2): Question[] {
+  const statusHomologacao = doc.exam.statusHomologacao || (doc.exam.homologado ? 'homologado' : 'validacao_pendente');
+  const isDraft = statusHomologacao === 'rascunho';
+  const isHomologated = doc.exam.homologado === true && statusHomologacao === 'homologado';
+  const fonteDocumental = isHomologated
+    ? 'Oficial Homologado'
+    : isDraft
+    ? 'Rascunho IA (Não Homologado)'
+    : 'Validação Documental Pendente';
+
   return doc.questoes.map((q) => ({
     id: q.id,
     banca: doc.exam.banca,
@@ -33,9 +42,15 @@ export function examDocV2ToQuestions(doc: ExamDocumentV2): Question[] {
     enunciado: q.enunciado,
     alternativas: q.alternativas.map((a) => ({ id: a.id, text: a.text })),
     gabarito: q.gabaritoOficial,
+    gabaritoDefinitivo: q.gabaritoDefinitivo,
+    gabaritoStatus: q.gabaritoStatus,
+    statusHomologacao,
+    homologado: isHomologated,
+    isDraft,
+    fonteDocumental,
     explicacao:
       q.explicacao ||
-      `🎯 Gabarito Oficial: ${q.gabaritoOficial}.\nQuestão ${q.numeroOriginal} da prova oficial ${doc.exam.titulo}. Resposta homologada pela banca ${doc.exam.banca}.`,
+      `🎯 Gabarito Oficial: ${q.gabaritoDefinitivo || q.gabaritoOficial}.\nQuestão ${q.numeroOriginal} da prova ${doc.exam.titulo}.`,
     baseLegal: q.baseLegal,
     tipo: q.tipo,
     textoCompartilhado: q.textoCompartilhado,
@@ -43,7 +58,6 @@ export function examDocV2ToQuestions(doc: ExamDocumentV2): Question[] {
     examId: doc.exam.id,
     examTitulo: doc.exam.titulo,
     numeroOriginal: q.numeroOriginal,
-    gabaritoStatus: q.gabaritoStatus,
   }));
 }
 
@@ -61,6 +75,10 @@ const fepeseQuestions: Question[] = (agenteFiscalTributario1Data as unknown as Q
   examId: 'fepese-2023-bc-agente-fiscal-tributario',
   examTitulo: 'Concurso Público Balneário Camboriú - Agente Fiscal Tributário (FEPESE 2023)',
   numeroOriginal: idx + 1,
+  statusHomologacao: 'homologado' as const,
+  homologado: true,
+  isDraft: false,
+  fonteDocumental: 'Oficial Homologado',
 }));
 
 export const AUDITED_EXAMS: ExamDocumentV2[] = [doc1, doc2, doc3, doc4, doc5, doc6];
