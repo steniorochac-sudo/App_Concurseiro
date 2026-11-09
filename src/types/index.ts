@@ -31,6 +31,11 @@ export interface Question {
   examTitulo?: string;
   numeroOriginal?: number;
   gabaritoStatus?: string;
+  gabaritoDefinitivo?: string;
+  statusHomologacao?: 'rascunho' | 'validacao_pendente' | 'homologado';
+  homologado?: boolean;
+  isDraft?: boolean;
+  fonteDocumental?: string;
 }
 
 export interface UserAttempt {
@@ -39,7 +44,9 @@ export interface UserAttempt {
   selectedOption: string;
   isCorrect: boolean;
   isAnnulled?: boolean;
-  scoreWeight?: number;
+  scoreWeight?: number; // Peso didático (0 para anulada, 1 para acerto válido, 0 para erro)
+  officialExamCredit?: number; // Crédito oficial da banca (1 para acerto e para anulada, 0 para erro)
+  countsForDidacticMetrics?: boolean; // false se anulada (isola de taxas de acerto)
   timestamp: number;
   timeSpentSeconds: number;
   mode: 'practice' | 'exam' | 'notebook';
@@ -78,7 +85,9 @@ export interface UserStats {
   totalAnswered: number;
   totalCorrect: number;
   totalAnnulled?: number;
-  accuracyRate: number; // Porcentagem de acerto (0 a 100)
+  totalValidAnswered?: number; // Questões respondidas excluindo anuladas
+  totalOfficialCredits?: number; // Pontos oficiais de concurso (acertos válidos + anuladas com crédito)
+  accuracyRate: number; // Porcentagem de acerto didático (0 a 100)
   averageTimeSeconds: number;
   accuracyBySubject: Record<string, { total: number; correct: number; accuracy: number }>;
   accuracyByBoard: Record<string, { total: number; correct: number; accuracy: number }>;

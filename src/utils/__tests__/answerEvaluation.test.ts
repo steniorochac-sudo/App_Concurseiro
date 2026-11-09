@@ -54,8 +54,38 @@ describe('answerEvaluation (P0.2)', () => {
     expect(res.status).toBe('anulada');
     expect(res.isAnnulled).toBe(true);
     expect(res.shouldAddToErrorNotebook).toBe(false); // CRÍTICO: Não vai para o caderno de erros
-    expect(res.scoreWeight).toBe(1); // Didaticamente pontuada para o estudante
+    expect(res.scoreWeight).toBe(0); // Didaticamente peso zero (não contamina acertos do aluno)
+    expect(res.scoreWeightDidactic).toBe(0);
+    expect(res.officialExamCredit).toBe(1); // Crédito concedido pela banca em concurso
+    expect(res.countsForDidacticMetrics).toBe(false); // Isola taxa de acerto do estudante
+    expect(res.isDidacticHit).toBe(false);
     expect(res.feedbackTitle).toContain('Questão Anulada pela Banca');
+  });
+
+  it('deve priorizar gabaritoDefinitivo pós-recurso quando question.gabaritoDefinitivo estiver preenchido', () => {
+    const rectifiedQ: Question = {
+      ...baseQuestion,
+      gabarito: 'A', // Preliminar original era A
+      gabaritoDefinitivo: 'D', // Retificado para D pós-recurso
+      gabaritoStatus: 'retificado',
+    };
+
+    // Aluno marcou o gabarito definitivo D
+    const resCorrect = evaluateQuestionAnswer(rectifiedQ, 'D');
+    expect(resCorrect.status).toBe('correta');
+    expect(resCorrect.isRectified).toBe(true);
+    expect(resCorrect.effectiveAnswer).toBe('D');
+    expect(resCorrect.isDidacticHit).toBe(true);
+    expect(resCorrect.scoreWeightDidactic).toBe(1);
+    expect(resCorrect.officialExamCredit).toBe(1);
+    expect(resCorrect.feedbackMessage).toContain('retificado');
+
+    // Aluno marcou a opção antiga A (que foi alterada)
+    const resOldAnswer = evaluateQuestionAnswer(rectifiedQ, 'A');
+    expect(resOldAnswer.status).toBe('incorreta');
+    expect(resOldAnswer.isDidacticHit).toBe(false);
+    expect(resOldAnswer.scoreWeightDidactic).toBe(0);
+    expect(resOldAnswer.shouldAddToErrorNotebook).toBe(true);
   });
 
   it('deve identificar gabarito retificado pós-recurso e avaliar contra o gabarito definitivo', () => {
@@ -74,6 +104,20 @@ describe('answerEvaluation (P0.2)', () => {
     expect(resWrong.status).toBe('incorreta');
     expect(resWrong.isRectified).toBe(true);
     expect(resWrong.shouldAddToErrorNotebook).toBe(true);
+  });
+
+  it('deve avaliar questões com gabarito pendente de divulgação sem penalizar o aluno', () => {
+    const pendingQ: Question = {
+      ...baseQuestion,
+      gabarito: '',
+      gabaritoStatus: 'pendente',
+    };
+
+    const res = evaluateQuestionAnswer(pendingQ, 'C');
+    expect(res.status).toBe('pendente');
+    expect(res.isPending).toBe(true);
+    expect(res.countsForDidacticMetrics).toBe(false);
+    expect(res.shouldAddToErrorNotebook).toBe(false);
   });
 
   it('deve sinalizar questão com gabarito preliminar ou pendente de conferência', () => {
