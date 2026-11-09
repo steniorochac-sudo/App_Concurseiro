@@ -104,8 +104,12 @@ export interface StructuralValidationResult {
 
 export type TextualFidelityStatus =
   | 'nao_verificada'
+  | 'triagem_lexical_aprovada'
   | 'verificacao_parcial'
+  | 'verificacao_documental_pendente'
+  | 'verificacao_documental_concluida'
   | 'verificada_integralmente'
+  | 'divergencia_identificada'
   | 'divergente';
 
 export interface DocumentaryValidationResult {
@@ -427,14 +431,16 @@ export function validateExamDocumentary(
     errors.push(`auditTrail.tipoGabarito inválido ou não suportado: '${gabaritoTipo}'`);
   }
 
-  // 5. Comprovação de Fidelidade Textual aos PDFs
+  // 5. Comprovação de Fidelidade Documental aos PDFs (P0.1/P0.2)
   const textualFidelityStatus: TextualFidelityStatus = options?.textualFidelityStatus || 'nao_verificada';
   if (textualFidelityStatus === 'nao_verificada') {
-    warnings.push('Fidelidade textual aos PDFs oficiais não foi verificada nesta chamada.');
-  } else if (textualFidelityStatus === 'divergente') {
-    errors.push('Fidelidade textual reprovada: divergências encontradas entre o JSON e o texto do PDF.');
-  } else if (textualFidelityStatus === 'verificacao_parcial') {
-    warnings.push('Fidelidade textual com pendências ou elementos não verificados integralmente.');
+    warnings.push('Fidelidade documental aos PDFs oficiais não foi verificada nesta chamada.');
+  } else if (textualFidelityStatus === 'divergente' || textualFidelityStatus === 'divergencia_identificada') {
+    errors.push('Fidelidade documental reprovada: divergências identificadas entre o JSON e o documento oficial PDF.');
+  } else if (textualFidelityStatus === 'verificacao_documental_pendente' || textualFidelityStatus === 'verificacao_parcial') {
+    warnings.push('Fidelidade documental com pendências de conferência integral.');
+  } else if (textualFidelityStatus === 'triagem_lexical_aprovada') {
+    warnings.push('Triagem lexical aprovada. Conferência documental localizada de enunciados, alternativas e ativos visuais permanece pendente.');
   }
 
   // 6. Homologação Formal
@@ -540,9 +546,17 @@ export function validateExamHomologation(
     combinedErrors.push("Homologação rejeitada: a prova declara 'homologado: true', mas a existência dos PDFs oficiais não foi comprovada fisicamente.");
   }
 
-  // Tentativa de homologar sem fidelidade textual verificada integralmente
-  if (claimedHomologated && docResult.textualFidelityStatus !== 'verificada_integralmente') {
-    combinedErrors.push(`Homologação rejeitada: fidelidade textual aos PDFs oficiais não comprovada integralmente (status: '${docResult.textualFidelityStatus}').`);
+  const isDocumentaryConcluded =
+    docResult.textualFidelityStatus === 'verificada_integralmente' ||
+    docResult.textualFidelityStatus === 'verificacao_documental_concluida';
+
+  // Tentativa de homologar sem conferência documental integral
+  if (claimedHomologated && !isDocumentaryConcluded) {
+    if (docResult.textualFidelityStatus === 'triagem_lexical_aprovada') {
+      combinedErrors.push("Homologação rejeitada: 'triagem_lexical_aprovada' indica apenas correspondência de vocabulário, não transcrição integral comprovada. É necessária verificação documental completa de enunciados, alternativas e ativos visuais.");
+    } else {
+      combinedErrors.push(`Homologação rejeitada: conferência documental integral pendente (status: '${docResult.textualFidelityStatus}').`);
+    }
   }
 
   // Condição estrita para ser formalmente HOMOLOGADO:
@@ -550,7 +564,7 @@ export function validateExamHomologation(
     structResult.isValidStructural &&
     docResult.isValidDocumentary &&
     docResult.gabaritoDefinitivoReconciled &&
-    docResult.textualFidelityStatus === 'verificada_integralmente' &&
+    isDocumentaryConcluded &&
     docResult.homologacaoFormal &&
     !isDraft &&
     claimedHomologated &&

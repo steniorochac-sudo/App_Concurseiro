@@ -15,6 +15,119 @@ import { evaluateQuestionAnswer } from '../utils/answerEvaluation';
 const STORAGE_KEY = 'concurseiro_user_state';
 const CURRENT_STORAGE_VERSION = '2.0';
 
+export const BACKUP_PROGRESS_PREFIX = 'concurseiro_backup_progress_';
+export const BACKUP_PROGRESS_LATEST = 'concurseiro_backup_progress_latest';
+export const BACKUP_PROGRESS_REGISTRY = 'concurseiro_progress_backups_registry';
+
+export const BACKUP_CUSTOM_PREFIX = 'concurseiro_backup_custom_questions_';
+export const BACKUP_CUSTOM_LATEST = 'concurseiro_backup_custom_questions_latest';
+export const BACKUP_CUSTOM_REGISTRY = 'concurseiro_custom_questions_backups_registry';
+
+export interface ProgressBackupSnapshot {
+  backupType: 'user_progress_backup';
+  backupId: string;
+  timestamp: number;
+  createdAt: string;
+  version: string;
+  sourceVersion: string;
+  reason: string;
+  data: {
+    attempts: UserAttempt[];
+    errorNotebook: Record<string, any>;
+    savedQuestionIds: string[];
+    exams: ExamSession[];
+  };
+}
+
+export interface CustomQuestionsBackupSnapshot {
+  backupType: 'custom_questions_backup';
+  backupId: string;
+  timestamp: number;
+  createdAt: string;
+  reason: string;
+  stats: {
+    totalQuestionsBefore: number;
+    staleQuestionsRemovedCount: number;
+    activeQuestionsRemainingCount: number;
+  };
+  staleQuestionsRemoved: Question[];
+  activeQuestionsRemaining: Question[];
+  fullOriginalQuestions: Question[];
+}
+
+export function saveProgressBackup(data: any, sourceVersion: string, reason: string): string {
+  const timestamp = Date.now();
+  const backupId = `progress-${timestamp}-${Math.random().toString(36).substring(2, 6)}`;
+  const key = `${BACKUP_PROGRESS_PREFIX}${timestamp}`;
+  const snapshot: ProgressBackupSnapshot = {
+    backupType: 'user_progress_backup',
+    backupId,
+    timestamp,
+    createdAt: new Date(timestamp).toISOString(),
+    version: CURRENT_STORAGE_VERSION,
+    sourceVersion,
+    reason,
+    data,
+  };
+  try {
+    localStorage.setItem(key, JSON.stringify(snapshot));
+    localStorage.setItem(BACKUP_PROGRESS_LATEST, key);
+    localStorage.setItem('concurseiro_user_state_backup_pre_v2', JSON.stringify(data));
+
+    const registryRaw = localStorage.getItem(BACKUP_PROGRESS_REGISTRY);
+    const registry: string[] = registryRaw ? JSON.parse(registryRaw) : [];
+    if (!registry.includes(key)) {
+      registry.push(key);
+      localStorage.setItem(BACKUP_PROGRESS_REGISTRY, JSON.stringify(registry));
+    }
+  } catch (e) {
+    console.error('Falha ao salvar backup de progresso:', e);
+  }
+  return key;
+}
+
+export function saveCustomQuestionsBackup(
+  originalList: Question[],
+  staleItems: Question[],
+  filteredItems: Question[],
+  reason: string
+): string {
+  const timestamp = Date.now();
+  const backupId = `custom-q-${timestamp}-${Math.random().toString(36).substring(2, 6)}`;
+  const key = `${BACKUP_CUSTOM_PREFIX}${timestamp}`;
+  const snapshot: CustomQuestionsBackupSnapshot = {
+    backupType: 'custom_questions_backup',
+    backupId,
+    timestamp,
+    createdAt: new Date(timestamp).toISOString(),
+    reason,
+    stats: {
+      totalQuestionsBefore: originalList.length,
+      staleQuestionsRemovedCount: staleItems.length,
+      activeQuestionsRemainingCount: filteredItems.length,
+    },
+    staleQuestionsRemoved: staleItems,
+    activeQuestionsRemaining: filteredItems,
+    fullOriginalQuestions: originalList,
+  };
+  try {
+    localStorage.setItem(key, JSON.stringify(snapshot));
+    localStorage.setItem(BACKUP_CUSTOM_LATEST, key);
+    localStorage.setItem(`${STORAGE_KEY}_custom_questions_backup`, JSON.stringify(staleItems));
+    localStorage.setItem('concurseiro_user_state_backup_pre_v2', JSON.stringify(originalList));
+
+    const registryRaw = localStorage.getItem(BACKUP_CUSTOM_REGISTRY);
+    const registry: string[] = registryRaw ? JSON.parse(registryRaw) : [];
+    if (!registry.includes(key)) {
+      registry.push(key);
+      localStorage.setItem(BACKUP_CUSTOM_REGISTRY, JSON.stringify(registry));
+    }
+  } catch (e) {
+    console.error('Falha ao salvar backup de questões customizadas:', e);
+  }
+  return key;
+}
+
 export function useQuestionBank() {
   // Questões customizadas que o usuário importou manualmente por arquivo ou IA
   const [customQuestions, setCustomQuestions] = useState<Question[]>(() => {
@@ -27,8 +140,12 @@ export function useQuestionBank() {
       const filtered = parsed.filter(q => !officialIds.has(q.id));
       if (filtered.length !== parsed.length) {
         const staleItems = parsed.filter(q => officialIds.has(q.id));
-        localStorage.setItem(`${STORAGE_KEY}_custom_questions_backup`, JSON.stringify(staleItems));
-        localStorage.setItem('concurseiro_user_state_backup_pre_v2', JSON.stringify(parsed));
+        saveCustomQuestionsBackup(
+          parsed,
+          staleItems,
+          filtered,
+          'Limpeza e isolamento de cópias locais obsoletas de questões oficiais do acervo'
+        );
         localStorage.setItem(`${STORAGE_KEY}_custom_questions`, JSON.stringify(filtered));
       }
       return filtered;
@@ -58,20 +175,50 @@ export function useQuestionBank() {
           if (!allKnownQuestions.has(q.id)) allKnownQuestions.set(q.id, q);
         });
 
-        // Migração controlada e reconciliação histórica de tentativas
+        // Migração controlada e reconciliação histórica de tentativas com auditoria estrita
         let attempts: UserAttempt[] = parsed.attempts || [];
         attempts = attempts.map(att => {
           const targetQ = allKnownQuestions.get(att.questionId);
           if (targetQ) {
             const evalResult = evaluateQuestionAnswer(targetQ, att.selectedOption);
-            return {
-              ...att,
-              isCorrect: evalResult.isCorrect,
-              isAnnulled: evalResult.isAnnulled,
-              scoreWeight: evalResult.scoreWeight,
-              officialExamCredit: evalResult.officialExamCredit,
-              countsForDidacticMetrics: evalResult.countsForDidacticMetrics,
-            };
+            const needsReconciliation =
+              att.isAnnulled !== evalResult.isAnnulled ||
+              att.isCorrect !== evalResult.isCorrect ||
+              att.scoreWeight !== evalResult.scoreWeight ||
+              att.officialExamCredit !== evalResult.officialExamCredit;
+
+            if (needsReconciliation) {
+              return {
+                ...att,
+                isCorrect: evalResult.isCorrect,
+                isAnnulled: evalResult.isAnnulled,
+                scoreWeight: evalResult.scoreWeight,
+                officialExamCredit: evalResult.officialExamCredit,
+                countsForDidacticMetrics: evalResult.countsForDidacticMetrics,
+                // Preservação estrita do registro original antes da reconciliação (Pendência 2)
+                originalAttempt: att.originalAttempt || {
+                  isCorrect: att.isCorrect,
+                  isAnnulled: att.isAnnulled,
+                  scoreWeight: att.scoreWeight,
+                  officialExamCredit: att.officialExamCredit,
+                  countsForDidacticMetrics: att.countsForDidacticMetrics,
+                },
+                reconciliationAuditTrail: {
+                  reconciledAt: Date.now(),
+                  reason: evalResult.isAnnulled
+                    ? 'Reconciliação automática: questão oficialmente anulada no gabarito definitivo.'
+                    : 'Reconciliação automática: gabarito oficial retificado pós-recurso.',
+                  previousValues: {
+                    isCorrect: att.isCorrect,
+                    isAnnulled: att.isAnnulled,
+                    scoreWeight: att.scoreWeight,
+                    officialExamCredit: att.officialExamCredit,
+                    countsForDidacticMetrics: att.countsForDidacticMetrics,
+                  },
+                },
+              };
+            }
+            return att;
           }
           if (att.isAnnulled) {
             return {
@@ -98,8 +245,11 @@ export function useQuestionBank() {
         };
 
         if (version !== CURRENT_STORAGE_VERSION) {
-          // Preservação do estado anterior em backup seguro antes de sobrescrever
-          localStorage.setItem('concurseiro_user_state_backup_pre_v2', stored);
+          saveProgressBackup(
+            parsed,
+            version,
+            `Migração controlada de versão legada (${version} -> ${CURRENT_STORAGE_VERSION})`
+          );
           localStorage.setItem(STORAGE_KEY, JSON.stringify(migratedState));
         }
 
@@ -472,6 +622,67 @@ export function useQuestionBank() {
     return questions.filter(q => userState.savedQuestionIds.includes(q.id));
   }, [userState.savedQuestionIds, questions]);
 
+  // Restauração de Backups Recuperáveis (Pendência 2 - 4ª Auditoria)
+  const restoreProgressFromBackup = useCallback((backupKeyOrId?: string): boolean => {
+    try {
+      let key = backupKeyOrId;
+      if (!key) {
+        key = localStorage.getItem(BACKUP_PROGRESS_LATEST) || undefined;
+      }
+      if (!key) return false;
+      const raw = localStorage.getItem(key);
+      if (!raw) return false;
+      const parsed: ProgressBackupSnapshot = JSON.parse(raw);
+      if (parsed.backupType !== 'user_progress_backup' || !parsed.data) {
+        return false;
+      }
+      const restored = {
+        version: CURRENT_STORAGE_VERSION,
+        attempts: parsed.data.attempts || [],
+        errorNotebook: parsed.data.errorNotebook || {},
+        savedQuestionIds: parsed.data.savedQuestionIds || [],
+        exams: parsed.data.exams || [],
+      };
+      setUserState(restored);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(restored));
+      return true;
+    } catch (e) {
+      console.error('Erro ao restaurar backup de progresso:', e);
+      return false;
+    }
+  }, []);
+
+  const restoreCustomQuestionsFromBackup = useCallback((backupKeyOrId?: string): boolean => {
+    try {
+      let key = backupKeyOrId;
+      if (!key) {
+        key = localStorage.getItem(BACKUP_CUSTOM_LATEST) || undefined;
+      }
+      if (!key) return false;
+      const raw = localStorage.getItem(key);
+      if (!raw) return false;
+      const parsed: CustomQuestionsBackupSnapshot = JSON.parse(raw);
+      if (parsed.backupType !== 'custom_questions_backup' || !parsed.fullOriginalQuestions) {
+        return false;
+      }
+      setCustomQuestions(parsed.fullOriginalQuestions);
+      localStorage.setItem(`${STORAGE_KEY}_custom_questions`, JSON.stringify(parsed.fullOriginalQuestions));
+      return true;
+    } catch (e) {
+      console.error('Erro ao restaurar backup de questões customizadas:', e);
+      return false;
+    }
+  }, []);
+
+  const listAvailableBackups = useCallback(() => {
+    const progressRaw = localStorage.getItem(BACKUP_PROGRESS_REGISTRY);
+    const customRaw = localStorage.getItem(BACKUP_CUSTOM_REGISTRY);
+    return {
+      progress: progressRaw ? (JSON.parse(progressRaw) as string[]) : [],
+      customQuestions: customRaw ? (JSON.parse(customRaw) as string[]) : [],
+    };
+  }, []);
+
   return {
     questions,
     attempts: userState.attempts,
@@ -492,6 +703,9 @@ export function useQuestionBank() {
     resetToFactoryDefaults,
     startExam,
     submitExamAnswer,
-    finishExam
+    finishExam,
+    restoreProgressFromBackup,
+    restoreCustomQuestionsFromBackup,
+    listAvailableBackups,
   };
 }

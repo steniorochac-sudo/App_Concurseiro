@@ -90,7 +90,32 @@ describe('Strict Document Validation (P0.1)', () => {
     expect(result.isHomologated).toBe(false);
     expect(result.statusHomologacao).toBe('validacao_pendente');
     expect(result.errors.some(e => e.includes('existência dos PDFs oficiais não foi comprovada fisicamente'))).toBe(true);
-    expect(result.errors.some(e => e.includes('fidelidade textual aos PDFs oficiais não comprovada'))).toBe(true);
+    expect(result.errors.some(e => e.includes('conferência documental integral pendente'))).toBe(true);
+  });
+
+  it('TESTE NEGATIVO (Pendência 1 - 4ª Auditoria): triagem_lexical_aprovada isoladamente NÃO PODE produzir homologação', () => {
+    const doc = createValidDoc();
+    // Prova com arquivos físicos comprovados, mas apenas com triagem lexical
+    const result = validateExamHomologation(doc, {
+      checkFileExists: () => true,
+      textualFidelityStatus: 'triagem_lexical_aprovada',
+    });
+
+    expect(result.isHomologated).toBe(false);
+    expect(result.statusHomologacao).toBe('validacao_pendente');
+    expect(result.errors.some(e => e.includes("'triagem_lexical_aprovada' indica apenas correspondência de vocabulário"))).toBe(true);
+  });
+
+  it('TESTE NEGATIVO (Pendência 1 - 4ª Auditoria): verificacao_documental_pendente NÃO PODE homologar prova', () => {
+    const doc = createValidDoc();
+    const result = validateExamHomologation(doc, {
+      checkFileExists: () => true,
+      textualFidelityStatus: 'verificacao_documental_pendente',
+    });
+
+    expect(result.isHomologated).toBe(false);
+    expect(result.statusHomologacao).toBe('validacao_pendente');
+    expect(result.errors.some(e => e.includes('conferência documental integral pendente'))).toBe(true);
   });
 
   it('deve rejeitar homologação se houver lacuna na numeração sequencial original (gaps)', () => {

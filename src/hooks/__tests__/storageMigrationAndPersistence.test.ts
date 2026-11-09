@@ -278,5 +278,158 @@ describe('Storage Migration, Persistence & Regression Gate (P1.1, P1.2, P1.3)', 
     expect(reconciledAttempt.scoreWeight).toBe(0); // Não inflaciona taxa didática
     expect(reconciledAttempt.officialExamCredit).toBe(1); // Concede crédito oficial da banca
     expect(reconciledAttempt.countsForDidacticMetrics).toBe(false); // Isolada das métricas didáticas
+
+    // PRESERVAÇÃO ESTRITA DO REGISTRO ORIGINAL E TRILHA DE MIGRAÇÃO (Pendência 2 - 4ª Auditoria)
+    expect(reconciledAttempt.originalAttempt).toBeDefined();
+    expect(reconciledAttempt.originalAttempt?.isCorrect).toBe(false);
+    expect(reconciledAttempt.originalAttempt?.isAnnulled).toBe(false);
+    expect(reconciledAttempt.originalAttempt?.officialExamCredit).toBe(0);
+
+    expect(reconciledAttempt.reconciliationAuditTrail).toBeDefined();
+    expect(reconciledAttempt.reconciliationAuditTrail?.reconciledAt).toBeGreaterThan(0);
+    expect(reconciledAttempt.reconciliationAuditTrail?.reason).toContain('oficialmente anulada');
+    expect(reconciledAttempt.reconciliationAuditTrail?.previousValues.isCorrect).toBe(false);
+  });
+
+  it('7. Pendência 2 (4ª Auditoria): Deve gerar backups com formatos/identificadores distintos e não sobrescrever histórico', () => {
+    const officialQ = ALL_IMPORTED_QUESTIONS[0];
+    const staleCustom: Question[] = [
+      {
+        ...officialQ,
+        enunciado: 'CÓPIA OBSOLETA',
+      },
+    ];
+
+    localStorage.setItem(CUSTOM_KEY, JSON.stringify(staleCustom));
+
+    // Primeiro render (gera primeiro backup)
+    const { unmount } = renderHook(() => useQuestionBank());
+    unmount();
+
+    // Simula novo evento de backup posterior
+    const staleCustom2: Question[] = [
+      {
+        ...officialQ,
+        enunciado: 'CÓPIA OBSOLETA SEGUNDA GERAÇÃO',
+      },
+    ];
+    localStorage.setItem(CUSTOM_KEY, JSON.stringify(staleCustom2));
+
+    const { result } = renderHook(() => useQuestionBank());
+
+    // Identificadores e formatos distintos
+    const backups = result.current.listAvailableBackups();
+    expect(backups.customQuestions.length).toBeGreaterThan(0);
+
+    const latestCustomKey = localStorage.getItem('concurseiro_backup_custom_questions_latest');
+    expect(latestCustomKey).toBeDefined();
+    expect(latestCustomKey).toContain('concurseiro_backup_custom_questions_');
+
+    const customBackupData = JSON.parse(localStorage.getItem(latestCustomKey!) || '{}');
+    expect(customBackupData.backupType).toBe('custom_questions_backup'); // Formato distinto
+    expect(customBackupData.stats).toBeDefined();
+    expect(customBackupData.fullOriginalQuestions).toBeDefined();
+
+    // Progresso
+    const latestProgressKey = localStorage.getItem('concurseiro_backup_progress_latest');
+    if (latestProgressKey) {
+      const progressBackupData = JSON.parse(localStorage.getItem(latestProgressKey!) || '{}');
+      expect(progressBackupData.backupType).toBe('user_progress_backup'); // Formato distinto
+      expect(progressBackupData.data).toBeDefined();
+    }
+  });
+
+  it('8. Pendência 2 (4ª Auditoria): Deve restaurar com sucesso estado de progresso e questões customizadas a partir de backup', () => {
+    // 1. Prepara backup simulado de progresso
+    const timestamp = Date.now();
+    const mockProgressKey = `concurseiro_backup_progress_${timestamp}`;
+    const mockProgressBackup = {
+      backupType: 'user_progress_backup',
+      backupId: `prog-${timestamp}`,
+      timestamp,
+      createdAt: new Date().toISOString(),
+      version: '2.0',
+      sourceVersion: '1.0',
+      reason: 'Backup para teste de restauração',
+      data: {
+        attempts: [
+          {
+            id: 'att-restaurada-01',
+            questionId: 'q-custom-restaurada',
+            selectedOption: 'A',
+            isCorrect: true,
+            timestamp: 1690000000000,
+            timeSpentSeconds: 10,
+            mode: 'practice',
+          },
+        ],
+        errorNotebook: {
+          'q-custom-restaurada': {
+            questionId: 'q-custom-restaurada',
+            errorCount: 1,
+            consecutiveCorrectCount: 0,
+            lastAttemptTimestamp: 1690000000000,
+          },
+        },
+        savedQuestionIds: ['q-custom-restaurada'],
+        exams: [],
+      },
+    };
+    localStorage.setItem(mockProgressKey, JSON.stringify(mockProgressBackup));
+    localStorage.setItem('concurseiro_backup_progress_latest', mockProgressKey);
+
+    // 2. Prepara backup simulado de questões customizadas
+    const mockCustomKey = `concurseiro_backup_custom_questions_${timestamp}`;
+    const mockCustomBackup = {
+      backupType: 'custom_questions_backup',
+      backupId: `custom-${timestamp}`,
+      timestamp,
+      createdAt: new Date().toISOString(),
+      reason: 'Backup para teste de restauração',
+      stats: { totalQuestionsBefore: 1, staleQuestionsRemovedCount: 0, activeQuestionsRemainingCount: 1 },
+      staleQuestionsRemoved: [],
+      activeQuestionsRemaining: [],
+      fullOriginalQuestions: [
+        {
+          id: 'q-restaurada-sucesso-99',
+          banca: 'Autoral',
+          ano: 2026,
+          orgao: 'Estudos',
+          disciplina: 'Administrativo',
+          assunto: 'Atos',
+          enunciado: 'Questão recuperada do backup.',
+          alternativas: [
+            { id: 'A', text: 'Opção A' },
+            { id: 'B', text: 'Opção B' },
+          ],
+          gabarito: 'A',
+          explicacao: 'Explicação.',
+        },
+      ],
+    };
+    localStorage.setItem(mockCustomKey, JSON.stringify(mockCustomBackup));
+    localStorage.setItem('concurseiro_backup_custom_questions_latest', mockCustomKey);
+
+    const { result } = renderHook(() => useQuestionBank());
+
+    // Executa restauração de progresso
+    let successProgress = false;
+    act(() => {
+      successProgress = result.current.restoreProgressFromBackup(mockProgressKey);
+    });
+    expect(successProgress).toBe(true);
+    expect(result.current.attempts).toHaveLength(1);
+    expect(result.current.attempts[0].id).toBe('att-restaurada-01');
+    expect(result.current.savedQuestionIds).toContain('q-custom-restaurada');
+
+    // Executa restauração de questões customizadas
+    let successCustom = false;
+    act(() => {
+      successCustom = result.current.restoreCustomQuestionsFromBackup(mockCustomKey);
+    });
+    expect(successCustom).toBe(true);
+    const restoredQ = result.current.questions.find((q) => q.id === 'q-restaurada-sucesso-99');
+    expect(restoredQ).toBeDefined();
+    expect(restoredQ?.enunciado).toBe('Questão recuperada do backup.');
   });
 });

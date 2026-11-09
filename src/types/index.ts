@@ -38,6 +38,18 @@ export interface Question {
   fonteDocumental?: string;
 }
 
+export interface AttemptReconciliationAudit {
+  reconciledAt: number;
+  reason: string;
+  previousValues: {
+    isCorrect: boolean;
+    isAnnulled?: boolean;
+    scoreWeight?: number;
+    officialExamCredit?: number;
+    countsForDidacticMetrics?: boolean;
+  };
+}
+
 export interface UserAttempt {
   id: string;
   questionId: string;
@@ -51,6 +63,15 @@ export interface UserAttempt {
   timeSpentSeconds: number;
   mode: 'practice' | 'exam' | 'notebook';
   examId?: string;
+  // Preservação estrita do registro histórico original e trilha de auditoria (Pendência 2 - 4ª Auditoria)
+  originalAttempt?: {
+    isCorrect: boolean;
+    isAnnulled?: boolean;
+    scoreWeight?: number;
+    officialExamCredit?: number;
+    countsForDidacticMetrics?: boolean;
+  };
+  reconciliationAuditTrail?: AttemptReconciliationAudit;
 }
 
 export interface ErrorNotebookItem {
