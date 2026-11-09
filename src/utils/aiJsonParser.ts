@@ -4,12 +4,17 @@ import {
   ExamMetadataV2,
   QuestionType,
   GabaritoStatus,
+  HomologationStatus,
+  validateExamHomologation,
+  ExamValidationReport,
 } from '../types/examSchemaV2';
 
 export interface ParseResult {
   success: boolean;
   data?: ExamDocumentV2;
   error?: string;
+  statusHomologacao?: HomologationStatus;
+  validationReport?: ExamValidationReport;
 }
 
 /**
@@ -73,13 +78,15 @@ export function sanitizeJsonText(jsonText: string): string {
 }
 
 /**
- * Normaliza e valida um JSON de prova gerado por IA
+ * Normaliza a entrada bruta da IA em um objeto ExamDocumentV2 de rascunho.
+ * Separa a flexibilidade de entrada da homologação estrita (P0.1).
  */
-export function parseAndValidateExamJson(rawInput: string): ParseResult {
+export function normalizeAiExamInput(rawInput: string): ParseResult {
   if (!rawInput || !rawInput.trim()) {
     return {
       success: false,
       error: 'Nenhum conteúdo informado para importação.',
+      statusHomologacao: 'rascunho',
     };
   }
 
@@ -94,6 +101,7 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
     return {
       success: false,
       error: `Sintaxe JSON inválida gerada pela IA: ${msg}. Verifique se o texto não foi cortado no meio da geração.`,
+      statusHomologacao: 'rascunho',
     };
   }
 
@@ -111,6 +119,7 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
     return {
       success: false,
       error: 'O JSON não contém uma lista válida de questões (campo "questoes" ou array de questões).',
+      statusHomologacao: 'rascunho',
     };
   }
 
@@ -118,10 +127,11 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
     return {
       success: false,
       error: 'O documento não contém nenhuma questão.',
+      statusHomologacao: 'rascunho',
     };
   }
 
-  // Metadados da prova com fallbacks seguros
+  // Metadados da prova com fallbacks seguros para estudo (Rascunho)
   const examId = rawExam.id || `prova_ia_${Date.now()}`;
   const examBanca = rawExam.banca || 'Banca Não Informada';
   const examAno = Number(rawExam.ano) || new Date().getFullYear();
@@ -129,6 +139,7 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
   const examCargo = rawExam.cargo || 'Cargo Não Informado';
   const examTitulo = rawExam.titulo || `${examOrgao} - ${examCargo} (${examBanca} ${examAno})`;
 
+  // Por padrão de segurança (P0.1), provas geradas ou coladas via IA iniciam como RASCUNHO (não homologadas)
   const examMetadata: ExamMetadataV2 = {
     id: examId,
     titulo: examTitulo,
@@ -142,14 +153,15 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
     formatoQuestoes: rawExam.formatoQuestoes || 'multipla_escolha_5',
     totalQuestoes: rawQuestoes.length,
     totalAnuladas: 0,
-    homologado: Boolean(rawExam.homologado),
+    homologado: false,
+    statusHomologacao: 'rascunho',
     auditTrail: rawExam.auditTrail || {
       arquivoProvaPdf: rawExam.arquivoProvaPdf || `${examId}.pdf`,
       arquivoGabaritoPdf: rawExam.arquivoGabaritoPdf || `gabarito_${examId}.pdf`,
       secaoGabarito: rawExam.secaoGabarito || examCargo,
       paginaGabarito: rawExam.paginaGabarito || 1,
       tipoGabarito: rawExam.tipoGabarito || 'definitivo',
-      responsavelAuditoria: 'IA Importador BYOD',
+      responsavelAuditoria: 'IA Importador BYOD (Rascunho)',
     },
   };
 
@@ -164,6 +176,7 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
       return {
         success: false,
         error: `A questão na posição ${idx + 1} possui um número original inválido.`,
+        statusHomologacao: 'rascunho',
       };
     }
 
@@ -172,6 +185,7 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
       return {
         success: false,
         error: `A questão número ${numOriginal} está com o enunciado vazio ou ausente.`,
+        statusHomologacao: 'rascunho',
       };
     }
 
@@ -182,6 +196,7 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
       return {
         success: false,
         error: `A questão número ${numOriginal} está sem o gabarito oficial definido. Verifique o gabarito da prova.`,
+        statusHomologacao: 'rascunho',
       };
     }
 
@@ -192,7 +207,6 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
     if (Array.isArray(rawAlts)) {
       alternativas = rawAlts.map((alt: any, aIdx: number) => {
         if (typeof alt === 'string') {
-          // Ex: "A) texto da alternativa"
           const match = alt.match(/^([A-Ea-eCcEe])\s*[\)\.\-]\s*(.*)$/);
           if (match) {
             return { id: match[1].toUpperCase(), text: match[2].trim() };
@@ -207,7 +221,7 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
       });
     }
 
-    // Identificação inteligente do tipo de questão
+    // Identificação do tipo de questão
     let tipo: QuestionType = rawQ.tipo || 'multipla_escolha';
     if (
       alternativas.length === 2 &&
@@ -263,14 +277,37 @@ export function parseAndValidateExamJson(rawInput: string): ParseResult {
   examMetadata.totalQuestoes = validatedQuestoes.length;
   examMetadata.totalAnuladas = validatedQuestoes.filter((q) => q.gabaritoStatus === 'anulado').length;
 
+  const doc: ExamDocumentV2 = {
+    schemaVersion: '2.0',
+    exam: examMetadata,
+    questoes: validatedQuestoes,
+  };
+
   return {
     success: true,
-    data: {
-      schemaVersion: '2.0',
-      exam: examMetadata,
-      questoes: validatedQuestoes,
-    },
+    data: doc,
+    statusHomologacao: 'rascunho',
   };
+}
+
+/**
+ * Função principal para parser e validação de importação de provas (BYOD).
+ */
+export function parseAndValidateExamJson(rawInput: string): ParseResult {
+  return normalizeAiExamInput(rawInput);
+}
+
+/**
+ * Avalia um ExamDocumentV2 contra os critérios estritos de homologação documental (P0.1).
+ */
+export function evaluateExamForHomologation(
+  doc: ExamDocumentV2,
+  options?: { checkImageFiles?: (imgPath: string) => boolean }
+): ExamValidationReport {
+  return validateExamHomologation(doc, {
+    requireHomologatedStatus: true,
+    checkImageFiles: options?.checkImageFiles,
+  });
 }
 
 /**

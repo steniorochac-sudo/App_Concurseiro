@@ -3,6 +3,8 @@ import {
   extractJsonFromAiResponse,
   sanitizeJsonText,
   parseAndValidateExamJson,
+  normalizeAiExamInput,
+  evaluateExamForHomologation,
   mergeQuestionsIntoExam,
 } from '../aiJsonParser';
 import { ExamDocumentV2 } from '../../types/examSchemaV2';
@@ -22,6 +24,7 @@ describe('aiJsonParser', () => {
       totalQuestoes: 2,
       totalAnuladas: 0,
       homologado: false,
+      statusHomologacao: 'rascunho',
       auditTrail: {
         arquivoProvaPdf: 'tj_sp_2023.pdf',
         arquivoGabaritoPdf: 'gabarito_tj_sp_2023.pdf',
@@ -110,6 +113,49 @@ Qualquer dúvida estou à disposição!
     it('deve remover caracteres BOM e espaços invisíveis', () => {
       const withBom = '\uFEFF{"status": true}';
       expect(sanitizeJsonText(withBom)).toBe('{"status": true}');
+    });
+  });
+
+  describe('normalizeAiExamInput (P0.1)', () => {
+    it('deve sempre atribuir statusHomologacao: rascunho e homologado: false a dados importados por IA', () => {
+      const aiInputWithFakeHomologado = `
+\`\`\`json
+{
+  "prova": {
+    "titulo": "Tentativa de auto-homologação",
+    "banca": "FGV",
+    "ano": 2024,
+    "orgao": "TJ",
+    "cargo": "Técnico",
+    "homologado": true
+  },
+  "questoes": [
+    {
+      "numero": 1,
+      "enunciado": "Enunciado de teste",
+      "alternativas": [
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "2" }
+      ],
+      "gabarito": "A"
+    }
+  ]
+}
+\`\`\`
+      `;
+
+      const result = normalizeAiExamInput(aiInputWithFakeHomologado);
+      expect(result.success).toBe(true);
+      expect(result.data?.exam.homologado).toBe(false);
+      expect(result.data?.exam.statusHomologacao).toBe('rascunho');
+    });
+
+    it('deve avaliar rascunho de IA contra homologação e apontar pendências obrigatórias', () => {
+      const doc = { ...validExamDocument };
+      const report = evaluateExamForHomologation(doc);
+      // Como o doc é rascunho, a homologação oficial é rejeitada com motivos
+      expect(report.isValid).toBe(false);
+      expect(report.errors.some((e) => e.includes('rascunho'))).toBe(true);
     });
   });
 
