@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import questionsRaw from '../agente_fiscal_tributario_1.json';
 import { Question } from '../../../types';
+import { evaluateQuestionAnswer } from '../../../utils/answerEvaluation';
 
 const questions = questionsRaw as Question[];
 
@@ -118,5 +119,66 @@ describe('Auditoria e Validação Integral - Agente Fiscal Tributário 1 (FEPESE
     const optD = q16.alternativas.find((a) => a.id === 'D');
     expect(optD?.text).toContain('presume-se feita');
     expect(optD?.text).not.toContain('presume- -se');
+  });
+
+  describe('Fase Documental — Matriz e Evidências Forenses (Marco 1)', () => {
+    it('deve mapear a distribuição documental exata das 40 questões nas páginas 3 a 10 do PDF', () => {
+      const pageRanges: Record<number, number[]> = {
+        3: [1, 2, 3, 4, 5, 6],
+        4: [7, 8, 9, 10, 11, 12],
+        5: [13, 14, 15, 16],
+        6: [17, 18, 19, 20, 21, 22],
+        7: [23, 24, 25, 26, 27],
+        8: [28, 29, 30, 31, 32],
+        9: [33, 34, 35, 36, 37, 38],
+        10: [39, 40],
+      };
+
+      let totalMapped = 0;
+      for (const [pageStr, qNums] of Object.entries(pageRanges)) {
+        const page = Number(pageStr);
+        expect(page).toBeGreaterThanOrEqual(3);
+        expect(page).toBeLessThanOrEqual(10);
+        totalMapped += qNums.length;
+      }
+      expect(totalMapped).toBe(40);
+    });
+
+    it('deve avaliar a anulação oficial da Q29 com atribuição de crédito sem mascarar didática', () => {
+      const q29 = questions[28];
+      const evalOptionE = evaluateQuestionAnswer(q29, 'E');
+      expect(evalOptionE.isAnnulled).toBe(true);
+      expect(evalOptionE.isCorrect).toBe(true);
+      expect(evalOptionE.scoreWeight).toBe(0);
+      expect(evalOptionE.officialExamCredit).toBe(1);
+      expect(evalOptionE.countsForDidacticMetrics).toBe(false);
+      expect(evalOptionE.shouldAddToErrorNotebook).toBe(false);
+
+      const evalOptionA = evaluateQuestionAnswer(q29, 'A');
+      expect(evalOptionA.isAnnulled).toBe(true);
+      expect(evalOptionA.isCorrect).toBe(true);
+      expect(evalOptionA.officialExamCredit).toBe(1);
+    });
+
+    it('questão 28 deve conter os 5 melhoramentos urbanos numerados para IPTU', () => {
+      const q28 = questions[27];
+      expect(q28.enunciado).toContain('1.');
+      expect(q28.enunciado).toContain('Meio fio ou calçamento');
+      expect(q28.enunciado).toContain('2.');
+      expect(q28.enunciado).toContain('3.');
+      expect(q28.enunciado).toContain('Rede de iluminação pública');
+      expect(q28.enunciado).toContain('4.');
+      expect(q28.enunciado).toContain('5.');
+      expect(q28.enunciado).toContain('Redutor de velocidade');
+    });
+
+    it('questão 9 deve preservar as colunas de correspondência de vícios de linguagem', () => {
+      const q9 = questions[8];
+      expect(q9.enunciado).toContain('Coluna 1');
+      expect(q9.enunciado).toContain('Coluna 2');
+      expect(q9.enunciado).toContain('Pleonasmo Vicioso');
+      expect(q9.enunciado).toContain('Barbarismo');
+      expect(q9.enunciado).toContain('Solecismo');
+    });
   });
 });

@@ -40,7 +40,26 @@
     "explicacao": "🎯 Gabarito Oficial: E.\n\nAnálise do preenchimento das lacunas no Texto 1:\n1. 'aparências': paroxítona terminada em ditongo crescente, acentuada com acento agudo.\n2. 'excessiva': grafia correta com 'xc' e 'ss'.\n3. 'espécies': paroxítona terminada em ditongo crescente, acentuada.\n4. 'joia': pelo Novo Acordo Ortográfico, os ditongos abertos 'ei' e 'oi' em palavras paroxítonas perderam o acento gráfico (ex: joia, ideia, jiboia).",
     "baseLegal": "Acordo Ortográfico da Língua Portuguesa (Decreto nº 6.583/2008).",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 1,
+    "paginaOrigem": 3,
+    "textoCompartilhado": {
+      "id": "fepese-2023-texto-1",
+      "title": "Texto 1 — Os gatos",
+      "content": "Os gatos possuem uma personalidade enigmática que costuma gerar bastante curiosidade nas pessoas. Com ________________ elegantes e extremamente inteligentes, estes felinos conquistaram os corações de diversos tutores e superaram o índice de adoção entre os cachorros. Segundo pesquisa elaborada pela COMAC (Comissão de Animais em Companhia), em 2021, os gatos corresponderam a 84% dos animais de estimação adotados neste ano.\n\nPossuem língua áspera para higienização oral, que ocorre após períodos de descanso, sono e alimentação. Quando ocorre comportamento de limpeza ________________ , é bem provável que o gato esteja estressado. Sua capacidade de audição, ao contrário do que se possa imaginar, é um pouco melhor do que a dos cães. Gatos escutam entre 45 e 65 mil hertz, enquanto os cães escutam entre 10 e 40 mil hertz.\n\nSeu ronronar é uma forma de comunicação, entre eles e outras ________________ . O gato pode ronronar em quase todas as situações de prazer ou angústia. A maioria dos gatos ronrona, mas nem todos. Especialistas acreditam que gatos que não tiveram a presença da mãe na infância tendem a não ronronar. Como é um comportamento adquirido nesta fase, aqueles que não foram estimulados pela progenitora a ronronar desde cedo, possivelmente não terão este hábito na vida adulta. Quem tem um gato em casa, sabe bem a ________________ que possui.\n\n(Fonte: www.terra.br/amp/vida-e-estilo/pets/confira-10-curiosidades-sobre-os-gatos. Adaptado.)"
+    },
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 3,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "E",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-02",
@@ -82,7 +101,26 @@
     "explicacao": "🎯 Gabarito Oficial: A.\n\nDe acordo com o primeiro parágrafo do Texto 1: 'Segundo pesquisa elaborada pela COMAC... em 2021, os gatos corresponderam a 84% dos animais de estimação adotados neste ano' e 'superaram o índice de adoção entre os cachorros'. Isso valida plenamente a alternativa A.\nAs demais opções contêm distorções diretas dos fatos apresentados no texto.",
     "baseLegal": "Compreensão textual do Texto 1.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 2,
+    "paginaOrigem": 3,
+    "textoCompartilhado": {
+      "id": "fepese-2023-texto-1",
+      "title": "Texto 1 — Os gatos",
+      "content": "Os gatos possuem uma personalidade enigmática que costuma gerar bastante curiosidade nas pessoas. Com ________________ elegantes e extremamente inteligentes, estes felinos conquistaram os corações de diversos tutores e superaram o índice de adoção entre os cachorros. Segundo pesquisa elaborada pela COMAC (Comissão de Animais em Companhia), em 2021, os gatos corresponderam a 84% dos animais de estimação adotados neste ano.\n\nPossuem língua áspera para higienização oral, que ocorre após períodos de descanso, sono e alimentação. Quando ocorre comportamento de limpeza ________________ , é bem provável que o gato esteja estressado. Sua capacidade de audição, ao contrário do que se possa imaginar, é um pouco melhor do que a dos cães. Gatos escutam entre 45 e 65 mil hertz, enquanto os cães escutam entre 10 e 40 mil hertz.\n\nSeu ronronar é uma forma de comunicação, entre eles e outras ________________ . O gato pode ronronar em quase todas as situações de prazer ou angústia. A maioria dos gatos ronrona, mas nem todos. Especialistas acreditam que gatos que não tiveram a presença da mãe na infância tendem a não ronronar. Como é um comportamento adquirido nesta fase, aqueles que não foram estimulados pela progenitora a ronronar desde cedo, possivelmente não terão este hábito na vida adulta. Quem tem um gato em casa, sabe bem a ________________ que possui.\n\n(Fonte: www.terra.br/amp/vida-e-estilo/pets/confira-10-curiosidades-sobre-os-gatos. Adaptado.)"
+    },
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 3,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "A",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-03",
@@ -124,7 +162,26 @@
     "explicacao": "🎯 Gabarito Oficial: C.\n\nNa alternativa C, todos os vocábulos devem ser acentuados graficamente:\n- anzóis: oxítona terminada no ditongo aberto 'ói' seguido de s (recebe acento agudo).\n- bônus: paroxítona terminada em 'us' (recebe acento circunflexo).\n- abdômen / abdómen: paroxítona terminada em 'n' (recebe acento).\n\nNas demais alternativas há palavras que não recebem acento: feiura (hiato precedido de ditongo em paroxítona), voo (perdeu acento circunflexo), geleia (ditongo aberto em paroxítona), assembleia (perdeu acento) e paranoico (perdeu acento).",
     "baseLegal": "Regras de Acentuação Gráfica da Língua Portuguesa.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 3,
+    "paginaOrigem": 3,
+    "textoCompartilhado": {
+      "id": "fepese-2023-texto-1",
+      "title": "Texto 1 — Os gatos",
+      "content": "Os gatos possuem uma personalidade enigmática que costuma gerar bastante curiosidade nas pessoas. Com ________________ elegantes e extremamente inteligentes, estes felinos conquistaram os corações de diversos tutores e superaram o índice de adoção entre os cachorros. Segundo pesquisa elaborada pela COMAC (Comissão de Animais em Companhia), em 2021, os gatos corresponderam a 84% dos animais de estimação adotados neste ano.\n\nPossuem língua áspera para higienização oral, que ocorre após períodos de descanso, sono e alimentação. Quando ocorre comportamento de limpeza ________________ , é bem provável que o gato esteja estressado. Sua capacidade de audição, ao contrário do que se possa imaginar, é um pouco melhor do que a dos cães. Gatos escutam entre 45 e 65 mil hertz, enquanto os cães escutam entre 10 e 40 mil hertz.\n\nSeu ronronar é uma forma de comunicação, entre eles e outras ________________ . O gato pode ronronar em quase todas as situações de prazer ou angústia. A maioria dos gatos ronrona, mas nem todos. Especialistas acreditam que gatos que não tiveram a presença da mãe na infância tendem a não ronronar. Como é um comportamento adquirido nesta fase, aqueles que não foram estimulados pela progenitora a ronronar desde cedo, possivelmente não terão este hábito na vida adulta. Quem tem um gato em casa, sabe bem a ________________ que possui.\n\n(Fonte: www.terra.br/amp/vida-e-estilo/pets/confira-10-curiosidades-sobre-os-gatos. Adaptado.)"
+    },
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 3,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "C",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-04",
@@ -166,7 +223,21 @@
     "explicacao": "🎯 Gabarito Oficial: C.\n\nEm 'Falaram mal de você na reunião', o verbo está na 3ª pessoa do plural sem que haja qualquer sujeito expresso anteriormente no contexto comunicativo, configurando caso clássico de sujeito indeterminado.\nNas outras alternativas: 'Nevou' e 'Havia' são verbos impessoais (oração sem sujeito); em 'O amanhã não existe', o sujeito é 'O amanhã'; e em 'Há muitos anos ele é meu amigo', o sujeito de 'é' é 'ele'.",
     "baseLegal": "Gramática Normativa da Língua Portuguesa - Sintaxe.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 4,
+    "paginaOrigem": 3,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 3,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "C",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-05",
@@ -208,7 +279,21 @@
     "explicacao": "🎯 Gabarito Oficial: D.\n\nEm 'Amigo <u>que mente</u> não merece confiança!', a oração sublinhada 'que mente' é introduzida pelo pronome relativo 'que' (equivalente a 'o qual mente') e exerce função sintática de adjunto adnominal de 'Amigo', qualificando-o e restringindo-o. Trata-se, portanto, de oração subordinada adjetiva restritiva.\nNas demais: em A e B são subordinadas substantivas (subjetiva e objetiva direta); em C é subordinada adverbial temporal ('quando amanhecia'); em E é subordinada substantiva subjetiva.",
     "baseLegal": "Gramática Normativa da Língua Portuguesa - Período Composto por Subordinação.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 5,
+    "paginaOrigem": 3,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 3,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "D",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-06",
@@ -251,7 +336,21 @@
     "explicacao": "🎯 Gabarito Oficial: A.\n\nEm 'Isso me traz lembranças felizes!', a colocação está correta porque o pronome demonstrativo 'Isso' é palavra atrativa, exigindo próclise obrigatória.\nErros das demais:\n- B: 'Não' atrai próclise ('Não se deixe abater').\n- C: 'Talvez' (advérbio de dúvida) atrai próclise ('Talvez nos sirvam').\n- D: 'que' (conjunção integrante) atrai próclise ('trata-se' está incorreto; o correto é 'se trata').\n- E: Não se inicia oração com pronome oblíquo átono ('Sente-se imediatamente aqui').",
     "baseLegal": "Norma-padrão da Língua Portuguesa - Colocação dos Pronomes Oblíquos Átonos.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 6,
+    "paginaOrigem": 3,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 3,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "A",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-07",
@@ -294,7 +393,21 @@
     "explicacao": "🎯 Gabarito Oficial: D.\n\nAnálise de cada lacuna:\n1. 'Há dias que Marina não voltava...': indica tempo decorrido, exigindo o verbo 'haver' (Há).\n2. '...não voltava à casa de seus pais': quem volta, volta a algum lugar; a palavra 'casa' está especificada ('de seus pais'), exigindo crase (à).\n3. '...cara a cara com ela': expressões com palavras repetidas não admitem crase (a).\n4. '...à espera de uma explicação': locução prepositiva feminina formada por substantivo feminino ('à espera de'), recebendo obrigatoriamente crase (à).\nSequência correta: Há • à • a • à.",
     "baseLegal": "Norma-padrão da Língua Portuguesa - Regência e Emprego do Acento Indicativo de Crase.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 7,
+    "paginaOrigem": 4,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 4,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "D",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-08",
@@ -337,7 +450,21 @@
     "explicacao": "🎯 Gabarito Oficial: B.\n\nA alternativa B está correta: 'Ela estava meio nervosa, depois relaxou'. A palavra 'meio' funciona como advérbio de intensidade (equivalente a 'um pouco'), sendo, portanto, estritamente invariável.\nErros das demais:\n- A: Homem deve dizer 'Muito obrigado'.\n- C: 'Eles mesmos' (pronome demonstrativo concorda em gênero e número).\n- D: Com artigo definido 'a entrada', a expressão deve concordar: 'Proibida a entrada'.\n- E: 'Menas' não existe na norma-padrão; o correto é 'Havia menos coisas'.",
     "baseLegal": "Gramática Normativa - Concordância Nominal.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 8,
+    "paginaOrigem": 4,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 4,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "B",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-09",
@@ -380,7 +507,21 @@
     "explicacao": "🎯 Gabarito Oficial: E.\n\nAssociação entre as frases e os vícios de linguagem:\n- 3. 'Chove,vamos entrar para dentro do teatro': redundância inútil e condenável pela norma -> Pleonasmo Vicioso.\n- 2. 'Ela pagou muito caro pelo concerto do relógio': erro gráfico de ortografia ao trocar 'conserto' (reparo) por 'concerto' (musical) -> Barbarismo.\n- 1. 'O professor disse que só falta seis alunos': erro sintático de concordância verbal (o correto seria 'só faltam seis alunos') -> Solecismo.\nSequência correta de cima para baixo: 3 • 2 • 1.",
     "baseLegal": "Estilística e Semântica da Língua Portuguesa.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 9,
+    "paginaOrigem": 4,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 4,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "E",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-10",
@@ -422,7 +563,21 @@
     "explicacao": "🎯 Gabarito Oficial: B.\n\nA alternativa B está plenamente correta: 'Faz três meses que não a via'. O verbo 'fazer' quando indica tempo transcorrido é impessoal, mantendo-se obrigatoriamente na 3ª pessoa do singular.\nErros das demais:\n- A: O correto é 'É zero hora' (concorda com o numeral 0).\n- C: Com 'ou' exclusor entre sujeitos de pessoas gramaticais diferentes, o verbo pode ir ao singular ou plural dependendo do contexto de inclusão/exclusão, mas a regra padrão é 'Ou ele ou você ganhará o prêmio' quando a ideia é de alternância exclusiva.\n- D: Nomes próprios precedidos de artigo no plural exigem verbo no plural: 'Os Estados Unidos invadiram o Iraque'.\n- E: Na expressão de reciprocidade com 'mais de um', o verbo deve ir ao plural: 'Mais de uma das candidatas se entreolharam com espanto'.",
     "baseLegal": "Norma-padrão da Língua Portuguesa - Concordância Verbal.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 10,
+    "paginaOrigem": 4,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 4,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "B",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-11",
@@ -464,7 +619,21 @@
     "explicacao": "🎯 Gabarito Oficial: E.\n\nA alternativa E está correta: o Oceano Pacífico é a maior massa de água do planeta Terra, cobrindo mais de 165 milhões de km², enquanto o Oceano Glacial Ártico é o menor em área e volume.\nNas outras opções:\n- A: A Ásia é banhada pelo Pacífico, Índico e Glacial Ártico.\n- B: O continente africano é banhado pelos oceanos Atlântico e Índico (além dos mares Mediterrâneo e Vermelho).\n- C: Existem 6 continentes (América, África, Ásia, Europa, Oceania e Antártida).\n- D: O Oceano Atlântico é o segundo maior oceano do mundo (não o terceiro).",
     "baseLegal": "Geografia Física e Cartografia Geral.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 11,
+    "paginaOrigem": 4,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 4,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "E",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-12",
@@ -506,7 +675,21 @@
     "explicacao": "🎯 Gabarito Oficial: A.\n\nA alternativa A reflete fielmente a dinâmica geopolítica contemporânea: os Estados Unidos representam o polo de atração de milhares de migrantes e solicitantes de refúgio, que frequentemente enfrentam travessias perigosas e irregulares pela fronteira sul.\nAs demais estão incorretas: refugiados enfrentam imensas dificuldades de acolhimento na América do Sul; a grande maioria não possui nível superior; o Brasil acolhe contingente expressivo de refugiados (destaque para venezuelanos na Operação Acolhida); e a maioria dos refugiados do mundo reside exatamente em países em desenvolvimento vizinhos às zonas de conflito.",
     "baseLegal": "Convenção da ONU sobre o Estatuto dos Refugiados (1951) e Relatórios ACNUR.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 12,
+    "paginaOrigem": 4,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 4,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "A",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-13",
@@ -548,7 +731,21 @@
     "explicacao": "🎯 Gabarito Oficial: B.\n\nA alternativa B está correta: a Assembleia Geral da ONU é constituída por todos os Estados-membros (atualmente 193 países) com igualdade de voto (um país, um voto) e reúne-se em sessão plenária anual ordinária a cada mês de setembro.\nErros das demais:\n- A: Os cinco membros permanentes do Conselho de Segurança são: EUA, Reino Unido, França, Rússia e China (Alemanha não é membro permanente).\n- C: O Conselho de Segurança possui 15 membros: 5 permanentes e 10 rotativos eleitos.\n- D: O único órgão com competência para autorizar sanções coercitivas e intervenções militares é o Conselho de Segurança (Capítulo VII da Carta).\n- E: A sede da ONU fica em Nova York (e não em Washington) e contava originalmente com 51 Estados fundadores.",
     "baseLegal": "Carta das Nações Unidas (1945).",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 13,
+    "paginaOrigem": 5,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 5,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "B",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-14",
@@ -592,7 +789,21 @@
     "explicacao": "🎯 Gabarito Oficial: D.\n\nA alternativa D está correta: o Fundo Monetário Internacional (FMI) foi concebido em Bretton Woods (1944) com o objetivo principal de zelar pela estabilidade do sistema monetário internacional, prestar assistência financeira e assegurar a solidez das relações comerciais globais.\nErros das demais:\n- A: Quem financia projetos estruturantes de desenvolvimento social e econômico é o Banco Mundial; a OMC atua na regulação e resolução de disputas do comércio internacional.\n- B: Os membros fundadores do Mercosul são Brasil, Argentina, Paraguai e Uruguai (o Equador é Estado associado, não pleno).\n- C: A OTAN foi fundada sob liderança dos Estados Unidos e potências ocidentais para conter a União Soviética (o pacto soviético correspondente era o Pacto de Varsóvia).\n- E: O Brasil ainda não foi formalmente admitido como membro pleno da OCDE (o país iniciou o processo de acessão formal em 2022).",
     "baseLegal": "Tratados Internacionais e Estatuto do FMI.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 14,
+    "paginaOrigem": 5,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 5,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "D",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-15",
@@ -635,7 +846,21 @@
     "explicacao": "🎯 Gabarito Oficial: C.\n\nA alternativa C está correta: Santa Catarina situa-se estrategicamente no centro geográfico do eixo econômico do Centro-Sul brasileiro e em posição privilegiada de integração logística e rodoviária no Mercosul.\nErros das demais:\n- A: Balneário Camboriú possui fortíssimo turismo e um dos maiores PIBs per capita e IDHs do Brasil.\n- B: A população de SC supera 7,5 milhões de habitantes, com forte densidade demográfica nas mesorregiões litorâneas e do Vale do Itajaí.\n- D: O município possui praias oceânicas e centrais reconhecidas (cerca de 10 praias catalogadas), mas a assertiva 15 principais praias é falsa.\n- E: Balneário Camboriú localiza-se no Litoral Norte de SC, sendo um município costeiro.",
     "baseLegal": "Geografia Regional de Santa Catarina e Perfil Socioeconômico de Balneário Camboriú.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 15,
+    "paginaOrigem": 5,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 5,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "C",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-16",
@@ -677,7 +902,21 @@
     "explicacao": "🎯 Gabarito Oficial: E.\n\nDe acordo com a Lei Municipal nº 223/1973 (e consagrado no direito processual tributário), eventuais omissões, lapsos ou incorreções formais do auto de infração não acarretarão sua nulidade desde que constem do processo fiscal elementos suficientes para a plena identificação da infração cometida e da pessoa do infrator, assegurando o direito de defesa.\nAs demais alternativas invertem normas expressas de processo administrativo fiscal (a assinatura não é confissão de dívida, a intimação não prescinde de identificação pessoal e o sigilo não impede a qualificação do devedor).",
     "baseLegal": "Lei Municipal nº 223/1973 (Código Tributário de Balneário Camboriú).",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 16,
+    "paginaOrigem": 5,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 5,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "E",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-17",
@@ -720,7 +959,21 @@
     "explicacao": "🎯 Gabarito Oficial: A.\n\nNos termos literais do art. 33 do CTN: 'A base do cálculo do imposto é o valor venal do imóvel'. Na determinação da base de cálculo, não se consideram os bens móveis mantidos, em caráter permanente ou temporário, no imóvel, para efeito de sua utilização, exploração, aformoseamento ou comodidade.",
     "baseLegal": "Código Tributário Nacional (Lei nº 5.172/1966), art. 33.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 17,
+    "paginaOrigem": 6,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 6,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "A",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-18",
@@ -761,7 +1014,21 @@
     "explicacao": "🎯 Gabarito Oficial: C.\n\nSegundo o art. 121, parágrafo único, do CTN, o sujeito passivo da obrigação principal diz-se:\nI - contribuinte, quando tenha relação pessoal e direta com a situação que constitua o respectivo fato gerador;\nII - responsável, quando, sem revestir a condição de contribuinte, sua obrigação decorra de disposição expressa de lei.",
     "baseLegal": "Código Tributário Nacional (Lei nº 5.172/1966), art. 121, parágrafo único, inciso II.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 18,
+    "paginaOrigem": 6,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 6,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "C",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-19",
@@ -803,7 +1070,21 @@
     "explicacao": "🎯 Gabarito Oficial: E.\n\nConforme o art. 43, I, do CTN, o imposto sobre a renda e proventos de qualquer natureza tem como fato gerador a aquisição da disponibilidade econômica ou jurídica de 'renda, assim entendido o produto do capital, do trabalho ou da combinação de ambos' (inciso I) e de 'proventos de qualquer natureza, assim entendidos os acréscimos patrimoniais não compreendidos no inciso anterior' (inciso II).",
     "baseLegal": "Código Tributário Nacional (Lei nº 5.172/1966), art. 43, inciso I.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 19,
+    "paginaOrigem": 6,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 6,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "E",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-20",
@@ -845,7 +1126,21 @@
     "explicacao": "🎯 Gabarito Oficial: D.\n\nA concessão legal de prorrogação ou dilatação do prazo de vencimento de um tributo antes do seu vencimento constitui moratória. Conforme o art. 151, inciso I, do CTN, a moratória é causa de suspensão da exigibilidade do crédito tributário.\nNão se trata de isenção ou anistia (causas de exclusão), remissão ou decadência (causas de extinção).",
     "baseLegal": "Código Tributário Nacional (Lei nº 5.172/1966), arts. 151, I e 152.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 20,
+    "paginaOrigem": 6,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 6,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "D",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-21",
@@ -887,7 +1182,21 @@
     "explicacao": "🎯 Gabarito Oficial: C.\n\nDispõe o art. 186 do CTN: 'O crédito tributário prefere a qualquer outro, seja qual for sua natureza ou o tempo de sua constituição, ressalvados os créditos decorrentes da legislação do trabalho ou do acidente de trabalho'.",
     "baseLegal": "Código Tributário Nacional (Lei nº 5.172/1966), art. 186.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 21,
+    "paginaOrigem": 6,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 6,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "C",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-22",
@@ -929,7 +1238,21 @@
     "explicacao": "🎯 Gabarito Oficial: B.\n\nA contribuição de melhoria tem como fato gerador a realização de obra pública de que decorra valorização imobiliária em benefício dos proprietários de imóveis na área de influência da obra realizada pelo Município.",
     "baseLegal": "CF/88, art. 145, III; CTN, art. 81; Lei Municipal nº 223/1973.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 22,
+    "paginaOrigem": 6,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 6,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "B",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-23",
@@ -972,7 +1295,21 @@
     "explicacao": "🎯 Gabarito Oficial: B.\n\nNo Código Tributário Municipal de Balneário Camboriú (Lei nº 223/1973), são expressamente instituídas no rol de taxas:\n1. Taxa de licença de publicidade (exercício do poder de polícia sobre anúncios e placas);\n4. Taxa de expediente (emissão de certidões, buscas e atos administrativos).\nNão existem as pretensas taxas de uso comum de parques/praias ou de simples passagem de navios. Logo, são corretas apenas as afirmativas 1 e 4.",
     "baseLegal": "Lei Municipal nº 223/1973 (Código Tributário de Balneário Camboriú).",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 23,
+    "paginaOrigem": 7,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 7,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "B",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-24",
@@ -1014,7 +1351,21 @@
     "explicacao": "🎯 Gabarito Oficial: A.\n\nConforme o art. 165 do CTN e reproduzido na Lei Municipal nº 223/1973, o contribuinte tem direito à restituição do tributo pago indevidamente nos casos de:\n1. Reforma, anulação, revogação ou rescisão de decisão condenatória (inciso III);\n2. Cobrança ou pagamento espontâneo de tributo indevido ou maior que o devido legalmente (inciso I).\nAs hipóteses 3 e 4 não constituem hipóteses legais de restituição tributária. Portanto, são corretas apenas as afirmativas 1 e 2.",
     "baseLegal": "Lei Municipal nº 223/1973 e CTN, art. 165.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 24,
+    "paginaOrigem": 7,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 7,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "A",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-25",
@@ -1056,7 +1407,21 @@
     "explicacao": "🎯 Gabarito Oficial: E.\n\nConforme a legislação tributária do Município de Balneário Camboriú (Lei nº 223/1973), o cadastro imobiliário urbano compreende todas as unidades imobiliárias prediais e territoriais situadas no município, incluindo os terrenos vagos existentes ou que venham a existir nas áreas urbanas ou destinadas à urbanização.\nVias públicas, faixas de praia ou mar territorial são bens públicos de uso comum do povo e não integram o cadastro imobiliário tributável de particulares.",
     "baseLegal": "Lei Municipal nº 223/1973.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 25,
+    "paginaOrigem": 7,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 7,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "E",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-26",
@@ -1098,7 +1463,21 @@
     "explicacao": "🎯 Gabarito Oficial: D.\n\nDe acordo com a Lei Municipal nº 223/1973 (e praxe de Direito Tributário Municipal), o fato gerador do Imposto Predial e Territorial Urbano (IPTU) considera-se ocorrido no primeiro dia de cada exercício financeiro, ou seja, anualmente, no dia primeiro de janeiro.",
     "baseLegal": "Lei Municipal nº 223/1973.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 26,
+    "paginaOrigem": 7,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 7,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "D",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-27",
@@ -1140,7 +1519,21 @@
     "explicacao": "🎯 Gabarito Oficial: B.\n\nEstão sujeitos à inscrição cadastral municipal do ISSQN os prestadores dos serviços tributados pelo município:\n1. Acupuntura (subitem de serviços de saúde da lista anexa);\n4. Tinturaria e lavanderia (subitem da lista anexa).\nTransporte intermunicipal de passageiros e fornecimento de energia elétrica são de competência estadual (ICMS, art. 155, II da CF/88), não configurando serviços municipais. Logo, são corretas apenas as afirmativas 1 e 4.",
     "baseLegal": "Lei Municipal nº 2326/2004 (Lei do ISSQN de Balneário Camboriú).",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 27,
+    "paginaOrigem": 7,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 7,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "B",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-28",
@@ -1182,7 +1575,21 @@
     "explicacao": "🎯 Gabarito Oficial: A.\n\nDe acordo com o art. 32, § 1º, do CTN e a Lei Municipal nº 223/1973, considera-se zona urbana a área em que existam pelo menos dois dos seguintes melhoramentos:\nI - meio-fio ou calçamento, com canalização de águas pluviais (1);\nII - abastecimento de água;\nIII - sistema de esgotos sanitários;\nIV - rede de iluminação pública, com ou sem posteamento para distribuição domiciliar (3);\nV - escola primária ou posto de saúde a uma distância máxima de 3 km.\nInternet, ciclovia e redutor de velocidade não integram os requisitos legais previstos na lei tributária. Estão corretas apenas as afirmativas 1 e 3.",
     "baseLegal": "Lei Municipal nº 223/1973 e CTN, art. 32, § 1º.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 28,
+    "paginaOrigem": 8,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 8,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "A",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-29",
@@ -1225,7 +1632,21 @@
     "baseLegal": "Lei Municipal nº 223/1973 e Gabarito Oficial Definitivo FEPESE (Edital 006/2022).",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
     "dificuldade": "difícil",
-    "alertaProfessor": "⚠️ Questão ANULADA pela banca examinadora (FEPESE) no gabarito oficial definitivo. Pontuação atribuída a todos os candidatos."
+    "alertaProfessor": "⚠️ Questão ANULADA pela banca examinadora (FEPESE) no gabarito oficial definitivo. Pontuação atribuída a todos os candidatos.",
+    "numeroOriginal": 29,
+    "paginaOrigem": 8,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 8,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "X",
+      "isAnulada": true,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-30",
@@ -1267,7 +1688,21 @@
     "explicacao": "🎯 Gabarito Oficial: B.\n\nNa prestação de serviço sob a forma de trabalho pessoal do próprio contribuinte (autônomo), o ISSQN não é calculado sobre o percentual da receita bruta, mas sim exigido sob a forma de tributação fixa anual, estabelecida em função da habilitação profissional exigida para o exercício da atividade (nível superior, médio ou elementar).",
     "baseLegal": "Lei Municipal nº 2326/2004 e Decreto-Lei nº 406/1968, art. 9º, § 1º.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 30,
+    "paginaOrigem": 8,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 8,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "B",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-31",
@@ -1309,7 +1744,21 @@
     "explicacao": "🎯 Gabarito Oficial: C.\n\nNos termos da Lei Municipal nº 2326/2004, o imposto sobre serviços poderá ser calculado e recolhido por estimativa da base de cálculo por critério da autoridade tributária quando se tratar de estabelecimento de rudimentar organização (afirmativa 2) ou constituído sob a forma de sociedade simples (afirmativa 4). Estão corretas apenas as afirmativas 2 e 4.",
     "baseLegal": "Lei Municipal nº 2326/2004.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 31,
+    "paginaOrigem": 8,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 8,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "C",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-32",
@@ -1351,7 +1800,21 @@
     "explicacao": "🎯 Gabarito Oficial: E.\n\nConforme o art. 7º da LC nº 116/2003 e a Lei Municipal nº 2326/2004: 'A base de cálculo do imposto é o preço do serviço'. Não se confunde com o lucro, valor da mão de obra isolada ou valorização decorrente.",
     "baseLegal": "Lei Municipal nº 2326/2004 e Lei Complementar Federal nº 116/2003, art. 7º.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 32,
+    "paginaOrigem": 8,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 8,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "E",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-33",
@@ -1393,7 +1856,21 @@
     "explicacao": "🎯 Gabarito Oficial: D.\n\nO lançamento de ofício do ISSQN ocorre quando a administração tributária efetua a constituição do crédito com base em seus próprios elementos ou quando o valor do tributo é apurado e levantado diretamente em procedimento de fiscalização e auditoria fiscal tributária.",
     "baseLegal": "Lei Municipal nº 2326/2004 e CTN, art. 149.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 33,
+    "paginaOrigem": 9,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 9,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "D",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-34",
@@ -1435,7 +1912,21 @@
     "explicacao": "🎯 Gabarito Oficial: A.\n\nConforme a Lei Municipal nº 2326/2004, são eleitas responsáveis por substituição tributária as empresas públicas e sociedades de economia mista quando tomarem serviços sujeitos à incidência do ISSQN no município, devendo reter e recolher o imposto devido pelo prestador contratado.",
     "baseLegal": "Lei Municipal nº 2326/2004.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 34,
+    "paginaOrigem": 9,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 9,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "A",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-35",
@@ -1477,7 +1968,21 @@
     "explicacao": "🎯 Gabarito Oficial: D.\n\nSegundo o art. 1º, § 1º, da LC nº 116/2003 e a legislação municipal: 'O imposto incide também sobre o serviço proveniente do exterior... e os serviços constantes da lista anexa incidem ainda que não se constituam como atividade preponderante do prestador'.",
     "baseLegal": "Lei Municipal nº 2326/2004 e Lei Complementar nº 116/2003, art. 1º, § 1º.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 35,
+    "paginaOrigem": 9,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 9,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "D",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-36",
@@ -1519,7 +2024,21 @@
     "explicacao": "🎯 Gabarito Oficial: C.\n\nComo regra geral, o ISSQN é devido no local do estabelecimento prestador. Todavia, o art. 3º, VII, da LC nº 116/2003 (reproduzido na Lei nº 2326/2004) estabelece exceção para os serviços de instalação e montagem de palcos, andaimes, coberturas e outras estruturas de uso temporário: o imposto é devido no local onde o palco foi instalado (ou seja, no município de Balneário Camboriú).",
     "baseLegal": "Lei Municipal nº 2326/2004 e Lei Complementar nº 116/2003, art. 3º, inciso VII.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 36,
+    "paginaOrigem": 9,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 9,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "C",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-37",
@@ -1561,7 +2080,21 @@
     "explicacao": "🎯 Gabarito Oficial: B.\n\nNos termos do art. 4º da LC nº 116/2003 e da legislação municipal: 'Considera-se estabelecimento prestador o local onde o sujeito passivo desenvolva a atividade de prestar serviços, de modo permanente ou temporário, e que configure unidade econômica ou profissional, sendo irrelevantes para caracterizá-lo as denominações de sede, filial, agência, posto de atendimento, sucursal, escritório de representação ou contato ou quaisquer outras que venham a ser utilizadas'.",
     "baseLegal": "Lei Municipal nº 2326/2004 e LC nº 116/2003, art. 4º.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 37,
+    "paginaOrigem": 9,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 9,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "B",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-38",
@@ -1603,7 +2136,21 @@
     "explicacao": "🎯 Gabarito Oficial: D.\n\nConforme o art. 148 do CTN e os dispositivos da Lei Municipal nº 2326/2004, quando as declarações do contribuinte forem omissas ou não mereçam fé, a autoridade fiscal procederá ao arbitramento da base de cálculo mediante processo regular com contraditório.",
     "baseLegal": "Lei Municipal nº 2326/2004 e CTN, art. 148.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 38,
+    "paginaOrigem": 9,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 9,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "D",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-39",
@@ -1645,7 +2192,21 @@
     "explicacao": "🎯 Gabarito Oficial: C.\n\nNos termos da Lei Municipal nº 223/1973, quando no mesmo processo for apurada a prática de mais de uma infração fiscal da mesma natureza ou afins, a autoridade competente aplicará a penalidade de multa correspondente à infração mais grave (princípio da absorção/consunção na dosimetria das penalidades fiscais afins).",
     "baseLegal": "Lei Municipal nº 223/1973 (Código Tributário de Balneário Camboriú).",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "médio"
+    "dificuldade": "médio",
+    "numeroOriginal": 39,
+    "paginaOrigem": 10,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 10,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "C",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   },
   {
     "id": "q-agente_fiscal_tributario_1-40",
@@ -1687,6 +2248,20 @@
     "explicacao": "🎯 Gabarito Oficial: A.\n\nConforme o art. 201 do CTN e a Lei Municipal nº 223/1973, esgotado o prazo fixado para pagamento administrativo sem a quitação do débito, os créditos tributários líquidos e certos não pagos são inscritos na repartição competente em Dívida Ativa da Fazenda Pública Municipal.",
     "baseLegal": "Lei Municipal nº 223/1973 e CTN, art. 201.",
     "fontePesquisa": "Caderno Oficial de Prova (Edital 006/2022) • Prefeitura Municipal de Balneário Camboriú / FEPESE",
-    "dificuldade": "fácil"
+    "dificuldade": "fácil",
+    "numeroOriginal": 40,
+    "paginaOrigem": 10,
+    "conferenciaDocumental": {
+      "arquivoProva": "agente_fiscal_tributario 1.pdf",
+      "pagina": 10,
+      "arquivoGabarito": "gabarito_agente_fiscal_tributario 1.pdf",
+      "secaoGabarito": "6M02",
+      "cargoCodigo": "6M02",
+      "gabaritoOficial": "A",
+      "isAnulada": false,
+      "metodoConferencia": "PyMuPDF_VectorDrawing_Direct_Inspection",
+      "conferidoEm": "2026-11-09",
+      "status": "verificacao_documental_concluida"
+    }
   }
 ]
