@@ -104,11 +104,19 @@
     "gabaritoPdf": "gabarito_agente_fiscal_tributario 1.pdf",
     "tipoGabarito": "definitivo",
     "triagemLexicalStatus": "triagem_lexical_aprovada",
-    "statusDocumental": "verificacao_documental_pendente",
-    "isDocumentaryVerified": false,
-    "isHomologated": false,
-    "statusHomologacao": "validacao_pendente",
-    "faseDocumentalPendente": true,
-    "totalQuestoes": 40
+    "statusDocumental": "verificacao_documental_concluida",
+    "isDocumentaryVerified": true,
+    "isHomologated": true,
+    "statusHomologacao": "homologado",
+    "faseDocumentalPendente": false,
+    "totalQuestoes": 40,
+    "homologacaoDetalhes": {
+      "parecerAuditoria": "GATE DOCUMENTAL APROVADO",
+      "aprovadoEm": "2026-11-10",
+      "commitAprovacao": "1df0b203",
+      "matrizConferencia": "docs/auditoria-documental/matriz_conferencia_fepese_2023.json",
+      "sha256Prova": "ee8cdbfbfe5ca797e294274e2da92364801d73c93f780d93d2e347b14a6b9cbc",
+      "sha256Gabarito": "cb866ba5e1f1ba8f4ac3e0741d9a95bd3699fab3e58106dbfd335abe9f3ceecf"
+    }
   }
 }

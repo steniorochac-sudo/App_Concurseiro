@@ -100,21 +100,32 @@ describe('examsRegistry - Acervo Unificado e Modular', () => {
     expect(q12.imagens![0]).toContain('q12_diagrama.png');
   });
 
-  describe('Auditoria Externa 5 - Correção A: Sincronização do Status Documental com o Catálogo', () => {
-    it('1. Todas as 7 provas devem refletir o estado de validacao_pendente e NÃO homologado', () => {
+  describe('Marco Documental e Homologação Efetiva (Encerramento FEPESE)', () => {
+    it('1. FEPESE 2023 deve ser a ÚNICA prova com status homologado no acervo pré-carregado', () => {
       expect(PRELOADED_EXAMS).toHaveLength(7);
-      for (const exam of PRELOADED_EXAMS) {
+      const fepese = PRELOADED_EXAMS.find((e) => e.id === 'fepese-2023-bc-agente-fiscal-tributario')!;
+      expect(fepese).toBeDefined();
+      expect(fepese.statusHomologacao).toBe('homologado');
+      expect(fepese.homologado).toBe(true);
+      expect(fepese.documentaryStatus).toBe('verificacao_documental_concluida');
+      expect(fepese.faseDocumentalPendente).toBe(false);
+      expect(fepese.totalQuestions).toBe(40);
+      expect(fepese.questions.every((q) => q.statusHomologacao === 'homologado')).toBe(true);
+      expect(fepese.questions.every((q) => q.homologado === true)).toBe(true);
+      expect(fepese.questions.every((q) => q.fonteDocumental === 'Oficial Homologado')).toBe(true);
+    });
+
+    it('2. As outras 6 provas devem permanecer estritamente em validacao_pendente e NÃO homologadas', () => {
+      const otherExams = PRELOADED_EXAMS.filter((e) => e.id !== 'fepese-2023-bc-agente-fiscal-tributario');
+      expect(otherExams).toHaveLength(6);
+
+      for (const exam of otherExams) {
         expect(exam.statusHomologacao).toBe('validacao_pendente');
         expect(exam.homologado).toBe(false);
         expect(exam.documentaryStatus).toBe('verificacao_documental_pendente');
         expect(exam.faseDocumentalPendente).toBe(true);
-      }
-    });
-
-    it('2. Todas as 7 provas devem permanecer 100% disponíveis para treino com questões intactas', () => {
-      for (const exam of PRELOADED_EXAMS) {
-        expect(exam.questions.length).toBeGreaterThan(0);
-        // Cada questão deve indicar fonte de validação documental pendente
+        expect(exam.questions.every((q) => q.statusHomologacao === 'validacao_pendente')).toBe(true);
+        expect(exam.questions.every((q) => q.homologado === false)).toBe(true);
         expect(exam.questions.every((q) => q.fonteDocumental === 'Validação Documental Pendente')).toBe(true);
       }
     });
@@ -130,12 +141,14 @@ describe('examsRegistry - Acervo Unificado e Modular', () => {
       expect(resolved.faseDocumentalPendente).toBe(true);
     });
 
-    it('4. O adaptador FEPESE deve calcular status dinamicamente e NÃO utilizar valor fixo true', () => {
-      const fepese = PRELOADED_EXAMS.find((e) => e.id === 'fepese-2023-bc-agente-fiscal-tributario');
-      expect(fepese).toBeDefined();
-      expect(fepese?.statusHomologacao).toBe('validacao_pendente');
-      expect(fepese?.homologado).toBe(false);
-      expect(fepese?.documentaryStatus).toBe('verificacao_documental_pendente');
+    it('4. O adaptador FEPESE deve ler a homologação comprovada a partir do registro único', () => {
+      const resolvedFepese = resolveEffectiveExamStatus('fepese-2023-bc-agente-fiscal-tributario');
+      expect(resolvedFepese.isHomologated).toBe(true);
+      expect(resolvedFepese.statusHomologacao).toBe('homologado');
+      expect(resolvedFepese.documentaryStatus).toBe('verificacao_documental_concluida');
+      expect(resolvedFepese.faseDocumentalPendente).toBe(false);
+      expect(resolvedFepese.fonteDocumental).toBe('Oficial Homologado');
+      expect(resolvedFepese.homologacaoDetalhes?.commitAprovacao).toBe('1df0b203');
     });
 
     it('5. Provas novas ou desconhecidas devem seguir a mesma regra estrita (Regra 5)', () => {
@@ -146,6 +159,13 @@ describe('examsRegistry - Acervo Unificado e Modular', () => {
       expect(resolvedNew.statusHomologacao).toBe('validacao_pendente');
       expect(resolvedNew.documentaryStatus).toBe('verificacao_documental_pendente');
       expect(resolvedNew.faseDocumentalPendente).toBe(true);
+    });
+
+    it('6. Todas as 7 provas devem permanecer 100% disponíveis para treino com questões intactas', () => {
+      expect(ALL_IMPORTED_QUESTIONS).toHaveLength(590);
+      for (const exam of PRELOADED_EXAMS) {
+        expect(exam.questions.length).toBeGreaterThan(0);
+      }
     });
   });
 });

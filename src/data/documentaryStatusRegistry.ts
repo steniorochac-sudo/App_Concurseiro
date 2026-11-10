@@ -16,6 +16,14 @@ export interface ExamDocumentaryEvidenceRecord {
   statusHomologacao: HomologationStatus;
   faseDocumentalPendente: boolean;
   totalQuestoes: number;
+  homologacaoDetalhes?: {
+    parecerAuditoria: string;
+    aprovadoEm: string;
+    commitAprovacao: string;
+    matrizConferencia: string;
+    sha256Prova: string;
+    sha256Gabarito: string;
+  };
 }
 
 export const EXAMS_DOCUMENTARY_REGISTRY: Record<string, ExamDocumentaryEvidenceRecord> =
@@ -38,6 +46,7 @@ export function resolveEffectiveExamStatus(
   fonteDocumental: string;
   documentaryStatus: TextualFidelityStatus;
   faseDocumentalPendente: boolean;
+  homologacaoDetalhes?: ExamDocumentaryEvidenceRecord['homologacaoDetalhes'];
 } {
   const record = EXAMS_DOCUMENTARY_REGISTRY[examId];
 
@@ -62,6 +71,7 @@ export function resolveEffectiveExamStatus(
       fonteDocumental,
       documentaryStatus: record.statusDocumental,
       faseDocumentalPendente: record.faseDocumentalPendente,
+      homologacaoDetalhes: record.homologacaoDetalhes,
     };
   }
 

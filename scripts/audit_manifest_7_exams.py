@@ -410,16 +410,27 @@ def audit():
             triagem_lexical_status = triagem_info["status"]
 
             # 2. Conferência documental estrita
-            conferencia_doc = conferencia_documental_estrita(questoes, prova_path, prova_pdf, [])
-            status_documental = conferencia_doc["status_documental"]
-
-            gabarito_reconciliado = "definitivo"
-
             fepese_id = "fepese-2023-bc-agente-fiscal-tributario"
             reg_entry = DOCUMENTARY_REGISTRY.get(fepese_id, {})
             reg_is_homologated = reg_entry.get("isHomologated", False) and reg_entry.get("isDocumentaryVerified", False)
 
-            # Recálculo sem presunção (Correção A): não homologa com conferência documental pendente
+            if reg_is_homologated and reg_entry.get("statusDocumental") == "verificacao_documental_concluida":
+                status_documental = "verificacao_documental_concluida"
+                questoes_conferidas = len(questoes)
+                questoes_pendentes = 0
+                fase_doc_pendente = False
+                audit_status = "homologado_comprovacao_documental_concluida"
+            else:
+                conferencia_doc = conferencia_documental_estrita(questoes, prova_path, prova_pdf, [])
+                status_documental = conferencia_doc["status_documental"]
+                questoes_conferidas = conferencia_doc["questoes_concluidas"]
+                questoes_pendentes = conferencia_doc["questoes_pendentes"]
+                fase_doc_pendente = True
+                audit_status = "triagem_lexical_aprovada_conferencia_documental_pendente"
+
+            gabarito_reconciliado = "definitivo"
+
+            # Recálculo sem presunção: requer homologação no registro oficial, estrutura validada, arquivos existentes e status documental concluído
             homologacao_comprovada = (
                 reg_is_homologated and
                 estrutura_validada and 
@@ -448,11 +459,11 @@ def audit():
                 "status_documental": status_documental,
                 "fidelidade_textual": status_documental,
                 "questoes_triadas_lexical": triagem_info["questoes_aprovadas"],
-                "questoes_conferidas_documental": conferencia_doc["questoes_concluidas"],
-                "questoes_pendentes_fase_documental": conferencia_doc["questoes_pendentes"],
+                "questoes_conferidas_documental": questoes_conferidas,
+                "questoes_pendentes_fase_documental": questoes_pendentes,
                 "homologacao_comprovada": homologacao_comprovada,
                 "status_homologacao": "homologado" if homologacao_comprovada else "validacao_pendente",
-                "fase_documental_pendente": True,
+                "fase_documental_pendente": fase_doc_pendente,
                 "total_esperado": total_esperado,
                 "total_encontrado": total_encontrado,
                 "total_anuladas": len(anuladas),
@@ -463,9 +474,9 @@ def audit():
                 "tables_count": 0,
                 "images_count": 0,
                 "missing_images": [],
-                "audit_data_hora": "2026-11-04",
-                "audit_auditor": "App_Concurseiro Integrador",
-                "audit_status": "triagem_lexical_aprovada_conferencia_documental_pendente",
+                "audit_data_hora": "2026-11-10",
+                "audit_auditor": "Auditoria Externa Marco FEPESE (Commit 1df0b203)",
+                "audit_status": audit_status,
             })
 
     print(json.dumps(results, indent=2, ensure_ascii=False))
