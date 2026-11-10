@@ -215,5 +215,122 @@ class TestFepeseDocumentaryConferral(unittest.TestCase):
         self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
         self.assertTrue(any(d["tipo"] == "gabarito_divergente" for d in divergences))
 
+    # =========================================================================
+    # TESTES COMPLEMENTARES DE TEXTO DE APOIO E ELEMENTOS VETORIAIS (Gate Complementar)
+    # =========================================================================
+
+    def test_q01_q02_support_text_exact_verification(self):
+        """15. Positivo: Q01 e Q02 devem validar integralmente o Texto 1 de apoio."""
+        for q_idx, q_num in [(0, 1), (1, 2)]:
+            q_json = self.json_data[q_idx]
+            pdf_q = self.pdf_questions[q_num]
+            analysis, is_valid, divergences = analyze_single_question(
+                q_num, pdf_q, q_json, self.sha_prova, self.sha_gabarito, self.doc
+            )
+            self.assertTrue(is_valid, f"Q{q_num} deveria validar integralmente o Texto 1")
+            self.assertEqual(analysis["statusDocumental"], "verificacao_documental_concluida")
+            self.assertEqual(divergences, [])
+
+    def test_negative_support_text_modification(self):
+        """16. Negativo: Modificação no texto compartilhado (ex: 84% -> 85%) deve reprovar a conferência."""
+        pdf_q1 = self.pdf_questions[1]
+        tampered_json_q = copy.deepcopy(self.json_data[0])
+        # Modifica número no texto compartilhado
+        tampered_json_q["textoCompartilhado"]["content"] = tampered_json_q["textoCompartilhado"]["content"].replace("84%", "85%")
+        
+        analysis, is_valid, divergences = analyze_single_question(
+            1, pdf_q1, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc
+        )
+        self.assertFalse(is_valid, "Verificação deveria reprovar alteração de número no Texto 1")
+        self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
+        self.assertTrue(any(d["tipo"] == "texto_apoio_divergente" for d in divergences))
+
+    def test_negative_support_text_removal_of_phrase(self):
+        """17. Negativo: Remoção de trecho do texto compartilhado (ex: COMAC) deve reprovar a conferência."""
+        pdf_q1 = self.pdf_questions[1]
+        tampered_json_q = copy.deepcopy(self.json_data[0])
+        # Remove referência à COMAC
+        tampered_json_q["textoCompartilhado"]["content"] = tampered_json_q["textoCompartilhado"]["content"].replace("COMAC", "")
+        
+        analysis, is_valid, divergences = analyze_single_question(
+            1, pdf_q1, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc
+        )
+        self.assertFalse(is_valid, "Verificação deveria reprovar remoção de trecho do Texto 1")
+        self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
+        self.assertTrue(any(d["tipo"] == "texto_apoio_divergente" for d in divergences))
+
+    def test_negative_support_text_lacuna_tampering(self):
+        """18. Negativo: Adulteração na quantidade de lacunas do Texto 1 (4 -> 3) deve reprovar a conferência."""
+        pdf_q1 = self.pdf_questions[1]
+        tampered_json_q = copy.deepcopy(self.json_data[0])
+        # Remove uma das lacunas
+        tampered_json_q["textoCompartilhado"]["content"] = tampered_json_q["textoCompartilhado"]["content"].replace("Com ________________ elegantes", "Com elegantes", 1)
+        
+        analysis, is_valid, divergences = analyze_single_question(
+            1, pdf_q1, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc
+        )
+        self.assertFalse(is_valid, "Verificação deveria reprovar alteração na quantidade de lacunas do Texto 1")
+        self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
+        self.assertTrue(any(d["tipo"] == "texto_apoio_divergente" for d in divergences))
+
+    def test_q05_vector_underline_exact_1_to_1_correspondence(self):
+        """19. Positivo: Q05 deve validar a correspondência 1-para-1 de cada alternativa com traço vetorial."""
+        pdf_q5 = self.pdf_questions[5]
+        q5_json = self.json_data[4]
+        analysis, is_valid, divergences = analyze_single_question(
+            5, pdf_q5, q5_json, self.sha_prova, self.sha_gabarito, self.doc
+        )
+        self.assertTrue(is_valid, "Q05 deve ser validada com sucesso")
+        self.assertEqual(analysis["statusDocumental"], "verificacao_documental_concluida")
+        self.assertTrue(analysis["evidenciaVetorial"]["comprovado"])
+        self.assertEqual(analysis["evidenciaVetorial"]["tracosConfirmados"], 5)
+        
+        # Confere cada alternativa
+        detalhes = analysis["evidenciaVetorial"]["detalhesPorAlternativa"]
+        expected_phrases = {
+            "A": "que eu não vou!",
+            "B": "que você saia da sala.",
+            "C": "quando amanhecia.",
+            "D": "que mente",
+            "E": "que essa novela tenha acabado."
+        }
+        for let, expected_phrase in expected_phrases.items():
+            self.assertEqual(detalhes[let]["status"], "comprovado_vetorialmente")
+            self.assertEqual(detalhes[let]["json_tagged"], expected_phrase)
+            self.assertEqual(detalhes[let]["pdf_underlined"], expected_phrase)
+            self.assertIsNotNone(detalhes[let]["bbox"])
+
+    def test_negative_q05_vector_underline_removal(self):
+        """20. Negativo: Remoção de tag <u> em alternativa da Q05 deve reprovar a conferência."""
+        pdf_q5 = self.pdf_questions[5]
+        tampered_json_q = copy.deepcopy(self.json_data[4])
+        # Remove a tag <u> na alternativa A
+        tampered_json_q["alternativas"][0]["text"] = "Acontece que eu não vou!"
+        
+        analysis, is_valid, divergences = analyze_single_question(
+            5, pdf_q5, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc
+        )
+        self.assertFalse(is_valid, "Verificação deveria reprovar Q05 sem tag <u>")
+        self.assertFalse(analysis["evidenciaVetorial"]["comprovado"], "evidenciaVetorial.comprovado deve ser False")
+        self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
+        self.assertEqual(analysis["confrontoAlternativas"]["A"], "falha_comprovacao_vetorial")
+        self.assertTrue(any(d["tipo"] == "falha_sublinhado_vetorial" for d in divergences))
+
+    def test_negative_q05_vector_underline_displacement(self):
+        """21. Negativo: Deslocamento da marcação <u> na Q05 para outra palavra deve reprovar a conferência."""
+        pdf_q5 = self.pdf_questions[5]
+        tampered_json_q = copy.deepcopy(self.json_data[4])
+        # Desloca a tag <u> para 'Acontece' em vez de 'que eu não vou!'
+        tampered_json_q["alternativas"][0]["text"] = "<u>Acontece</u> que eu não vou!"
+        
+        analysis, is_valid, divergences = analyze_single_question(
+            5, pdf_q5, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc
+        )
+        self.assertFalse(is_valid, "Verificação deveria reprovar Q05 com tag <u> deslocada")
+        self.assertFalse(analysis["evidenciaVetorial"]["comprovado"], "evidenciaVetorial.comprovado deve ser False")
+        self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
+        self.assertEqual(analysis["confrontoAlternativas"]["A"], "falha_comprovacao_vetorial")
+        self.assertTrue(any(d["tipo"] == "falha_sublinhado_vetorial" for d in divergences))
+
 if __name__ == "__main__":
     unittest.main()

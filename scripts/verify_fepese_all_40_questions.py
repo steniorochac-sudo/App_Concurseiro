@@ -130,19 +130,132 @@ def normalize_text_for_comparison(s, preserve_underlines=False):
     s = re.sub(r'\s*\n\s*', ' ', s)
     return s.strip()
 
-def verify_vector_underlines_q05(doc):
+def verify_support_text_1_detailed(doc, json_q):
     """
-    Inspeciona os traços vetoriais da Questão 05 na página 3.
+    Valida especificamente o Texto 1 associado às questões 1 e 2,
+    preservando integralmente parágrafos, números, palavras, pontuação relevante e lacunas.
     """
-    page = doc[2] # Página 3
-    drawings = page.get_drawings()
-    underlines = []
+    p3 = doc[2] # Página 3
+    blocks = [b for b in p3.get_text('blocks') if 35 <= b[1] <= 735 and b[0] < 280]
+    blocks.sort(key=lambda b: b[1])
+    
+    # Blocos 2 a 6 da pág. 3 (Texto 1: título, parágrafos 1, 2, 3 e fonte)
+    support_blocks = blocks[2:7]
+    pdf_text = "\n\n".join(b[4].strip() for b in support_blocks)
+    pdf_text = re.sub(r'(\w+)-\s*\n\s*(\w+)', r'\1\2', pdf_text)
+    
+    errors = []
+    
+    # 1. Validação no enunciado (citação em markdown)
+    enunciado = json_q.get("enunciado", "")
+    if "> [Texto 1]" not in enunciado:
+        errors.append("Enunciado não contém citação do Texto 1 (> [Texto 1])")
+        
+    # 2. Validação no objeto textoCompartilhado
+    shared = json_q.get("textoCompartilhado")
+    if not shared:
+        errors.append("Questão não contém objeto textoCompartilhado")
+        return False, errors
+        
+    title = shared.get("title", "")
+    content = shared.get("content", "")
+    
+    if "Texto 1" not in title or "Os gatos" not in title:
+        errors.append(f"Título do textoCompartilhado divergente: '{title}'")
+        
+    required_elements = [
+        ("personalidade enigmática", "Parágrafo 1 - abertura"),
+        ("COMAC", "Parágrafo 1 - sigla COMAC"),
+        ("Comissão de Animais em Companhia", "Parágrafo 1 - nome COMAC"),
+        ("2021", "Parágrafo 1 - ano 2021"),
+        ("84%", "Parágrafo 1 - percentual 84%"),
+        ("língua áspera para higienização oral", "Parágrafo 2 - abertura"),
+        ("45 e 65 mil hertz", "Parágrafo 2 - audição gatos"),
+        ("10 e 40 mil hertz", "Parágrafo 2 - audição cães"),
+        ("Seu ronronar é uma forma de comunicação", "Parágrafo 3 - abertura"),
+        ("Especialistas acreditam", "Parágrafo 3 - hipótese"),
+        ("progenitora a ronronar", "Parágrafo 3 - termo progenitora"),
+        ("www.terra.br/amp/vida-e-estilo/pets/confira-10-curiosidades-sobre-os-gatos", "Fonte - URL oficial")
+    ]
+    
+    for token, desc in required_elements:
+        if token not in content:
+            errors.append(f"Elemento ausente ou adulterado no Texto 1 ({desc}): '{token}'")
+            
+    # Contagem de lacunas no texto compartilhado (devem ser exatamente 4)
+    lacunas_count = len(re.findall(r'_{4,}', content))
+    if lacunas_count != 4:
+        errors.append(f"Número incorreto de lacunas no Texto 1: encontrado {lacunas_count}, esperado 4")
+        
+    is_valid = (len(errors) == 0)
+    return is_valid, errors
+
+def verify_vector_underlines_q05_detailed(doc, json_q):
+    """
+    Verifica a correspondência 1-para-1 entre cada segmento sublinhado no PDF
+    e a respectiva tag <u> no JSON da Questão 05, participando do bloqueio de is_valid.
+    """
+    p3 = doc[2] # Página 3
+    words = p3.get_text('words')
+    drawings = p3.get_drawings()
+    q5_words = [w for w in words if w[0] > 300 and 520 <= w[1] <= 600]
+    
+    u_lines = []
     for d in drawings:
-        rect = d.get("rect")
-        # Traços de sublinhado na coluna 1 da página 3 (x0 > 300, y entre 520 e 600, altura estreita < 2pt)
-        if rect and rect.x0 > 300 and 520 <= rect.y0 <= 600 and (rect.y1 - rect.y0) < 2.0:
-            underlines.append(rect)
-    return len(underlines) >= 5, len(underlines)
+        r = d.get('rect')
+        if r and r.x0 > 300 and 520 <= r.y0 <= 600 and (r.y1 - r.y0) < 3.0:
+            u_lines.append(r)
+    u_lines.sort(key=lambda r: r.y0)
+    
+    letters = ['A', 'B', 'C', 'D', 'E']
+    pdf_underlines = {}
+    for idx, let in enumerate(letters):
+        if idx < len(u_lines):
+            ul = u_lines[idx]
+            matching_words = [w for w in q5_words if abs(w[3] - ul.y0) < 4.0 and not (w[2] < ul.x0 or w[0] > ul.x1)]
+            phrase = ' '.join(w[4] for w in matching_words).strip()
+            pdf_underlines[let] = {
+                "phrase": phrase,
+                "bbox": [round(ul.x0, 1), round(ul.y0, 1), round(ul.x1, 1), round(ul.y1, 1)]
+            }
+        else:
+            pdf_underlines[let] = {"phrase": "", "bbox": []}
+
+    errors = []
+    details = {}
+    alts = {a["id"].upper(): a.get("text", "") for a in json_q.get("alternativas", [])}
+    for let in letters:
+        alt_text = alts.get(let, "")
+        m = re.findall(r'<u>(.*?)</u>', alt_text)
+        pdf_info = pdf_underlines.get(let, {})
+        expected_phrase = pdf_info.get("phrase", "")
+        
+        if not m:
+            errors.append(f"Alternativa {let} não possui marcação <u>...</u> no JSON")
+            details[let] = {"status": "faltando_tag_u", "json_tagged": "", "pdf_underlined": expected_phrase}
+        elif len(m) > 1:
+            errors.append(f"Alternativa {let} possui múltiplas marcações <u>...</u> no JSON")
+            details[let] = {"status": "multiplas_tags_u", "json_tagged": m, "pdf_underlined": expected_phrase}
+        else:
+            json_tagged = m[0].strip()
+            if json_tagged == expected_phrase:
+                details[let] = {
+                    "status": "comprovado_vetorialmente",
+                    "json_tagged": json_tagged,
+                    "pdf_underlined": expected_phrase,
+                    "bbox": pdf_info.get("bbox")
+                }
+            else:
+                errors.append(f"Alternativa {let}: trecho sublinhado no JSON '{json_tagged}' diverge do PDF '{expected_phrase}'")
+                details[let] = {
+                    "status": "divergencia_sublinhado",
+                    "json_tagged": json_tagged,
+                    "pdf_underlined": expected_phrase,
+                    "bbox": pdf_info.get("bbox")
+                }
+    
+    is_valid = (len(errors) == 0 and len(u_lines) >= 5)
+    return is_valid, details, errors
 
 def compute_overall_bbox(bboxes):
     if not bboxes:
@@ -220,6 +333,18 @@ def analyze_single_question(q_num, pdf_q, json_q, sha_prova, sha_gabarito, doc=N
                 "json_norm": norm_json_stmt
             })
 
+    # Validação integral de Texto de Apoio (Texto 1 para Q01 e Q02)
+    if q_num in [1, 2] and doc:
+        sup_valid, sup_errors = verify_support_text_1_detailed(doc, json_q)
+        if not sup_valid:
+            confronto_enunciado_status = "divergencia_relevante_nao_justificada"
+            for err in sup_errors:
+                unjustified_divergences.append({
+                    "tipo": "texto_apoio_divergente",
+                    "elemento": "texto_compartilhado_texto_1",
+                    "detalhe": err
+                })
+
     # Confronto Alternativas
     json_alts = {a["id"].upper(): a.get("text", "") for a in json_q.get("alternativas", [])}
     confronto_alts = {}
@@ -231,7 +356,7 @@ def analyze_single_question(q_num, pdf_q, json_q, sha_prova, sha_gabarito, doc=N
         j_norm = normalize_text_for_comparison(j_raw)
 
         if p_norm == j_norm:
-            # Caso especial Q05: sublinhados vetoriais
+            # Caso especial Q05: sublinhados vetoriais (confirmado preliminarmente)
             if q_num == 5:
                 confronto_alts[let] = "fidelidade_integral_comprovada_vetorialmente"
             # Caso especial Q40 Alt E: exclusão do marcador de rascunho
@@ -298,26 +423,37 @@ def analyze_single_question(q_num, pdf_q, json_q, sha_prova, sha_gabarito, doc=N
             "justificativa": decisao_oficial_banca
         })
 
-    # Status da questão
+    # Evidência vetorial para Q05 com verificação 1-para-1 de cada alternativa
+    evidencia_vetorial = None
+    if q_num == 5 and doc:
+        v_valid, v_details, v_errors = verify_vector_underlines_q05_detailed(doc, json_q)
+        evidencia_vetorial = {
+            "tipo": "sublinhados_graficos",
+            "metodo": "page.get_drawings()",
+            "pagina": 3,
+            "tracosConfirmados": len([d for d in v_details.values() if d.get("status") == "comprovado_vetorialmente"]),
+            "tagsHtml": "<u>...</u>",
+            "comprovado": v_valid,
+            "detalhesPorAlternativa": v_details
+        }
+        if not v_valid:
+            for err in v_errors:
+                unjustified_divergences.append({
+                    "tipo": "falha_sublinhado_vetorial",
+                    "elemento": "sublinhado_q05",
+                    "detalhe": err
+                })
+            for let, d in v_details.items():
+                if d.get("status") != "comprovado_vetorialmente":
+                    confronto_alts[let] = "falha_comprovacao_vetorial"
+
+    # Status da questão (calculado obrigatoriamente após todas as checagens vetoriais e de texto de apoio)
     if len(unjustified_divergences) > 0:
         status_result = "divergencia_relevante_identificada"
     elif len(differences_found) > 0:
         status_result = "verificacao_documental_concluida"
     else:
         status_result = "verificacao_documental_concluida"
-
-    # Evidência vetorial para Q05
-    evidencia_vetorial = None
-    if q_num == 5 and doc:
-        has_drawings, count = verify_vector_underlines_q05(doc)
-        evidencia_vetorial = {
-            "tipo": "sublinhados_graficos",
-            "metodo": "page.get_drawings()",
-            "pagina": 3,
-            "tracosConfirmados": count,
-            "tagsHtml": "<u>...</u>",
-            "comprovado": has_drawings
-        }
 
     analysis = {
         "numeroOriginal": q_num,

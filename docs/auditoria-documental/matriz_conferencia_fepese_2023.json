@@ -212,9 +212,66 @@
       "tipo": "sublinhados_graficos",
       "metodo": "page.get_drawings()",
       "pagina": 3,
-      "tracosConfirmados": 6,
+      "tracosConfirmados": 5,
       "tagsHtml": "<u>...</u>",
-      "comprovado": true
+      "comprovado": true,
+      "detalhesPorAlternativa": {
+        "A": {
+          "status": "comprovado_vetorialmente",
+          "json_tagged": "que eu não vou!",
+          "pdf_underlined": "que eu não vou!",
+          "bbox": [
+            374.3,
+            534.1,
+            438.9,
+            535.6
+          ]
+        },
+        "B": {
+          "status": "comprovado_vetorialmente",
+          "json_tagged": "que você saia da sala.",
+          "pdf_underlined": "que você saia da sala.",
+          "bbox": [
+            355.2,
+            546.1,
+            441.8,
+            547.6
+          ]
+        },
+        "C": {
+          "status": "comprovado_vetorialmente",
+          "json_tagged": "quando amanhecia.",
+          "pdf_underlined": "quando amanhecia.",
+          "bbox": [
+            379.8,
+            558.1,
+            460.2,
+            559.6
+          ]
+        },
+        "D": {
+          "status": "comprovado_vetorialmente",
+          "json_tagged": "que mente",
+          "pdf_underlined": "que mente",
+          "bbox": [
+            363.0,
+            570.1,
+            408.4,
+            571.6
+          ]
+        },
+        "E": {
+          "status": "comprovado_vetorialmente",
+          "json_tagged": "que essa novela tenha acabado.",
+          "pdf_underlined": "que essa novela tenha acabado.",
+          "bbox": [
+            384.1,
+            582.1,
+            514.0,
+            583.6
+          ]
+        }
+      }
     }
   },
   {

@@ -212,5 +212,35 @@ describe('Auditoria e Validação Integral - Agente Fiscal Tributário 1 (FEPESE
       expect(q29.conferenciaDocumental.decisaoOficialBanca).toContain('Gabarito Oficial Definitivo');
       expect(q29.conferenciaDocumental.comentarioDidatico).toContain('CTN');
     });
+
+    it('Texto 1 deve preservar integralmente parágrafos, números (84%, 2021) e as 4 lacunas', () => {
+      [questions[0], questions[1]].forEach((q) => {
+        const shared = (q as any).textoCompartilhado;
+        expect(shared).toBeDefined();
+        expect(shared.title).toContain('Texto 1 — Os gatos');
+        expect(shared.content).toContain('COMAC');
+        expect(shared.content).toContain('84%');
+        expect(shared.content).toContain('2021');
+        expect(shared.content).toContain('45 e 65 mil hertz');
+        expect(shared.content).toContain('10 e 40 mil hertz');
+        expect(shared.content).toContain('progenitora a ronronar');
+        const lacunas = shared.content.match(/_{4,}/g);
+        expect(lacunas).toHaveLength(4);
+      });
+    });
+
+    it('Q05 deve possuir cada alternativa com tags <u> correspondendo a orações subordinadas comprovadas', () => {
+      const q5 = questions[4];
+      const expectedTags: Record<string, string> = {
+        A: '<u>que eu não vou!</u>',
+        B: '<u>que você saia da sala.</u>',
+        C: '<u>quando amanhecia.</u>',
+        D: '<u>que mente</u>',
+        E: '<u>que essa novela tenha acabado.</u>'
+      };
+      q5.alternativas.forEach((alt) => {
+        expect(alt.text).toContain(expectedTags[alt.id]);
+      });
+    });
   });
 });

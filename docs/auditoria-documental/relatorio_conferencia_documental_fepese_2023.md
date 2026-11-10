@@ -127,11 +127,27 @@ Todas as 40 questões foram analisadas elemento a elemento (enunciado, proposiç
 - **JSON:** `"Débitos de terceiros."`.
 - **Classificação:** `normalizacao_editorial_justificada`.
 
+### Texto 1 de Apoio (Questões 01 e 02) — Conferência Integral
+- **PDF Oficial (Página 3, Blocos 2 a 6):** Contém título "Texto 1", subtítulo "Os gatos", 3 parágrafos narrativos, 4 lacunas de preenchimento, números oficiais (`2021`, `84%`, `45 e 65 mil hertz`, `10 e 40 mil hertz`), dados institucionais (`COMAC - Comissão de Animais em Companhia`) e URL da fonte.
+- **JSON:** Registrado integralmente tanto na citação em bloco markdown (`> [Texto 1]`) quanto no objeto estruturado `textoCompartilhado`.
+- **Classificação:** `fidelidade_integral`.
+- **Bloqueio Determinístico:** A conferência valida a integridade de todos os parágrafos, dados numéricos e as 4 lacunas, falhando obrigatoriamente perante qualquer omissão ou adulteração.
+
+### Elementos Gráficos e Vetoriais da Questão 05 — Correspondência 1-para-1
+- **Inspeção Vetorial:** Mapeamento determinístico das coordenadas verticais das linhas de sublinhado na página 3 ($y \approx 534.1$ a $582.1$ pt) contra os retângulos envolventes das palavras.
+- **Correspondência 1-para-1:**
+  - Alternativa A: `que eu não vou!` (bbox `[374.3, 534.1, 438.9, 535.6]`) -> `<u>que eu não vou!</u>`
+  - Alternativa B: `que você saia da sala.` (bbox `[355.2, 546.1, 441.8, 547.6]`) -> `<u>que você saia da sala.</u>`
+  - Alternativa C: `quando amanhecia.` (bbox `[379.8, 558.1, 460.2, 559.6]`) -> `<u>quando amanhecia.</u>`
+  - Alternativa D: `que mente` (bbox `[363.0, 570.1, 408.4, 571.6]`) -> `<u>que mente</u>`
+  - Alternativa E: `que essa novela tenha acabado.` (bbox `[384.1, 582.1, 514.0, 583.6]`) -> `<u>que essa novela tenha acabado.</u>`
+- **Bloqueio Ativo no Status:** A verificação vetorial participa diretamente de `is_valid` e `statusDocumental`. Qualquer ausência ou deslocamento de tag `<u>` reprova a questão com `divergencia_relevante_identificada`.
+
 ---
 
 ## 5. Bateria de Testes Negativos e Blindagem de Integridade
 
-Para atender prioritariamente à regra de criação de testes e comprovar o bloqueio contra adulterações, foram implementados **5 cenários de teste negativo** em [`scripts/tests/test_fepese_documentary_conferral.py`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/scripts/tests/test_fepese_documentary_conferral.py):
+Para atender prioritariamente à regra de criação de testes e comprovar o bloqueio contra adulterações, foram implementados **10 cenários de teste negativo** em [`scripts/tests/test_fepese_documentary_conferral.py`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/scripts/tests/test_fepese_documentary_conferral.py):
 
 1. **Alteração de Negação no Enunciado (`test_negative_statement_negation_alteration`):**  
    Inserção espúria de `"Não"` em Q01 provocou imediata rejeição (`divergencia_relevante_identificada`).
@@ -143,15 +159,25 @@ Para atender prioritariamente à regra de criação de testes e comprovar o bloq
    Supressão da proposição 3 de Q24 causou bloqueio imediato por divergência de enunciado.
 5. **Divergência de Gabarito (`test_negative_gabarito_divergence`):**  
    Modificação do gabarito em Q10 gerou falha formal de validação contra a seção 6M02.
+6. **Modificação Numérica no Texto de Apoio (`test_negative_support_text_modification`):**  
+   Alteração do percentual oficial no Texto 1 (`84%` para `85%`) em Q01 foi detectada e reprovada com `texto_apoio_divergente`.
+7. **Remoção de Trecho do Texto de Apoio (`test_negative_support_text_removal_of_phrase`):**  
+   Remoção da menção à `COMAC` no Texto 1 causou imediata rejeição da conferência.
+8. **Adulteração de Lacunas no Texto de Apoio (`test_negative_support_text_lacuna_tampering`):**  
+   Supressão de lacuna no Texto 1 (reduzindo de 4 para 3) reprovou a validação com erro de integridade de lacunas.
+9. **Remoção de Marcação Sublinhada em Q05 (`test_negative_q05_vector_underline_removal`):**  
+   Remoção da tag `<u>` na alternativa A da Q05 resultou em `evidenciaVetorial.comprovado = False` e `confrontoAlternativas.A = "falha_comprovacao_vetorial"`, bloqueando a validação.
+10. **Deslocamento de Sublinhado em Q05 (`test_negative_q05_vector_underline_displacement`):**  
+    Deslocamento da tag `<u>` para palavra não sublinhada no PDF (`<u>Acontece</u>`) causou bloqueio imediato da questão.
 
 ---
 
 ## 6. Resultados dos Gates Automatizados
 
-- **Suíte Vitest (Frontend & Types):** **218 testes aprovados** (21 arquivos de teste, 0 falhas).
-  - Teste dedicado [`agente_fiscal_tributario_1.test.ts`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/src/data/imported/__tests__/agente_fiscal_tributario_1.test.ts): **17 testes aprovados**.
-- **Suíte Python (PyMuPDF & Unittest):** **63 testes aprovados** (0 erros, 0 falhas).
-  - Teste dedicado [`test_fepese_documentary_conferral.py`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/scripts/tests/test_fepese_documentary_conferral.py): **14 testes aprovados** (9 positivos + 5 negativos).
+- **Suíte Vitest (Frontend & Types):** **220 testes aprovados** (21 arquivos de teste, 0 falhas).
+  - Teste dedicado [`agente_fiscal_tributario_1.test.ts`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/src/data/imported/__tests__/agente_fiscal_tributario_1.test.ts): **19 testes aprovados**.
+- **Suíte Python (PyMuPDF & Unittest):** **70 testes aprovados** (0 erros, 0 falhas).
+  - Teste dedicado [`test_fepese_documentary_conferral.py`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/scripts/tests/test_fepese_documentary_conferral.py): **21 testes aprovados** (11 positivos + 10 negativos).
 - **Compilação de Produção:** `npm run build` (`tsc && vite build`) concluído com **código 0**.
 
 ---
