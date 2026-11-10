@@ -11,6 +11,7 @@ from scripts.verify_fepese_all_40_questions import (
     extract_flow,
     compute_sha256,
     run_full_verification,
+    verify_support_text_1_detailed,
     OFFICIAL_GABARITO_6M02,
     PDF_PATH,
     GABARITO_PDF_PATH,
@@ -220,7 +221,7 @@ class TestFepeseDocumentaryConferral(unittest.TestCase):
     # =========================================================================
 
     def test_q01_q02_support_text_exact_verification(self):
-        """15. Positivo: Q01 e Q02 devem validar integralmente o Texto 1 de apoio."""
+        """15. Positivo: Q01 e Q02 devem validar integralmente o Texto 1 contra o PDF oficial."""
         for q_idx, q_num in [(0, 1), (1, 2)]:
             q_json = self.json_data[q_idx]
             pdf_q = self.pdf_questions[q_num]
@@ -230,41 +231,117 @@ class TestFepeseDocumentaryConferral(unittest.TestCase):
             self.assertTrue(is_valid, f"Q{q_num} deveria validar integralmente o Texto 1")
             self.assertEqual(analysis["statusDocumental"], "verificacao_documental_concluida")
             self.assertEqual(divergences, [])
+            self.assertIn("evidenciaTextoApoio", analysis)
+            ev = analysis["evidenciaTextoApoio"]
+            self.assertTrue(ev["comprovado"])
+            self.assertEqual(ev["confrontoPdfVsShared"], "100%_identico")
+            self.assertEqual(ev["confrontoPdfVsEnunciado"], "100%_identico")
+            self.assertEqual(ev["confrontoSharedVsEnunciado"], "100%_identico")
+            self.assertEqual(ev["paragrafosConferidos"], 4)
+            self.assertEqual(ev["lacunasConferidas"], 4)
 
-    def test_negative_support_text_modification(self):
-        """16. Negativo: Modificação no texto compartilhado (ex: 84% -> 85%) deve reprovar a conferência."""
+    def test_support_text_1_direct_function_verification(self):
+        """15b. Positivo Direto: verify_support_text_1_detailed deve retornar comprovado sem divergências."""
+        is_valid, errors, details = verify_support_text_1_detailed(self.doc, self.json_data[0])
+        self.assertTrue(is_valid)
+        self.assertEqual(errors, [])
+        self.assertEqual(len(details), 4)
+        for p_name in ["Parágrafo 1", "Parágrafo 2", "Parágrafo 3", "Fonte"]:
+            self.assertTrue(details[p_name]["pdfVsSharedMatch"])
+            self.assertTrue(details[p_name]["pdfVsEnuncMatch"])
+            self.assertTrue(details[p_name]["sharedVsEnuncMatch"])
+            self.assertEqual(details[p_name]["divergencias"], [])
+
+    def test_negative_support_text_removal_of_intermediate_sentence(self):
+        """16. Negativo: Remoção de frase intermediária não incluída na antiga lista de palavras obrigatórias."""
         pdf_q1 = self.pdf_questions[1]
         tampered_json_q = copy.deepcopy(self.json_data[0])
-        # Modifica número no texto compartilhado
+        # Frase intermediária do Parágrafo 3 nunca presente na antiga lista de tokens
+        phrase_to_remove = "A maioria dos gatos ronrona, mas nem todos."
+        self.assertIn(phrase_to_remove, tampered_json_q["textoCompartilhado"]["content"])
+        tampered_json_q["textoCompartilhado"]["content"] = tampered_json_q["textoCompartilhado"]["content"].replace(phrase_to_remove, "")
+        
+        analysis, is_valid, divergences = analyze_single_question(
+            1, pdf_q1, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc
+        )
+        self.assertFalse(is_valid, "Conferência deve reprovar remoção de frase intermediária do Texto 1")
+        self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
+        self.assertTrue(any(d["tipo"] == "texto_apoio_divergente" for d in divergences))
+        self.assertTrue(any("Parágrafo 3: divergência textual integral" in d["detalhe"] for d in divergences))
+
+    def test_negative_support_text_swap_order_of_periods(self):
+        """17. Negativo: Troca da ordem de dois períodos no Texto 1 deve reprovar a conferência."""
+        pdf_q1 = self.pdf_questions[1]
+        tampered_json_q = copy.deepcopy(self.json_data[0])
+        # No Parágrafo 1, troca a ordem dos períodos 2 e 3
+        orig_p1 = "Os gatos possuem uma personalidade enigmática que costuma gerar bastante curiosidade nas pessoas. Com ________________ elegantes e extremamente inteligentes, estes felinos conquistaram os corações de diversos tutores e superaram o índice de adoção entre os cachorros. Segundo pesquisa elaborada pela COMAC (Comissão de Animais em Companhia), em 2021, os gatos corresponderam a 84% dos animais de estimação adotados neste ano."
+        swapped_p1 = "Os gatos possuem uma personalidade enigmática que costuma gerar bastante curiosidade nas pessoas. Segundo pesquisa elaborada pela COMAC (Comissão de Animais em Companhia), em 2021, os gatos corresponderam a 84% dos animais de estimação adotados neste ano. Com ________________ elegantes e extremamente inteligentes, estes felinos conquistaram os corações de diversos tutores e superaram o índice de adoção entre os cachorros."
+        tampered_json_q["textoCompartilhado"]["content"] = tampered_json_q["textoCompartilhado"]["content"].replace(orig_p1, swapped_p1)
+        tampered_json_q["enunciado"] = tampered_json_q["enunciado"].replace(orig_p1, swapped_p1)
+        
+        analysis, is_valid, divergences = analyze_single_question(
+            1, pdf_q1, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc
+        )
+        self.assertFalse(is_valid, "Conferência deve reprovar troca da ordem de períodos no Texto 1")
+        self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
+        self.assertTrue(any(d["tipo"] == "texto_apoio_divergente" for d in divergences))
+        self.assertTrue(any("Parágrafo 1" in d["detalhe"] for d in divergences))
+
+    def test_negative_support_text_numeric_alteration(self):
+        """18. Negativo: Alteração de um dado numérico no Texto 1 (84% -> 85%) deve reprovar a conferência."""
+        pdf_q1 = self.pdf_questions[1]
+        tampered_json_q = copy.deepcopy(self.json_data[0])
+        # Modifica dado numérico no texto compartilhado e no enunciado
         tampered_json_q["textoCompartilhado"]["content"] = tampered_json_q["textoCompartilhado"]["content"].replace("84%", "85%")
+        tampered_json_q["enunciado"] = tampered_json_q["enunciado"].replace("84%", "85%")
         
         analysis, is_valid, divergences = analyze_single_question(
             1, pdf_q1, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc
         )
-        self.assertFalse(is_valid, "Verificação deveria reprovar alteração de número no Texto 1")
+        self.assertFalse(is_valid, "Conferência deve reprovar alteração de dado numérico no Texto 1")
         self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
         self.assertTrue(any(d["tipo"] == "texto_apoio_divergente" for d in divergences))
+        self.assertTrue(any("84%" in tampered_json_q["textoCompartilhado"]["content"] or "Parágrafo 1" in d["detalhe"] for d in divergences))
 
-    def test_negative_support_text_removal_of_phrase(self):
-        """17. Negativo: Remoção de trecho do texto compartilhado (ex: COMAC) deve reprovar a conferência."""
+    def test_negative_support_text_divergence_between_shared_and_enunciado(self):
+        """18b. Negativo: Divergência entre textoCompartilhado.content e o texto repetido no enunciado."""
         pdf_q1 = self.pdf_questions[1]
         tampered_json_q = copy.deepcopy(self.json_data[0])
-        # Remove referência à COMAC
-        tampered_json_q["textoCompartilhado"]["content"] = tampered_json_q["textoCompartilhado"]["content"].replace("COMAC", "")
+        # Altera apenas o texto no enunciado, mantendo textoCompartilhado idêntico ao PDF
+        tampered_json_q["enunciado"] = tampered_json_q["enunciado"].replace("personalidade enigmática", "personalidade misteriosa")
         
         analysis, is_valid, divergences = analyze_single_question(
             1, pdf_q1, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc
         )
-        self.assertFalse(is_valid, "Verificação deveria reprovar remoção de trecho do Texto 1")
+        self.assertFalse(is_valid, "Conferência deve reprovar divergência entre textoCompartilhado e enunciado")
         self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
         self.assertTrue(any(d["tipo"] == "texto_apoio_divergente" for d in divergences))
+        self.assertTrue(any("divergência entre textoCompartilhado.content e o texto repetido no enunciado" in d["detalhe"] for d in divergences))
+
+    def test_negative_support_text_suppression_of_complete_paragraph(self):
+        """18c. Negativo: Supressão de um parágrafo completo no Texto 1 deve reprovar a conferência."""
+        pdf_q1 = self.pdf_questions[1]
+        tampered_json_q = copy.deepcopy(self.json_data[0])
+        # Remove o Parágrafo 2 completo
+        paras = tampered_json_q["textoCompartilhado"]["content"].split("\n\n")
+        self.assertEqual(len(paras), 4)
+        tampered_json_q["textoCompartilhado"]["content"] = "\n\n".join([paras[0], paras[2], paras[3]])
+        
+        analysis, is_valid, divergences = analyze_single_question(
+            1, pdf_q1, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc
+        )
+        self.assertFalse(is_valid, "Conferência deve reprovar supressão de parágrafo completo")
+        self.assertEqual(analysis["statusDocumental"], "divergencia_relevante_identificada")
+        self.assertTrue(any(d["tipo"] == "texto_apoio_divergente" for d in divergences))
+        self.assertTrue(any("Número incorreto de parágrafos" in d["detalhe"] for d in divergences))
 
     def test_negative_support_text_lacuna_tampering(self):
-        """18. Negativo: Adulteração na quantidade de lacunas do Texto 1 (4 -> 3) deve reprovar a conferência."""
+        """18d. Negativo: Adulteração na quantidade de lacunas do Texto 1 (4 -> 3) deve reprovar a conferência."""
         pdf_q1 = self.pdf_questions[1]
         tampered_json_q = copy.deepcopy(self.json_data[0])
         # Remove uma das lacunas
         tampered_json_q["textoCompartilhado"]["content"] = tampered_json_q["textoCompartilhado"]["content"].replace("Com ________________ elegantes", "Com elegantes", 1)
+        tampered_json_q["enunciado"] = tampered_json_q["enunciado"].replace("Com ________________ elegantes", "Com elegantes", 1)
         
         analysis, is_valid, divergences = analyze_single_question(
             1, pdf_q1, tampered_json_q, self.sha_prova, self.sha_gabarito, self.doc

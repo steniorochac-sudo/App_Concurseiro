@@ -229,6 +229,27 @@ describe('Auditoria e Validação Integral - Agente Fiscal Tributário 1 (FEPESE
       });
     });
 
+    it('Texto 1 deve possuir paridade integral entre textoCompartilhado.content e o texto repetido no enunciado de Q01 e Q02', () => {
+      [questions[0], questions[1]].forEach((q) => {
+        const shared = (q as any).textoCompartilhado;
+        const sharedParas = shared.content.split('\n\n').map((p: string) => p.trim()).filter(Boolean);
+        expect(sharedParas).toHaveLength(4);
+
+        // Extrai parágrafos citados do enunciado
+        const bqLines = q.enunciado
+          .split('\n')
+          .filter((line: string) => line.startsWith('>'))
+          .map((line: string) => line.replace(/^>\s?/, '').trim())
+          .filter(Boolean)
+          .filter((line: string) => !['[Texto 1]', 'Os gatos'].includes(line));
+
+        expect(bqLines).toHaveLength(4);
+        for (let i = 0; i < 4; i++) {
+          expect(bqLines[i]).toBe(sharedParas[i]);
+        }
+      });
+    });
+
     it('Q05 deve possuir cada alternativa com tags <u> correspondendo a orações subordinadas comprovadas', () => {
       const q5 = questions[4];
       const expectedTags: Record<string, string> = {

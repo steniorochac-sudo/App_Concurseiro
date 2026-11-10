@@ -39,7 +39,65 @@
     "pendencias": [],
     "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
     "conferidoEm": "2026-11-09",
-    "statusDocumental": "verificacao_documental_concluida"
+    "statusDocumental": "verificacao_documental_concluida",
+    "evidenciaTextoApoio": {
+      "tipo": "confronto_integral_texto_1",
+      "titulo": "Texto 1 — Os gatos",
+      "paragrafosConferidos": 4,
+      "lacunasConferidas": 4,
+      "confrontoPdfVsShared": "100%_identico",
+      "confrontoPdfVsEnunciado": "100%_identico",
+      "confrontoSharedVsEnunciado": "100%_identico",
+      "normalizacoesEditoriaisDocumentadas": [
+        "Desfazimento de hifenização de quebra de linha diagramada no PDF ('Especialis-\\ntas' -> 'Especialistas', 'curiosidades-\\nsobre' -> 'curiosidades-sobre')",
+        "Unificação de lacunas diagramadas no PDF (traço vetorial sobre em-spaces) com o padrão formal JSON ('________________')",
+        "Unificação editorial de quebras de linha e múltiplos espaços intraparágrafo em espaço simples",
+        "Formatação de citação editorial na linha de fonte oficial ('(Fonte: ...)')"
+      ],
+      "comprovado": true,
+      "detalhesPorParagrafo": {
+        "Parágrafo 1": {
+          "nome": "Parágrafo 1",
+          "periodosCountPdf": 3,
+          "periodosCountShared": 3,
+          "periodosCountEnunc": 3,
+          "pdfVsSharedMatch": true,
+          "pdfVsEnuncMatch": true,
+          "sharedVsEnuncMatch": true,
+          "divergencias": []
+        },
+        "Parágrafo 2": {
+          "nome": "Parágrafo 2",
+          "periodosCountPdf": 4,
+          "periodosCountShared": 4,
+          "periodosCountEnunc": 4,
+          "pdfVsSharedMatch": true,
+          "pdfVsEnuncMatch": true,
+          "sharedVsEnuncMatch": true,
+          "divergencias": []
+        },
+        "Parágrafo 3": {
+          "nome": "Parágrafo 3",
+          "periodosCountPdf": 6,
+          "periodosCountShared": 6,
+          "periodosCountEnunc": 6,
+          "pdfVsSharedMatch": true,
+          "pdfVsEnuncMatch": true,
+          "sharedVsEnuncMatch": true,
+          "divergencias": []
+        },
+        "Fonte": {
+          "nome": "Fonte",
+          "periodosCountPdf": 2,
+          "periodosCountShared": 2,
+          "periodosCountEnunc": 2,
+          "pdfVsSharedMatch": true,
+          "pdfVsEnuncMatch": true,
+          "sharedVsEnuncMatch": true,
+          "divergencias": []
+        }
+      }
+    }
   },
   {
     "numeroOriginal": 2,
@@ -81,7 +139,65 @@
     "pendencias": [],
     "metodoConferencia": "PyMuPDF_Bicolumnar_Flow_Vector_Drawing",
     "conferidoEm": "2026-11-09",
-    "statusDocumental": "verificacao_documental_concluida"
+    "statusDocumental": "verificacao_documental_concluida",
+    "evidenciaTextoApoio": {
+      "tipo": "confronto_integral_texto_1",
+      "titulo": "Texto 1 — Os gatos",
+      "paragrafosConferidos": 4,
+      "lacunasConferidas": 4,
+      "confrontoPdfVsShared": "100%_identico",
+      "confrontoPdfVsEnunciado": "100%_identico",
+      "confrontoSharedVsEnunciado": "100%_identico",
+      "normalizacoesEditoriaisDocumentadas": [
+        "Desfazimento de hifenização de quebra de linha diagramada no PDF ('Especialis-\\ntas' -> 'Especialistas', 'curiosidades-\\nsobre' -> 'curiosidades-sobre')",
+        "Unificação de lacunas diagramadas no PDF (traço vetorial sobre em-spaces) com o padrão formal JSON ('________________')",
+        "Unificação editorial de quebras de linha e múltiplos espaços intraparágrafo em espaço simples",
+        "Formatação de citação editorial na linha de fonte oficial ('(Fonte: ...)')"
+      ],
+      "comprovado": true,
+      "detalhesPorParagrafo": {
+        "Parágrafo 1": {
+          "nome": "Parágrafo 1",
+          "periodosCountPdf": 3,
+          "periodosCountShared": 3,
+          "periodosCountEnunc": 3,
+          "pdfVsSharedMatch": true,
+          "pdfVsEnuncMatch": true,
+          "sharedVsEnuncMatch": true,
+          "divergencias": []
+        },
+        "Parágrafo 2": {
+          "nome": "Parágrafo 2",
+          "periodosCountPdf": 4,
+          "periodosCountShared": 4,
+          "periodosCountEnunc": 4,
+          "pdfVsSharedMatch": true,
+          "pdfVsEnuncMatch": true,
+          "sharedVsEnuncMatch": true,
+          "divergencias": []
+        },
+        "Parágrafo 3": {
+          "nome": "Parágrafo 3",
+          "periodosCountPdf": 6,
+          "periodosCountShared": 6,
+          "periodosCountEnunc": 6,
+          "pdfVsSharedMatch": true,
+          "pdfVsEnuncMatch": true,
+          "sharedVsEnuncMatch": true,
+          "divergencias": []
+        },
+        "Fonte": {
+          "nome": "Fonte",
+          "periodosCountPdf": 2,
+          "periodosCountShared": 2,
+          "periodosCountEnunc": 2,
+          "pdfVsSharedMatch": true,
+          "pdfVsEnuncMatch": true,
+          "sharedVsEnuncMatch": true,
+          "divergencias": []
+        }
+      }
+    }
   },
   {
     "numeroOriginal": 3,

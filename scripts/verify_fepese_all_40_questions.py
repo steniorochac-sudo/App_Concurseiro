@@ -130,65 +130,243 @@ def normalize_text_for_comparison(s, preserve_underlines=False):
     s = re.sub(r'\s*\n\s*', ' ', s)
     return s.strip()
 
-def verify_support_text_1_detailed(doc, json_q):
+def extract_pdf_support_text_1(doc):
     """
-    Valida especificamente o Texto 1 associado às questões 1 e 2,
-    preservando integralmente parágrafos, números, palavras, pontuação relevante e lacunas.
+    Extrai o Texto 1 diretamente da região correspondente no PDF oficial (Página 3).
+    Blocos da coluna esquerda (x < 280, 35 <= y <= 735):
+      - Bloco 2: 'Texto 1'
+      - Bloco 3: 'Os gatos'
+      - Bloco 4: Parágrafo 1
+      - Bloco 5: Parágrafo 2
+      - Bloco 6: Parágrafo 3 e Fonte oficial
     """
-    p3 = doc[2] # Página 3
+    p3 = doc[2]
     blocks = [b for b in p3.get_text('blocks') if 35 <= b[1] <= 735 and b[0] < 280]
     blocks.sort(key=lambda b: b[1])
     
-    # Blocos 2 a 6 da pág. 3 (Texto 1: título, parágrafos 1, 2, 3 e fonte)
-    support_blocks = blocks[2:7]
-    pdf_text = "\n\n".join(b[4].strip() for b in support_blocks)
-    pdf_text = re.sub(r'(\w+)-\s*\n\s*(\w+)', r'\1\2', pdf_text)
+    title = f"{blocks[2][4].strip()} — {blocks[3][4].strip()}"
+    p1 = blocks[4][4].strip()
+    p2 = blocks[5][4].strip()
+    b6 = blocks[6][4].strip()
     
-    errors = []
-    
-    # 1. Validação no enunciado (citação em markdown)
-    enunciado = json_q.get("enunciado", "")
-    if "> [Texto 1]" not in enunciado:
-        errors.append("Enunciado não contém citação do Texto 1 (> [Texto 1])")
+    if '\nwww.' in b6:
+        p3_text, src_text = b6.rsplit('\nwww.', 1)
+        src_text = 'www.' + src_text.strip()
+    else:
+        p3_text = b6
+        src_text = ''
         
-    # 2. Validação no objeto textoCompartilhado
-    shared = json_q.get("textoCompartilhado")
-    if not shared:
-        errors.append("Questão não contém objeto textoCompartilhado")
-        return False, errors
-        
-    title = shared.get("title", "")
-    content = shared.get("content", "")
-    
-    if "Texto 1" not in title or "Os gatos" not in title:
-        errors.append(f"Título do textoCompartilhado divergente: '{title}'")
-        
-    required_elements = [
-        ("personalidade enigmática", "Parágrafo 1 - abertura"),
-        ("COMAC", "Parágrafo 1 - sigla COMAC"),
-        ("Comissão de Animais em Companhia", "Parágrafo 1 - nome COMAC"),
-        ("2021", "Parágrafo 1 - ano 2021"),
-        ("84%", "Parágrafo 1 - percentual 84%"),
-        ("língua áspera para higienização oral", "Parágrafo 2 - abertura"),
-        ("45 e 65 mil hertz", "Parágrafo 2 - audição gatos"),
-        ("10 e 40 mil hertz", "Parágrafo 2 - audição cães"),
-        ("Seu ronronar é uma forma de comunicação", "Parágrafo 3 - abertura"),
-        ("Especialistas acreditam", "Parágrafo 3 - hipótese"),
-        ("progenitora a ronronar", "Parágrafo 3 - termo progenitora"),
-        ("www.terra.br/amp/vida-e-estilo/pets/confira-10-curiosidades-sobre-os-gatos", "Fonte - URL oficial")
-    ]
-    
-    for token, desc in required_elements:
-        if token not in content:
-            errors.append(f"Elemento ausente ou adulterado no Texto 1 ({desc}): '{token}'")
+    return {
+        'title': title,
+        'paragraphs': [p1, p2, p3_text.strip(), src_text.strip()]
+    }
+
+def extract_enunciado_support_text_1(enunciado):
+    """
+    Extrai os parágrafos de apoio do Texto 1 a partir da citação em bloco ('>') do enunciado.
+    """
+    bq_lines = []
+    for line in enunciado.splitlines():
+        if line.startswith('>'):
+            clean = line[1:].strip() if line.startswith('> ') or line == '>' else line[1:]
+            bq_lines.append(clean)
             
-    # Contagem de lacunas no texto compartilhado (devem ser exatamente 4)
-    lacunas_count = len(re.findall(r'_{4,}', content))
-    if lacunas_count != 4:
-        errors.append(f"Número incorreto de lacunas no Texto 1: encontrado {lacunas_count}, esperado 4")
+    non_empty = [l.strip() for l in bq_lines if l.strip()]
+    header = [l for l in non_empty if l in ['[Texto 1]', 'Os gatos']]
+    body_paras = [l for l in non_empty if l not in ['[Texto 1]', 'Os gatos']]
+    return {
+        'header': header,
+        'paragraphs': body_paras
+    }
+
+def extract_shared_support_text_1(shared):
+    """
+    Extrai os parágrafos do objeto textoCompartilhado.
+    """
+    if not shared:
+        return {'title': '', 'paragraphs': []}
+    title = shared.get('title', '')
+    content = shared.get('content', '')
+    paras = [p.strip() for p in content.split('\n\n') if p.strip()]
+    return {
+        'title': title,
+        'paragraphs': paras
+    }
+
+def normalize_support_paragraph(p, is_pdf=False):
+    """
+    Aplica exclusivamente normalizações editoriais documentadas:
+    1. Desfazimento de hifenização de quebra de linha diagramada no PDF (ex: 'Especialis-\ntas' -> 'Especialistas').
+    2. Unificação da representação de lacuna (traço vetorial sobre em-spaces no PDF vs sequência de underscores no JSON).
+    3. Normalização de quebras de linha e múltiplos espaços em branco para espaço simples.
+    4. Unificação editorial da linha de fonte para formato padrão '(Fonte: ...)'.
+    5. Preservação integral de pontuação semanticamente relevante, números e ordem textual.
+    """
+    t = p
+    if is_pdf:
+        # Desfaz hifenização diagramada de quebra de linha no PDF
+        t = re.sub(r'Especialis-\s*\n\s*tas', 'Especialistas', t)
+        t = re.sub(r'curiosidades-\s*\n\s*sobre', 'curiosidades-sobre', t)
+        # Lacunas no PDF (em-spaces sob traço vetorial)
+        t = re.sub(r'[\u2003\s]{5,}', ' ________________ ', t)
+        # Formatação de citação editorial na linha de fonte oficial
+        if t.startswith('www.'):
+            t = f'(Fonte: {t.strip()})'
+    else:
+        # Lacunas no JSON
+        t = re.sub(r'_{4,}', ' ________________ ', t)
+        
+    # Normalização de espaços e quebras de linha
+    t = re.sub(r'[ \t\u2000-\u200f\u00a0]+', ' ', t)
+    t = re.sub(r'\s*\n\s*', ' ', t)
+    t = re.sub(r'\s+([,.:;?!])', r'\1', t)
+    t = re.sub(r'([,.:;?!])(?=[a-zA-ZÀ-ÿ0-9])', r'\1 ', t)
+    t = re.sub(r'\s+', ' ', t)
+    return t.strip()
+
+def split_into_periods(para_text):
+    """
+    Divide o parágrafo em períodos oracionais completos delimitados por pontuação terminal.
+    """
+    return [s.strip() for s in re.split(r'(?<=[.!?])\s+(?=[A-ZÀ-ÿ0-9\(\[])', para_text) if s.strip()]
+
+def verify_support_text_1_detailed(doc, json_q):
+    """
+    Confronto integral entre:
+    1. Texto 1 extraído da região correspondente do PDF oficial (pág. 3).
+    2. Conteúdo do campo textoCompartilhado.content.
+    3. Texto de apoio presente nos enunciados das questões 1 e 2.
+
+    Preserva a ordem integral dos parágrafos e períodos, comparando palavras, números,
+    pontuação semanticamente relevante e lacunas.
+    Aceita somente normalizações editoriais documentadas (hifenização de diagramação,
+    unificação de lacunas, espaços e formato editorial da fonte).
+    """
+    errors = []
+    details = {}
+    
+    # 1. Validação estrutural do objeto textoCompartilhado
+    shared = json_q.get('textoCompartilhado')
+    if not shared:
+        errors.append('Questão não contém objeto textoCompartilhado')
+        return False, errors, details
+        
+    shared_data = extract_shared_support_text_1(shared)
+    title = shared_data['title']
+    if 'Texto 1' not in title or 'Os gatos' not in title:
+        errors.append(f'Título do textoCompartilhado divergente: "{title}"')
+        
+    # 2. Validação estrutural do enunciado
+    enunciado = json_q.get('enunciado', '')
+    if '> [Texto 1]' not in enunciado:
+        errors.append('Enunciado não contém citação do Texto 1 (> [Texto 1])')
+    enunc_data = extract_enunciado_support_text_1(enunciado)
+    
+    # 3. Extração documental do PDF oficial
+    pdf_data = extract_pdf_support_text_1(doc)
+    
+    # Normalização editorial documentada
+    pdf_paras = [normalize_support_paragraph(p, is_pdf=True) for p in pdf_data['paragraphs']]
+    shared_paras = [normalize_support_paragraph(p, is_pdf=False) for p in shared_data['paragraphs']]
+    enunc_paras = [normalize_support_paragraph(p, is_pdf=False) for p in enunc_data['paragraphs']]
+    
+    para_names = ['Parágrafo 1', 'Parágrafo 2', 'Parágrafo 3', 'Fonte']
+    expected_lacunas = [1, 1, 2, 0]
+    
+    # Conferência de contagem de parágrafos
+    if len(shared_paras) != 4:
+        errors.append(f'Número incorreto de parágrafos em textoCompartilhado: {len(shared_paras)} (esperado: 4)')
+    if len(enunc_paras) != 4:
+        errors.append(f'Número incorreto de parágrafos de apoio no enunciado: {len(enunc_paras)} (esperado: 4)')
+    if len(pdf_paras) != 4:
+        errors.append(f'Número incorreto de parágrafos no PDF: {len(pdf_paras)} (esperado: 4)')
+        
+    if errors:
+        return False, errors, details
+        
+    # Confronto integral parágrafo a parágrafo
+    for idx in range(4):
+        p_name = para_names[idx]
+        p_pdf = pdf_paras[idx]
+        p_shared = shared_paras[idx]
+        p_enunc = enunc_paras[idx]
+        
+        # Divisão em períodos para preservação da ordem interna
+        sents_pdf = split_into_periods(p_pdf)
+        sents_shared = split_into_periods(p_shared)
+        sents_enunc = split_into_periods(p_enunc)
+        
+        para_details = {
+            'nome': p_name,
+            'periodosCountPdf': len(sents_pdf),
+            'periodosCountShared': len(sents_shared),
+            'periodosCountEnunc': len(sents_enunc),
+            'pdfVsSharedMatch': (p_pdf == p_shared),
+            'pdfVsEnuncMatch': (p_pdf == p_enunc),
+            'sharedVsEnuncMatch': (p_shared == p_enunc),
+            'divergencias': []
+        }
+        
+        # 1. Confronto integral de parágrafo: PDF vs textoCompartilhado
+        if p_pdf != p_shared:
+            msg = f'{p_name}: divergência textual integral entre PDF e textoCompartilhado.content'
+            errors.append(msg)
+            para_details['divergencias'].append(msg)
+            
+        # 2. Confronto integral de parágrafo: PDF vs Enunciado
+        if p_pdf != p_enunc:
+            msg = f'{p_name}: divergência textual integral entre PDF e texto de apoio no enunciado'
+            errors.append(msg)
+            para_details['divergencias'].append(msg)
+            
+        # 3. Confronto de paridade: textoCompartilhado vs Enunciado
+        if p_shared != p_enunc:
+            msg = f'{p_name}: divergência entre textoCompartilhado.content e o texto repetido no enunciado'
+            errors.append(msg)
+            para_details['divergencias'].append(msg)
+            
+        # 4. Confronto minucioso de períodos e ordem
+        if len(sents_pdf) != len(sents_shared):
+            msg = f'{p_name}: contagem de períodos divergente entre PDF ({len(sents_pdf)}) e textoCompartilhado ({len(sents_shared)})'
+            errors.append(msg)
+            para_details['divergencias'].append(msg)
+        else:
+            for s_idx, (s_p, s_s) in enumerate(zip(sents_pdf, sents_shared), 1):
+                if s_p != s_s:
+                    msg = f'{p_name}, período {s_idx}: divergência de período ou troca de ordem entre PDF e textoCompartilhado'
+                    if msg not in errors:
+                        errors.append(msg)
+                    para_details['divergencias'].append(msg)
+                    
+        if len(sents_shared) != len(sents_enunc):
+            msg = f'{p_name}: contagem de períodos divergente entre textoCompartilhado ({len(sents_shared)}) e enunciado ({len(sents_enunc)})'
+            errors.append(msg)
+            para_details['divergencias'].append(msg)
+        else:
+            for s_idx, (s_s, s_e) in enumerate(zip(sents_shared, sents_enunc), 1):
+                if s_s != s_e:
+                    msg = f'{p_name}, período {s_idx}: divergência de período ou troca de ordem entre textoCompartilhado e enunciado'
+                    if msg not in errors:
+                        errors.append(msg)
+                    para_details['divergencias'].append(msg)
+
+        # 5. Conferência de lacunas por parágrafo
+        exp_lac = expected_lacunas[idx]
+        sh_lac = len(re.findall(r'________________', p_shared))
+        en_lac = len(re.findall(r'________________', p_enunc))
+        if sh_lac != exp_lac:
+            msg = f'{p_name}: contagem de lacunas incorreta em textoCompartilhado: encontrado {sh_lac}, esperado {exp_lac}'
+            errors.append(msg)
+            para_details['divergencias'].append(msg)
+        if en_lac != exp_lac:
+            msg = f'{p_name}: contagem de lacunas incorreta no enunciado: encontrado {en_lac}, esperado {exp_lac}'
+            errors.append(msg)
+            para_details['divergencias'].append(msg)
+            
+        details[p_name] = para_details
         
     is_valid = (len(errors) == 0)
-    return is_valid, errors
+    return is_valid, errors, details
 
 def verify_vector_underlines_q05_detailed(doc, json_q):
     """
@@ -334,8 +512,26 @@ def analyze_single_question(q_num, pdf_q, json_q, sha_prova, sha_gabarito, doc=N
             })
 
     # Validação integral de Texto de Apoio (Texto 1 para Q01 e Q02)
+    evidencia_texto_apoio = None
     if q_num in [1, 2] and doc:
-        sup_valid, sup_errors = verify_support_text_1_detailed(doc, json_q)
+        sup_valid, sup_errors, sup_details = verify_support_text_1_detailed(doc, json_q)
+        evidencia_texto_apoio = {
+            "tipo": "confronto_integral_texto_1",
+            "titulo": "Texto 1 — Os gatos",
+            "paragrafosConferidos": 4,
+            "lacunasConferidas": 4,
+            "confrontoPdfVsShared": "100%_identico" if sup_valid else "divergencia_detectada",
+            "confrontoPdfVsEnunciado": "100%_identico" if sup_valid else "divergencia_detectada",
+            "confrontoSharedVsEnunciado": "100%_identico" if sup_valid else "divergencia_detectada",
+            "normalizacoesEditoriaisDocumentadas": [
+                "Desfazimento de hifenização de quebra de linha diagramada no PDF ('Especialis-\\ntas' -> 'Especialistas', 'curiosidades-\\nsobre' -> 'curiosidades-sobre')",
+                "Unificação de lacunas diagramadas no PDF (traço vetorial sobre em-spaces) com o padrão formal JSON ('________________')",
+                "Unificação editorial de quebras de linha e múltiplos espaços intraparágrafo em espaço simples",
+                "Formatação de citação editorial na linha de fonte oficial ('(Fonte: ...)')"
+            ],
+            "comprovado": sup_valid,
+            "detalhesPorParagrafo": sup_details
+        }
         if not sup_valid:
             confronto_enunciado_status = "divergencia_relevante_nao_justificada"
             for err in sup_errors:
@@ -493,6 +689,8 @@ def analyze_single_question(q_num, pdf_q, json_q, sha_prova, sha_gabarito, doc=N
         analysis["comentarioDidatico"] = comentario_didatico
     if evidencia_vetorial:
         analysis["evidenciaVetorial"] = evidencia_vetorial
+    if evidencia_texto_apoio:
+        analysis["evidenciaTextoApoio"] = evidencia_texto_apoio
 
     is_valid = (len(unjustified_divergences) == 0)
     return analysis, is_valid, unjustified_divergences

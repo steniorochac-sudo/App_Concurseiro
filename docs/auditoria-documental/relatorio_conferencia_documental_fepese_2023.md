@@ -127,11 +127,22 @@ Todas as 40 questões foram analisadas elemento a elemento (enunciado, proposiç
 - **JSON:** `"Débitos de terceiros."`.
 - **Classificação:** `normalizacao_editorial_justificada`.
 
-### Texto 1 de Apoio (Questões 01 e 02) — Conferência Integral
-- **PDF Oficial (Página 3, Blocos 2 a 6):** Contém título "Texto 1", subtítulo "Os gatos", 3 parágrafos narrativos, 4 lacunas de preenchimento, números oficiais (`2021`, `84%`, `45 e 65 mil hertz`, `10 e 40 mil hertz`), dados institucionais (`COMAC - Comissão de Animais em Companhia`) e URL da fonte.
-- **JSON:** Registrado integralmente tanto na citação em bloco markdown (`> [Texto 1]`) quanto no objeto estruturado `textoCompartilhado`.
-- **Classificação:** `fidelidade_integral`.
-- **Bloqueio Determinístico:** A conferência valida a integridade de todos os parágrafos, dados numéricos e as 4 lacunas, falhando obrigatoriamente perante qualquer omissão ou adulteração.
+### Texto 1 de Apoio (Questões 01 e 02) — Confronto Integral Tríplice
+- **Três Representações Confrontadas:**
+  1. **PDF Oficial:** Extraído deterministicamente da coluna esquerda da página 3 (Blocos 2 a 6: título, subtítulo, 3 parágrafos narrativos, 4 lacunas e linha de fonte oficial).
+  2. **Campo Estruturado (`textoCompartilhado.content`):** 4 parágrafos (3 narrativos + citação da fonte).
+  3. **Enunciados das Questões 01 e 02:** Texto de apoio repetido nas citações em bloco (`>`) dos enunciados.
+- **Normalizações Editoriais Documentadas Aceitas:**
+  - Desfazimento de hifenização de quebra de linha diagramada no PDF (`Especialis-\ntas` $\rightarrow$ `Especialistas`, `curiosidades-\nsobre` $\rightarrow$ `curiosidades-sobre`).
+  - Unificação da representação de lacuna (traço vetorial sobre espaços/em-spaces no PDF $\rightarrow$ sequência de underscores `________________` no JSON).
+  - Unificação de quebras de linha e múltiplos espaços intraparágrafo em espaço simples.
+  - Formatação editorial de citação na linha de fonte oficial (`(Fonte: ...)`).
+- **Confronto Integral Minucioso:**
+  - A conferência por lista de palavras obrigatórias foi **totalmente substituída por confronto integral**.
+  - Validação de integridade de 100% das palavras, números (`2021`, `84%`, `45 e 65`, `10 e 40`), pontuação e lacunas (1 no P1, 1 no P2, 2 no P3; total 4).
+  - Preservação estrita da ordem dos parágrafos e dos 14 períodos oracionais.
+  - Paridade cruzada obrigatória: `PDF == textoCompartilhado`, `PDF == Enunciado` e `textoCompartilhado == Enunciado`.
+- **Bloqueio Ativo no Status:** Qualquer diferença não justificada (remoção de frase intermediária, alteração numérica, troca de ordem de períodos, divergência entre shared e enunciado ou supressão de parágrafo) produz imediatamente `is_valid = false` e define `statusDocumental = "divergencia_relevante_identificada"`, impedindo a conclusão documental.
 
 ### Elementos Gráficos e Vetoriais da Questão 05 — Correspondência 1-para-1
 - **Inspeção Vetorial:** Mapeamento determinístico das coordenadas verticais das linhas de sublinhado na página 3 ($y \approx 534.1$ a $582.1$ pt) contra os retângulos envolventes das palavras.
@@ -147,7 +158,7 @@ Todas as 40 questões foram analisadas elemento a elemento (enunciado, proposiç
 
 ## 5. Bateria de Testes Negativos e Blindagem de Integridade
 
-Para atender prioritariamente à regra de criação de testes e comprovar o bloqueio contra adulterações, foram implementados **10 cenários de teste negativo** em [`scripts/tests/test_fepese_documentary_conferral.py`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/scripts/tests/test_fepese_documentary_conferral.py):
+Para atender com prioridade máxima à regra de criação de testes (`RULE[user_global]`) e comprovar o bloqueio determinístico contra qualquer alteração, foram implementados **12 cenários de teste negativo** em [`scripts/tests/test_fepese_documentary_conferral.py`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/scripts/tests/test_fepese_documentary_conferral.py):
 
 1. **Alteração de Negação no Enunciado (`test_negative_statement_negation_alteration`):**  
    Inserção espúria de `"Não"` em Q01 provocou imediata rejeição (`divergencia_relevante_identificada`).
@@ -159,25 +170,31 @@ Para atender prioritariamente à regra de criação de testes e comprovar o bloq
    Supressão da proposição 3 de Q24 causou bloqueio imediato por divergência de enunciado.
 5. **Divergência de Gabarito (`test_negative_gabarito_divergence`):**  
    Modificação do gabarito em Q10 gerou falha formal de validação contra a seção 6M02.
-6. **Modificação Numérica no Texto de Apoio (`test_negative_support_text_modification`):**  
-   Alteração do percentual oficial no Texto 1 (`84%` para `85%`) em Q01 foi detectada e reprovada com `texto_apoio_divergente`.
-7. **Remoção de Trecho do Texto de Apoio (`test_negative_support_text_removal_of_phrase`):**  
-   Remoção da menção à `COMAC` no Texto 1 causou imediata rejeição da conferência.
-8. **Adulteração de Lacunas no Texto de Apoio (`test_negative_support_text_lacuna_tampering`):**  
-   Supressão de lacuna no Texto 1 (reduzindo de 4 para 3) reprovou a validação com erro de integridade de lacunas.
-9. **Remoção de Marcação Sublinhada em Q05 (`test_negative_q05_vector_underline_removal`):**  
-   Remoção da tag `<u>` na alternativa A da Q05 resultou em `evidenciaVetorial.comprovado = False` e `confrontoAlternativas.A = "falha_comprovacao_vetorial"`, bloqueando a validação.
-10. **Deslocamento de Sublinhado em Q05 (`test_negative_q05_vector_underline_displacement`):**  
+6. **Remoção de Frase Intermediária no Texto 1 (`test_negative_support_text_removal_of_intermediate_sentence`):**  
+   Remoção de frase intermediária do Parágrafo 3 (*"A maioria dos gatos ronrona, mas nem todos."*), não incluída na antiga lista de tokens, reprovou a validação com erro de divergência integral.
+7. **Troca da Ordem de Dois Períodos no Texto 1 (`test_negative_support_text_swap_order_of_periods`):**  
+   Inversão da ordem entre os períodos 2 e 3 do Parágrafo 1 foi detectada pelo rastreamento sequencial de períodos, resultando em bloqueio imediato.
+8. **Alteração de Dado Numérico no Texto 1 (`test_negative_support_text_numeric_alteration`):**  
+   Modificação do percentual oficial (`84%` $\rightarrow$ `85%`) provocou imediata rejeição com `texto_apoio_divergente`.
+9. **Divergência entre Texto Compartilhado e Enunciado (`test_negative_support_text_divergence_between_shared_and_enunciado`):**  
+   Divergência pontual entre o conteúdo de `textoCompartilhado.content` e o texto repetido no enunciado gerou reprovação obrigatória por quebra de paridade.
+10. **Supressão de Parágrafo Completo no Texto 1 (`test_negative_support_text_suppression_of_complete_paragraph`):**  
+    Remoção integral do Parágrafo 2 (*"Possuem língua áspera..."*) foi barrada pela contagem estrutural de parágrafos (3 encontrados vs 4 esperados).
+11. **Adulteração de Lacunas no Texto 1 (`test_negative_support_text_lacuna_tampering`):**  
+    Supressão de lacuna (reduzindo de 4 para 3) reprovou a validação com erro de integridade de lacunas.
+12. **Remoção de Marcação Sublinhada em Q05 (`test_negative_q05_vector_underline_removal`):**  
+    Remoção da tag `<u>` na alternativa A da Q05 resultou em `evidenciaVetorial.comprovado = False` e `confrontoAlternativas.A = "falha_comprovacao_vetorial"`, bloqueando a validação.
+13. **Deslocamento de Sublinhado em Q05 (`test_negative_q05_vector_underline_displacement`):**  
     Deslocamento da tag `<u>` para palavra não sublinhada no PDF (`<u>Acontece</u>`) causou bloqueio imediato da questão.
 
 ---
 
 ## 6. Resultados dos Gates Automatizados
 
-- **Suíte Vitest (Frontend & Types):** **220 testes aprovados** (21 arquivos de teste, 0 falhas).
-  - Teste dedicado [`agente_fiscal_tributario_1.test.ts`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/src/data/imported/__tests__/agente_fiscal_tributario_1.test.ts): **19 testes aprovados**.
-- **Suíte Python (PyMuPDF & Unittest):** **70 testes aprovados** (0 erros, 0 falhas).
-  - Teste dedicado [`test_fepese_documentary_conferral.py`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/scripts/tests/test_fepese_documentary_conferral.py): **21 testes aprovados** (11 positivos + 10 negativos).
+- **Suíte Vitest (Frontend & Types):** **221 testes aprovados** (21 arquivos de teste, 0 falhas).
+  - Teste dedicado [`agente_fiscal_tributario_1.test.ts`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/src/data/imported/__tests__/agente_fiscal_tributario_1.test.ts): **20 testes aprovados**.
+- **Suíte Python (PyMuPDF & Unittest):** **74 testes aprovados** (0 erros, 0 falhas).
+  - Teste dedicado [`test_fepese_documentary_conferral.py`](file:///c:/Users/steni/Desktop/Codification/Programas/App_Concurseiro/scripts/tests/test_fepese_documentary_conferral.py): **25 testes aprovados** (12 positivos + 13 negativos).
 - **Compilação de Produção:** `npm run build` (`tsc && vite build`) concluído com **código 0**.
 
 ---
